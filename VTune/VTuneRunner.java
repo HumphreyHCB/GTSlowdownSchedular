@@ -7,9 +7,9 @@ import java.util.List;
 
 public class VTuneRunner {
 
-    public static void runVtune(String benchmark, int innerBenchmarkAmount, 
+    public static void runVtune(String benchmark,int iterations, int innerBenchmarkAmount, 
                                 boolean jdkGraalGTMarkBasicBlocks, boolean jdkGraalLIRGTSlowDown,
-                                String lirBlockSlowdownFileName, String trivialInliningSize) {
+                                String lirBlockSlowdownFileName, String RunID) {
         // Command to be built dynamically
         List<String> command = new ArrayList<>();
         
@@ -17,6 +17,7 @@ public class VTuneRunner {
         command.add("vtune");
         command.add("-collect");
         command.add("hotspots");
+        command.add("-r /home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
         command.add("-knob");
         command.add("sampling-mode=hw");
         command.add("-knob");
@@ -30,8 +31,11 @@ public class VTuneRunner {
         // Add customizable JVM options, defaulting to false
         command.add("-Djdk.graal.LIRGTSlowDown=" + (jdkGraalLIRGTSlowDown ? "true" : "false"));
         command.add("-Djdk.graal.GTMarkBasicBlocks=" + (jdkGraalGTMarkBasicBlocks ? "true" : "false"));
-        command.add("-Djdk.graal.LIRBlockSlowdownFileName=" + lirBlockSlowdownFileName);
-        command.add("-Djdk.graal.TrivialInliningSize=" + trivialInliningSize);
+        if (!lirBlockSlowdownFileName.equals("")) {
+            command.add("-Djdk.graal.LIRBlockSlowdownFileName=" + lirBlockSlowdownFileName);
+        }
+
+        command.add("-Djdk.graal.TrivialInliningSize=0");
 
         // Add other fixed JVM options
         command.add("-XX:+UseJVMCICompiler");
@@ -43,7 +47,7 @@ public class VTuneRunner {
         // Add benchmark and inner benchmark amount
         command.add("Harness");
         command.add(benchmark); // e.g. "Queens"
-        command.add("500"); // e.g. "Queens"
+        command.add(iterations+ ""); // e.g. "Queens"
         command.add(String.valueOf(innerBenchmarkAmount)); // e.g. "5000"
 
         // Run the command using ProcessBuilder
@@ -84,6 +88,6 @@ public class VTuneRunner {
         String trivialInliningSize = "0"; // Dynamic JVM option
 
         // Call runVtune method with customizable options
-        runVtune(benchmark, innerBenchmarkAmount, jdkGraalGTMarkBasicBlocks, jdkGraalLIRGTSlowDown, lirBlockSlowdownFileName, trivialInliningSize);
+        //runVtune(benchmark, innerBenchmarkAmount, jdkGraalGTMarkBasicBlocks, jdkGraalLIRGTSlowDown, lirBlockSlowdownFileName, trivialInliningSize);
     }
 }

@@ -140,7 +140,7 @@ public class VTuneReportRipper {
     }
 
     // Inner class to store Block data (lines, CPU Time, and Graal ID)
-    class BlockData {
+    public class BlockData {
         private List<String> lines = new ArrayList<>();
         private String cpuTime;
         private String graalID;
