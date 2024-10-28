@@ -1,14 +1,21 @@
 package Phases.Marker;
 
+
 import GTResources.AWFYBenchmarksLookUp;
 import VTune.VTuneAnalyzer;
 import VTune.VTuneRunner;
 import VTune.VTuneReportRipper;
 import VTune.VTuneReportRipper.BlockData;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BuildSlowdownTargetsList {
@@ -30,25 +37,34 @@ public class BuildSlowdownTargetsList {
     private static void processGeneratedFiles(String markerRunId, List<String> significantMethods) {
         String directoryPath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/", markerRunId);
         VTuneReportRipper ripper = new VTuneReportRipper();
+        JSONObject resultJson = new JSONObject();
 
         for (String method : significantMethods) {
             String filePath = directoryPath + method.replaceAll("[\\/:*?\"<>|]", "_") + ".txt";
             File file = new File(filePath);
             if (file.exists()) {
                 Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
+                JSONArray blockArray = new JSONArray();
 
-                // Output blocks and their Graal ID for verification
-                System.out.println("Method: " + method);
                 for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
-                    System.out.println("Block: " + entry.getKey());
+                    JSONObject blockInfo = new JSONObject();
+                    blockInfo.put("Block", entry.getKey());
                     if (entry.getValue().getGraalID() != null) {
-                        System.out.println("Graal ID: " + entry.getValue().getGraalID());
+                        blockInfo.put("GraalID", entry.getValue().getGraalID());
                     }
-                    System.out.println();
+                    blockArray.put(blockInfo);
                 }
+                resultJson.put(method, blockArray);
             } else {
                 System.out.println("File not found for method: " + method);
             }
+        }
+
+        // Write resultJson to a JSON file
+        try (FileWriter writer = new FileWriter("Data/"+ markerRunId+ "/result.json")) {
+            writer.write(resultJson.toString(4)); // Pretty print with an indentation of 4
+        } catch (IOException e) {
+            System.err.println("Error writing JSON file: " + e.getMessage());
         }
     }
 

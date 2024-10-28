@@ -81,12 +81,11 @@ public class VTuneReportRipper {
 
     // Helper method to detect the Graal ID by looking for the instruction sequence
     private String detectGraalID(List<String> lines) {
-        // Instruction sequence and sfence detection
         String pattern = "vshufps xmm0, xmm0, xmm0, ";
         boolean sfenceStart = false;
         List<String> sequence = new ArrayList<>();
         String graalID = null;
-
+    
         for (String line : lines) {
             // Detect sfence start
             if (line.contains("sfence")) {
@@ -95,29 +94,30 @@ public class VTuneReportRipper {
                     sequence.clear(); // Start fresh when sfence is encountered
                 } else {
                     // sfence end, if sequence contains vshufps instructions, mark it as Backend Block
-                    if (sequence.size() == 3) {
-                        String lastInstruction = sequence.get(2).trim();
+                    if (!sequence.isEmpty()) {
+                        String lastInstruction = sequence.get(sequence.size() - 1).trim();
                         String value = lastInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
                         graalID = "Backend Block " + convertToDecimal(value);
                     }
                     sfenceStart = false; // Reset after end sfence
                 }
             }
-
+    
             // Detect vshufps instructions within sfence boundaries or without sfence
             if (line.contains(pattern)) {
                 sequence.add(line); // Add matching lines to sequence
-                if (!sfenceStart && sequence.size() == 3) {
+                if (!sfenceStart && sequence.size() >= 1) {
                     // Handle case without sfence boundaries
-                    String lastInstruction = sequence.get(2).trim();
+                    String lastInstruction = sequence.get(sequence.size() - 1).trim();
                     String value = lastInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
                     graalID = convertToDecimal(value);
                 }
             }
         }
-
+    
         return graalID; // Return Graal ID if found
     }
+    
 
     // Helper method to convert a string (hex or decimal) to a decimal string
     private String convertToDecimal(String value) {
