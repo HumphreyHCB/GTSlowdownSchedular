@@ -1,3 +1,4 @@
+package VTune;
 import java.io.File;
 import java.io.IOException;
 
@@ -43,7 +44,7 @@ public class VTuneReporter {
         String functionName = "Queens::placeQueen";
 
         // Generating a report and saving it to a new .txt file
-        String outputFileName = "vtune_report.txt";  // You can choose any name for this
+        String outputFileName = "vtune_report_"+functionName+".txt";  // You can choose any name for this
         generateVTuneReport(vtunePath, functionName, outputFileName);
     }
 }
