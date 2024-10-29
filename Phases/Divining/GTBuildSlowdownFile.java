@@ -12,7 +12,7 @@ import java.util.Map;
 public class GTBuildSlowdownFile {
 
     // Store data with method names as keys and block/value pairs as sub-keys/values
-    public static final Map<String, Map<String, Integer>> slowdownData = new HashMap<>();
+    public static Map<String, Map<String, Integer>> slowdownData = new HashMap<>();
 
     /**
      * Adds an entry to the slowdown data.

@@ -41,12 +41,12 @@ public class MarkerPhaseDataLookup {
     // Data class to hold benchmark entry details
     public static class BlockInfo {
         public double baseCpuTime;
-        public String graalID;
+        public int graalID;
         public boolean backendBlock;
-        public String vtuneBlock;
+        public int vtuneBlock;
         public int lineCount; // New field for LineCount
 
-        public BlockInfo(double baseCpuTime, String graalID, boolean backendBlock, String vtuneBlock, int lineCount) {
+        public BlockInfo(double baseCpuTime, int graalID, boolean backendBlock, int vtuneBlock, int lineCount) {
             this.baseCpuTime = baseCpuTime;
             this.graalID = graalID;
             this.backendBlock = backendBlock;
@@ -64,9 +64,9 @@ public class MarkerPhaseDataLookup {
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonEntry = jsonArray.getJSONObject(i);
                 double baseCpuTime = jsonEntry.getDouble("BaseCpuTime");
-                String graalID = jsonEntry.getString("GraalID");
+                int graalID = jsonEntry.getInt("GraalID");
                 boolean backendBlock = jsonEntry.getBoolean("Backend Block");
-                String vtuneBlock = jsonEntry.getString("VtuneBlock");
+                int vtuneBlock = jsonEntry.getInt("VtuneBlock");
                 int lineCount = jsonEntry.getInt("LineCount"); // Read the new LineCount field
 
                 entries.add(new BlockInfo(baseCpuTime, graalID, backendBlock, vtuneBlock, lineCount));
