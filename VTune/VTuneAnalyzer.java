@@ -108,6 +108,65 @@ public class VTuneAnalyzer {
         }
     }
 
+
+        /**
+     * Method to get the CPU time for a specific function and block ID.
+     *
+     * @param vtunePath    the path to the VTune run
+     * @param functionName the function name, e.g., "Queens::placeQueen"
+     * @param blockID      the block ID for which the CPU time is needed
+     * @return the CPU time as a double, or -1 if not found
+     */
+    public static double getCpuTimeForBlock(String vtunePath, String functionName, int blockID) {
+        // Convert "Queens::placeQueen" to "Queens.placeQueen"
+        String formattedFunctionName = functionName.replace(".", "::");
+
+        // Construct the VTune command to retrieve block information
+        String command = String.format(
+                "vtune -report hotspots -r %s -source-object function=%s -group-by=basic-block,address -column=block,\"CPU Time:Self\",assembly",
+                vtunePath, formattedFunctionName
+        );
+
+        try {
+            // Execute the command and capture output
+            ProcessBuilder builder = new ProcessBuilder("/bin/sh", "-c", command);
+            builder.redirectErrorStream(true);
+            Process process = builder.start();
+
+            // Parse the output to find the specified block and its CPU time
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String line;
+                String targetBlock = "Block " + blockID;
+                while ((line = reader.readLine()) != null) {
+                    if (line.contains(targetBlock)) {
+                        // Extract CPU time
+                        String cpuTimeStr = extractCpuTime(line);
+                        if (cpuTimeStr != null) {
+                            return Double.parseDouble(cpuTimeStr.replace("s", ""));
+                        }
+                    }
+                }
+            }
+
+            // Wait for the process to complete
+            process.waitFor();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return -1; // Return -1 if CPU time for the specified block is not found
+    }
+
+    // Helper method to extract CPU time from a line (if present)
+    private static String extractCpuTime(String line) {
+        // Regex to match CPU time in the format "0.329s" at the end of the line
+        String cpuTimeRegex = ".*\\s(\\d+\\.\\d+)s$";
+        if (line.matches(cpuTimeRegex)) {
+            return line.replaceAll(cpuTimeRegex, "$1");
+        }
+        return null; // No CPU time found
+    }
+
     // Main method to demonstrate the usage of the generateVTuneReport method
     public static void main(String[] args) {
         // Example usage

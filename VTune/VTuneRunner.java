@@ -7,7 +7,7 @@ import java.util.List;
 
 public class VTuneRunner {
 
-    public static void runVtune(String benchmark,int iterations, int innerBenchmarkAmount, 
+    public static String runVtune(String benchmark,int iterations, int innerBenchmarkAmount, 
                                 boolean jdkGraalGTMarkBasicBlocks, boolean jdkGraalLIRGTSlowDown,
                                 String lirBlockSlowdownFileName, String RunID) {
         // Command to be built dynamically
@@ -73,9 +73,11 @@ public class VTuneRunner {
             } else {
                 System.out.println("VTune command failed with exit code: " + exitCode);
             }
+            return "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID;
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
+            return "";
         }
     }
 

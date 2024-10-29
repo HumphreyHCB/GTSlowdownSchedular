@@ -21,7 +21,9 @@ public class DiviningRunner {
         List<BlockInfo> blocks = MarkerPhaseDataLookup.getBenchmarkEntries("Queens::getRowColumn");
 
         for (BlockInfo blockInfo : blocks) {
-            Diviner.Divine(RunID, blockInfo, Benchmark, iterations);
+            Diviner.Divine(RunID,"Queens::getRowColumn", blockInfo, Benchmark, iterations);
+            // we need to save the data once its divined
+            GTBuildSlowdownFile.slowdownData.clear();
         }
 
 

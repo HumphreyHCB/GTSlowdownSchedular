@@ -32,8 +32,8 @@ public class GTSchedular {
     /// this method should invoke both the marker and divining phase
     public void schedule() {
 
-        MarkerRunner.run(benchmark, iterations, ID);
-
+        //MarkerRunner.run(benchmark, iterations, ID);
+        ID = "2024_10_29_18_19_36";
         DiviningRunner.run(benchmark, iterations, ID);
         // Divining
 
