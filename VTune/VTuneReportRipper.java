@@ -10,7 +10,7 @@ import java.util.Map;
 public class VTuneReportRipper {
 
     public static void main(String[] args) {
-        String filePath = "vtune_report.txt";
+        String filePath = "Data/2024_10_29_14_48_26_MarkerRun/Queens__placeQueenCopy.txt";
         VTuneReportRipper ripper = new VTuneReportRipper();
         Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
 
@@ -158,7 +158,7 @@ public class VTuneReportRipper {
         }
 
         public void setCpuTime(String cpuTime) {
-            this.cpuTime = cpuTime;
+            this.cpuTime = cpuTime.replace("s", "");
         }
 
         public String getGraalID() {

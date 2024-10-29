@@ -1,4 +1,4 @@
-package Phases.Marker;
+package Phases.Common;
 
 import GTResources.AWFYBenchmarksLookUp;
 import VTune.VTuneAnalyzer;
@@ -17,9 +17,9 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class BuildSlowdownTargetsList {
+public class BuildResultsForRun {
 
-    public static void run(String markerRunId, List<String> significantMethods) {
+    public static void run(String markerRunId, List<String> significantMethods, boolean includeLineCount) {
         if (significantMethods == null || significantMethods.isEmpty()) {
             System.out.println("No significant methods provided.");
             return;
@@ -31,10 +31,10 @@ public class BuildSlowdownTargetsList {
             VTuneAnalyzer.generateMethodBlockVTuneReport(markerRunId, method, outputFilePath);
         }
 
-        processGeneratedFiles(markerRunId, significantMethods);
+        processGeneratedFiles(markerRunId, significantMethods, includeLineCount);
     }
 
-    private static void processGeneratedFiles(String markerRunId, List<String> significantMethods) {
+    private static void processGeneratedFiles(String markerRunId, List<String> significantMethods, boolean includeLineCount) {
         String directoryPath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/", markerRunId);
         VTuneReportRipper ripper = new VTuneReportRipper();
         JSONObject resultJson = new JSONObject();
@@ -48,21 +48,14 @@ public class BuildSlowdownTargetsList {
 
                 for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
                     BlockData blockData = entry.getValue();
-                    if (blockData.getGraalID() != null && blockData.getCpuTime() != null) {
+                    if (blockData.getCpuTime() != null) { // Only include blocks that have CPU time
                         JSONObject blockInfo = new JSONObject();
                         blockInfo.put("VtuneBlock", entry.getKey().replaceAll("Block ", ""));
-                        String graalID = blockData.getGraalID();
-                        if (graalID.contains("Backend Block")) {
-                            blockInfo.put("GraalID", graalID.replace("Backend Block ", ""));
-                            blockInfo.put("Backend Block", true);
-                        } else {
-                            blockInfo.put("GraalID", graalID);
-                            blockInfo.put("Backend Block", false);
-                        }
-                        if (blockData.getCpuTime() != null) {
-                            blockInfo.put("CpuTime", blockData.getCpuTime());
-                        }
+                        blockInfo.put("CpuTime", blockData.getCpuTime());
                         blockArray.put(blockInfo);
+                        if (includeLineCount) {
+                            blockInfo.put("LineCount",entry.getValue().getLines().size());
+                        }
                     }
                 }
                 resultJson.put(method, blockArray);

@@ -20,6 +20,7 @@ public class VTuneRunner {
         command.add("-r /home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
         command.add("-knob");
         command.add("sampling-mode=hw");
+        command.add("-quiet");
         command.add("-knob");
         command.add("enable-stack-collection=true");
         command.add("-knob");

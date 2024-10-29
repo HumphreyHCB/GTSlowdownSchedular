@@ -1,6 +1,7 @@
 
 import org.json.JSONObject;
 
+import Phases.Divining.DiviningRunner;
 import Phases.Marker.MarkerRunner;
 import VTune.VTuneRunner;
 
@@ -33,7 +34,7 @@ public class GTSchedular {
 
         MarkerRunner.run(benchmark, iterations, ID);
 
-
+        DiviningRunner.run(benchmark, iterations, ID);
         // Divining
 
 
