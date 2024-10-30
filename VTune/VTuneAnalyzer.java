@@ -108,8 +108,55 @@ public class VTuneAnalyzer {
         }
     }
 
-
         /**
+     * Method to get the total CPU time for all blocks with CPU time (excluding individual instructions).
+     *
+     * @param vtunePath    the path to the VTune run
+     * @param functionName the function name, e.g., "Queens::placeQueen"
+     * @return the total CPU time as a double, or -1 if not found
+     */
+    public static double getTotalCpuTimeForMethodsBlocks(String vtunePath, String functionName) {
+        // Convert "Queens::placeQueen" to "Queens.placeQueen"
+        String formattedFunctionName = functionName.replace(".", "::");
+
+        // Construct the VTune command to retrieve block information
+        String command = String.format(
+                "vtune -report hotspots -r %s -source-object function=%s -group-by=basic-block,address -column=block,\"CPU Time:Self\",assembly",
+                vtunePath, formattedFunctionName
+        );
+
+        double totalCpuTime = 0.0;
+
+        try {
+            // Execute the command and capture output
+            ProcessBuilder builder = new ProcessBuilder("/bin/sh", "-c", command);
+            builder.redirectErrorStream(true);
+            Process process = builder.start();
+
+            // Parse the output to accumulate CPU time for block lines only
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    // Check if the line represents a block with a CPU time (e.g., "Block 3 0.048s")
+                    if (line.matches(".*Block \\d+\\s+\\d*\\.\\d+s.*")) {
+                        String cpuTimeStr = extractCpuTime(line);
+                        if (cpuTimeStr != null && !cpuTimeStr.equals("0s")) {  // Exclude blocks with 0 CPU time
+                            totalCpuTime += Double.parseDouble(cpuTimeStr.replace("s", ""));
+                        }
+                    }
+                }
+            }
+
+            // Wait for the process to complete
+            process.waitFor();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return totalCpuTime > 0 ? totalCpuTime : -1; // Return total CPU time, or -1 if no blocks had CPU time
+    }
+    
+    /**
      * Method to get the CPU time for a specific function and block ID.
      *
      * @param vtunePath    the path to the VTune run

@@ -48,7 +48,7 @@ public class BuildMarkerPhaseInfo {
             JSONObject markerRunJson = new JSONObject(markerRunContent);
 
             // Check that both have the same methods and blocks
-            if (haveSameMethodsAndBlocks(normalRunJson, markerRunJson) > 1.0) {
+            if (haveSameMethodsAndBlocks(normalRunJson, markerRunJson) > 5.0) {
                 //System.out.println("Methods and blocks do not match between the runs.");
                 return false;
             }
