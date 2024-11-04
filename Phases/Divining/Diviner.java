@@ -10,55 +10,46 @@ public class Diviner {
 
     // For a given method's block work out the correct amount of slowdown
     public static int Divine(String runID, String method, BlockInfo block, String Benchmark, int iterations) {
-
-        double BaseCPUSpeed = block.baseCpuTime;
-        double targetSpeed = BaseCPUSpeed * 2;
-
+        double baseCPUSpeed = block.baseCpuTime;
+        double targetSpeed = baseCPUSpeed * 2;
+    
         int initialGuess = block.lineCount;
         int count = 0;
-
         int lowerBound = 1;
-        int upperBound = initialGuess + 1; // Set initial bounds
-
-        String Runlocation2 = VTuneRunner.runVtune(Benchmark, iterations,
-        AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, false, "",
-        runID + "_" + method.replace("::", "").replace(".", "") + "_" + block.vtuneBlock + "__" + "BaseRun");
-        double basetotalCpuTime = VTuneAnalyzer.getTotalCpuTimeForMethodsBlocks(Runlocation2, method);
+        int upperBound = initialGuess + 2; // Set initial bounds, we get at least 1 loop
+    
+        // Run VTune to get the base total CPU time
+        // String formattedRunID = runID + "_" + method.replace("::", "").replace(".", "") + "_" + block.vtuneBlock + "__BaseRun";
+        // String runLocationBase = VTuneRunner.runVtune(Benchmark, iterations, AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, false, "", formattedRunID);
+        // double baseTotalCpuTime = VTuneAnalyzer.getTotalCpuTimeForMethodsBlocks(runLocationBase, method);
 
         while (upperBound - lowerBound > 1) {
-            //Add slowdown entry and write to file for current initialGuess
+            // Add slowdown entry and write to file for current initialGuess
             GTBuildSlowdownFile.addEntry(method, block.graalID, block.vtuneBlock, initialGuess, block.backendBlock);
-            String pathtoSlowdownFile = GTBuildSlowdownFile
-                    .writeToFile("_" + method + "_" + block.vtuneBlock + "_" + count, runID);
-
+            String pathToSlowdownFile = GTBuildSlowdownFile.writeToFile("_" + method + "_" + block.vtuneBlock + "_" + count, runID);
+    
             // Run VTune analysis and get CPU speed for current initialGuess
-            String Runlocation = VTuneRunner.runVtune(Benchmark, iterations,
-                    AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, true, pathtoSlowdownFile,
-                    runID + "_" + method.replace("::", "").replace(".", "") + "_" + block.vtuneBlock + "_" + count);
-            double currentTotalCPUSpeed = VTuneAnalyzer.getTotalCpuTimeForMethodsBlocks(Runlocation, method);
-
-
-
-            String outputFilePath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
-                    runID + "_" + method.replace("::", "").replace(".", "") + "_" + block.vtuneBlock + "_" + count,
-                    method.replaceAll("[\\/:*?\"<>|]", "_"));
-            VTuneAnalyzer.generateMethodBlockVTuneReport(
-                    runID + "_" + method.replace("::", "").replace(".", "") + "_" + block.vtuneBlock + "_" + count,
-                    method, outputFilePath);
-
-            if (currentTotalCPUSpeed > basetotalCpuTime + BaseCPUSpeed) {
-                // If `currentCPUSpeed` exceeds target, set upperBound to initialGuess
+            String formattedRunLocation = runID + "_" + method.replace("::", "").replace(".", "") + "_" + block.vtuneBlock + "_" + count;
+            String runLocation = VTuneRunner.runVtune(Benchmark, iterations, AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, true, pathToSlowdownFile, formattedRunLocation);
+            double currentTotalCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
+    
+            // Generate VTune report
+            String outputFilePath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt", formattedRunLocation, method.replaceAll("[\\/:*?\"<>|]", "_"));
+            VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath);
+    
+            // Adjust bounds based on the current CPU speed
+            if (currentTotalCPUSpeed > targetSpeed) {
                 upperBound = initialGuess;
             } else {
-                // If below target, set lowerBound to initialGuess
                 lowerBound = initialGuess;
                 upperBound = Math.max(upperBound, initialGuess * 2); // Dynamically expand upperBound if needed
             }
-
+    
             // Calculate new guess as the midpoint of current bounds
             initialGuess = (lowerBound + upperBound) / 2;
             count++;
         }
+    
         return lowerBound;
 
         // At this point, upperBound should be the minimal value exceeding the target.
