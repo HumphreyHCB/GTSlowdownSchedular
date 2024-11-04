@@ -25,7 +25,7 @@ public class VTuneRunner {
         command.add("enable-stack-collection=true");
         command.add("-knob");
         command.add("stack-size=4096");
-        command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
+        //command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
         command.add("--");
         command.add("/home/hb478/repos/graal-instrumentation/vm/latest_graalvm_home/bin/java");
 
@@ -45,6 +45,8 @@ public class VTuneRunner {
         command.add("-XX:CompileCommand=dontinline,*::*");
         command.add("-XX:-BackgroundCompilation");
 
+        command.add("-cp");
+        command.add("/home/hb478/repos/graal-instrumentation/compiler/benchmarks.jar");
         // Add benchmark and inner benchmark amount
         command.add("Harness");
         command.add(benchmark); // e.g. "Queens"
