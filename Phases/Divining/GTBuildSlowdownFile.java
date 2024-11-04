@@ -17,10 +17,10 @@ public class GTBuildSlowdownFile {
     /**
      * Adds an entry to the slowdown data.
      *
-     * @param methodName    the method name in format like "Queens::placeQueen"
-     * @param graalID       the graal ID for the block
-     * @param vtuneBlock    the vtune block number as an integer
-     * @param slowdown      the associated integer value for the block
+     * @param methodName     the method name in format like "Queens::placeQueen"
+     * @param graalID        the graal ID for the block
+     * @param vtuneBlock     the vtune block number as an integer
+     * @param slowdown       the associated integer value for the block
      * @param isBackendBlock indicates if this block is a backend block
      */
     public static void addEntry(String methodName, int graalID, int vtuneBlock, int slowdown, boolean isBackendBlock) {
@@ -30,49 +30,55 @@ public class GTBuildSlowdownFile {
         // Format the Vtune block entry as "BlockNumber (Vtune Block BlockNumber)"
         String blockKey = graalID + " (Vtune Block " + vtuneBlock + ")";
 
-        // Add the entry to the main slowdownData map
-        slowdownData
-            .computeIfAbsent(formattedMethodName, k -> new HashMap<>())
-            .put(blockKey, slowdown);
-
         // If it's a backend block, also add it to the backendSlowdownData map
         if (isBackendBlock) {
             backendSlowdownData
-                .computeIfAbsent(formattedMethodName, k -> new HashMap<>())
-                .put(blockKey, slowdown);
+                    .computeIfAbsent(formattedMethodName, k -> new HashMap<>())
+                    .put(blockKey, slowdown);
+        } else {
+            // Add the entry to the main slowdownData map
+            slowdownData
+                    .computeIfAbsent(formattedMethodName, k -> new HashMap<>())
+                    .put(blockKey, slowdown);
         }
     }
 
     /**
-     * Writes the slowdown data and backend slowdown data to a JSON file at the specified location.
+     * Writes the slowdown data and backend slowdown data to a JSON file at the
+     * specified location.
      *
      * @param filename the file name for the JSON file
      * @param runID    the ID for the run, used to create a directory path
      */
     public static String writeToFile(String filename, String runID) {
         JSONObject jsonObject = new JSONObject();
-
-        // Merge regular and backend slowdown data into jsonObject
+    
+        // Iterate over slowdownData to add regular blocks
+        JSONObject methodData = new JSONObject();
         for (String methodName : slowdownData.keySet()) {
-            JSONObject methodData = new JSONObject();
-
+    
             // Add all regular block entries for this method
             for (Map.Entry<String, Integer> entry : slowdownData.get(methodName).entrySet()) {
                 methodData.put(entry.getKey(), entry.getValue());
             }
-
-            // Only add "Backend Blocks" if there are entries for this method
-            if (backendSlowdownData.containsKey(methodName)) {
-                JSONObject backendBlocks = new JSONObject(backendSlowdownData.get(methodName));
-                methodData.put("Backend Blocks", backendBlocks);
-            }
-
+    
             jsonObject.put(methodName, methodData);
         }
-
+    
+        // Now iterate over backendSlowdownData to add backend-only methods
+        for (String methodName : backendSlowdownData.keySet()) {
+    
+                // Add "Backend Blocks" section for methods only in backendSlowdownData
+                JSONObject backendBlocks = new JSONObject(backendSlowdownData.get(methodName));
+                methodData.put("Backend Blocks", backendBlocks);
+    
+                jsonObject.put(methodName, methodData);
+            
+        }
+    
         String directoryPath = "Data/" + runID + "_SlowDown_Data";
         File directory = new File(directoryPath);
-
+    
         // Create the directory if it does not exist
         if (!directory.exists()) {
             boolean dirCreated = directory.mkdirs();
@@ -83,7 +89,7 @@ public class GTBuildSlowdownFile {
                 return "";
             }
         }
-
+    
         try (FileWriter file = new FileWriter(directoryPath + "/" + filename + ".json")) {
             file.write(jsonObject.toString(2)); // Pretty print with indentation
             File file2 = new File(directoryPath + "/" + filename + ".json");
@@ -93,6 +99,7 @@ public class GTBuildSlowdownFile {
             return " ";
         }
     }
+    
 
     // Example usage of the class
     public static void main(String[] args) {
