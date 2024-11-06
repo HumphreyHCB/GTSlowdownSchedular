@@ -14,15 +14,16 @@ import java.time.format.DateTimeFormatter;
 
 public class GTSchedular {
 
-
+    public Boolean lowFootPrint;
     public String benchmark;
     public int iterations;
     public String ID;
 
     // Parameterized constructor
-    public GTSchedular(String benchmarkString, int iterations) {
+    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint) {
         this.benchmark = benchmarkString;
         this.iterations = iterations;
+        this.lowFootPrint = lowFootPrint;
         ID = generateId();
 
         schedule();
@@ -34,7 +35,7 @@ public class GTSchedular {
 
         MarkerRunner.run(benchmark, iterations, ID);
         //ID = "2024_10_29_18_19_36";
-        DiviningRunner.run(benchmark, iterations, ID);
+        DiviningRunner.run(benchmark, iterations, ID, lowFootPrint);
         // Divining
 
 

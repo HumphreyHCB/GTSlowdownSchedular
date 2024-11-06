@@ -4,7 +4,7 @@ public class GodRunner {
         String benchmark = "Queens";
         int iterations = 500;
         
-        GTSchedular schedular = new GTSchedular(benchmark, iterations);
+        GTSchedular schedular = new GTSchedular(benchmark, iterations, true);
 
     }
     
