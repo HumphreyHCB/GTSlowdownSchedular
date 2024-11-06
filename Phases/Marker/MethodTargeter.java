@@ -11,7 +11,7 @@ import java.util.Map.Entry;
  */
 public class MethodTargeter {
 
-    static double SIGNIFICANT_THRESHOLD = 80.0;
+    static double SIGNIFICANT_THRESHOLD = 85.0;
 
     public static List<String> findSignificantMethod(Map<String, Double> methods) {
         // Sort the methods map by value in descending order without using streams
