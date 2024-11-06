@@ -37,7 +37,7 @@ public class VTuneReportRipper {
             String line;
             while ((line = reader.readLine()) != null) {
                 // Match lines with "Block <number>"
-                if (line.matches(".*Block\\s+\\d+.*")) {
+                if (line.matches(".*(?<!<)Block\\s+\\d+(?!>).*")) {
                     // New Block found, extract the block identifier
                     currentBlock = line.replaceAll(".*(Block\\s+\\d+).*", "$1").trim();
                     blocks.put(currentBlock, new BlockData());
