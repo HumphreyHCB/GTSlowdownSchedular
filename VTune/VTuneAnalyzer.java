@@ -78,6 +78,13 @@ public class VTuneAnalyzer {
     // Method to generate the VTune report and save it to a .txt file
     public static void generateMethodBlockVTuneReport(String vtunePath, String functionName, String outputFileName) {
         // Construct the VTune command with the dynamic path and function name
+        if (functionName.contains("$")) {
+            functionName = functionName.replace("$", "\\$");
+        }
+
+        if (vtunePath.contains("$")) {
+            vtunePath = vtunePath.replace("$", "\\$");
+        }
         String command = String.format(
                 "vtune -report hotspots -r %s -source-object function=%s -group-by=basic-block,address -column=block,\"CPU Time:Self\",assembly",
                 "Data/"+ vtunePath, functionName
@@ -117,7 +124,18 @@ public class VTuneAnalyzer {
      */
     public static double getTotalCpuTimeForMethodsBlocks(String vtunePath, String functionName) {
         // Convert "Queens::placeQueen" to "Queens.placeQueen"
+        
+        if (functionName.contains("$")) {
+            functionName = functionName.replace("$", "\\$");
+        }
+
+        if (vtunePath.contains("$")) {
+            vtunePath = vtunePath.replace("$", "\\$");
+        }
+        
+        
         String formattedFunctionName = functionName.replace(".", "::");
+
 
         // Construct the VTune command to retrieve block information
         String command = String.format(
@@ -138,7 +156,7 @@ public class VTuneAnalyzer {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     // Check if the line represents a block with a CPU time (e.g., "Block 3 0.048s")
-                    if (line.matches(".*Block \\d+\\s+\\d*\\.\\d+s.*")) {
+                    if (line.matches(".*(?<!<)Block\\s+\\d+(?!>).*")) {
                         String cpuTimeStr = extractCpuTime(line);
                         if (cpuTimeStr != null && !cpuTimeStr.equals("0s")) {  // Exclude blocks with 0 CPU time
                             totalCpuTime += Double.parseDouble(cpuTimeStr.replace("s", ""));
@@ -166,6 +184,14 @@ public class VTuneAnalyzer {
      */
     public static double getCpuTimeForBlock(String vtunePath, String functionName, int blockID) {
         // Convert "Queens::placeQueen" to "Queens.placeQueen"
+        if (functionName.contains("$")) {
+            functionName = functionName.replace("$", "\\$");
+        }
+
+        if (vtunePath.contains("$")) {
+            vtunePath = vtunePath.replace("$", "\\$");
+        }
+
         String formattedFunctionName = functionName.replace(".", "::");
 
         // Construct the VTune command to retrieve block information
@@ -183,9 +209,9 @@ public class VTuneAnalyzer {
             // Parse the output to find the specified block and its CPU time
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
                 String line;
-                String targetBlock = "Block " + blockID;
+                String targetBlockPattern = String.format(".*(?<!<)Block\\s+%d(?!>).*\\d*\\.\\d+s.*", blockID);
                 while ((line = reader.readLine()) != null) {
-                    if (line.contains(targetBlock)) {
+                    if (line.matches(targetBlockPattern)) {
                         // Extract CPU time
                         String cpuTimeStr = extractCpuTime(line);
                         if (cpuTimeStr != null) {
@@ -223,13 +249,8 @@ public class VTuneAnalyzer {
         // // Generating a report and saving it to a new .txt file
         // String outputFileName = "vtune_report_"+functionName+".txt";  // You can choose any name for this
         // generateMethodBlockVTuneReport(vtunePath, functionName, outputFileName);
-
-        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_10_28_12_08_27";
-        Map<String, Double> methods = getAllMethodsFoundByVtune(vtunePath);
-        if (methods.isEmpty()) {
-            System.out.println("No methods to display.");
-        } else {
-            methods.forEach((method, percentage) -> System.out.printf("%.2f%% %s%n", percentage, method));
-        }
+        String id = "2024_11_10_16_46_30_NormalRun";
+        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_11_10_16_46_30_NormalRun";
+        generateMethodBlockVTuneReport(id,"Towers$TowersDisk::setNext", vtunePath+"/Towers$TowersDisk::setNextGen.txt");
     }
 }

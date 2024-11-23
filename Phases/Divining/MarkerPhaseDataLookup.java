@@ -44,14 +44,14 @@ public class MarkerPhaseDataLookup {
         public int graalID;
         public boolean backendBlock;
         public int vtuneBlock;
-        public int lineCount; // New field for LineCount
+       // public int lineCount; // New field for LineCount
 
-        public BlockInfo(double baseCpuTime, int graalID, boolean backendBlock, int vtuneBlock, int lineCount) {
+        public BlockInfo(double baseCpuTime, int graalID, boolean backendBlock, int vtuneBlock) {
             this.baseCpuTime = baseCpuTime;
             this.graalID = graalID;
             this.backendBlock = backendBlock;
             this.vtuneBlock = vtuneBlock;
-            this.lineCount = lineCount;
+            //this.lineCount = lineCount;
         }
     }
 
@@ -67,9 +67,9 @@ public class MarkerPhaseDataLookup {
                 int graalID = jsonEntry.getInt("GraalID");
                 boolean backendBlock = jsonEntry.getBoolean("Backend Block");
                 int vtuneBlock = jsonEntry.getInt("VtuneBlock");
-                int lineCount = jsonEntry.getInt("LineCount"); // Read the new LineCount field
+                //int lineCount = jsonEntry.getInt("LineCount"); // Read the new LineCount field
 
-                entries.add(new BlockInfo(baseCpuTime, graalID, backendBlock, vtuneBlock, lineCount));
+                entries.add(new BlockInfo(baseCpuTime, graalID, backendBlock, vtuneBlock));
             }
         } else {
             System.out.println("Method not found in the JSON data: " + methodName);
@@ -88,8 +88,7 @@ public class MarkerPhaseDataLookup {
             System.out.println("BaseCpuTime: " + entry.baseCpuTime +
                                ", GraalID: " + entry.graalID +
                                ", Backend Block: " + entry.backendBlock +
-                               ", VtuneBlock: " + entry.vtuneBlock +
-                               ", LineCount: " + entry.lineCount); // Print the new LineCount field
+                               ", VtuneBlock: " + entry.vtuneBlock ); // Print the new LineCount field
         }
     }
 }

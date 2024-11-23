@@ -54,7 +54,7 @@ public class BuildResultsForRun {
                         blockInfo.put("CpuTime", blockData.getCpuTime());
                         blockArray.put(blockInfo);
                         if (includeLineCount) {
-                            blockInfo.put("LineCount",entry.getValue().getLines().size());
+                            blockInfo.put("Assembler",entry.getValue().getFormatedAsm());
                         }
                     }
                 }

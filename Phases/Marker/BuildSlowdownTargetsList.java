@@ -48,7 +48,8 @@ public class BuildSlowdownTargetsList {
 
                 for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
                     BlockData blockData = entry.getValue();
-                    if (blockData.getGraalID() != null && blockData.getCpuTime() != null) {
+                    //&& blockData.getCpuTime() != null
+                    if (blockData.getGraalID() != null ) {
                         JSONObject blockInfo = new JSONObject();
                         blockInfo.put("VtuneBlock", entry.getKey().replaceAll("Block ", ""));
                         String graalID = blockData.getGraalID();
@@ -61,6 +62,7 @@ public class BuildSlowdownTargetsList {
                         }
                         if (blockData.getCpuTime() != null) {
                             blockInfo.put("CpuTime", blockData.getCpuTime());
+                            blockInfo.put("Assembler", blockData.getFormatedAsm());
                         }
                         blockArray.put(blockInfo);
                     }

@@ -1,6 +1,7 @@
 package Phases.Divining;
 
 import java.util.List;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +15,8 @@ public class DiviningRunner {
     
         // Get a list of all the methods we will be "attacking"
         List<String> methods = MarkerPhaseDataLookup.getAllMethods();
-        
+
+
         for (String method : methods) {
             // Clear final data at the start of each method
             GTBuildFinalSlowdownFile.slowdownData.clear();
@@ -25,9 +27,14 @@ public class DiviningRunner {
             // Use a consistent format for the method name
             String formattedMethodName = method.replace(".", "::");
             
+            int count = 0;
+
             for (BlockInfo blockInfo : blocks) {
+                count++;
                 // Run the Divine function for the block and capture the returned slowdown value
-                int slowdownValue = Diviner.Divine(RunID, formattedMethodName, blockInfo, Benchmark, iterations, lowFootPrint);
+                int slowdownValue = Diviner.DivineComplex(RunID, formattedMethodName, blockInfo, Benchmark, iterations, lowFootPrint);
+                
+                //int slowdownValue = Diviner.DivineFindClosestUnderOverIncremental(RunID, formattedMethodName, blockInfo, Benchmark, iterations, lowFootPrint);
                 //int slowdownValue = 1;
                 // Generate block key in the same format as addEntry
                 String blockKey = blockInfo.graalID + " (Vtune Block " + blockInfo.vtuneBlock + ")";
@@ -45,6 +52,8 @@ public class DiviningRunner {
 
                 GTBuildSlowdownFile.slowdownData.clear();
                 GTBuildSlowdownFile.backendSlowdownData.clear();
+
+                System.out.println("Block " + count + " / " + blocks.size());
             }
             
             // Write final results for the method to a file

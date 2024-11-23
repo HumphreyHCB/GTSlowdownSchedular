@@ -10,22 +10,35 @@ import java.util.Map;
 public class VTuneReportRipper {
 
     public static void main(String[] args) {
-        String filePath = "Data/2024_10_29_14_48_26_MarkerRun/Queens__placeQueenCopy.txt";
-        VTuneReportRipper ripper = new VTuneReportRipper();
-        Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
 
-        // Output blocks and their Graal ID for verification
-        for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
-            System.out.println("Block " + entry.getKey() + ":");
-            System.out.println("CPU Time: " + entry.getValue().getCpuTime());
-            if (entry.getValue().getGraalID() != null) {
-                System.out.println("Graal ID: " + entry.getValue().getGraalID());
-            }
-            for (String line : entry.getValue().getLines()) {
-                System.out.println(line);
-            }
-            System.out.println();
-        }
+        List<String> inputLines = List.of(
+            "0x7f08d48c22e0  mov byte ptr [rsi+r8*1+0x10], dl                                      0.084s",
+            "0x7f08d48c22e5  mov r9d, r8d                                                          0.503s",
+            "0x7f08d48c22e8  inc r9d                                                               0.013s",
+            "0x7f08d48c22eb  mov byte ptr [rsi+r9*1+0x10], dl                                      0s",
+            "0x7f08d48c2369  mov byte ptr [rsi+r9*1+0x10], dl",
+            "0x7f08d48c236e  lea r8d, ptr [r8+0x10]                                                0.403s"
+        );
+
+        String result = processAssemblerLines(inputLines);
+        System.out.println(result);
+
+        // String filePath = "Data/2024_10_29_14_48_26_MarkerRun/Queens__placeQueenCopy.txt";
+        // VTuneReportRipper ripper = new VTuneReportRipper();
+        // Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
+
+        // // Output blocks and their Graal ID for verification
+        // for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
+        //     System.out.println("Block " + entry.getKey() + ":");
+        //     System.out.println("CPU Time: " + entry.getValue().getCpuTime());
+        //     if (entry.getValue().getGraalID() != null) {
+        //         System.out.println("Graal ID: " + entry.getValue().getGraalID());
+        //     }
+        //     for (String line : entry.getValue().getLines()) {
+        //         System.out.println(line);
+        //     }
+        //     System.out.println();
+        // }
     }
 
     // Method to read and process the text file into blocks
@@ -85,7 +98,9 @@ public class VTuneReportRipper {
         boolean sfenceStart = false;
         List<String> sequence = new ArrayList<>();
         String graalID = null;
-    
+        
+        int index = 0;
+
         for (String line : lines) {
             // Detect sfence start
             if (line.contains("sfence")) {
@@ -95,9 +110,16 @@ public class VTuneReportRipper {
                 } else {
                     // sfence end, if sequence contains vshufps instructions, mark it as Backend Block
                     if (!sequence.isEmpty()) {
-                        String lastInstruction = sequence.get(sequence.size() - 1).trim();
-                        String value = lastInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
-                        graalID = "Backend Block " + convertToDecimal(value);
+                        String firstInstruction = sequence.get(0).trim();
+                        String secondInstruction = sequence.get(1).trim();
+                        String thirdInstruction = sequence.get(2).trim();
+                        String graalBlockIdLower = firstInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                        String graalBlockIdHigher = secondInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                        String UquineID = thirdInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                                            // Combine lower and upper bits into a 16-bit ID
+                    int combinedID = (Integer.parseInt(convertToDecimal(graalBlockIdHigher)) << 8) |
+                    Integer.parseInt(convertToDecimal(graalBlockIdLower));
+                        graalID = "Backend Block " + buildBackendBlockID(String.valueOf(combinedID),convertToDecimal(UquineID));
                     }
                     sfenceStart = false; // Reset after end sfence
                 }
@@ -106,16 +128,35 @@ public class VTuneReportRipper {
             // Detect vshufps instructions within sfence boundaries or without sfence
             if (line.contains(pattern)) {
                 sequence.add(line); // Add matching lines to sequence
-                if (!sfenceStart && sequence.size() >= 1) {
+                if (!sfenceStart && sequence.size() >= 2) {
                     // Handle case without sfence boundaries
-                    String lastInstruction = sequence.get(sequence.size() - 1).trim();
-                    String value = lastInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
-                    graalID = convertToDecimal(value);
+                    String firstInstruction = sequence.get(0).trim();
+                    String secondInstruction = sequence.get(1).trim();
+                    String graalBlockIdLower = firstInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                    String graalBlockIdHigher = secondInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                    int combinedID = (Integer.parseInt(convertToDecimal(graalBlockIdHigher)) << 8) |
+                    Integer.parseInt(convertToDecimal(graalBlockIdLower));
+                    graalID = String.valueOf(combinedID);
                 }
             }
+            index++;
         }
     
         return graalID; // Return Graal ID if found
+    }
+
+    private String buildBackendBlockID(String GraalBlockId, String UquineID) {
+        int GraalBlockIdint = Integer.parseInt(GraalBlockId);
+        int UquineIDint = Integer.parseInt(UquineID);
+    
+        int ID;
+        if (GraalBlockIdint == 0) {
+            ID = 100000 + UquineIDint;
+        } else {
+            ID = (GraalBlockIdint * 1000) + UquineIDint;
+        }
+    
+        return String.valueOf(ID);
     }
     
 
@@ -139,11 +180,45 @@ public class VTuneReportRipper {
         return null; // In case of any error
     }
 
+    
+    public static String processAssemblerLines(List<String> lines) {
+        StringBuilder result = new StringBuilder();
+
+        for (String line : lines) {
+            // Split the line into parts by whitespace
+            String[] parts = line.trim().split("\\s+", 3);
+
+            // If the line has at least two parts, take the second part onward
+            if (parts.length >= 2) {
+                String instructionAndOperands = parts[1] + (parts.length > 2 ? " " + parts[2] : "");
+
+                // Remove any timing information (ends with "0.403s", "0s", etc.)
+                String cleanedLine = instructionAndOperands.replaceAll("\\s+\\d+(\\.\\d+)?s$", "").trim();
+
+                // Append the cleaned instruction to the result
+                result.append(cleanedLine).append("\n");
+            }
+        }
+
+        // Return the assembled string, removing the trailing newline
+        return result.toString().trim();
+    }
+
     // Inner class to store Block data (lines, CPU Time, and Graal ID)
     public class BlockData {
         private List<String> lines = new ArrayList<>();
         private String cpuTime;
         private String graalID;
+        private String MethodHash;
+
+        public void setMethodHash(String Hash){
+            this.MethodHash = Hash;
+        }
+
+        public String getMethodHash(){
+            return MethodHash;
+        }
+
 
         public void addLine(String line) {
             lines.add(line);
@@ -151,6 +226,10 @@ public class VTuneReportRipper {
 
         public List<String> getLines() {
             return lines;
+        }
+
+        public String getFormatedAsm(){
+            return processAssemblerLines(lines);
         }
 
         public String getCpuTime() {

@@ -18,13 +18,15 @@ public class VTuneRunner {
         command.add("-collect");
         command.add("hotspots");
         command.add("-r /home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
+        //command.add("-r /mnt/vtune_ramdisk/" + RunID);
         command.add("-knob");
         command.add("sampling-mode=hw");
         command.add("-quiet");
         command.add("-knob");
-        command.add("enable-stack-collection=true");
-        command.add("-knob");
-        command.add("stack-size=4096");
+        command.add("enable-stack-collection=false");
+        //command.add("-knob");
+       // command.add("stack-size=1024");
+        //command.add("-mrte-mode managed");
         //command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
         command.add("--");
         command.add("/home/hb478/repos/graal-instrumentation/vm/latest_graalvm_home/bin/java");
@@ -36,14 +38,19 @@ public class VTuneRunner {
             command.add("-Djdk.graal.LIRBlockSlowdownFileName=" + lirBlockSlowdownFileName);
         }
 
-        command.add("-Djdk.graal.TrivialInliningSize=0");
+        //command.add("-Djdk.graal.TrivialInliningSize=0");
 
         // Add other fixed JVM options
+        command.add("-Djdk.graal.IsolatedLoopHeaderAlignment=0");
+        command.add("-Djdk.graal.LoopHeaderAlignment=0");
+
         command.add("-XX:+UseJVMCICompiler");
         command.add("-XX:+UseJVMCINativeLibrary");
         command.add("-XX:-TieredCompilation");
-        command.add("-XX:CompileCommand=dontinline,*::*");
+        //command.add("-XX:CompileCommand=dontinline,*::*");
         command.add("-XX:-BackgroundCompilation");
+        command.add("-Xss20m");
+        command.add("-XX:StackShadowPages=20");
 
         command.add("-cp");
         command.add("/home/hb478/repos/graal-instrumentation/compiler/benchmarks.jar");
@@ -91,8 +98,15 @@ public class VTuneRunner {
         boolean jdkGraalLIRGTSlowDown = false; // Dynamic JVM option, default to false
         String lirBlockSlowdownFileName = "/home/hb478/repos/graal-instrumentation/vm/BlockSlowdown1.json"; // File path
         String trivialInliningSize = "0"; // Dynamic JVM option
-
+        String runId = "runE";
+        long start = System.currentTimeMillis();
         // Call runVtune method with customizable options
-        //runVtune(benchmark, innerBenchmarkAmount, jdkGraalGTMarkBasicBlocks, jdkGraalLIRGTSlowDown, lirBlockSlowdownFileName, trivialInliningSize);
+        runVtune(benchmark,500, innerBenchmarkAmount, jdkGraalGTMarkBasicBlocks, jdkGraalLIRGTSlowDown, "",runId);
+
+        long end = System.currentTimeMillis();
+
+        // Calculate and print the elapsed time in seconds
+        double elapsedTimeInSeconds = (end - start) / 1000.0;
+        System.out.println("Elapsed time: " + elapsedTimeInSeconds + " seconds");
     }
 }
