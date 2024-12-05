@@ -39,6 +39,7 @@ public class VTuneAnalyzer {
     
                 // Parse the actual data lines
                 String[] tokens = line.trim().split("\\s+", 3);
+                //System.out.println(line);
                 if (tokens.length >= 3) {
                     try {
                         String functionName = tokens[2];
@@ -78,13 +79,9 @@ public class VTuneAnalyzer {
     // Method to generate the VTune report and save it to a .txt file
     public static void generateMethodBlockVTuneReport(String vtunePath, String functionName, String outputFileName) {
         // Construct the VTune command with the dynamic path and function name
-        if (functionName.contains("$")) {
-            functionName = functionName.replace("$", "\\$");
-        }
-
-        if (vtunePath.contains("$")) {
-            vtunePath = vtunePath.replace("$", "\\$");
-        }
+        functionName = functionName.replace("$$", "\\$\\$").replace("$", "\\$").replace(";", "\\;").replace("::", "\\:\\:");
+        vtunePath = vtunePath.replace("$$", "\\$\\$").replace("$", "\\$");
+        
         String command = String.format(
                 "vtune -report hotspots -r %s -source-object function=%s -group-by=basic-block,address -column=block,\"CPU Time:Self\",assembly",
                 "Data/"+ vtunePath, functionName
@@ -108,6 +105,7 @@ public class VTuneAnalyzer {
                 System.out.println("VTune report generated successfully and saved to " + outputFileName);
             } else {
                 System.out.println("Error occurred while generating the VTune report.");
+                System.out.println("Tryed to output here: " + outputFileName);
             }
 
         } catch (IOException | InterruptedException e) {
@@ -249,8 +247,10 @@ public class VTuneAnalyzer {
         // // Generating a report and saving it to a new .txt file
         // String outputFileName = "vtune_report_"+functionName+".txt";  // You can choose any name for this
         // generateMethodBlockVTuneReport(vtunePath, functionName, outputFileName);
-        String id = "2024_11_10_16_46_30_NormalRun";
-        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_11_10_16_46_30_NormalRun";
-        generateMethodBlockVTuneReport(id,"Towers$TowersDisk::setNext", vtunePath+"/Towers$TowersDisk::setNextGen.txt");
+        // whats wrong with this "Lc/CollisionDetector\$\$Lambda\:\:0x00007f37f4007820\;\:\:apply"
+        String id = "2024_12_02_13_40_29_NormalRun";
+        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_12_02_13_40_29_NormalRun";
+        generateMethodBlockVTuneReport(id,"Lc/CollisionDetector$$Lambda::0x00007f37f4007820;::apply", vtunePath+"/runE.txt");
+        //getAllMethodsFoundByVtune(id);
     }
 }
