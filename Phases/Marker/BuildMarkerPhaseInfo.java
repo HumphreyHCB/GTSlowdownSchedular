@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Iterator;
 
 /**
  * BuildMarkerPhaseInfo
@@ -88,8 +87,12 @@ public class BuildMarkerPhaseInfo {
                                 }
                             }
                         }
-
+                        if (Double.parseDouble(normalBlock.get("CpuTime").toString()) < 0.09) {
+                            // skip
+                        }
+                        else{
                         updatedBlocks.put(updatedBlock);
+                        }
                     } else {
                         System.out
                                 .println("Incomplete block data for VtuneBlock ID: " + vtuneBlockId + ". Skipping...");
