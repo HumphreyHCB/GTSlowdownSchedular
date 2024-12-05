@@ -12,15 +12,15 @@ Contains AWFY benchmark names and their `ExtraArgs`. A static class is provided 
 ### Phases
 Contains folders and files related to the marker phases and the Divining phase.
 
-#### Common
-Common class that both phases use.
+- **Common**  
+  Common classes that both phases use.
 
-#### Marker
-In this phase, we will perform at least two runs. The first is a "normal" run—this is a VTune-attached run with no marking or slowdown applied.  
-Then, we will conduct an additional marker run. This will use Graal's "mark basic blocks" phase to tag all blocks identified by Graal.
+- **Marker**  
+  In this phase, we will perform at least two runs. The first is a "normal" run—this is a VTune-attached run with no marking or slowdown applied.  
+  Then, we will conduct an additional marker run. This will use Graal's "mark basic blocks" phase to tag all blocks identified by Graal.
 
-#### Divining
-This is the main phase of the GT schedule. It will systematically determine the correct amount of slowdown for every VTune block and produce a final data file. This file can then be passed to an executor to generate a slowed-down version of the program.
+- **Divining**  
+  This is the main phase of the GT schedule. It will systematically determine the correct amount of slowdown for every VTune block and produce a final data file. This file can then be passed to an executor to generate a slowed-down version of the program.
 
 ### VTune
 Includes files for running and extracting data from VTune reports.
