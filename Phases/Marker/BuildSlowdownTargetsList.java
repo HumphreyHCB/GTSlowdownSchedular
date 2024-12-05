@@ -1,8 +1,6 @@
 package Phases.Marker;
 
-import GTResources.AWFYBenchmarksLookUp;
 import VTune.VTuneAnalyzer;
-import VTune.VTuneRunner;
 import VTune.VTuneReportRipper;
 import VTune.VTuneReportRipper.BlockData;
 
@@ -13,9 +11,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class BuildSlowdownTargetsList {
 
