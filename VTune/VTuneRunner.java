@@ -21,9 +21,9 @@ public class VTuneRunner {
         //command.add("-r /mnt/vtune_ramdisk/" + RunID);
         command.add("-knob");
         command.add("sampling-mode=hw");
-        command.add("-quiet");
-        command.add("-knob");
-        command.add("enable-stack-collection=false");
+       // command.add("-quiet");
+       command.add("-knob");
+        command.add("enable-stack-collection=true");
         //command.add("-knob");
        // command.add("stack-size=1024");
         //command.add("-mrte-mode managed");
@@ -49,8 +49,18 @@ public class VTuneRunner {
         command.add("-XX:-TieredCompilation");
         //command.add("-XX:CompileCommand=dontinline,*::*");
         command.add("-XX:-BackgroundCompilation");
-        command.add("-Xss20m");
-        command.add("-XX:StackShadowPages=20");
+        command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
+
+        //command.add("-XX:CodeEntryAlignment=64");
+        //command.add("-XX:OptoLoopAlignment=16");
+        //command.add("-XX:InteriorEntryAlignment=16");
+
+        //command.add("-Djdk.graal.SaveProfiles=true");
+        //command.add("-Djdk.graal.OverrideProfiles=true");
+        //command.add("-Djdk.graal.SaveProfilesPath=/home/hb478/repos/GTSlowdownSchedular/SaveProfiles");
+        command.add("-Djdk.graal.StrictProfiles=false");
+        command.add("-Djdk.graal.LoadProfiles=/home/hb478/repos/GTSlowdownSchedular/SaveProfiles");
+
 
         command.add("-cp");
         command.add("/home/hb478/repos/graal-instrumentation/compiler/benchmarks.jar");
