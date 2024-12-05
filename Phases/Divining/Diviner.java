@@ -7,7 +7,6 @@ import VTune.VTuneAnalyzer;
 import VTune.VTuneRunner;
 
 import java.io.File;
-import java.util.*;;
 
 public class Diviner {
 
