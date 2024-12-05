@@ -1,0 +1,8 @@
+javac -cp .:GTResources/org.json-1.6-20240205.jar $(find . -name "*.java")
+
+
+
+nohup java -cp .:GTResources/org.json-1.6-20240205.jar GodRunner
+
+
+ps aux | grep java
