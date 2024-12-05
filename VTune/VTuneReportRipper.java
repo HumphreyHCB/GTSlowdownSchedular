@@ -94,7 +94,7 @@ public class VTuneReportRipper {
 
     // Helper method to detect the Graal ID by looking for the instruction sequence
     private String detectGraalID(List<String> lines) {
-        String pattern = "vshufps xmm0, xmm0, xmm0, ";
+        String pattern = "vpblendd xmm0, xmm0, xmm0,";
         boolean sfenceStart = false;
         List<String> sequence = new ArrayList<>();
         String graalID = null;
@@ -113,9 +113,9 @@ public class VTuneReportRipper {
                         String firstInstruction = sequence.get(0).trim();
                         String secondInstruction = sequence.get(1).trim();
                         String thirdInstruction = sequence.get(2).trim();
-                        String graalBlockIdLower = firstInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
-                        String graalBlockIdHigher = secondInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
-                        String UquineID = thirdInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                        String graalBlockIdLower = firstInstruction.replaceAll(".*vpblendd xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                        String graalBlockIdHigher = secondInstruction.replaceAll(".*vpblendd xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                        String UquineID = thirdInstruction.replaceAll(".*vpblendd xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
                                             // Combine lower and upper bits into a 16-bit ID
                     int combinedID = (Integer.parseInt(convertToDecimal(graalBlockIdHigher)) << 8) |
                     Integer.parseInt(convertToDecimal(graalBlockIdLower));
@@ -132,8 +132,8 @@ public class VTuneReportRipper {
                     // Handle case without sfence boundaries
                     String firstInstruction = sequence.get(0).trim();
                     String secondInstruction = sequence.get(1).trim();
-                    String graalBlockIdLower = firstInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
-                    String graalBlockIdHigher = secondInstruction.replaceAll(".*vshufps xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                    String graalBlockIdLower = firstInstruction.replaceAll(".*vpblendd xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
+                    String graalBlockIdHigher = secondInstruction.replaceAll(".*vpblendd xmm0, xmm0, xmm0,\\s*([^\\s]+).*", "$1").trim();
                     int combinedID = (Integer.parseInt(convertToDecimal(graalBlockIdHigher)) << 8) |
                     Integer.parseInt(convertToDecimal(graalBlockIdLower));
                     graalID = String.valueOf(combinedID);
