@@ -1,0 +1,53 @@
+{
+    "deltablue.EqualityConstraint.execute": {
+        "65535 (Vtune Block 2)": 8,
+        "0 (Vtune Block 3)": 15,
+        "5 (Vtune Block 6)": 3,
+        "2 (Vtune Block 4)": 8
+    },
+    "deltablue.Planner.makePlan": {
+        "67 (Vtune Block 301)": 16,
+        "49 (Vtune Block 348)": 102,
+        "9 (Vtune Block 270)": 41,
+        "17 (Vtune Block 278)": 68,
+        "94 (Vtune Block 310)": 23,
+        "10 (Vtune Block 271)": 13,
+        "12 (Vtune Block 273)": 30,
+        "91 (Vtune Block 307)": 82
+    },
+    "deltablue.Planner.removePropagateFrom": {
+        "26 (Vtune Block 4036)": 46,
+        "45 (Vtune Block 4048)": 44,
+        "22 (Vtune Block 3972)": 26,
+        "17 (Vtune Block 3969)": 26,
+        "24 (Vtune Block 4035)": 14,
+        "52 (Vtune Block 4055)": 16,
+        "71 (Vtune Block 3976)": 6,
+        "74 (Vtune Block 3979)": 18,
+        "68 (Vtune Block 3973)": 9
+    },
+    "deltablue.Planner.change": {
+        "115 (Vtune Block 91)": 62,
+        "132 (Vtune Block 85)": 10,
+        "137 (Vtune Block 96)": 10,
+        "110 (Vtune Block 80)": 16,
+        "94 (Vtune Block 76)": 23,
+        "95 (Vtune Block 77)": 97,
+        "136 (Vtune Block 95)": 50,
+        "111 (Vtune Block 81)": 8,
+        "116 (Vtune Block 92)": 75,
+        "109 (Vtune Block 79)": 10
+    },
+    "deltablue.Plan.execute": {
+        "79 (Vtune Block 174)": 90,
+        "100 (Vtune Block 187)": 71,
+        "95 (Vtune Block 178)": 7,
+        "78 (Vtune Block 173)": 10,
+        "116 (Vtune Block 182)": 18,
+        "94 (Vtune Block 177)": 9,
+        "99 (Vtune Block 186)": 67,
+        "97 (Vtune Block 180)": 5,
+        "77 (Vtune Block 184)": 9,
+        "93 (Vtune Block 176)": 10
+    }
+}
