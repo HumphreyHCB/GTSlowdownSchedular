@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-226[deltablue.UnaryConstraint.isSatisfied()]",
+  "method": "deltablue.UnaryConstraint.isSatisfied()boolean",
+  "entryBCI": -1,
+  "codeSignature": "52ac8a4b64b64e2266b9459ea9a5b2ebb18bab0f24a04647f8019c8021a06749",
+  "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.UnaryConstraint.isSatisfied()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.UnaryConstraint.isSatisfied()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

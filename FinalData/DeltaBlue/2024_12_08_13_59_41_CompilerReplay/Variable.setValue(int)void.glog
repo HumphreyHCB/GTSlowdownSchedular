@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-110[deltablue.Variable.setValue(int)]",
+  "method": "deltablue.Variable.setValue(int)void",
+  "entryBCI": -1,
+  "codeSignature": "225e90beaa0e5ce49f24f0235eb46bbc7dbacbc083e8cd52f39eccb33eb198fe",
+  "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Variable.setValue(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Variable.setValue(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

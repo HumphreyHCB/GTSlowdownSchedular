@@ -1,0 +1,77 @@
+{
+  "identifier": "HotSpotCompilation-182[richards.Scheduler.createTask(int, int, Packet, TaskState, ProcessFunction, RBObject)]",
+  "method": "richards.Scheduler.createTask(int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+  "entryBCI": -1,
+  "codeSignature": "3de569deda1296591b5e67a45cfcf4e3b84482de2a79639b08585adb08bc2085",
+  "graphSignature": "59ba5f922bfd617e97d1d3eb502b06f402df2813c4d07023bc029f03300f2160",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.createTask(int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.createTask(int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskControlBlock.<init>(richards.TaskControlBlock, int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.setPacketPending(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskWaiting(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

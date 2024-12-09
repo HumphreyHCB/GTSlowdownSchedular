@@ -1,0 +1,61 @@
+{
+  "identifier": "HotSpotCompilation-327[java.util.Arrays.copyOf(Object[], int)]",
+  "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+  "entryBCI": -1,
+  "codeSignature": "f6dce10088116f5cef6d891fcfadc44132009f8e05f4f02c9e4859debfd6b5bc",
+  "graphSignature": "724c48c769a286eafab7b73cefcf60d20c5e2623e4d1e23c61ab2aa3c1ed18c5",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Math.min(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.41378636984963874
+    }]
+  }]
+}

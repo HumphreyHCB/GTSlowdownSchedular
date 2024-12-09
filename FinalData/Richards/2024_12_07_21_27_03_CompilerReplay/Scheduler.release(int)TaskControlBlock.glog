@@ -1,0 +1,62 @@
+{
+  "identifier": "HotSpotCompilation-120[richards.Scheduler.release(int)]",
+  "method": "richards.Scheduler.release(int)richards.TaskControlBlock",
+  "entryBCI": -1,
+  "codeSignature": "c6db4f6e45c0b38b733cea3f40aa345f55b5804d38ed60af070fc959351a3f55",
+  "graphSignature": "3d749e2ee34317d320f7146055a1445201d7a223d7680abb95900bb6c5ccf14d",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.release(int)richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.release(int)richards.TaskControlBlock",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.findTask(int)richards.TaskControlBlock",
+    "isMature": true,
+    "compilerIRSize": 21,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

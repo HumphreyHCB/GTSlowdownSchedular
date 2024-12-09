@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-230[deltablue.BinaryConstraint.isSatisfied()]",
+  "method": "deltablue.BinaryConstraint.isSatisfied()boolean",
+  "entryBCI": -1,
+  "codeSignature": "59c9f2ad70cb8cfb9c010d9116e8f76c541925486e255e66c301f58d477fb8a3",
+  "graphSignature": "fd88ff33c81d1d92aa7c1ec04fe1293f520ce3a40b5e7a03b6572f3ae1f88dae",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.BinaryConstraint.isSatisfied()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.BinaryConstraint.isSatisfied()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 9.644131545954287E-5
+    }]
+  }]
+}

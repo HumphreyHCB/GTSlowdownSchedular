@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-192[richards.TaskState.waiting()]",
+  "method": "richards.TaskState.waiting()void",
+  "entryBCI": -1,
+  "codeSignature": "cb4794878b1433e028ce37baff6ff756f3862bf5f0e7f2c99b18cc9a6a9ba386",
+  "graphSignature": "3097913a84c9f25d24d8ac190ef413316dcc880a190fbfb150b25c07dc206b89",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskState.waiting()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.waiting()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

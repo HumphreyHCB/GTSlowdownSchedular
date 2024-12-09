@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-122[java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object, int)]",
+  "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, int)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "75c326bc03c541ea3592f3b49503849ac80be4f3e35c6503be372304f8f56905",
+  "graphSignature": "16bbb3b4e9181291e1d4ab5d55c092aa20f13aaee48a8b2c92bbcd2a603a4e3b",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": 130,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

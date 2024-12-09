@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-164[java.lang.Boolean.booleanValue()]",
+  "method": "java.lang.Boolean.booleanValue()boolean",
+  "entryBCI": -1,
+  "codeSignature": "55ba4838634d6d29de816b83c4295343d0dfb168e8df4d2a5a839967f21d92a7",
+  "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Boolean.booleanValue()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Boolean.booleanValue()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

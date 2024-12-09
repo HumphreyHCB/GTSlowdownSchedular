@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-111[deltablue.Variable.getConstraints()]",
+  "method": "deltablue.Variable.getConstraints()som.Vector",
+  "entryBCI": -1,
+  "codeSignature": "788977417169f84534ac448c304fd3a3a615af4be075a3cef89f87470d4a417e",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Variable.getConstraints()som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Variable.getConstraints()som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

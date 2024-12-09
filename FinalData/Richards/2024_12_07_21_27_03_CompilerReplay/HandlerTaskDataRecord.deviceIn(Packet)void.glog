@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-104[richards.HandlerTaskDataRecord.deviceIn(Packet)]",
+  "method": "richards.HandlerTaskDataRecord.deviceIn(richards.Packet)void",
+  "entryBCI": -1,
+  "codeSignature": "f2b86f3687d866bb5af40984e1f764847a9f191ee6e76e5f9764330bae0f4f10",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "richards.HandlerTaskDataRecord.deviceIn(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.HandlerTaskDataRecord.deviceIn(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

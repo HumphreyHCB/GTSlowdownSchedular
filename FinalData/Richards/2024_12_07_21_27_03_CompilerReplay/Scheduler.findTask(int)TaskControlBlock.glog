@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-113[richards.Scheduler.findTask(int)]",
+  "method": "richards.Scheduler.findTask(int)richards.TaskControlBlock",
+  "entryBCI": -1,
+  "codeSignature": "63724e0a9d464bea2b03e2e0e5804ae41d7dfc7613596c43465bb2e377494b4f",
+  "graphSignature": "e5b3736b39d938ad9116d664ebfa25844e76a9fbc4cee2f09f4b29b6bc789d9a",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.findTask(int)richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.findTask(int)richards.TaskControlBlock",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

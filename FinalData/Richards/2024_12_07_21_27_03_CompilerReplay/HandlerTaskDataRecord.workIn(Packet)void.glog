@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-107[richards.HandlerTaskDataRecord.workIn(Packet)]",
+  "method": "richards.HandlerTaskDataRecord.workIn(richards.Packet)void",
+  "entryBCI": -1,
+  "codeSignature": "182571186f5170a13b468cbfe879a884bdc8227640ae1e88ea26032328e77529",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "richards.HandlerTaskDataRecord.workIn(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.HandlerTaskDataRecord.workIn(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-91[richards.Packet.getDatum()]",
+  "method": "richards.Packet.getDatum()int",
+  "entryBCI": -1,
+  "codeSignature": "9eab7ae1b74c58f8ce0a541329aa269acfc11c0cf526e2552aa27b2ff4e0cf9c",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Packet.getDatum()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Packet.getDatum()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

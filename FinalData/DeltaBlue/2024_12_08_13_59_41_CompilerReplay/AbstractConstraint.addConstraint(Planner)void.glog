@@ -1,0 +1,196 @@
+{
+  "identifier": "HotSpotCompilation-232[deltablue.AbstractConstraint.addConstraint(Planner)]",
+  "method": "deltablue.AbstractConstraint.addConstraint(deltablue.Planner)void",
+  "entryBCI": -1,
+  "codeSignature": "5a1839f503eccab31b285af17ff14fa34158eae4c2c65a88132c5ca395d3ae01",
+  "graphSignature": "fd106dd247ad5ca7c6a6081d02d43d900f8304527e60fbc6814f4c6071ecb0f8",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.AbstractConstraint.addConstraint(deltablue.Planner)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.AbstractConstraint.addConstraint(deltablue.Planner)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/EqualityConstraint;",
+          "probability": 0.500048823357094
+        },
+        {
+          "type": "Ldeltablue/StayConstraint;",
+          "probability": 0.24997558832145297
+        },
+        {
+          "type": "Ldeltablue/ScaleConstraint;",
+          "probability": 0.24987794160726493
+        },
+        {
+          "type": "Ldeltablue/EditConstraint;",
+          "probability": 9.764671418806757E-5
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.BinaryConstraint.addToGraph()void",
+    "isMature": false,
+    "compilerIRSize": 171,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.UnaryConstraint.addToGraph()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.ScaleConstraint.addToGraph()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.addConstraint(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9982425307557118
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Planner.incrementalAdd(deltablue.AbstractConstraint)void",
+    "isMature": true,
+    "compilerIRSize": 670,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": 0.24387862042682926
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

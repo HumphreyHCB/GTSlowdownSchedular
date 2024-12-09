@@ -1,0 +1,83 @@
+{
+  "identifier": "HotSpotCompilation-344[java.lang.String.hashCode()]",
+  "method": "java.lang.String.hashCode()int",
+  "entryBCI": -1,
+  "codeSignature": "3fc9b543176c34b27ca2983641909812cfd2119b325da8a104c9b5b8749c9041",
+  "graphSignature": "4d20582f6ab8bed0d83522cbea8884ed146c2ba75320d109970e3664ee35be21",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.String.hashCode()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.String.hashCode()int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 0.8417937705028915
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": 0.030141085934159897
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 42,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.hashCode(byte[])int",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 2,
+      "switchProbabilities": [0.0,
+      3.4328870580157915E-4,
+      0.9996567112941984]
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

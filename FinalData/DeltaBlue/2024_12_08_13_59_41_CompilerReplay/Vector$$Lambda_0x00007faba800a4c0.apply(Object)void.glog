@@ -1,0 +1,54 @@
+{
+  "identifier": "HotSpotCompilation-268[som.Vector$$Lambda/0x00007faba800a4c0.apply(Object)]",
+  "method": "som.Vector$$Lambda/0x00007faba800a4c0.apply(java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "1aeae6fb6aa95ad0a795e1181fec8b2f972e9a119d47be250210c29e00bf18e7",
+  "graphSignature": "1e2a9ff4cc3d9a02ed765a40ce84a249bcd818fc85c3837b5cabe0227e69cd3f",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "som.Vector$$Lambda/0x00007faba800a4c0.apply(Object)",
+    "method": "som.Vector$$Lambda/0x00007faba800a4c0.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "som.Vector$$Lambda/0x00007faba800a4c0.apply(Object)",
+    "method": "som.Vector$$Lambda/0x00007faba800a4c0.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.lambda$remove$0(java.lang.Object, boolean[], java.lang.Object[], int[], java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 106,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.9999023532858119
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

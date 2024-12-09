@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-194[richards.DeviceTaskDataRecord.<init>()]",
+  "method": "richards.DeviceTaskDataRecord.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "d94acb8cbfd172770af2c341f3b008cc4a79879b87e9b22dde00498244f447c5",
+  "graphSignature": "9a25e3baa463a947484f25fc3566b34f94c78370f85324c03fa653ea9e0f1f4a",
+  "result": true,
+  "profiles": [{
+    "method": "richards.DeviceTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.DeviceTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

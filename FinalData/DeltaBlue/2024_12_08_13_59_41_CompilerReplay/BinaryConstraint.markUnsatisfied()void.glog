@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-310[deltablue.BinaryConstraint.markUnsatisfied()]",
+  "method": "deltablue.BinaryConstraint.markUnsatisfied()void",
+  "entryBCI": -1,
+  "codeSignature": "f1434064a3fef23971344d1f362a307424846ec005dc9e2971fb235c89c2b320",
+  "graphSignature": "9a25e3baa463a947484f25fc3566b34f94c78370f85324c03fa653ea9e0f1f4a",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.BinaryConstraint.markUnsatisfied()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.BinaryConstraint.markUnsatisfied()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

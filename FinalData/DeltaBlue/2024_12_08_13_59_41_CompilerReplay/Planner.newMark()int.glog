@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-136[deltablue.Planner.newMark()]",
+  "method": "deltablue.Planner.newMark()int",
+  "entryBCI": -1,
+  "codeSignature": "90f5483e9b60a8b1a0e363117ae6e2677e3eea938a12d4a6e83e35298cb20326",
+  "graphSignature": "af91a8c5aee9dd0a0651a164538a2e8cc716de5f6f6269026d9bf9d24b551edd",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Planner.newMark()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Planner.newMark()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

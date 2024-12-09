@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-97[richards.DeviceTaskDataRecord.getPending()]",
+  "method": "richards.DeviceTaskDataRecord.getPending()richards.Packet",
+  "entryBCI": -1,
+  "codeSignature": "7756f4de46b2c4335af9ff35d7ae55b33f55f9a8083111150dff97fe807c32e1",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "richards.DeviceTaskDataRecord.getPending()richards.Packet",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.DeviceTaskDataRecord.getPending()richards.Packet",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}
