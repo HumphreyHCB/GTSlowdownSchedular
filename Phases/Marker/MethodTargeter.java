@@ -49,6 +49,10 @@ public class MethodTargeter {
             sum += entry.getValue();
     
         }
+
+        // Remove "Interpreter" from methodList
+        methodList.removeIf(entry -> entry.getKey().equals("Interpreter"));
+        methodList.removeIf(entry -> entry.getKey().startsWith("G1"));
     
         return significantMethods;
     }

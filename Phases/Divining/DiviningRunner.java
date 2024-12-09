@@ -9,7 +9,7 @@ import Phases.Divining.MarkerPhaseDataLookup.BlockInfo;
 
 public class DiviningRunner {
     
-    public static void run(String Benchmark, int iterations, String RunID, Boolean lowFootPrint) {
+    public static void run(String Benchmark, int iterations, String RunID, Boolean lowFootPrint, boolean compilerReplay) {
         // Load the data from the Marker Phase into static memory
         MarkerPhaseDataLookup.loadData(RunID);
     
@@ -32,7 +32,7 @@ public class DiviningRunner {
             for (BlockInfo blockInfo : blocks) {
                 count++;
                 // Run the Divine function for the block and capture the returned slowdown value
-                int slowdownValue = Diviner.DivineComplex(RunID, formattedMethodName, blockInfo, Benchmark, iterations, lowFootPrint);
+                int slowdownValue = Diviner.DivineComplex(RunID, formattedMethodName, blockInfo, Benchmark, iterations, lowFootPrint, compilerReplay);
                 
                 //int slowdownValue = Diviner.DivineFindClosestUnderOverIncremental(RunID, formattedMethodName, blockInfo, Benchmark, iterations, lowFootPrint);
                 //int slowdownValue = 1;

@@ -12,12 +12,12 @@ import VTune.VTuneRunner;
 public class MarkerRunner {
 
     // this need to run the marker phase, then process the outputed result
-    public static void run(String Benchmark, int iterations, String RunID) {
+    public static void run(String Benchmark, int iterations, String RunID, boolean compilerReplay) {
 
         String normalRunID = RunID + "_NormalRun";
         // Run the Vtune with nothing on
         VTuneRunner.runVtune(Benchmark, iterations, AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, false, "",
-                normalRunID);
+                normalRunID, compilerReplay);
 
         // Find all methods that Vtune Identifes
         Map<String, Double> normalRunfoundMethods = VTuneAnalyzer.getAllMethodsFoundByVtune(normalRunID);
@@ -30,7 +30,7 @@ public class MarkerRunner {
         String markerRunId = RunID + "_MarkerRun";
         // Run the Vtune with the Marker
         VTuneRunner.runVtune(Benchmark, iterations, AWFYBenchmarksLookUp.getExtraArgs(Benchmark), true, false, "",
-                markerRunId);
+                markerRunId, compilerReplay);
 
 
         // we should use a normal runs methods, as marking may schew the methods found that at signigficant

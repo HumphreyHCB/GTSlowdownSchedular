@@ -238,6 +238,7 @@ public class VTuneAnalyzer {
         return null; // No CPU time found
     }
 
+    
     // Main method to demonstrate the usage of the generateVTuneReport method
     public static void main(String[] args) {
         // Example usage
@@ -248,9 +249,9 @@ public class VTuneAnalyzer {
         // String outputFileName = "vtune_report_"+functionName+".txt";  // You can choose any name for this
         // generateMethodBlockVTuneReport(vtunePath, functionName, outputFileName);
         // whats wrong with this "Lc/CollisionDetector\$\$Lambda\:\:0x00007f37f4007820\;\:\:apply"
-        String id = "2024_12_02_13_40_29_NormalRun";
-        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_12_02_13_40_29_NormalRun";
-        generateMethodBlockVTuneReport(id,"Lc/CollisionDetector$$Lambda::0x00007f37f4007820;::apply", vtunePath+"/runE.txt");
+        String id = "runE";
+        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/runE";
+        generateMethodBlockVTuneReport(id,"java::util::Arrays::setAll", vtunePath+"/runE11.txt");
         //getAllMethodsFoundByVtune(id);
     }
 }
