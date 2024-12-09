@@ -4,7 +4,20 @@ public class GodRunner {
         //String benchmark = "Sieve";
         int iterations = 500;
 
-        new GTSchedular("CD", iterations, true);
+        // Jybytes in json
+        // havlak needs concerting
+        // storage has a major problem
+
+       // new GTSchedular("Storage", iterations, true);
+       // new GTSchedular("Bounce", iterations, true);
+      // new GTSchedular("NBody", iterations, true, true);
+      // new GTSchedular("Richards", iterations, true, true);
+       new GTSchedular("DeltaBlue", iterations, true, true);
+       //new GTSchedular("Havlak", iterations, true, true);
+      // new GTSchedular("Json", iterations, true, true);
+        
+        // DeltaBlue has a lambda
+        //
        
        
         //
