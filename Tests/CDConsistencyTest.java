@@ -3,6 +3,7 @@ package Tests;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import Phases.Common.CompilerReplayRunner;
 import Phases.Divining.DiviningRunner;
 import Phases.Marker.MarkerRunner;
 
@@ -11,10 +12,11 @@ public class CDConsistencyTest {
     public static void main(String[] args) {
         int iterations = 500;
         boolean lowFootPrint = true;
-        String benchmark = "CD";
+        String benchmark = "DeltaBlue";
         String ID = generateId();
 
-        MarkerRunner.run(benchmark, iterations, ID);
+        CompilerReplayRunner.run(benchmark, iterations, ID);
+        MarkerRunner.run(benchmark, iterations, ID, true);
         VTuneFileComparatorRunner.CheckCD(ID);
         //MarkerRunner.run(benchmark, iterations, generateId());
         //MarkerRunner.run(benchmark, iterations, generateId());

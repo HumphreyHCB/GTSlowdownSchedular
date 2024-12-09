@@ -6,31 +6,22 @@ import java.util.*;
 
 public class VTuneFileComparatorRunner {
 
-    public static void CheckCD(String runid) {
-        // if (args.length < 2) {
-        //     System.out.println("Usage: java VTuneProcessor <NormalRunFilePath> <MarkerRunFilePath>");
-        //     return;
-        // }
-        String runID = runid;
-        //String runID = "2024_12_03_18_37_59";
+    public static void CheckCD(String runID) {
+        String normalRunDirPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID + "_NormalRun";
+        String markerRunDirPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID + "_MarkerRun";
 
-        // Placeholder list of methods to process
-        List<String> methods = Arrays.asList(
-            "cd__CollisionDetector__handleNewFrame",
-            "cd__CollisionDetector__putIntoMap",
-            "cd__CollisionDetector__recurse",
-            "cd__CollisionDetector__reduceCollisionSet",
-            "cd__CollisionDetector$RemoveAbsentAircraft__apply",
-            "cd__RedBlackTree__findNode",
-            "cd__RedBlackTree__forEach",
-            "cd__RedBlackTree__put",
-            "cd__RedBlackTree__treeInsert"
-        );
+        // Get the list of method names dynamically from the NormalRun directory
+        List<String> methods = findMethodsInDirectory(normalRunDirPath);
+
+        if (methods.isEmpty()) {
+            System.err.println("No .txt files found in the NormalRun directory for runID: " + runID);
+            return;
+        }
 
         // Loop through each method in the list
         for (String method : methods) {
-            String normalRunFilePath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID + "_NormalRun/" + method + ".txt";
-            String markerRunFilePath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID + "_MarkerRun/" + method + ".txt";
+            String normalRunFilePath = normalRunDirPath + "/" + method;
+            String markerRunFilePath = markerRunDirPath + "/" + method;
 
             // Extract the method/file name from the provided paths
             String methodName = extractFileName(normalRunFilePath);
@@ -58,6 +49,21 @@ public class VTuneFileComparatorRunner {
                 System.err.println("Error processing files for method " + method + ": " + e.getMessage());
             }
         }
+    }
+
+    /**
+     * Finds all .txt files in the provided directory and returns their names.
+     */
+    private static List<String> findMethodsInDirectory(String directoryPath) {
+        List<String> methods = new ArrayList<>();
+        try {
+            Files.list(Paths.get(directoryPath))
+                .filter(path -> Files.isRegularFile(path) && path.toString().endsWith(".txt"))
+                .forEach(path -> methods.add(path.getFileName().toString()));
+        } catch (IOException e) {
+            System.err.println("Error accessing directory: " + directoryPath + " - " + e.getMessage());
+        }
+        return methods;
     }
 
     /**
