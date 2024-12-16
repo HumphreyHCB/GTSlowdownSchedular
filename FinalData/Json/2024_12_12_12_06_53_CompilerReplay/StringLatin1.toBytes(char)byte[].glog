@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-83[java.lang.StringLatin1.toBytes(char)]",
+  "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+  "entryBCI": -1,
+  "codeSignature": "12f6bb6a2c33bf17f7f33b34ba7cceb050052ae2f8f48cc92af06e9c2410396e",
+  "graphSignature": "d44037aef31821e10cc6038b903aad81e5cee3a952d3df7fc126530394119f40",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

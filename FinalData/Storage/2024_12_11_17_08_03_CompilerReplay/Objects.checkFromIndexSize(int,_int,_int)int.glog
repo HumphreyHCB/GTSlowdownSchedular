@@ -1,0 +1,36 @@
+{
+  "identifier": "HotSpotCompilation-37[java.util.Objects.checkFromIndexSize(int, int, int)]",
+  "method": "java.util.Objects.checkFromIndexSize(int, int, int)int",
+  "entryBCI": -1,
+  "codeSignature": "ae9312983d223ab47bb2d5f6e5be7111cae4bc661468980097db026a9993491f",
+  "graphSignature": "0d6b1a76a7749e303ae8c6e298ab62a8aa58f2911d43854854bf52bf6af62270",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Objects.checkFromIndexSize(int, int, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Objects.checkFromIndexSize(int, int, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "jdk.internal.util.Preconditions.checkFromIndexSize(int, int, int, java.util.function.BiFunction)int",
+    "isMature": true,
+    "compilerIRSize": 23,
+    "data": [{
+      "bci": 5,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

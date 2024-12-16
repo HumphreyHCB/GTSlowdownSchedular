@@ -1,0 +1,74 @@
+{
+  "identifier": "HotSpotCompilation-115[json.JsonPureStringParser.readName()]",
+  "method": "json.JsonPureStringParser.readName()java.lang.String",
+  "entryBCI": -1,
+  "codeSignature": "3995d295f52b9242e56a81ee747a98fe3a1bf3f8ad342838370ab035a0d8ebd9",
+  "graphSignature": "a88205bcdcbd746c451271ced94d378933bd8dd84de118e7975e88134bb6e50e",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.readName()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.readName()java.lang.String",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.readStringInternal()java.lang.String",
+    "isMature": true,
+    "compilerIRSize": 701,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.13398630658044883
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 60,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.startCapture()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

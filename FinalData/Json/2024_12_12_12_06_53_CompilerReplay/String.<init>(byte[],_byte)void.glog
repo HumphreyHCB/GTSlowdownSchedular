@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-81[java.lang.String.<init>(byte[], byte)]",
+  "method": "java.lang.String.<init>(byte[], byte)void",
+  "entryBCI": -1,
+  "codeSignature": "f42d4360dfb22799d6fb86716d1ba4be87c94fb6fc8f7eece5ea5578eb6470d3",
+  "graphSignature": "42676f124ab92198907b5eab4291a0ed4f5c63e1991a5245e9c5d62f43415a58",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.String.<init>(byte[], byte)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.String.<init>(byte[], byte)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

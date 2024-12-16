@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-191[jdk.internal.org.objectweb.asm.SymbolTable.getMajorVersion()]",
+  "method": "jdk.internal.org.objectweb.asm.SymbolTable.getMajorVersion()int",
+  "entryBCI": -1,
+  "codeSignature": "5584b88e33a33bd3261934f6fe8395734eac85057254f3d7eb941a71cf67b07c",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.org.objectweb.asm.SymbolTable.getMajorVersion()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.org.objectweb.asm.SymbolTable.getMajorVersion()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

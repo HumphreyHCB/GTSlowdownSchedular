@@ -1,0 +1,41 @@
+{
+  "identifier": "HotSpotCompilation-92[java.lang.StringLatin1.hashCode(byte[])]",
+  "method": "java.lang.StringLatin1.hashCode(byte[])int",
+  "entryBCI": -1,
+  "codeSignature": "ba2a6b56d165ce096f34e00caa03ae03a75274239a9a12c6fa7935b87ba5e212",
+  "graphSignature": "91207daea099fb929038e2b3f2a9b19bf85306f06a4415520b4e38768bd4d49a",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.StringLatin1.hashCode(byte[])int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.StringLatin1.hashCode(byte[])int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 2,
+      "switchProbabilities": [0.0,
+      0.5974609375,
+      0.4025390625]
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}
