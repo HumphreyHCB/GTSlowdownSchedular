@@ -1,0 +1,110 @@
+{
+    "json.JsonPureStringParser.readNumber": {
+        "59 (Vtune Block 46)": 49,
+        "78 (Vtune Block 67)": 53,
+        "Backend Blocks": {"37001 (Vtune Block 34)": 44},
+        "106 (Vtune Block 95)": 41
+    },
+    "json.JsonPureStringParser.isWhiteSpace": {
+        "17 (Vtune Block 20)": 7,
+        "41 (Vtune Block 23)": 8,
+        "42 (Vtune Block 24)": 17,
+        "6 (Vtune Block 18)": 19,
+        "29 (Vtune Block 26)": 10,
+        "5 (Vtune Block 17)": 17,
+        "65535 (Vtune Block 2)": 9,
+        "4 (Vtune Block 5)": 6,
+        "30 (Vtune Block 27)": 14,
+        "0 (Vtune Block 3)": 6,
+        "18 (Vtune Block 21)": 13,
+        "48 (Vtune Block 15)": 5
+    },
+    "json.JsonPureStringParser.readArray": {
+        "159 (Vtune Block 142)": 30,
+        "142 (Vtune Block 126)": 46,
+        "160 (Vtune Block 143)": 15,
+        "153 (Vtune Block 127)": 27,
+        "134 (Vtune Block 118)": 8,
+        "0 (Vtune Block 3)": 54,
+        "158 (Vtune Block 141)": 28
+    },
+    "json.JsonPureStringParser.subStringFromTo": {
+        "30 (Vtune Block 20)": 9,
+        "35 (Vtune Block 23)": 5,
+        "27 (Vtune Block 24)": 4,
+        "24 (Vtune Block 15)": 21,
+        "28 (Vtune Block 18)": 6,
+        "70 (Vtune Block 46)": 14,
+        "0 (Vtune Block 3)": 21,
+        "33 (Vtune Block 21)": 3,
+        "26 (Vtune Block 17)": 27,
+        "34 (Vtune Block 22)": 4,
+        "65535 (Vtune Block 2)": 15,
+        "29 (Vtune Block 19)": 7,
+        "39 (Vtune Block 41)": 11,
+        "41 (Vtune Block 42)": 23,
+        "15 (Vtune Block 10)": 14,
+        "5 (Vtune Block 6)": 10,
+        "2 (Vtune Block 4)": 22
+    },
+    "json.JsonPureStringParser.isDigit": {
+        "61 (Vtune Block 32)": 17,
+        "39 (Vtune Block 22)": 20,
+        "28 (Vtune Block 17)": 16,
+        "6 (Vtune Block 7)": 19,
+        "50 (Vtune Block 27)": 16,
+        "17 (Vtune Block 12)": 15,
+        "5 (Vtune Block 6)": 14
+    },
+    "json.JsonPureStringParser.readStringInternal": {
+        "16 (Vtune Block 12)": 15,
+        "78 (Vtune Block 65)": 4,
+        "7 (Vtune Block 8)": 16,
+        "0 (Vtune Block 3)": 38,
+        "46 (Vtune Block 54)": 7,
+        "39 (Vtune Block 36)": 16,
+        "74 (Vtune Block 62)": 5,
+        "44 (Vtune Block 82)": 3,
+        "Backend Blocks": {
+            "81001 (Vtune Block 67)": 11,
+            "81002 (Vtune Block 76)": 6,
+            "88001 (Vtune Block 101)": 30
+        },
+        "68 (Vtune Block 88)": 13,
+        "42 (Vtune Block 38)": 55,
+        "77 (Vtune Block 64)": 11,
+        "32 (Vtune Block 130)": 18,
+        "27 (Vtune Block 132)": 24,
+        "67 (Vtune Block 87)": 3,
+        "64 (Vtune Block 60)": 3,
+        "75 (Vtune Block 63)": 6,
+        "54 (Vtune Block 57)": 7,
+        "108 (Vtune Block 110)": 32,
+        "21 (Vtune Block 30)": 12,
+        "83 (Vtune Block 97)": 23,
+        "48 (Vtune Block 56)": 16,
+        "59 (Vtune Block 85)": 16,
+        "47 (Vtune Block 55)": 4,
+        "80 (Vtune Block 66)": 28,
+        "58 (Vtune Block 84)": 6,
+        "19 (Vtune Block 14)": 66
+    },
+    "json.JsonPureStringParser.readNull": {
+        "51 (Vtune Block 43)": 71,
+        "0 (Vtune Block 3)": 57
+    },
+    "json.JsonPureStringParser.read": {
+        "6 (Vtune Block 30)": 15,
+        "Backend Blocks": {"21001 (Vtune Block 13)": 13},
+        "12 (Vtune Block 6)": 11,
+        "65535 (Vtune Block 2)": 12,
+        "20 (Vtune Block 12)": 58,
+        "0 (Vtune Block 3)": 19,
+        "17 (Vtune Block 10)": 13
+    },
+    "json.JsonPureStringParser.readValue": {
+        "4 (Vtune Block 56)": 8,
+        "65535 (Vtune Block 2)": 14,
+        "0 (Vtune Block 3)": 21
+    }
+}
