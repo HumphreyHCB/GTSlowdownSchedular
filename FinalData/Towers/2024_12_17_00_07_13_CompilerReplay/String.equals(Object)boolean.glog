@@ -1,0 +1,92 @@
+{
+  "identifier": "HotSpotCompilation-56[java.lang.String.equals(Object)]",
+  "method": "java.lang.String.equals(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "d72a7bfad984c50796a1ae7d280fff8c12b868a8b0c9bf5cca83414eb0a75644",
+  "graphSignature": "4c609eb6df537dd4055d7bd8758e6088351cb9cc47b118ef627e4c0368adeb1b",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.String.equals(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.String.equals(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.93212890625
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 1.3095861707700367E-4
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 44,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 47,
+      "branchTakenProbability": 0.953765553372626
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.equals(byte[], byte[])boolean",
+    "isMature": true,
+    "compilerIRSize": 58,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.8599525735806947
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "branchTakenProbability": 0.042687006556938314
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": 0.9042493709812692
+    }]
+  }]
+}
