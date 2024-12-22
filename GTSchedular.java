@@ -19,13 +19,15 @@ public class GTSchedular {
     public String benchmark;
     public int iterations;
     public String ID;
+    public double slowdownAmount;
 
     // Parameterized constructor
-    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay) {
+    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay, double slowdownAmount) {
         this.benchmark = benchmarkString;
         this.iterations = iterations;
         this.lowFootPrint = lowFootPrint;
         this.compilerReplay = compilerReplay;
+        this.slowdownAmount = slowdownAmount;
         ID = generateId();
 
         schedule();
@@ -41,7 +43,7 @@ public class GTSchedular {
 
         MarkerRunner.run(benchmark, iterations, ID, compilerReplay);
         // ID = "2024_10_29_18_19_36";
-        DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay);
+        DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
         mergeFinalJsonFiles(benchmark, ID);

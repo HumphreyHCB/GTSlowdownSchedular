@@ -14,7 +14,7 @@ public class Diviner {
     public static int DivineSimple(String runID, String method, BlockInfo block, String Benchmark, int iterations,
             Boolean lowFootPrint, Boolean compilerReplay) {
 
-        if (block.baseCpuTime < 0.09) {
+        if (block.baseCpuTime < 0.02) {
             return 0; // not worth our time just skip
         }
 
@@ -68,14 +68,14 @@ public class Diviner {
 
     public static int DivineComplex(String runID, String method, BlockInfo block,
             String Benchmark,
-            int iterations, Boolean lowFootPrint, boolean compilerReplay) {
+            int iterations, Boolean lowFootPrint, boolean compilerReplay, Double slowdownAmount) {
 
-        if (block.baseCpuTime < 0.09) {
+        if (block.baseCpuTime < 0.02) {
             return 0; // not worth our time, just skip
         }
 
         double baseCPUSpeed = block.baseCpuTime;
-        double targetSpeed = baseCPUSpeed * 2;
+        double targetSpeed = baseCPUSpeed * slowdownAmount;
 
         int guess = 1;
         int closestUnder = -1;
