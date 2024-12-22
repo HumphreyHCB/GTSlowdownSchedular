@@ -41,7 +41,12 @@ public class CompilerReplayRunner {
         command.add("sampling-mode=hw");
        // command.add("-quiet");
        command.add("-knob");
+       if(AWFYBenchmarksLookUp.getIfSingleFile(benchmark)){
+        command.add("enable-stack-collection=false");
+       }
+       else{
         command.add("enable-stack-collection=true");
+       }
         //command.add("-knob");
        // command.add("stack-size=1024");
         //command.add("-mrte-mode managed");
@@ -61,6 +66,12 @@ public class CompilerReplayRunner {
         command.add("-XX:-BackgroundCompilation");
         command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
 
+        if (benchmark.equals("Havlak")) {
+            command.add("-Xms8g");
+            command.add("-Xmx8g");
+    
+        }
+
         //command.add("-XX:CodeEntryAlignment=64");
         //command.add("-XX:OptoLoopAlignment=16");
         //command.add("-XX:InteriorEntryAlignment=16");
@@ -73,7 +84,7 @@ public class CompilerReplayRunner {
 
 
         command.add("-cp");
-        command.add("/home/hb478/repos/graal-instrumentation/compiler/benchmarks.jar");
+        command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src/benchmarks_debug.jar");
         // Add benchmark and inner benchmark amount
         command.add("Harness");
         command.add(benchmark); // e.g. "Queens"

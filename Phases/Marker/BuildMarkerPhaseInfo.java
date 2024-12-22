@@ -13,7 +13,47 @@ import java.io.IOException;
 public class BuildMarkerPhaseInfo {
 
     public static void main(String[] args) {
-        build("2024_10_29_14_48_26");
+        System.out.println("Now building ID: 2024_12_20_16_18_39");
+        build("2024_12_20_16_18_39");
+
+        System.out.println("Now building ID: 2024_12_20_16_22_20");
+        build("2024_12_20_16_22_20");
+
+        System.out.println("Now building ID: 2024_12_20_16_24_04");
+        build("2024_12_20_16_24_04");
+
+        System.out.println("Now building ID: 2024_12_20_16_26_38");
+        build("2024_12_20_16_26_38");
+
+        System.out.println("Now building ID: 2024_12_20_16_29_10");
+        build("2024_12_20_16_29_10");
+
+        System.out.println("Now building ID: 2024_12_20_16_33_00");
+        build("2024_12_20_16_33_00");
+
+        System.out.println("Now building ID: 2024_12_20_16_34_27");
+        build("2024_12_20_16_34_27");
+
+        System.out.println("Now building ID: 2024_12_20_16_36_26");
+        build("2024_12_20_16_36_26");
+
+        System.out.println("Now building ID: 2024_12_20_16_37_42");
+        build("2024_12_20_16_37_42");
+
+        System.out.println("Now building ID: 2024_12_20_16_39_14");
+        build("2024_12_20_16_39_14");
+
+        System.out.println("Now building ID: 2024_12_20_16_40_32");
+        build("2024_12_20_16_40_32");
+
+        System.out.println("Now building ID: 2024_12_20_16_41_41");
+        build("2024_12_20_16_41_41");
+
+        System.out.println("Now building ID: 2024_12_20_16_43_32");
+        build("2024_12_20_16_43_32");
+
+        System.out.println("Now building ID: 2024_12_20_16_45_30");
+        build("2024_12_20_16_45_30");
     }
 
     private static String readFileContents(File file) throws IOException {
@@ -58,6 +98,7 @@ public class BuildMarkerPhaseInfo {
                     System.out.println("No matching method found in marker JSON for: " + method);
                     continue;
                 }
+                int total_time = 0;
     
                 for (int i = 0; i < normalBlocks.length(); i++) {
                     JSONObject normalBlock = normalBlocks.getJSONObject(i);
@@ -87,15 +128,10 @@ public class BuildMarkerPhaseInfo {
                                 }
                             }
                         }
-                        if (Double.parseDouble(normalBlock.get("CpuTime").toString()) < 0.09) {
-                            // skip
-                        }
-                        else{
                         updatedBlocks.put(updatedBlock);
-                        }
                     } else {
                         System.out
-                                .println("Incomplete block data for VtuneBlock ID: " + vtuneBlockId + ". Skipping...");
+                                .println("Incomplete block data for VtuneBlock ID: " + vtuneBlockId + " Time : "+ normalBlock.get("CpuTime") +" . Skipping...");
                     }
                 }
     
