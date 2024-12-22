@@ -1,46 +1,60 @@
 {
     "AWFY Benchmarks": {
         "DeltaBlue": {
-            "extra_args": 60000
+            "extra_args": 60000,
+            "SingleFile": false
         },
         "Richards": {
-            "extra_args": 100
+            "extra_args": 100,
+            "SingleFile": false
         },
         "Json": {
-            "extra_args": 100
+            "extra_args": 100,
+            "SingleFile": false
         },
         "CD": {
-            "extra_args": 1000
+            "extra_args": 1000,
+            "SingleFile": false
         },
         "Havlak": {
-            "extra_args": 15000
+            "extra_args": 15000,
+            "SingleFile": false
         },
         "Bounce": {
-            "extra_args": 10000
+            "extra_args": 10000,
+            "SingleFile": true
         },
         "List": {
-            "extra_args": 10000
+            "extra_args": 10000,
+            "SingleFile": true
         },
         "Mandelbrot": {
-            "extra_args": 750
+            "extra_args": 750,
+            "SingleFile": true
         },
         "NBody": {
-            "extra_args": 1200000
+            "extra_args": 1200000,
+            "SingleFile": false
         },
         "Permute": {
-            "extra_args": 3500
+            "extra_args": 3500,
+            "SingleFile": true
         },
         "Queens": {
-            "extra_args": 5000
+            "extra_args": 5000,
+            "SingleFile": true
         },
         "Sieve": {
-            "extra_args": 10000
+            "extra_args": 10000,
+            "SingleFile": true
         },
         "Storage": {
-            "extra_args": 1800
+            "extra_args": 1800,
+            "SingleFile": false
         },
         "Towers": {
-            "extra_args": 2500
+            "extra_args": 2500,
+            "SingleFile": true
         }
     }
 }
