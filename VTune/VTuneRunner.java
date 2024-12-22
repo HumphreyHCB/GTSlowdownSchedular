@@ -1,9 +1,11 @@
 package VTune;
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
+import GTResources.AWFYBenchmarksLookUp;
 
 public class VTuneRunner {
 
@@ -18,45 +20,47 @@ public class VTuneRunner {
         command.add("-collect");
         command.add("hotspots");
         command.add("-r /home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
-        //command.add("-r /mnt/vtune_ramdisk/" + RunID);
+
         command.add("-knob");
         command.add("sampling-mode=hw");
-       // command.add("-quiet");
+        command.add("-quiet");
        command.add("-knob");
+       if(AWFYBenchmarksLookUp.getIfSingleFile(benchmark)){
+        command.add("enable-stack-collection=false");
+       }
+       else{
         command.add("enable-stack-collection=true");
-        //command.add("-knob");
-       // command.add("stack-size=1024");
-        //command.add("-mrte-mode managed");
-        //command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
+       }
+
+       command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
+
         command.add("--");
         command.add("/home/hb478/repos/graal-instrumentation/vm/latest_graalvm_home/bin/java");
 
-        // Add customizable JVM options, defaulting to false
+        // Add customizable JVM options, defaulting to false                        
         command.add("-Djdk.graal.LIRGTSlowDown=" + (jdkGraalLIRGTSlowDown ? "true" : "false"));
         command.add("-Djdk.graal.GTMarkBasicBlocks=" + (jdkGraalGTMarkBasicBlocks ? "true" : "false"));
         if (!lirBlockSlowdownFileName.equals("")) {
             command.add("-Djdk.graal.LIRBlockSlowdownFileName=" + lirBlockSlowdownFileName);
         }
 
-        //command.add("-Djdk.graal.TrivialInliningSize=0");
+        if (benchmark.equals("Havlak")) {
+            command.add("-Xms8g");
+            command.add("-Xmx8g");
+    
+        }
 
         // Add other fixed JVM options
         command.add("-Djdk.graal.IsolatedLoopHeaderAlignment=0");
         command.add("-Djdk.graal.LoopHeaderAlignment=0");
+        command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
 
         command.add("-XX:+UseJVMCICompiler");
         command.add("-XX:+UseJVMCINativeLibrary");
         command.add("-XX:-TieredCompilation");
         command.add("-XX:-BackgroundCompilation");
-        command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
 
-        //command.add("-XX:CodeEntryAlignment=64");
-        //command.add("-XX:OptoLoopAlignment=16");
-        //command.add("-XX:InteriorEntryAlignment=16");
 
-        //command.add("-Djdk.graal.SaveProfiles=true");
-        //command.add("-Djdk.graal.OverrideProfiles=true");
-        //command.add("-Djdk.graal.SaveProfilesPath=/home/hb478/repos/GTSlowdownSchedular/SaveProfiles");
 
         if (compilerReplay) {
             command.add("-Djdk.graal.StrictProfiles=false");
@@ -66,13 +70,14 @@ public class VTuneRunner {
 
 
         command.add("-cp");
-        command.add("/home/hb478/repos/graal-instrumentation/compiler/benchmarks.jar");
+        command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
         // Add benchmark and inner benchmark amount
         command.add("Harness");
         command.add(benchmark); // e.g. "Queens"
         command.add(iterations+ ""); // e.g. "Queens"
         command.add(String.valueOf(innerBenchmarkAmount)); // e.g. "5000"
 
+        //System.out.println(command.toString());
         // Run the command using ProcessBuilder
         ProcessBuilder processBuilder = new ProcessBuilder(command);
         processBuilder.redirectErrorStream(true);
@@ -105,16 +110,16 @@ public class VTuneRunner {
 
     public static void main(String[] args) {
         // Example arguments to customize the run
-        String benchmark = "Storage"; // Benchmark name
-        int innerBenchmarkAmount = 1800; // Inner benchmark amount
+        String benchmark = "DeltaBlue"; // Benchmark name
+        int innerBenchmarkAmount = AWFYBenchmarksLookUp.getExtraArgs(benchmark); // Inner benchmark amount
         boolean jdkGraalGTMarkBasicBlocks = false; // Dynamic JVM option, default to false
         boolean jdkGraalLIRGTSlowDown = true; // Dynamic JVM option, default to false
-        String lirBlockSlowdownFileName = "/home/hb478/repos/GTSlowdownSchedular/Data/java::util::Arrays::setAll.json"; // File path
-        String trivialInliningSize = "0"; // Dynamic JVM option
-        String runId = "runE";
+        String lirBlockSlowdownFileName = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_12_20_17_01_59_SlowDown_Data/_deltablue::Planner::makePlan_290_14731.json"; // File path
+        //String trivialInliningSize = "0"; // Dynamic JVM option
+        String runId = "2024_12_20_17_01_59_runE";
         long start = System.currentTimeMillis();
         // Call runVtune method with customizable options
-        runVtune(benchmark,500, innerBenchmarkAmount, jdkGraalGTMarkBasicBlocks, jdkGraalLIRGTSlowDown, lirBlockSlowdownFileName ,runId, false);
+        runVtune(benchmark,500, innerBenchmarkAmount, jdkGraalGTMarkBasicBlocks, jdkGraalLIRGTSlowDown, lirBlockSlowdownFileName ,runId, true);
 
         long end = System.currentTimeMillis();
 

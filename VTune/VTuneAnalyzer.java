@@ -249,9 +249,9 @@ public class VTuneAnalyzer {
         // String outputFileName = "vtune_report_"+functionName+".txt";  // You can choose any name for this
         // generateMethodBlockVTuneReport(vtunePath, functionName, outputFileName);
         // whats wrong with this "Lc/CollisionDetector\$\$Lambda\:\:0x00007f37f4007820\;\:\:apply"
-        String id = "runE";
-        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/runE";
-        generateMethodBlockVTuneReport(id,"java::util::Arrays::setAll", vtunePath+"/runE11.txt");
+        String id = "2024_12_20_17_01_59_runE";
+        String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_12_20_17_01_59_runE";
+        generateMethodBlockVTuneReport(id,"deltablue::Planner::makePlan", vtunePath+"/runE1.txt");
         //getAllMethodsFoundByVtune(id);
     }
 }
