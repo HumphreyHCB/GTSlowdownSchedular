@@ -1,0 +1,114 @@
+{
+  "identifier": "HotSpotCompilation-111[som.Vector.hasSome(TestInterface)]",
+  "method": "som.Vector.hasSome(som.TestInterface)boolean",
+  "entryBCI": -1,
+  "codeSignature": "49606832e3946f81991768c89ae064e404f1e385ba7054921457e4cd3222c611",
+  "graphSignature": "704c83c27f7d736acefc70ca48ee0d829a19a8b7be2c2692915f940594738312",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.hasSome(som.TestInterface)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.hasSome(som.TestInterface)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.5346827133479213
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/IdentitySet$$Lambda.0x00007f3d2c00a628;",
+          "probability": 0.5184575593698566
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$4$$Lambda.0x00007f3d2c00a408;",
+          "probability": 0.333176581236774
+        },
+        {
+          "type": "Lsom/Set$$Lambda.0x00007f3d2c009938;",
+          "probability": 0.14836585939336938
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 25,
+      "branchTakenProbability": 0.9630848812602869
+    }]
+  },
+  {
+    "stableLambdaName": "som.IdentitySet$$Lambda/0x00007f3d2c00a628.test(Object)",
+    "method": "som.IdentitySet$$Lambda/0x00007f3d2c00a628.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$4$$Lambda/0x00007f3d2c00a408.test(Object)",
+    "method": "havlak.HavlakLoopFinder$4$$Lambda/0x00007f3d2c00a408.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "som.Set$$Lambda/0x00007f3d2c009938.test(Object)",
+    "method": "som.Set$$Lambda/0x00007f3d2c009938.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.lambda$contains$1(java.lang.Object, java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$4.lambda$apply$0(havlak.UnionFindNode, havlak.UnionFindNode)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": -1.0
+    }]
+  },
+  {
+    "method": "som.IdentitySet.lambda$contains$0(java.lang.Object, java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

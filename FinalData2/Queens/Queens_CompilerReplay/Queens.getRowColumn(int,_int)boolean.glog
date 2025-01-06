@@ -1,0 +1,43 @@
+{
+  "identifier": "HotSpotCompilation-78[Queens.getRowColumn(int, int)]",
+  "method": "Queens.getRowColumn(int, int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "3f795407a69d520de9418e6ca7410baecf09c0e306c585ef36707a89030cf164",
+  "graphSignature": "6ae6b373f88b1d7bfd7484b9199f8ce9b7662a6785d86816c7ddf30b8d0fc6cc",
+  "result": true,
+  "profiles": [{
+    "method": "Queens.getRowColumn(int, int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Queens.getRowColumn(int, int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.615625
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.2860772357723577
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "branchTakenProbability": 0.5288256227758007
+    }]
+  }]
+}

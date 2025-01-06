@@ -1,0 +1,205 @@
+{
+  "identifier": "HotSpotCompilation-173[json.JsonPureStringParser.readFalse()]",
+  "method": "json.JsonPureStringParser.readFalse()json.JsonValue",
+  "entryBCI": -1,
+  "codeSignature": "56c7f8b31a594fa96defc2c77a9351711ae8207ec4a25087db842256feff6111",
+  "graphSignature": "136fd6408127396146d93157a536f787e3dbb2570d3e106a371797f8796ad440",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.readFalse()json.JsonValue",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.readFalse()json.JsonValue",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.readRequiredChar(java.lang.String)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.readChar(java.lang.String)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.5918095238095238
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.read()void",
+    "isMature": true,
+    "compilerIRSize": 177,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 49,
+      "branchTakenProbability": 1.9047619047619048E-4
+    },
+    {
+      "bci": 61,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Character.toString(char)java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.length()int",
+    "isMature": false,
+    "compilerIRSize": 12,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.String.charAt(int)char",
+    "isMature": true,
+    "compilerIRSize": 34,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.charAt(byte[], int)char",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.checkIndex(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.valueOf(char)java.lang.String",
+    "isMature": true,
+    "compilerIRSize": 92,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.<init>(byte[], byte)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

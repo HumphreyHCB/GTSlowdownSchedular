@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-249[deltablue.AbstractConstraint.lambda$inputsKnown$0(int, Variable)]",
+  "method": "deltablue.AbstractConstraint.lambda$inputsKnown$0(int, deltablue.Variable)boolean",
+  "entryBCI": -1,
+  "codeSignature": "dcee08543e53209943eaa71bc443bf1e7ac7a70021802bffb1769f3a298f3e63",
+  "graphSignature": "e62f8d83b15186d7da0239b2d9d520995a308071c6c7ce7ed3a81dedde48aee1",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.AbstractConstraint.lambda$inputsKnown$0(int, deltablue.Variable)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.AbstractConstraint.lambda$inputsKnown$0(int, deltablue.Variable)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

@@ -1,0 +1,91 @@
+{
+  "identifier": "HotSpotCompilation-88[Storage.lambda$buildTreeDepth$0(int, Random, int)]",
+  "method": "Storage.lambda$buildTreeDepth$0(int, som.Random, int)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "a3f1997c6dad72891a3c0a7a6d8da3b556ddc042ea244eae0810a32aa959af3f",
+  "graphSignature": "076aa88133f2e2bddafae96ba9074ca2affc4691fc0daa3f1ebbf463bb0f67ce",
+  "result": true,
+  "profiles": [{
+    "method": "Storage.lambda$buildTreeDepth$0(int, som.Random, int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Storage.lambda$buildTreeDepth$0(int, som.Random, int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Storage.buildTreeDepth(int, som.Random)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 847,
+    "data": [{
+      "bci": 12,
+      "branchTakenProbability": 0.24975590704940442
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$lFgucZzpc71gfY48KtJh01.linkToTargetMethod(Object, int, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$MH/0x00007fdfc8007c00.linkToTargetMethod(java.lang.Object, int, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$XOx48OeQEUKzBfim0BpqXD.newInvokeSpecial(Object, Object, int, Object)",
+    "method": "java.lang.invoke.LambdaForm$DMH/0x00007fdfc8007400.newInvokeSpecial(java.lang.Object, java.lang.Object, int, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,25 @@
+{
+  "identifier": "HotSpotCompilation-152[deltablue.Planner$$Lambda/0x00007fa8680097d8.<init>(AbstractConstraint, Vector)]",
+  "method": "deltablue.Planner$$Lambda/0x00007fa8680097d8.<init>(deltablue.AbstractConstraint, som.Vector)void",
+  "entryBCI": -1,
+  "codeSignature": "7e76d06d8ef412178325c97f32eb17f54129ce7affdf0d5bd3aa934dd3aa6095",
+  "graphSignature": "eb5d647d53c9129c8e60bbd473e389385d8049575ca731aaba90c3bc267921fd",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007fa8680097d8.<init>(AbstractConstraint, Vector)",
+    "method": "deltablue.Planner$$Lambda/0x00007fa8680097d8.<init>(deltablue.AbstractConstraint, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007fa8680097d8.<init>(AbstractConstraint, Vector)",
+    "method": "deltablue.Planner$$Lambda/0x00007fa8680097d8.<init>(deltablue.AbstractConstraint, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

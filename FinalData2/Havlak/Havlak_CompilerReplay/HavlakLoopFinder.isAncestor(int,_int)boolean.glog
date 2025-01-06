@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-115[havlak.HavlakLoopFinder.isAncestor(int, int)]",
+  "method": "havlak.HavlakLoopFinder.isAncestor(int, int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "4901139f85ca0f2f540484dfd535a73df10cc416d95306690ac3a00ff4a6d9fb",
+  "graphSignature": "9cf9ee73953c828aeeb6e217737ae3c6575251c3e633004556326a60f81b302c",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.HavlakLoopFinder.isAncestor(int, int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.isAncestor(int, int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.4283203125
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "branchTakenProbability": 0.1250427058421592
+    }]
+  }]
+}

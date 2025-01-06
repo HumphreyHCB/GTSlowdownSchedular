@@ -1,0 +1,75 @@
+{
+  "identifier": "HotSpotCompilation-249[som.Dictionary.splitBucket(Dictionary$Entry[], int, Dictionary$Entry)]",
+  "method": "som.Dictionary.splitBucket(som.Dictionary$Entry[], int, som.Dictionary$Entry)void",
+  "entryBCI": -1,
+  "codeSignature": "06826a0b0b9a57e1fcf3c2313d2dc99c3fab8ac8ee753627a3a7996f7cabe4a2",
+  "graphSignature": "5b4b4c80bfe46d4066f962da334525c5285eb670a9dbf06ea07fe7575a42d78f",
+  "result": true,
+  "profiles": [{
+    "method": "som.Dictionary.splitBucket(som.Dictionary$Entry[], int, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.splitBucket(som.Dictionary$Entry[], int, som.Dictionary$Entry)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 17,
+      "branchTakenProbability": 0.3333333333333333
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "branchTakenProbability": 0.5
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 59,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 82,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 92,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 108,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 111,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 117,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 130,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,0 +1,164 @@
+{
+  "identifier": "HotSpotCompilation-254[deltablue.AbstractConstraint.inputsKnown(int)]",
+  "method": "deltablue.AbstractConstraint.inputsKnown(int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "50cf1cca68d607e44d857a40dd16fdb11f202c9d52d6dcf42486c5a7f5f5559f",
+  "graphSignature": "eac668ec67bed34cc1e20e0fdebcc60bf9d2cf23225d66808f5fa706152aea15",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.AbstractConstraint.inputsKnown(int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.AbstractConstraint.inputsKnown(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/EqualityConstraint;",
+          "probability": 0.9758003048780488
+        },
+        {
+          "type": "Ldeltablue/ScaleConstraint;",
+          "probability": 0.023628048780487805
+        },
+        {
+          "type": "Ldeltablue/EditConstraint;",
+          "probability": 5.716463414634146E-4
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(int, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007fa86800a2a8.<init>(int)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007fa86800a2a8.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.BinaryConstraint.inputsHasOne(som.TestInterface)boolean",
+    "isMature": true,
+    "compilerIRSize": 42,
+    "data": [{
+      "bci": 7,
+      "branchTakenProbability": 1.9069412662090009E-4
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007fa86800a2a8;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007fa86800a2a8;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "deltablue.UnaryConstraint.inputsHasOne(som.TestInterface)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007fa86800a2a8.test(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007fa86800a2a8.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 47,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.AbstractConstraint.lambda$inputsKnown$0(int, deltablue.Variable)boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 0.9767308792675949
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

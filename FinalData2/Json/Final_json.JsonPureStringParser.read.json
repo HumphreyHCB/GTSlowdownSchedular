@@ -1,0 +1,19 @@
+{"json.JsonPureStringParser.read": {
+  "0 (Vtune Block 68)": 17,
+  "5 (Vtune Block 94)": 4,
+  "20 (Vtune Block 77)": 50,
+  "14 (Vtune Block 73)": 0,
+  "18 (Vtune Block 76)": 2,
+  "17 (Vtune Block 75)": 18,
+  "12 (Vtune Block 71)": 11,
+  "6 (Vtune Block 95)": 13,
+  "Backend Blocks": {
+    "21001 (Vtune Block 78)": 17,
+    "21002 (Vtune Block 87)": 5
+  },
+  "4 (Vtune Block 70)": 10,
+  "13 (Vtune Block 72)": 0,
+  "26 (Vtune Block 92)": 1,
+  "15 (Vtune Block 74)": 2,
+  "65535 (Vtune Block 67)": 13
+}}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-301[java.lang.invoke.DirectMethodHandle.internalMemberName()]",
+  "method": "java.lang.invoke.DirectMethodHandle.internalMemberName()java.lang.invoke.MemberName",
+  "entryBCI": -1,
+  "codeSignature": "d91cac079eab908404b37a38af9053327e129a761e68fc484e3daed09ceb7ab2",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.DirectMethodHandle.internalMemberName()java.lang.invoke.MemberName",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.internalMemberName()java.lang.invoke.MemberName",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

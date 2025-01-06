@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-102[cd.Vector3D.<init>(double, double, double)]",
+  "method": "cd.Vector3D.<init>(double, double, double)void",
+  "entryBCI": -1,
+  "codeSignature": "49ca3fe7c4b1587f9497c5d66b09aa94f59eadcdfe73bd6f45c7b5c77fccbd97",
+  "graphSignature": "0cbf311da8d04dbb531ec6bc65bfbd893ef966ab4fe3d1c85f6d68720b0d2813",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector3D.<init>(double, double, double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector3D.<init>(double, double, double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

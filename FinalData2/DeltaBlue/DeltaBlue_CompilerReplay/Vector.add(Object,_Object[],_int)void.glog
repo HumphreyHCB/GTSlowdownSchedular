@@ -1,0 +1,44 @@
+{
+  "identifier": "HotSpotCompilation-183[java.util.Vector.add(Object, Object[], int)]",
+  "method": "java.util.Vector.add(java.lang.Object, java.lang.Object[], int)void",
+  "entryBCI": -1,
+  "codeSignature": "210e61c721b12d63592b3b1737965b52804e2e64a2d97bb1b2958ad689a52d52",
+  "graphSignature": "854d7034f013acee0b6ba371fcc22635e7c7f0aed2b777b935a792eb68c61a3d",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector.add(java.lang.Object, java.lang.Object[], int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector.add(java.lang.Object, java.lang.Object[], int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 3,
+      "branchTakenProbability": 0.999609375
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.grow()java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

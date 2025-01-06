@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-190[havlak.SimpleLoop.isRoot()]",
+  "method": "havlak.SimpleLoop.isRoot()boolean",
+  "entryBCI": -1,
+  "codeSignature": "5a7632341c41b44f53f958a7f394df14207a3467cc4554560a8ec011e9fff52b",
+  "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.SimpleLoop.isRoot()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.isRoot()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

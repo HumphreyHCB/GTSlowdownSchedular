@@ -1,0 +1,47 @@
+{
+  "identifier": "HotSpotCompilation-88[java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)]",
+  "method": "java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "89f4fae9f02708eaf3dee7bd09f0c875e3fe782fd8dc5da2fabc99668a2ad33e",
+  "graphSignature": "d6dd494176fdf671eab8005370ad8fa6b04994b01a5148f1f449a517afb92383",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 26,
+      "branchTakenProbability": 3.8109756097560977E-4
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 3.8109756097560977E-4
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

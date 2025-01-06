@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-79[java.security.ProtectionDomain.getCodeSource()]",
+  "method": "java.security.ProtectionDomain.getCodeSource()java.security.CodeSource",
+  "entryBCI": -1,
+  "codeSignature": "9f3fec79477627eafab940a8851d10aa55730cc08e7861b95fe16d770b9187b6",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.security.ProtectionDomain.getCodeSource()java.security.CodeSource",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.security.ProtectionDomain.getCodeSource()java.security.CodeSource",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

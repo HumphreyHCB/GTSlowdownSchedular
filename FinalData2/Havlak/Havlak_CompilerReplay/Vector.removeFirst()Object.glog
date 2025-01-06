@@ -1,0 +1,40 @@
+{
+  "identifier": "HotSpotCompilation-166[som.Vector.removeFirst()]",
+  "method": "som.Vector.removeFirst()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "5246fcaa83a88fa86b6c693066d83e90d2800c98e7cc10da1ab64595f41e2170",
+  "graphSignature": "ba086a111a2802394519dcbc8e8ecdacd42fc0eca668d9d6998554319791f821",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.removeFirst()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.removeFirst()java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.isEmpty()boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 8,
+      "branchTakenProbability": 0.6211677406756493
+    }]
+  }]
+}

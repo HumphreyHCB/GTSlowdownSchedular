@@ -1,0 +1,43 @@
+{
+  "identifier": "HotSpotCompilation-271[som.Vector.lambda$remove$0(Object, boolean[], Object[], int[], Object)]",
+  "method": "som.Vector.lambda$remove$0(java.lang.Object, boolean[], java.lang.Object[], int[], java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "c503cd444fc43176b83ea476c960ada2269b315ec35a5c365b50653685343016",
+  "graphSignature": "b3aea829e4b891031b10a3845a452032e42e8314e7636d336eb5c2efd13a2a9e",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.lambda$remove$0(java.lang.Object, boolean[], java.lang.Object[], int[], java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.lambda$remove$0(java.lang.Object, boolean[], java.lang.Object[], int[], java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.9999023532858119
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

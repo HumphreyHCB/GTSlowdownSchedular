@@ -2,3 +2,6 @@ r000hs/
 r001hs/
 Data
 *.class
+SaveProfiles
+DataBackup
+Tests/

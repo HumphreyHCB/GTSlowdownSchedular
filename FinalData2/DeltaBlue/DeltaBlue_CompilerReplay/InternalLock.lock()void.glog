@@ -1,0 +1,87 @@
+{
+  "identifier": "HotSpotCompilation-318[jdk.internal.misc.InternalLock.lock()]",
+  "method": "jdk.internal.misc.InternalLock.lock()void",
+  "entryBCI": -1,
+  "codeSignature": "ee1888701aa7be6de86bd326825f95ec6581e63b2dfb26e085c051db636bd658",
+  "graphSignature": "1caba39c83005c46065c1f017c7f11de3ded41d81f4b7c41eadbd6c7cd6adff8",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.misc.InternalLock.lock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.misc.InternalLock.lock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock.lock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$Sync.lock()void",
+    "isMature": true,
+    "compilerIRSize": 43,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
+    "isMature": true,
+    "compilerIRSize": 40,
+    "data": [{
+      "bci": 0,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 3.8102495713469235E-4
+    },
+    {
+      "bci": 25,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

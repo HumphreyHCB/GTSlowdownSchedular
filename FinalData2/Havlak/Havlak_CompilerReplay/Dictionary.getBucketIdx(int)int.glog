@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-102[som.Dictionary.getBucketIdx(int)]",
+  "method": "som.Dictionary.getBucketIdx(int)int",
+  "entryBCI": -1,
+  "codeSignature": "9cb8f7c22fb9c73b56dfc21cc85a81a1b15795ea3858910d097cf494c0c6562c",
+  "graphSignature": "6196c6fe94664dc4a75d394b673f28ae84e2a2f6827e3a47e533faae88ae41b6",
+  "result": true,
+  "profiles": [{
+    "method": "som.Dictionary.getBucketIdx(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.getBucketIdx(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

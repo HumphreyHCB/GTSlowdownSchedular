@@ -1,0 +1,274 @@
+{
+  "identifier": "HotSpotCompilation-116[som.Set.add(Object)]",
+  "method": "som.Set.add(java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "4902edb8f5e94d296d925541125478c88ebf4cc32cfbb6d8cd4f21b8befb99a8",
+  "graphSignature": "fe29851fcb9620680e58ff0d3205150d521c114555370ce02b5611c43b323073",
+  "result": true,
+  "profiles": [{
+    "method": "som.Set.add(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.add(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 0.538671875
+        },
+        {
+          "type": "Lsom/IdentitySet;",
+          "probability": 0.461328125
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 0.0384765625
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.contains(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  },
+  {
+    "method": "som.IdentitySet.contains(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "som.Set$$Lambda/0x00007f3d2c009938.<init>(Object)",
+    "method": "som.Set$$Lambda/0x00007f3d2c009938.<init>(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.hasSome(som.TestInterface)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "som.IdentitySet$$Lambda/0x00007f3d2c00a628.<init>(Object)",
+    "method": "som.IdentitySet$$Lambda/0x00007f3d2c00a628.<init>(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.hasSome(som.TestInterface)boolean",
+    "isMature": true,
+    "compilerIRSize": 198,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.5347336177661087
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/IdentitySet$$Lambda.0x00007f3d2c00a628;",
+          "probability": 0.5184575593698566
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$4$$Lambda.0x00007f3d2c00a408;",
+          "probability": 0.333176581236774
+        },
+        {
+          "type": "Lsom/Set$$Lambda.0x00007f3d2c009938;",
+          "probability": 0.14836585939336938
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 25,
+      "branchTakenProbability": 0.9630848812602869
+    }]
+  },
+  {
+    "stableLambdaName": "som.IdentitySet$$Lambda/0x00007f3d2c00a628.test(Object)",
+    "method": "som.IdentitySet$$Lambda/0x00007f3d2c00a628.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.IdentitySet.lambda$contains$0(java.lang.Object, java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "stableLambdaName": "som.Set$$Lambda/0x00007f3d2c009938.test(Object)",
+    "method": "som.Set$$Lambda/0x00007f3d2c009938.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.lambda$contains$1(java.lang.Object, java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9996094512790471
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

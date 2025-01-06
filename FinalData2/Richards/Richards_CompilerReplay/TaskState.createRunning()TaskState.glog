@@ -1,0 +1,44 @@
+{
+  "identifier": "HotSpotCompilation-203[richards.TaskState.createRunning()]",
+  "method": "richards.TaskState.createRunning()richards.TaskState",
+  "entryBCI": -1,
+  "codeSignature": "055508890067048ec53d6388e5f737ee41b8468b313f7d71bf1ffdd859854d94",
+  "graphSignature": "7bca8c058d6e6e51b3629a976d52b4e95000e8fd990c6c425b94831a477116c1",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskState.createRunning()richards.TaskState",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.createRunning()richards.TaskState",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.running()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

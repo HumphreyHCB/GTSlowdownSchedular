@@ -1,0 +1,45 @@
+{
+  "identifier": "HotSpotCompilation-240[deltablue.StayConstraint.<init>(Variable, Strength$Sym, Planner)]",
+  "method": "deltablue.StayConstraint.<init>(deltablue.Variable, deltablue.Strength$Sym, deltablue.Planner)void",
+  "entryBCI": -1,
+  "codeSignature": "7247d20a5e8a8abd9a4ab6ca1165b6aca22962025f4ef9ba15d69a3b2a1fcee6",
+  "graphSignature": "432bd038e0dce3ccee139af2c60677ace2cf91b9c10ff48d36fd90e71fb4e987",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.StayConstraint.<init>(deltablue.Variable, deltablue.Strength$Sym, deltablue.Planner)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.StayConstraint.<init>(deltablue.Variable, deltablue.Strength$Sym, deltablue.Planner)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.UnaryConstraint.<init>(deltablue.Variable, deltablue.Strength$Sym, deltablue.Planner)void",
+    "isMature": false,
+    "compilerIRSize": 352,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.AbstractConstraint.addConstraint(deltablue.Planner)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

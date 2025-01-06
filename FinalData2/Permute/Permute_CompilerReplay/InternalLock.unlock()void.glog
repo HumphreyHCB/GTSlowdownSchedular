@@ -1,0 +1,91 @@
+{
+  "identifier": "HotSpotCompilation-131[jdk.internal.misc.InternalLock.unlock()]",
+  "method": "jdk.internal.misc.InternalLock.unlock()void",
+  "entryBCI": -1,
+  "codeSignature": "edaee4801397ae9a63850d42d7ee0dc50f4a160b138613780555a23c1440e869",
+  "graphSignature": "90e8318599eb09506789de2c66be320c7077e558bb6548bcd633a2a0df878e79",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.misc.InternalLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.misc.InternalLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 0.001143074871404077
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 35,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 26,
+      "branchTakenProbability": 0.001143074871404077
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.001143074871404077
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.signalNext(java.util.concurrent.locks.AbstractQueuedSynchronizer$Node)void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

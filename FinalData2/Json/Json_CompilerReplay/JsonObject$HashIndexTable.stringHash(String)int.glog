@@ -1,0 +1,45 @@
+{
+  "identifier": "HotSpotCompilation-113[json.JsonObject$HashIndexTable.stringHash(String)]",
+  "method": "json.JsonObject$HashIndexTable.stringHash(java.lang.String)int",
+  "entryBCI": -1,
+  "codeSignature": "fc81f78083b6c0dc3da8846934313dbe8ca41637ab377d3aa2b17638f3c01e8c",
+  "graphSignature": "90c2efbe6821a32228f9077c8d83cd47488daec426fbcbfa83fef2b2ef16b37a",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonObject$HashIndexTable.stringHash(java.lang.String)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonObject$HashIndexTable.stringHash(java.lang.String)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.length()int",
+    "isMature": false,
+    "compilerIRSize": 12,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

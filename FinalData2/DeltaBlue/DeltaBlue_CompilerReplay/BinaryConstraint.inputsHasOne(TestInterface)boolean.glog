@@ -1,0 +1,62 @@
+{
+  "identifier": "HotSpotCompilation-247[deltablue.BinaryConstraint.inputsHasOne(TestInterface)]",
+  "method": "deltablue.BinaryConstraint.inputsHasOne(som.TestInterface)boolean",
+  "entryBCI": -1,
+  "codeSignature": "dc274b3842b593ed0052215ba57728d0a8591ad6f0f277e93fd61041e4aca3a2",
+  "graphSignature": "4fb2e5b90c78bd9fa7def8633a67d583cb047e0351851de9f32a88f59399aed8",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.BinaryConstraint.inputsHasOne(som.TestInterface)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.BinaryConstraint.inputsHasOne(som.TestInterface)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007fa86800a2a8;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007fa86800a2a8.test(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007fa86800a2a8.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.AbstractConstraint.lambda$inputsKnown$0(int, deltablue.Variable)boolean",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

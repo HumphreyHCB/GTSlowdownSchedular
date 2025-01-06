@@ -1,0 +1,81 @@
+{
+  "identifier": "HotSpotCompilation-108[json.JsonPureStringParser.endCapture()]",
+  "method": "json.JsonPureStringParser.endCapture()java.lang.String",
+  "entryBCI": -1,
+  "codeSignature": "37a2cbceea5139c11583a1c3ac346a14828138a656068db13c50fffc5fee1e9e",
+  "graphSignature": "414bc29ad3eaae64c44624a9b2f6126577b21fab10a4436a86c30c968f8d9d51",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.endCapture()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.endCapture()java.lang.String",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.subStringFromTo(int, int)java.lang.String",
+    "isMature": true,
+    "compilerIRSize": 660,
+    "data": [{
+      "bci": 19,
+      "branchTakenProbability": 0.155288192501399
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringBuilder.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringBuilder.append(char)java.lang.StringBuilder",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringBuilder.toString()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.String.<init>(java.lang.StringBuilder)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

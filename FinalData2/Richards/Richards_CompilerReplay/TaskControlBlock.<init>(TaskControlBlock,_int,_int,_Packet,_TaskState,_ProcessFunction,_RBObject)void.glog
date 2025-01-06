@@ -1,0 +1,64 @@
+{
+  "identifier": "HotSpotCompilation-183[richards.TaskControlBlock.<init>(TaskControlBlock, int, int, Packet, TaskState, ProcessFunction, RBObject)]",
+  "method": "richards.TaskControlBlock.<init>(richards.TaskControlBlock, int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+  "entryBCI": -1,
+  "codeSignature": "6c73cb286e207107cbebd79eb4de7d9892afe77a8013ec0817e77e5f0a29c68e",
+  "graphSignature": "06ebcae127d0ab85e5802955f5168161ff0dfe8010e7c1972be45cd712ab7ee2",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskControlBlock.<init>(richards.TaskControlBlock, int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskControlBlock.<init>(richards.TaskControlBlock, int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.setPacketPending(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskWaiting(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

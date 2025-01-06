@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-79[Towers$TowersDisk.getSize()]",
+  "method": "Towers$TowersDisk.getSize()int",
+  "entryBCI": -1,
+  "codeSignature": "4678e9367a7ec4ccea48a216a73f5867d60824bdbec9cd9b10e3f81cad1718e7",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "Towers$TowersDisk.getSize()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers$TowersDisk.getSize()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

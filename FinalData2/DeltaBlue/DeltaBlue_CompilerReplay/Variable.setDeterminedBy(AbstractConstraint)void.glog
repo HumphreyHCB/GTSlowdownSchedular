@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-106[deltablue.Variable.setDeterminedBy(AbstractConstraint)]",
+  "method": "deltablue.Variable.setDeterminedBy(deltablue.AbstractConstraint)void",
+  "entryBCI": -1,
+  "codeSignature": "dc4da81917d99a78038346d694a49407e8c8ae9f4be8be5fa6e2c272eb6701cb",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Variable.setDeterminedBy(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Variable.setDeterminedBy(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

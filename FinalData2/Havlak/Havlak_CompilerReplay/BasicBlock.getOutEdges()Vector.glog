@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-88[havlak.BasicBlock.getOutEdges()]",
+  "method": "havlak.BasicBlock.getOutEdges()som.Vector",
+  "entryBCI": -1,
+  "codeSignature": "6afba362e716791fe8abbfeccac5249416068f714265f9d6d46a75b57708d460",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.BasicBlock.getOutEdges()som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.BasicBlock.getOutEdges()som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

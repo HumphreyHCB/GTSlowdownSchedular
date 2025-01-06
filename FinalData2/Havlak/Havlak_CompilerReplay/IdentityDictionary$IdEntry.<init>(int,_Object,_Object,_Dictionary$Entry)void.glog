@@ -1,0 +1,32 @@
+{
+  "identifier": "HotSpotCompilation-161[som.IdentityDictionary$IdEntry.<init>(int, Object, Object, Dictionary$Entry)]",
+  "method": "som.IdentityDictionary$IdEntry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+  "entryBCI": -1,
+  "codeSignature": "b33a3d40af1897445248697e6603f8fd8abb4472e30c3802caf89180c9b150fd",
+  "graphSignature": "82e736a69dc2ea379b062261c69c11c2a88d4687ca11bcc9ed650de469b8043b",
+  "result": true,
+  "profiles": [{
+    "method": "som.IdentityDictionary$IdEntry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.IdentityDictionary$IdEntry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary$Entry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

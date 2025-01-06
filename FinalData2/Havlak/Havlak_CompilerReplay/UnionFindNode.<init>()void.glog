@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-128[havlak.UnionFindNode.<init>()]",
+  "method": "havlak.UnionFindNode.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "09e12f11d2facaa7fc3231d6cc6d1384a0d4fb9a4d9335f4999176d697c91e6d",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.UnionFindNode.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.UnionFindNode.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

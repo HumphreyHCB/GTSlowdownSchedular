@@ -1,0 +1,155 @@
+{
+  "identifier": "HotSpotCompilation-110[cd.CollisionDetector$RemoveAbsentAircraft.apply(RedBlackTree$Entry)]",
+  "method": "cd.CollisionDetector$RemoveAbsentAircraft.apply(cd.RedBlackTree$Entry)void",
+  "entryBCI": -1,
+  "codeSignature": "6e3b6d592e4f396ecf8f3bebde33172aa4f927484daa04f0c89f5b9a4141397c",
+  "graphSignature": "4e4d8c704ae2c1e8cf2fbcb005d7e31b51b4767121856a5702b83142966500d0",
+  "result": true,
+  "profiles": [{
+    "method": "cd.CollisionDetector$RemoveAbsentAircraft.apply(cd.RedBlackTree$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CollisionDetector$RemoveAbsentAircraft.apply(cd.RedBlackTree$Entry)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.get(java.lang.Comparable)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 283,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.7065026362038664
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.findNode(java.lang.Comparable)cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 274,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 0.030228918019956957
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/CallSign;",
+          "probability": 0.5970947240996671
+        },
+        {
+          "type": "Lcd/Vector2D;",
+          "probability": 0.40290527590033287
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/CallSign;",
+          "probability": 0.5970947240996671
+        },
+        {
+          "type": "Lcd/Vector2D;",
+          "probability": 0.40290527590033287
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 24,
+      "branchTakenProbability": 0.9305961868253808
+    },
+    {
+      "bci": 30,
+      "branchTakenProbability": 0.7837398373983739
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CallSign.compareTo(java.lang.Object)int",
+    "isMature": false,
+    "compilerIRSize": 40,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CallSign.compareTo(cd.CallSign)int",
+    "isMature": true,
+    "compilerIRSize": 17,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.9418082405780122
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "branchTakenProbability": 0.7525399129172714
+    }]
+  }]
+}

@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-111[cd.RedBlackTree.<init>()]",
+  "method": "cd.RedBlackTree.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "91e90caf69380ac6f318f440b8091e237bdd02e23e01fb2f0aedfd2b5a8f3e3c",
+  "graphSignature": "9a25e3baa463a947484f25fc3566b34f94c78370f85324c03fa653ea9e0f1f4a",
+  "result": true,
+  "profiles": [{
+    "method": "cd.RedBlackTree.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.RedBlackTree.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}
