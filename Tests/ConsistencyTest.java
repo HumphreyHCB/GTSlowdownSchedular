@@ -10,25 +10,26 @@ import java.time.format.DateTimeFormatter;
 public class ConsistencyTest {
 
     private static final String[] AWFY_BENCHMARKS = {
-        "DeltaBlue",
+        "Towers",
         "Richards",
+        "List",
         "Json",
+        "DeltaBlue",
         "CD",
         "Havlak",
         "Bounce",
-        "List",
         "Mandelbrot",
         "NBody",
         "Permute",
         "Queens",
         "Sieve",
         "Storage",
-        "Towers"
     };
     public static void testAWFYSuite() {
-        int iterations = 100;  // or another value you prefer
+        int iterations = 50;  // or another value you prefer
         boolean lowFootPrint = true;
 
+        
         for (String benchmark : AWFY_BENCHMARKS) {
             String ID = generateId();
 
@@ -44,13 +45,16 @@ public class ConsistencyTest {
             // Run comparison/check phase if required for each benchmark
             VTuneFileComparatorRunner.CheckCD(ID, logFilePath);
 
+            VTuneFindUnmarkedBlocks.find(ID);
+
             // You can add logging or print statements here if needed:
             System.out.println("Completed benchmark: " + benchmark + " with ID: " + ID);
         }
     }
 
     public static void main(String[] args) {
-
+        //testBenchmark("Towers", 50);
+       // testBenchmark("Richards", 50);
         testAWFYSuite();
     //     int iterations = 100;
     //     boolean lowFootPrint = true;
@@ -68,6 +72,32 @@ public class ConsistencyTest {
 
     
 
+    }
+
+    public static void testBenchmark(String benchmark, int iterations) {
+        boolean lowFootPrint = true;
+
+        
+
+            String ID = generateId();
+
+            // Run compiler replay phase
+            CompilerReplayRunner.run(benchmark, iterations, ID);
+
+            // Run marker phase
+            MarkerRunner.run(benchmark, iterations, ID, true);
+
+            // Assuming a similar naming convention for log files as in the main method
+            String logFilePath = "Tests/TestResults/" + ID + "_" + benchmark + ".txt";
+
+            // Run comparison/check phase if required for each benchmark
+            VTuneFileComparatorRunner.CheckCD(ID, logFilePath);
+
+            VTuneFindUnmarkedBlocks.find(ID);
+
+            // You can add logging or print statements here if needed:
+            System.out.println("Completed benchmark: " + benchmark + " with ID: " + ID);
+        
     }
 
     public static String generateId() {

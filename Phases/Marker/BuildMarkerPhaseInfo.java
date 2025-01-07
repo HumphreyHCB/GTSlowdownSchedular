@@ -132,8 +132,10 @@ public class BuildMarkerPhaseInfo {
                     } else {
                         System.out
                                 .println("Incomplete block data for VtuneBlock ID: " + vtuneBlockId + " Time : "+ normalBlock.get("CpuTime") +" . Skipping...");
+                                total_time += normalBlock.getDouble("CpuTime");
                     }
                 }
+                System.out.println("Total time missing for method: " + method + " is " + total_time);
     
                 // Add updated blocks to the new JSON under the method name
                 updatedMarkerRunJson.put(method, updatedBlocks);
