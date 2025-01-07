@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-109[richards.TaskControlBlock.runTask()]",
   "method": "richards.TaskControlBlock.runTask()richards.TaskControlBlock",
   "entryBCI": -1,
-  "codeSignature": "c3b20bab19c47b5f36f037502f5cefffa331a8e97b6f0b3531a8aa354992b812",
+  "codeSignature": "6c9478f166a6a2e80c697303b794c7fad0e2d3f1f76185f0cfd8336e66ed090d",
   "graphSignature": "5c70591f5f2298bee8998223cba96d86e9a13a97fec916e2c5a99121a6621ef2",
   "result": true,
   "profiles": [{

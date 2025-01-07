@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-197[richards.Scheduler.holdSelf()]",
   "method": "richards.Scheduler.holdSelf()richards.TaskControlBlock",
   "entryBCI": -1,
-  "codeSignature": "f6b592bb68bcb28ae67de08b01a0f92eda6e2e8ef2dfac58797794188ba2cf79",
+  "codeSignature": "9a21ff6522734884c82ad23e5fbe86c379dae1df22483cffd03db534facc0a29",
   "graphSignature": "732a1a20cf9456cf2e94f560d70683df4aabeb6723a5356007b23bede8470755",
   "result": true,
   "profiles": [{

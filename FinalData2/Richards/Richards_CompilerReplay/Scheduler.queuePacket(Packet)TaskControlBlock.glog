@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-117[richards.Scheduler.queuePacket(Packet)]",
   "method": "richards.Scheduler.queuePacket(richards.Packet)richards.TaskControlBlock",
   "entryBCI": -1,
-  "codeSignature": "677bcd808a48796019041242d2d6fe7ebca18a4e682480cbff9e73c1d266c416",
+  "codeSignature": "69ec3c48a7714cbc53bfa7e73cf2aea06c56b2aae4685177bbf5fb3e09c8c095",
   "graphSignature": "6f61b07bb4b772bf59cb66b33c906b2062b230d470e01ef7f09f20fc563f7d57",
   "result": true,
   "profiles": [{

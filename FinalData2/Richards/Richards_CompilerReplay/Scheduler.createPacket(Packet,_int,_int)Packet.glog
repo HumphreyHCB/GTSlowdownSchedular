@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-179[richards.Scheduler.createPacket(Packet, int, int)]",
   "method": "richards.Scheduler.createPacket(richards.Packet, int, int)richards.Packet",
   "entryBCI": -1,
-  "codeSignature": "5cf9e1a6db83811b6b33f73f08df1a51158be9d7594b967b0f60ed377b83db84",
+  "codeSignature": "6423a8342cdadca7c83fe3f0ed02893d879162a66c73284d697b9b38bffe4d0d",
   "graphSignature": "df287b83b50af27f0964ffbf372c0f8138f0460f20a1c1307a349223e091f4ab",
   "result": true,
   "profiles": [{

@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-54[sun.invoke.util.Wrapper.basicTypeChar()]",
   "method": "sun.invoke.util.Wrapper.basicTypeChar()char",
   "entryBCI": -1,
-  "codeSignature": "07196fe161762eecefd7835a707c94dc0aec4c9601758f22f0605dfaaf943f0e",
+  "codeSignature": "825d7a4b0de1ff64af27528759d32c20b40d52f55c815535c40211c44e587c6e",
   "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
   "result": true,
   "profiles": [{

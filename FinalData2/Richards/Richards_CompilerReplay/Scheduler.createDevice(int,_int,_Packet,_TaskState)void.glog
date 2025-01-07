@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-194[richards.Scheduler.createDevice(int, int, Packet, TaskState)]",
   "method": "richards.Scheduler.createDevice(int, int, richards.Packet, richards.TaskState)void",
   "entryBCI": -1,
-  "codeSignature": "9d5580cd5a343bde3a556a596e7dfafa57542c5660fc3411c2cb38b033340eed",
+  "codeSignature": "dd32671c7b3de6cd0d717d0310a949071e36bafd00a3850d22238d0e7bd1025b",
   "graphSignature": "2455878460fd6e5c4e3878ea9b3d780c3f21cde5ca468de4e68d5ca40e2706b2",
   "result": true,
   "profiles": [{

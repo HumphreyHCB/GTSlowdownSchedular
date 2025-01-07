@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-202[richards.Scheduler.start()]",
   "method": "richards.Scheduler.start()boolean",
   "entryBCI": -1,
-  "codeSignature": "bd8ce940dd751e368de24a689c0835a1a5260e9bd2f86984d4e38fd6e6ce7a12",
+  "codeSignature": "882eaa311959dde88ba70f9b22a5e629f6d27606b3043314ef938bdd6baafa65",
   "graphSignature": "bd37655a314f5d39da093dc4e6a55bdb88cca8c10a4cd28dc93e1509d0155329",
   "result": true,
   "profiles": [{

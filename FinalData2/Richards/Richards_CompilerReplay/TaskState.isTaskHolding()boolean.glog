@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-127[richards.TaskState.isTaskHolding()]",
   "method": "richards.TaskState.isTaskHolding()boolean",
   "entryBCI": -1,
-  "codeSignature": "c1d1c162c819eab6b2e779a870cdc365c159f418668972882b9600424b700dc8",
+  "codeSignature": "bab69f431368db743946d2a9a13612e003d3a8569dfbd38f7f84b4433bd3338d",
   "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
   "result": true,
   "profiles": [{

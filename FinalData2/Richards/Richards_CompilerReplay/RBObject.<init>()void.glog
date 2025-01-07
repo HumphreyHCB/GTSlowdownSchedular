@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-165[richards.RBObject.<init>()]",
   "method": "richards.RBObject.<init>()void",
   "entryBCI": -1,
-  "codeSignature": "fddece8bc13b4a955966bc23b3943293fcd433c5c73137ff074de335ebeee474",
+  "codeSignature": "7725da8085a0c05a5d382f7725bd490be4eb304c043b2bfb9dfe88742d833428",
   "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
   "result": true,
   "profiles": [{

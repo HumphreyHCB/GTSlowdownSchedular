@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-195[richards.DeviceTaskDataRecord.<init>()]",
   "method": "richards.DeviceTaskDataRecord.<init>()void",
   "entryBCI": -1,
-  "codeSignature": "8464df03daef935c672d23a5bb629d6d8209d3f9f2b718e875f8b21063969408",
+  "codeSignature": "26c2e8b214b39c067c354998c4adde5606729f092c50a0545d8c674421153232",
   "graphSignature": "9a25e3baa463a947484f25fc3566b34f94c78370f85324c03fa653ea9e0f1f4a",
   "result": true,
   "profiles": [{

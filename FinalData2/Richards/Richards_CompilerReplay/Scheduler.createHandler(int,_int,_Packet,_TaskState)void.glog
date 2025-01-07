@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-189[richards.Scheduler.createHandler(int, int, Packet, TaskState)]",
   "method": "richards.Scheduler.createHandler(int, int, richards.Packet, richards.TaskState)void",
   "entryBCI": -1,
-  "codeSignature": "fb28500b4543596d750e8214a9e035fae21e26235b8f85db855c7dc2968da424",
+  "codeSignature": "aded0980a2358063082b37c4496e7b764d7ced6b42bc80750ccdc873b4dcefdb",
   "graphSignature": "9fa3d1b69b0ccb55532d3a018415fa44530be562d692473d712f0f9d4510804a",
   "result": true,
   "profiles": [{

@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-83[Towers.moveTopDisk(int, int)]",
   "method": "Towers.moveTopDisk(int, int)void",
   "entryBCI": -1,
-  "codeSignature": "fd55c7585e673cf4091798de2d05e846dfe328232eb9160401cd42e6c4bd2699",
+  "codeSignature": "fd24c87a374482afee97172e0a2b185249e062e7609c822958908855f98a45e0",
   "graphSignature": "66382b27952bc197d1624e411ead318b8c5c0e1c1bb18050998c07886b35a7f1",
   "result": true,
   "profiles": [{

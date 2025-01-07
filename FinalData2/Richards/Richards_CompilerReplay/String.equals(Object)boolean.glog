@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-60[java.lang.String.equals(Object)]",
   "method": "java.lang.String.equals(java.lang.Object)boolean",
   "entryBCI": -1,
-  "codeSignature": "e31b3f4ba7bc7be6f932a8adf8a9d93837271193aca65d4255ce55efb236ef24",
+  "codeSignature": "f7f306d9057c705807b6d3dd99f9d2cbc21e5dfd133cd7f2c60b5c812df241d1",
   "graphSignature": "4c609eb6df537dd4055d7bd8758e6088351cb9cc47b118ef627e4c0368adeb1b",
   "result": true,
   "profiles": [{
@@ -17,11 +17,11 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 2,
-      "branchTakenProbability": 0.9326171875
+      "branchTakenProbability": 0.9324951171875
     },
     {
       "bci": 11,
-      "branchTakenProbability": 1.3089005235602096E-4
+      "branchTakenProbability": 1.3090718680455556E-4
     },
     {
       "bci": 15,
@@ -49,7 +49,7 @@
     },
     {
       "bci": 47,
-      "branchTakenProbability": 0.9537897630579919
+      "branchTakenProbability": 0.953783713013878
     }]
   },
   {
@@ -66,7 +66,7 @@
     },
     {
       "bci": 4,
-      "branchTakenProbability": 0.8666487068965517
+      "branchTakenProbability": 0.8586971683637885
     },
     {
       "bci": 11,
@@ -74,7 +74,7 @@
     },
     {
       "bci": 12,
-      "branchTakenProbability": 0.0415910676901605
+      "branchTakenProbability": 0.04024539877300613
     },
     {
       "bci": 17,
@@ -86,7 +86,7 @@
     },
     {
       "bci": 21,
-      "branchTakenProbability": 0.8992281928061745
+      "branchTakenProbability": 0.9124264893889031
     }]
   }]
 }

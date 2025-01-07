@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-88[java.lang.invoke.LambdaForm$BasicType.basicTypeClass()]",
   "method": "java.lang.invoke.LambdaForm$BasicType.basicTypeClass()java.lang.Class",
   "entryBCI": -1,
-  "codeSignature": "9610621655a647ed6c973a990226260805d8e50c5e8d59c7ee54943d91323b5e",
+  "codeSignature": "8e38e8373c938dbaf1ed3b000094ec4aa90a1aa50511297f657d389a820b746a",
   "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
   "result": true,
   "profiles": [{

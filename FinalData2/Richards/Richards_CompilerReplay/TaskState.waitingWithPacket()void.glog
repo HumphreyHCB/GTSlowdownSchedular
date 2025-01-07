@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-186[richards.TaskState.waitingWithPacket()]",
   "method": "richards.TaskState.waitingWithPacket()void",
   "entryBCI": -1,
-  "codeSignature": "ee7cf729e66b7523b58bfe804a4ef05dabdf6851265e682ea3659b5c9683ef20",
+  "codeSignature": "0c0a4fc15bdb4a64526d04df61ec7f95cf3f20f18b4a8df906fbe9a87cc4cfc4",
   "graphSignature": "3097913a84c9f25d24d8ac190ef413316dcc880a190fbfb150b25c07dc206b89",
   "result": true,
   "profiles": [{

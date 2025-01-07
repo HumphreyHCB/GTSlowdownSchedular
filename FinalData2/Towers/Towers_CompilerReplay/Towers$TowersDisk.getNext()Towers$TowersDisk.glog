@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-80[Towers$TowersDisk.getNext()]",
   "method": "Towers$TowersDisk.getNext()Towers$TowersDisk",
   "entryBCI": -1,
-  "codeSignature": "a035f353b6017ea2446ba6a5ff85cedc5f0df985b36378c0fee0b979f54a125d",
+  "codeSignature": "2f706619051e1a6181d9a47a3a082065b699b5ee4443ac4829500199de6cadf7",
   "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
   "result": true,
   "profiles": [{

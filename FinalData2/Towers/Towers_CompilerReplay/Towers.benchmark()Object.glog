@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-125[Towers.benchmark()]",
   "method": "Towers.benchmark()java.lang.Object",
   "entryBCI": -1,
-  "codeSignature": "11b080a7fb9f6b6e81706f54719653ea3d7a7d1870b8757dd004290593adc409",
+  "codeSignature": "8dddf6a75f15a1353dda6e4a0e50bd531a68c5642325ca2e5440be448c1cffc4",
   "graphSignature": "a61e6054a8b643cd70c02e99a498d4876c925ccf895e3ccb2983db518e65cf6e",
   "result": true,
   "profiles": [{

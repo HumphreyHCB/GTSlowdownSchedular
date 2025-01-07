@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-86[Towers$TowersDisk.<init>(int)]",
   "method": "Towers$TowersDisk.<init>(int)void",
   "entryBCI": -1,
-  "codeSignature": "78b1bfe00753d26315af29cf5fac495df6ba6239cfc687bcab96c88d5917d01e",
+  "codeSignature": "50fd0885b2e7dc0f8d6693c6c2cab39796013253ec3fb124d2e80e0dc27b34b4",
   "graphSignature": "26a1cf54af1723285019cfdc205263e5675a8be4ddf321222b7524cad87d33ac",
   "result": true,
   "profiles": [{

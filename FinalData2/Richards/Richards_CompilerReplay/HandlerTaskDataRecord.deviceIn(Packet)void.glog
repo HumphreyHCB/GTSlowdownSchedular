@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-104[richards.HandlerTaskDataRecord.deviceIn(Packet)]",
   "method": "richards.HandlerTaskDataRecord.deviceIn(richards.Packet)void",
   "entryBCI": -1,
-  "codeSignature": "ed1d93b6edd05c1ae063a55377cad16b6620b1b9ab621b5ed4623596c6462eb7",
+  "codeSignature": "91d0e8e6a3f0ee28a6ab03e26414bc25756f599f696d17e84e63055f131c9e08",
   "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
   "result": true,
   "profiles": [{

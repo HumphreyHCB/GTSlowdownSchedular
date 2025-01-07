@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-80[richards.TaskControlBlock.getIdentity()]",
+  "method": "richards.TaskControlBlock.getIdentity()int",
+  "entryBCI": -1,
+  "codeSignature": "c07e2efe8fc732f4c1cd69c9392b8aa1a185d787a6b238bbfad0aa2e925764a7",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskControlBlock.getIdentity()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskControlBlock.getIdentity()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

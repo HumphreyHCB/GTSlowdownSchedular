@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-28[java.lang.String.isLatin1()]",
   "method": "java.lang.String.isLatin1()boolean",
   "entryBCI": -1,
-  "codeSignature": "c1a76b848c65e6ab92e329292776c3ad04048928c511f56b197839b35fa6b094",
+  "codeSignature": "bf89992b61208e1d5f7a1ca8fcbe4be0843a74cb342b3f15f76f47f5b776c770",
   "graphSignature": "4fcc83da4f6fad300af7f05d1ddac5ec0226e5bc05fc831a3f7ec484a1b056a7",
   "result": true,
   "profiles": [{

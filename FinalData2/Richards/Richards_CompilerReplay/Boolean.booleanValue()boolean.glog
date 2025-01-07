@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-164[java.lang.Boolean.booleanValue()]",
   "method": "java.lang.Boolean.booleanValue()boolean",
   "entryBCI": -1,
-  "codeSignature": "9b4bdb0ea6df2da76c31ec1e2dbe9533cd9f5872f9d0c9f76bf04ad270c6c003",
+  "codeSignature": "306ca76d679dd0ff7c662d0f6d87a4fb87b48af5e19a197357c68ca843e50a51",
   "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
   "result": true,
   "profiles": [{

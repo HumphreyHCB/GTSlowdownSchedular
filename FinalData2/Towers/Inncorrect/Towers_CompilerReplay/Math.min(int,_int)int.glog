@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-152[java.lang.Math.min(int, int)]",
+  "method": "java.lang.Math.min(int, int)int",
+  "entryBCI": -1,
+  "codeSignature": "da9f30afe56ee5b7b499b94e9e2b4ccc7eab6040bf34c5f23c7719874704479e",
+  "graphSignature": "e207042958b80c4c546097e7a1062b19bfed702462f8d52fe0f843fc639dd518",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Math.min(int, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Math.min(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.3708984375
+    }]
+  }]
+}

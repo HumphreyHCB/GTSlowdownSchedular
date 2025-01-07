@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-200[Richards.benchmark()]",
   "method": "Richards.benchmark()java.lang.Object",
   "entryBCI": -1,
-  "codeSignature": "2429c34e01f397b9f75dac9c38ed35073e8cfb0aa05560f46070c77d4883b19b",
+  "codeSignature": "bc5407f70d2b27e97ec8d3c04e457bc15322ee541977043981129448feee39ca",
   "graphSignature": "cbd4ec24aa135d2ebc661eddd4a61bc13414b12bced71d44b11e7a4cd4e540fa",
   "result": true,
   "profiles": [{

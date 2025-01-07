@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-99[richards.TaskState.setPacketPending(boolean)]",
   "method": "richards.TaskState.setPacketPending(boolean)void",
   "entryBCI": -1,
-  "codeSignature": "b96e0e42c9298050de61e4bdb38c4f39e2567fa5d91b7471b8cd664a449a043f",
+  "codeSignature": "7fd8ca545f42a1ca4c1dcd7975c8f565f5063cef889909890b5b0b280f44def7",
   "graphSignature": "40046a2fc8956c40d205d4d4ca05be2c141cceed7fdff4d5a950fc95b1d0c077",
   "result": true,
   "profiles": [{

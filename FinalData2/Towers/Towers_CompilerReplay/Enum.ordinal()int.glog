@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-49[java.lang.Enum.ordinal()]",
   "method": "java.lang.Enum.ordinal()int",
   "entryBCI": -1,
-  "codeSignature": "4678e9367a7ec4ccea48a216a73f5867d60824bdbec9cd9b10e3f81cad1718e7",
+  "codeSignature": "84e237928e497c41698955c432a0e8f4b682dec281f96e937b92e5d26beb07e5",
   "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
   "result": true,
   "profiles": [{

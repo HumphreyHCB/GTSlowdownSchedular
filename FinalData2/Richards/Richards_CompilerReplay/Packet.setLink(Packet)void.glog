@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-81[richards.Packet.setLink(Packet)]",
   "method": "richards.Packet.setLink(richards.Packet)void",
   "entryBCI": -1,
-  "codeSignature": "5aa67c544b7b142c4ed05f9be9f78038bc50b05186b81e9c34dadfae611ca53b",
+  "codeSignature": "703379d9f36b5738eb9e15cf1cffe84fecc9efc05cf55a10ee474212cfa758c0",
   "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
   "result": true,
   "profiles": [{

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-59[java.lang.invoke.MethodType.returnType()]",
+  "method": "java.lang.invoke.MethodType.returnType()java.lang.Class",
+  "entryBCI": -1,
+  "codeSignature": "0ca0d403c9e5ac07b9182311954b72626b83e144a814df8a4f265d0f69309c7b",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MethodType.returnType()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MethodType.returnType()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

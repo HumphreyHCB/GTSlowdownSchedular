@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-63[java.lang.invoke.MemberName.getDeclaringClass()]",
   "method": "java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class",
   "entryBCI": -1,
-  "codeSignature": "b9f50d220a8279268e7f5ff78441a93a66ead31589917935aad91475a48ce3bd",
+  "codeSignature": "2d3d1dfc18d68588fbb18cffe0cc893989c8ec029168e6efb3cdfa7783d4abfd",
   "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
   "result": true,
   "profiles": [{

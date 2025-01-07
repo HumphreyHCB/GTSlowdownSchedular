@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-92[richards.Packet.getData()]",
   "method": "richards.Packet.getData()int[]",
   "entryBCI": -1,
-  "codeSignature": "58a71efebdd66d9421c1ac9a192fa36ccf554bafb68966366d054eabd83a7bbc",
+  "codeSignature": "5276a4c5c3d768f628944191df0be8725ee1719518222361d32ba3532d6af5d0",
   "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
   "result": true,
   "profiles": [{

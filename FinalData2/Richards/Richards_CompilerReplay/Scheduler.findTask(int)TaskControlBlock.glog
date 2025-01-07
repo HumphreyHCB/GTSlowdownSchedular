@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-113[richards.Scheduler.findTask(int)]",
   "method": "richards.Scheduler.findTask(int)richards.TaskControlBlock",
   "entryBCI": -1,
-  "codeSignature": "5b8faaf62c3e2a30a4fd92b99019711a8405790472b94d85ed5a2703cf51f385",
+  "codeSignature": "3404479325ba1edb490e6e3708a9dbdb4796a16680aab112fe73c20476cc7e03",
   "graphSignature": "e5b3736b39d938ad9116d664ebfa25844e76a9fbc4cee2f09f4b29b6bc789d9a",
   "result": true,
   "profiles": [{

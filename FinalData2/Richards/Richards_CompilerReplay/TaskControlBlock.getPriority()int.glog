@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-84[richards.TaskControlBlock.getPriority()]",
   "method": "richards.TaskControlBlock.getPriority()int",
   "entryBCI": -1,
-  "codeSignature": "8b9716fee37f74e4ff0a47b1e086814a97cba47e7d24a1654ca9ee50f96d5487",
+  "codeSignature": "86b0c5e43eaa05fb7ecc15455d29c77e21e6d54f1efafa73cb4d59ce4d6dbaa6",
   "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
   "result": true,
   "profiles": [{

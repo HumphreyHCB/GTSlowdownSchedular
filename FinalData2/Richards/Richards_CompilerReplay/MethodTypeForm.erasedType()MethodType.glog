@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-150[java.lang.invoke.MethodTypeForm.erasedType()]",
   "method": "java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType",
   "entryBCI": -1,
-  "codeSignature": "8e69de8c7832332c6810431b127550465e9fe6c65ee8cf06e9cae46dba3dfecb",
+  "codeSignature": "956988fa5064891d89e7d0d6f7959c29e56abcdc60e1057508c87f716698da74",
   "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
   "result": true,
   "profiles": [{

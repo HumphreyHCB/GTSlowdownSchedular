@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-116[richards.Scheduler.markWaiting()]",
+  "method": "richards.Scheduler.markWaiting()richards.TaskControlBlock",
+  "entryBCI": -1,
+  "codeSignature": "e94668aab84f26d57a3541e70792478b1539dbc059a0e5e604895cd77d894f46",
+  "graphSignature": "04902e2c47a6770ae64ecc559118a1fc255b0ee8622ba5d95e80febb58d6ba1d",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.markWaiting()richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.markWaiting()richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.setTaskWaiting(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

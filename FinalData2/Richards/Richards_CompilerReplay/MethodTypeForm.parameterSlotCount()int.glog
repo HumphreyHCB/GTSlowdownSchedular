@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-131[java.lang.invoke.MethodTypeForm.parameterSlotCount()]",
   "method": "java.lang.invoke.MethodTypeForm.parameterSlotCount()int",
   "entryBCI": -1,
-  "codeSignature": "571bafd67022d57081d52a70a899e4a1f46e0b21cf4228c64ca5f5aa7eac8611",
+  "codeSignature": "5e10fc08c65ff4421ecde964ea8745d116c7725fac45ce6efee64d359177ab2b",
   "graphSignature": "2a89e6f1d8e4a559db871761e4b7a67c4847787f5f9b19d2e9a7cb6b1b60f6ad",
   "result": true,
   "profiles": [{

@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-204[richards.Scheduler.createIdler(int, int, Packet, TaskState)]",
   "method": "richards.Scheduler.createIdler(int, int, richards.Packet, richards.TaskState)void",
   "entryBCI": -1,
-  "codeSignature": "0eb21f75962a1ea88d898102681851b5d0b83bd11f5f51bb6eadc0c45830dd87",
+  "codeSignature": "4007bb2ee9549230878068bf33b1a46fb2f33f972dbe413be50d5bef12696186",
   "graphSignature": "01425375600ccaf9c49545bf40e54c252f56ce7e0256cfeb3404807734b77406",
   "result": true,
   "profiles": [{

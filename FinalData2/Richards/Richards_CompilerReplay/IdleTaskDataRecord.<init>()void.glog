@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-205[richards.IdleTaskDataRecord.<init>()]",
   "method": "richards.IdleTaskDataRecord.<init>()void",
   "entryBCI": -1,
-  "codeSignature": "a130f5b90c9398827d57da7a508006f045faefca8b2db05c1470b04492b5e69b",
+  "codeSignature": "f0c583bce39fc618fff84b5720090fd3dae5d5b5df54f54ac5c5282ecae7f4b6",
   "graphSignature": "fbb30dddd9e67908f1bc61cffc3807f3b44b73b4c31d97f5ab3c6b54e9ceef9e",
   "result": true,
   "profiles": [{

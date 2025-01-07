@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-32[java.lang.Object.<init>()]",
   "method": "java.lang.Object.<init>()void",
   "entryBCI": -1,
-  "codeSignature": "31fb1c63b21b411b14bb590b1a05f548da39b21cc0bb7678dff0e62c5180d2d4",
+  "codeSignature": "008adebf080299a9868c8ead271f5b6028fcccdbdb896f332d7ccdd760915f17",
   "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
   "result": true,
   "profiles": [{

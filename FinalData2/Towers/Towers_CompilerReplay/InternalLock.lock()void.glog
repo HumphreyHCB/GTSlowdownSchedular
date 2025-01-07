@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-137[jdk.internal.misc.InternalLock.lock()]",
   "method": "jdk.internal.misc.InternalLock.lock()void",
   "entryBCI": -1,
-  "codeSignature": "b495099ea9c8273c41dd19728625073ef72200356a60f3c20ae5edb6d38519c2",
+  "codeSignature": "e259314f613b2286e85bf2fdd97ba1dce64aae263484ce09987ecfcc82ad47a8",
   "graphSignature": "1caba39c83005c46065c1f017c7f11de3ded41d81f4b7c41eadbd6c7cd6adff8",
   "result": true,
   "profiles": [{

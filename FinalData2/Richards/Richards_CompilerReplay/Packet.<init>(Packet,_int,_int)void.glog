@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-180[richards.Packet.<init>(Packet, int, int)]",
   "method": "richards.Packet.<init>(richards.Packet, int, int)void",
   "entryBCI": -1,
-  "codeSignature": "25d83ea18e9f974f8725326a634e4a9ddb3e7f32a0aeb1a009197168f9928e9f",
+  "codeSignature": "74bd85c77d190a9e6c6c1cb7f4f17e26cf6aece8c28f6be2273ae750fd75ba92",
   "graphSignature": "f372f5ecbdf9b65c778159df8b2cf06df98df0828316832ade36c047f1898f21",
   "result": true,
   "profiles": [{

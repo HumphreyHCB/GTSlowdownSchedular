@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-190[richards.HandlerTaskDataRecord.<init>()]",
   "method": "richards.HandlerTaskDataRecord.<init>()void",
   "entryBCI": -1,
-  "codeSignature": "936e3e163c465634074064b76cacd824fd125f103c8049b38eef70bf1f4904e3",
+  "codeSignature": "7198ac213c899c78159e675c87a3f87e0beae5dc4793b80907743a79f18eeedd",
   "graphSignature": "24b96bddb36046d053b255f5b892a9f3adf054816e8d098b0ef332c53a70d945",
   "result": true,
   "profiles": [{

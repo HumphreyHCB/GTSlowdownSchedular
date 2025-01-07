@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-196[richards.Scheduler$DeviceProcessFunction.<init>(Scheduler)]",
   "method": "richards.Scheduler$DeviceProcessFunction.<init>(richards.Scheduler)void",
   "entryBCI": -1,
-  "codeSignature": "4521f795ab09197a96c23391dc7f8d38e0bd7fc4f2307cc5652417b5800c6b6a",
+  "codeSignature": "4957626dc6864c73276a6ca76e78a61427a80e2d32cc866ff5ae38689eaebdbb",
   "graphSignature": "253fe7deecfb5aebb960b441d60ae51f63e4117866e06a54704f2e03cbbd388e",
   "result": true,
   "profiles": [{
