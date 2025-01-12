@@ -172,6 +172,59 @@ public class VTuneAnalyzer {
         return totalCpuTime > 0 ? totalCpuTime : -1; // Return total CPU time, or -1 if no blocks had CPU time
     }
     
+    public static Map<Integer, Double> getCpuTimesForAllBlocks(String vtunePath, String functionName) {
+        // Sanitize inputs to escape special characters
+        if (functionName.contains("$")) {
+            functionName = functionName.replace("$", "\\$");
+        }
+    
+        if (vtunePath.contains("$")) {
+            vtunePath = vtunePath.replace("$", "\\$");
+        }
+    
+        String formattedFunctionName = functionName.replace(".", "::");
+    
+        // Construct the VTune command to retrieve block information
+        String command = String.format(
+                "vtune -report hotspots -r %s -source-object function=%s -group-by=basic-block,address -column=block,\"CPU Time:Self\",assembly",
+                vtunePath, formattedFunctionName
+        );
+    
+        // Map to store block IDs and their corresponding CPU times
+        Map<Integer, Double> blockCpuTimes = new HashMap<>();
+    
+        try {
+            // Execute the command and capture output
+            ProcessBuilder builder = new ProcessBuilder("/bin/sh", "-c", command);
+            builder.redirectErrorStream(true);
+            Process process = builder.start();
+    
+            // Parse the output to find blocks and their CPU times
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String line;
+                String blockPattern = ".*(?<!<)Block\\s+(\\d+)(?!>).*(\\d*\\.\\d+)s.*"; // Regex to extract Block ID and CPU time
+    
+                while ((line = reader.readLine()) != null) {
+                    if (line.matches(blockPattern)) {
+                        // Extract Block ID and CPU Time
+                        String[] parts = line.split("\\s+");
+                        Integer blockID = Integer.parseInt(parts[2].trim());
+                        Double cpuTime = Double.parseDouble(parts[parts.length - 1].replace("s", "").trim());
+    
+                        blockCpuTimes.put(blockID, cpuTime);
+                    }
+                }
+            }
+    
+            // Wait for the process to complete
+            process.waitFor();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    
+        return blockCpuTimes; // Return the map of Block IDs and CPU times
+    }
+
     /**
      * Method to get the CPU time for a specific function and block ID.
      *
@@ -251,7 +304,8 @@ public class VTuneAnalyzer {
         // whats wrong with this "Lc/CollisionDetector\$\$Lambda\:\:0x00007f37f4007820\;\:\:apply"
         String id = "2024_12_20_17_01_59_runE";
         String vtunePath = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_12_20_17_01_59_runE";
-        generateMethodBlockVTuneReport(id,"deltablue::Planner::makePlan", vtunePath+"/runE1.txt");
+       // generateMethodBlockVTuneReport(id,"deltablue::Planner::makePlan", vtunePath+"/runE1.txt");
+        getCpuTimesForAllBlocks("/home/hb478/repos/GTSlowdownSchedular/Data/2025_01_07_22_40_12_Iter13", "Towers::moveDisks");
         //getAllMethodsFoundByVtune(id);
     }
 }

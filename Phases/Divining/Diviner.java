@@ -172,4 +172,111 @@ public class Diviner {
 
         return guess; // Return both values
     }
+
+    public static int DivineComplex(String runID, String method, BlockInfo block,
+            String Benchmark,
+            int iterations, Boolean lowFootPrint, boolean compilerReplay, Double slowdownAmount, int startingGuess, int lastGeuss) {
+
+        if (block.baseCpuTime < 0.05) {
+            return 0; // not worth our time, just skip
+        }
+
+        double baseCPUSpeed = block.baseCpuTime;
+        double targetSpeed = baseCPUSpeed * slowdownAmount;
+
+        int guess = startingGuess;
+        int closestUnder = lastGeuss;
+        int closestOver = -1;
+
+        // Step 1: Increment by 3 until overshooting the target
+        while (true) {
+            // Add slowdown entry and write to file for the current guess
+            GTBuildSlowdownFile.addEntry(method, block.graalID, block.vtuneBlock, guess, block.backendBlock);
+            String pathToSlowdownFile = GTBuildSlowdownFile
+                    .writeToFile("_" + method + "_" + block.vtuneBlock + "_" + guess, runID);
+
+            // Run VTune analysis and get CPU speed for the current guess
+            String formattedRunLocation = runID + "_" + method.replace("::", "").replace(".", "") + "_"
+                    + block.vtuneBlock + "_" + guess;
+            String runLocation = VTuneRunner.runVtune(Benchmark, iterations,
+                    AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, true, pathToSlowdownFile,
+                    formattedRunLocation, compilerReplay);
+            double currentBlockCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
+
+            if (lowFootPrint) {
+                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
+                        + "_SlowDown_Data/LowFootPrintDumps";
+                File directory = new File(directoryPath);
+
+                // Create the directory if it does not exist
+                if (!directory.exists()) {
+                    directory.mkdirs();
+                }
+                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                        runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
+                VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
+                RemoveVtuneRun.run(runLocation);
+            }
+
+            if (currentBlockCPUSpeed > targetSpeed) {
+                // We've gone over the target, break out of the loop
+                closestOver = guess;
+                break;
+            } else {
+                // Update closestUnder and increment the guess
+                closestUnder = guess;
+                guess += 4;
+                if (guess > 100) {
+                    guess += 50;
+                }
+            }
+        }
+
+        // Step 2: Fine-tune to find the exact number that makes it go over
+        guess = closestUnder + 1 ; // Start just above the last "under" value
+        while (true) {
+            // Add slowdown entry and write to file for the current guess
+            GTBuildSlowdownFile.addEntry(method, block.graalID, block.vtuneBlock, guess, block.backendBlock);
+            String pathToSlowdownFile = GTBuildSlowdownFile
+                    .writeToFile("_" + method + "_" + block.vtuneBlock + "_" + guess, runID);
+
+            // Run VTune analysis and get CPU speed for the current guess
+            String formattedRunLocation = runID + "_" + method.replace("::", "").replace(".", "") + "_"
+                    + block.vtuneBlock + "_" + guess;
+            String runLocation = VTuneRunner.runVtune(Benchmark, iterations,
+                    AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, true, pathToSlowdownFile,
+                    formattedRunLocation, compilerReplay);
+            double currentBlockCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
+
+            if (lowFootPrint) {
+                // Handle low footprint option: generate report and remove VTune run
+                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
+                        + "_SlowDown_Data/LowFootPrintDumps";
+                File directory = new File(directoryPath);
+    
+                // Create the directory if it does not exist
+                if (!directory.exists()) {
+                    directory.mkdirs();
+                }
+                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                        runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
+                VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
+                RemoveVtuneRun.run(runLocation);
+            }
+
+            if (currentBlockCPUSpeed > targetSpeed) {
+                // guess is now first over
+                break;
+            } else {
+                guess++;
+            }
+
+            if (guess > closestOver) {
+                guess = closestOver;
+                break;
+            }
+        }
+
+        return guess; // Return both values
+    }
 }

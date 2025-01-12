@@ -3,6 +3,7 @@ import org.json.JSONObject;
 
 import Phases.Common.CompilerReplayRunner;
 import Phases.Divining.DiviningRunner;
+import Phases.Divining.DiviningRunnerMultiplexed;
 import Phases.Marker.MarkerRunner;
 import java.io.File;
 import java.io.FileReader;
@@ -37,13 +38,14 @@ public class GTSchedular {
     /// this method should invoke both the marker and divining phase
     public void schedule() {
 
-        if (compilerReplay) {
-            CompilerReplayRunner.run(benchmark, iterations, ID);
+       if (compilerReplay) {
+           CompilerReplayRunner.run(benchmark, iterations, ID);
         }
 
         MarkerRunner.run(benchmark, iterations, ID, compilerReplay);
-        // ID = "2024_10_29_18_19_36";
-        DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        // ID = "2025_01_07_22_40_12";
+        //DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        DiviningRunnerMultiplexed.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
         mergeFinalJsonFiles(benchmark, ID);
