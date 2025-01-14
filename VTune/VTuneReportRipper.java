@@ -137,6 +137,7 @@ public class VTuneReportRipper {
                     int combinedID = (Integer.parseInt(convertToDecimal(graalBlockIdHigher)) << 8) |
                     Integer.parseInt(convertToDecimal(graalBlockIdLower));
                     graalID = String.valueOf(combinedID);
+                    break; // Exit loop after finding Graal ID
                 }
             }
             index++;
