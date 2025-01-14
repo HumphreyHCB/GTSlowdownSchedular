@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-194[jdk.internal.util.ClassFileDumper.isEnabled()]",
+  "method": "jdk.internal.util.ClassFileDumper.isEnabled()boolean",
+  "entryBCI": -1,
+  "codeSignature": "ef07e3158ea91960b5fb23d01cd06a9be216e53fa72eeadb8ca8e0e8ff00f1c8",
+  "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.util.ClassFileDumper.isEnabled()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.util.ClassFileDumper.isEnabled()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

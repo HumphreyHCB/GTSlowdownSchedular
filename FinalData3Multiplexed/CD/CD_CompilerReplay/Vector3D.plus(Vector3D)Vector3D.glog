@@ -1,0 +1,44 @@
+{
+  "identifier": "HotSpotCompilation-151[cd.Vector3D.plus(Vector3D)]",
+  "method": "cd.Vector3D.plus(cd.Vector3D)cd.Vector3D",
+  "entryBCI": -1,
+  "codeSignature": "a5a816f0c23e5df2260c120c080b237ea14a0ad5339d2c18272cd7eadfdea187",
+  "graphSignature": "7c6758d2d1356e2dabf218c5b8f8db66b4cae34efedf11e8fd3e4b9e556d7730",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector3D.plus(cd.Vector3D)cd.Vector3D",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector3D.plus(cd.Vector3D)cd.Vector3D",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Vector3D.<init>(double, double, double)void",
+    "isMature": false,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

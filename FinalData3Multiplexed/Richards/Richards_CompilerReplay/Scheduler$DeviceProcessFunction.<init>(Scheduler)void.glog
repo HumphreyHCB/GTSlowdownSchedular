@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-197[richards.Scheduler$DeviceProcessFunction.<init>(Scheduler)]",
+  "method": "richards.Scheduler$DeviceProcessFunction.<init>(richards.Scheduler)void",
+  "entryBCI": -1,
+  "codeSignature": "dfb256c6db6df1f4be9e2455e6bd2e85553373cfbeddb52f7978cf28649a649e",
+  "graphSignature": "253fe7deecfb5aebb960b441d60ae51f63e4117866e06a54704f2e03cbbd388e",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler$DeviceProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler$DeviceProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.ProcessFunction.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

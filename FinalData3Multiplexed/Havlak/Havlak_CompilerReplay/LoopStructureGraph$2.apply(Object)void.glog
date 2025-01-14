@@ -1,0 +1,160 @@
+{
+  "identifier": "HotSpotCompilation-202[havlak.LoopStructureGraph$2.apply(Object)]",
+  "method": "havlak.LoopStructureGraph$2.apply(java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "a644119cb6fa6945014475629bf408d747f13992400623d34d0affbb17132811",
+  "graphSignature": "641a415fd9c368d550af3f9699bc859d86d0503468780dcd289faf9828b23475",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.LoopStructureGraph$2.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.LoopStructureGraph$2.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.LoopStructureGraph$2.apply(havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.LoopStructureGraph.calculateNestingLevelRec(havlak.SimpleLoop, int)void",
+    "isMature": false,
+    "compilerIRSize": 69,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.SimpleLoop.setDepthLevel(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.forEach(som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.LoopStructureGraph$2.<init>(havlak.LoopStructureGraph, int, havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": 19,
+    "data": [{
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.forEach(som.ForEachInterface)void",
+    "isMature": true,
+    "compilerIRSize": 63,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.34481830417227455
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lhavlak/HavlakLoopFinder$1;",
+          "probability": 0.6286976170912079
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$2;",
+          "probability": 0.13804437140509448
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$4;",
+          "probability": 0.10353327855382087
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$5;",
+          "probability": 0.07785538208709943
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$6;",
+          "probability": 0.025986031224322102
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$3;",
+          "probability": 0.025883319638455218
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.Math.max(int, int)int",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.3292325717633275
+    }]
+  },
+  {
+    "method": "havlak.SimpleLoop.setNestingLevel(int)void",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

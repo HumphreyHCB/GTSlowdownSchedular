@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-43[java.util.Objects.requireNonNull(Object)]",
+  "method": "java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "7a9fc6f5f66da63df351766a114316e3d4f9a39609be9010391512bb291a9d0a",
+  "graphSignature": "96d3342181420ff79460bc492d7c0b3dc709c0463b17c24b9e20c9f387a1a1e6",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

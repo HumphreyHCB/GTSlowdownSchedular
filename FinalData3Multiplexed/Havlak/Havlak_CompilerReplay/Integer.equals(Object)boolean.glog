@@ -1,0 +1,35 @@
+{
+  "identifier": "HotSpotCompilation-143[java.lang.Integer.equals(Object)]",
+  "method": "java.lang.Integer.equals(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "ff674a5a309869e1a72fb795e0c6fa3303ba8f01ab2ce6968df240f850bf7ade",
+  "graphSignature": "977cfdeffe18a54e7ff77fd7c7e9a380bc6b85e83edc6e82c7426dd510ebf34b",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Integer.equals(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Integer.equals(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "branchTakenProbability": 0.75
+    }]
+  }]
+}

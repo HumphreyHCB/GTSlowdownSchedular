@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-131[java.nio.Buffer.position()]",
+  "method": "java.nio.Buffer.position()int",
+  "entryBCI": -1,
+  "codeSignature": "8154ba6e9283f4fd1bf79c49c0c241c575ee0fd4ed9a1a299f3e7dfaf7dbdaf4",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.nio.Buffer.position()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.nio.Buffer.position()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

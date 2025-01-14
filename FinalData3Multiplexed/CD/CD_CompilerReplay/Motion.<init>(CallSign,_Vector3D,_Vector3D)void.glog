@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-108[cd.Motion.<init>(CallSign, Vector3D, Vector3D)]",
+  "method": "cd.Motion.<init>(cd.CallSign, cd.Vector3D, cd.Vector3D)void",
+  "entryBCI": -1,
+  "codeSignature": "bf8b8322132e1fb9fd6c3542e7f473bf94b96eea35ef1b862c78246708e90674",
+  "graphSignature": "7592409fa1143b210e843fe61df290fdca6ceb75368418417b3ff553538e41f3",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Motion.<init>(cd.CallSign, cd.Vector3D, cd.Vector3D)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Motion.<init>(cd.CallSign, cd.Vector3D, cd.Vector3D)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

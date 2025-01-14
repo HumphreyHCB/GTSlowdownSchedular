@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-122[Queens.verifyResult(Object)]",
+  "method": "Queens.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "bb15fb1143427314e5bd231134e1d7c1f81b7ffc8f95d4b426a4993eed7201fa",
+  "graphSignature": "7fd83e23fc88bb08071df379295467582d5aa461c2cd80435af68ff17a37ecff",
+  "result": true,
+  "profiles": [{
+    "method": "Queens.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Queens.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

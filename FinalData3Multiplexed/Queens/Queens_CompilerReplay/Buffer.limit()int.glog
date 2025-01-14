@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-136[java.nio.Buffer.limit()]",
+  "method": "java.nio.Buffer.limit()int",
+  "entryBCI": -1,
+  "codeSignature": "5e56de9ea598359299e55760fa5c43903e02ebad8d43b4835b7514c91fab0cef",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.nio.Buffer.limit()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.nio.Buffer.limit()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

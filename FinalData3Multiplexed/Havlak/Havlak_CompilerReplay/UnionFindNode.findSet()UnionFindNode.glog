@@ -1,0 +1,191 @@
+{
+  "identifier": "HotSpotCompilation-123[havlak.UnionFindNode.findSet()]",
+  "method": "havlak.UnionFindNode.findSet()havlak.UnionFindNode",
+  "entryBCI": -1,
+  "codeSignature": "6afaca9e657c4c8bc0e1ce735048c0421aa368e8cfee44008f091e50260b595e",
+  "graphSignature": "17ba13c98d49738da6ed083d5ef5983f5de15784efbe1e9f385c5031bc2bb04b",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.UnionFindNode.findSet()havlak.UnionFindNode",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.UnionFindNode.findSet()havlak.UnionFindNode",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "branchTakenProbability": 0.8823022574530416
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 38,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 52,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "havlak.UnionFindNode$$Lambda/0x00007eff90009fb8.<init>(UnionFindNode)",
+    "method": "havlak.UnionFindNode$$Lambda/0x00007eff90009fb8.<init>(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.forEach(som.ForEachInterface)void",
+    "isMature": true,
+    "compilerIRSize": 63,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.5302889095992545
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lhavlak/HavlakLoopFinder$2;",
+          "probability": 0.2962962962962963
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$4;",
+          "probability": 0.2222222222222222
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$1;",
+          "probability": 0.2037037037037037
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$5;",
+          "probability": 0.16666666666666666
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$6;",
+          "probability": 0.05555555555555555
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$3;",
+          "probability": 0.05555555555555555
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "havlak.UnionFindNode$$Lambda/0x00007eff90009fb8.apply(Object)",
+    "method": "havlak.UnionFindNode$$Lambda/0x00007eff90009fb8.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.lambda$findSet$0(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.union(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

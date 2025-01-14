@@ -1,0 +1,99 @@
+{
+  "identifier": "HotSpotCompilation-231[deltablue.Variable.addConstraint(AbstractConstraint)]",
+  "method": "deltablue.Variable.addConstraint(deltablue.AbstractConstraint)void",
+  "entryBCI": -1,
+  "codeSignature": "19d29a8202cf048e83f714aef7768d718cbc9e68e1c1073108bb2085b1627477",
+  "graphSignature": "eafaf7e205931d6622f77c03a139507448b399d2a44f01e1d7efc417aa0071c7",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Variable.addConstraint(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Variable.addConstraint(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9982425307557118
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

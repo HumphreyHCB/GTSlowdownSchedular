@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-96[som.Vector.size()]",
+  "method": "som.Vector.size()int",
+  "entryBCI": -1,
+  "codeSignature": "f01a2cfe1425ddf45a9e884a64d098eb8ecc561615dcffe6578db34f84c2d530",
+  "graphSignature": "5b777e2f77da99d6d8639f348b2186aaada4b6a73bc294be563e6720f68ee6d1",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-84[richards.TaskControlBlock.getPriority()]",
+  "method": "richards.TaskControlBlock.getPriority()int",
+  "entryBCI": -1,
+  "codeSignature": "18c229aeb2d11583213a56470defe63a68565b6b9448388754c3cf3497cb8ac7",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskControlBlock.getPriority()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskControlBlock.getPriority()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

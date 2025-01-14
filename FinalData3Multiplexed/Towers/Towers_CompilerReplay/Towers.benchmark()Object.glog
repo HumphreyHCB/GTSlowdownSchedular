@@ -1,0 +1,117 @@
+{
+  "identifier": "HotSpotCompilation-125[Towers.benchmark()]",
+  "method": "Towers.benchmark()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "d98f9306f09e572604cc6f7dd2e4efb090124de441ac3e94dd31e51764f42d72",
+  "graphSignature": "a61e6054a8b643cd70c02e99a498d4876c925ccf895e3ccb2983db518e65cf6e",
+  "result": true,
+  "profiles": [{
+    "method": "Towers.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers.buildTowerAt(int, int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.06666666666666667
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers.pushDisk(Towers$TowersDisk, int)void",
+    "isMature": true,
+    "compilerIRSize": 52,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.011325912907635228
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.moveDisks(int, int, int)void",
+    "isMature": true,
+    "compilerIRSize": 402,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.49990236281976175
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 44,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

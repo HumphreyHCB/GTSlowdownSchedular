@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-154[havlak.ControlFlowGraph.getNumNodes()]",
+  "method": "havlak.ControlFlowGraph.getNumNodes()int",
+  "entryBCI": -1,
+  "codeSignature": "868dc6e914deee8f2b9495e7087f97c02a5867b40f7a9f4ec253a5ff3d929ac9",
+  "graphSignature": "b65eb70ce9da6b28dd41488a2b9174bf51963b5e824f8933a3454db0bc6a37e1",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.ControlFlowGraph.getNumNodes()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.ControlFlowGraph.getNumNodes()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

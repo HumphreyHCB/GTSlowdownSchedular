@@ -1,0 +1,111 @@
+{
+  "identifier": "HotSpotCompilation-208[richards.Scheduler.createWorker(int, int, Packet, TaskState)]",
+  "method": "richards.Scheduler.createWorker(int, int, richards.Packet, richards.TaskState)void",
+  "entryBCI": -1,
+  "codeSignature": "56fda9e78c6703290d75fc03aa56a27569fc60571fbc5dda51ff20d5c588d2c2",
+  "graphSignature": "66de56eac236f8766daf665a426ad7af9299956270f09cd4a699eae9db9cc7af",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.createWorker(int, int, richards.Packet, richards.TaskState)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.createWorker(int, int, richards.Packet, richards.TaskState)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler$WorkerProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.ProcessFunction.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.WorkerTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler.createTask(int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": 99,
+    "data": [{
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskControlBlock.<init>(richards.TaskControlBlock, int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": 49,
+    "data": [{
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setPacketPending(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskWaiting(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

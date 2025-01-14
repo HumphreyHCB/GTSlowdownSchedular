@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-182[richards.ProcessFunction.<init>()]",
+  "method": "richards.ProcessFunction.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "91a11e68b540a3caba45ee2d543b04fe4b7c2f27b7e16170db0688ec011ea1b7",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "richards.ProcessFunction.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.ProcessFunction.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

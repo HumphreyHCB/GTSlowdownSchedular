@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-118[deltablue.Strength.weaker(Strength)]",
+  "method": "deltablue.Strength.weaker(deltablue.Strength)boolean",
+  "entryBCI": -1,
+  "codeSignature": "681b35ff1a1ce14ecd0f18f94ba7f6ff3fb0b1d8a310dbdc19593fb520fbe56e",
+  "graphSignature": "68abf25b0cff4887db01da9246c0e34680ff5e7021a48f79dc98f87d08374102",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Strength.weaker(deltablue.Strength)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Strength.weaker(deltablue.Strength)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.5
+    }]
+  }]
+}

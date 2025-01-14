@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-190[java.util.Vector.elementData(int)]",
+  "method": "java.util.Vector.elementData(int)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "208c2169fb3900f40332d1586b53ba4c732cd96fa49308346e33901430859973",
+  "graphSignature": "3573d3e527a9fc99a2ad9f4613e10e782e2c66e5c0e2cf348d8f0bda03cc5c12",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector.elementData(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector.elementData(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-110[richards.TaskState.isWaitingWithPacket()]",
+  "method": "richards.TaskState.isWaitingWithPacket()boolean",
+  "entryBCI": -1,
+  "codeSignature": "21c059bb4973630276386a9549007501c527baa92f9660e32d4ccf9cce094b93",
+  "graphSignature": "7405144535432e0aeb5a975c64567ecd8476a5025bc68f7ede533259e43aecc1",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskState.isWaitingWithPacket()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.isWaitingWithPacket()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.37421875
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 0.43664169787765295
+    },
+    {
+      "bci": 18,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

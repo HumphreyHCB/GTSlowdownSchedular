@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-51[java.lang.invoke.MethodTypeForm.basicType()]",
+  "method": "java.lang.invoke.MethodTypeForm.basicType()java.lang.invoke.MethodType",
+  "entryBCI": -1,
+  "codeSignature": "e3f87e1d2856b2ce052091cf5704de727c6069ae0d527f75c2b8b94431772f53",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MethodTypeForm.basicType()java.lang.invoke.MethodType",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MethodTypeForm.basicType()java.lang.invoke.MethodType",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

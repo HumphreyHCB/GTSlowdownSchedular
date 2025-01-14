@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-191[richards.HandlerTaskDataRecord.<init>()]",
+  "method": "richards.HandlerTaskDataRecord.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "e56bcaeeaca731cba0f50a9e9c23d5f9c3c98a55bab6eb7c978015a0a7d998d8",
+  "graphSignature": "24b96bddb36046d053b255f5b892a9f3adf054816e8d098b0ef332c53a70d945",
+  "result": true,
+  "profiles": [{
+    "method": "richards.HandlerTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.HandlerTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

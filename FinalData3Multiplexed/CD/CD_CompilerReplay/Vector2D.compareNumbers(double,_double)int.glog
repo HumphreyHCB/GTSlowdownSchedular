@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-87[cd.Vector2D.compareNumbers(double, double)]",
+  "method": "cd.Vector2D.compareNumbers(double, double)int",
+  "entryBCI": -1,
+  "codeSignature": "a4472e56684c30cb1db3bdd654112425a6cc8cf0665b18a00705f002abc32546",
+  "graphSignature": "f1550ef8f8f2d3c9df8020efdd97f9c19641c010d96c19e64f8e9853cb3c0a11",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector2D.compareNumbers(double, double)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector2D.compareNumbers(double, double)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.4798828125
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 0.8738298738298739
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

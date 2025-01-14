@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-92[havlak.SimpleLoop.setCounter(int)]",
+  "method": "havlak.SimpleLoop.setCounter(int)void",
+  "entryBCI": -1,
+  "codeSignature": "4b2948d6038c98b0d55add7ad32be35870e20df2401813a2092507eb0f9724ef",
+  "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.SimpleLoop.setCounter(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.setCounter(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-237[deltablue.StayConstraint.execute()]",
+  "method": "deltablue.StayConstraint.execute()void",
+  "entryBCI": -1,
+  "codeSignature": "c2832c64c42502478896a652b4dd8d65e8168d9aaad45225440d9978e9daf245",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.StayConstraint.execute()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.StayConstraint.execute()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

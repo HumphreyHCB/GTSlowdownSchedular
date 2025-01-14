@@ -1,0 +1,105 @@
+{
+  "identifier": "HotSpotCompilation-253[deltablue.Plan.append(Object)]",
+  "method": "deltablue.Plan.append(java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "309a29dd6f1e492247bca9a77a0ea26fb0a6efc4ba4cdd8383ae3455bb6bd213",
+  "graphSignature": "8dbed8060b5b7eabe44374cf8f979b891613ec8e34ef60aa57a8f675fa33f2cc",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Plan.append(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Plan.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/EqualityConstraint;",
+          "probability": 0.500048823357094
+        },
+        {
+          "type": "Ldeltablue/ScaleConstraint;",
+          "probability": 0.49965823650034175
+        },
+        {
+          "type": "Ldeltablue/EditConstraint;",
+          "probability": 2.9294014256420274E-4
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/EqualityConstraint;",
+          "probability": 0.500048823357094
+        },
+        {
+          "type": "Ldeltablue/ScaleConstraint;",
+          "probability": 0.49965823650034175
+        },
+        {
+          "type": "Ldeltablue/EditConstraint;",
+          "probability": 2.9294014256420274E-4
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.add(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 258,
+    "data": [{
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.add(java.lang.Object, java.lang.Object[], int)void",
+    "isMature": true,
+    "compilerIRSize": 104,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 3,
+      "branchTakenProbability": 0.9996094512790471
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.grow()java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

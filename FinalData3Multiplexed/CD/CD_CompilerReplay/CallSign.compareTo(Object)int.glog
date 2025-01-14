@@ -1,0 +1,48 @@
+{
+  "identifier": "HotSpotCompilation-85[cd.CallSign.compareTo(Object)]",
+  "method": "cd.CallSign.compareTo(java.lang.Object)int",
+  "entryBCI": -1,
+  "codeSignature": "b0b87f8afad202013af23bce696217fa24a83c29e64834e7c3ec1e93aed2eb8c",
+  "graphSignature": "e87c079814feb912df62e10c5a9e767a4b7f79d11ec6aaa893689c2e643e19a1",
+  "result": true,
+  "profiles": [{
+    "method": "cd.CallSign.compareTo(java.lang.Object)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CallSign.compareTo(java.lang.Object)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CallSign.compareTo(cd.CallSign)int",
+    "isMature": true,
+    "compilerIRSize": 26,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.9418025583439117
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "branchTakenProbability": 0.752514256091239
+    }]
+  }]
+}

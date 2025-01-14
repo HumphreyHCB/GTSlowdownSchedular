@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-80[java.lang.StringLatin1.canEncode(int)]",
+  "method": "java.lang.StringLatin1.canEncode(int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "ba944079414f4f65b7a7b703c64ec35c194102a417c3c9ee48cfadbae2788423",
+  "graphSignature": "dbf3b21b8fbfd1e42ded035e647276c5a7db7dfa310c2d692a05dd81158f8651",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

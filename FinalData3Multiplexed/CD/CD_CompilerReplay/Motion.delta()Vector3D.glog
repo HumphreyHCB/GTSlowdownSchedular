@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-130[cd.Motion.delta()]",
+  "method": "cd.Motion.delta()cd.Vector3D",
+  "entryBCI": -1,
+  "codeSignature": "0564b6c5f34631b02126b1a96a4165aa0ea039e947b9d8c9dfd5ccc1f8d4b881",
+  "graphSignature": "f8490de12fcf30b2876a8ba7f1e614b16c33a478a495926c4d2578a7782f147a",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Motion.delta()cd.Vector3D",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Motion.delta()cd.Vector3D",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Vector3D.minus(cd.Vector3D)cd.Vector3D",
+    "isMature": false,
+    "compilerIRSize": 67,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Vector3D.<init>(double, double, double)void",
+    "isMature": false,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

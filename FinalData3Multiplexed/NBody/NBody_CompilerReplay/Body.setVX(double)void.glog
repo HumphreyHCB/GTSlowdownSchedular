@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-85[nbody.Body.setVX(double)]",
+  "method": "nbody.Body.setVX(double)void",
+  "entryBCI": -1,
+  "codeSignature": "b3d9d056993c243e6bd64f0be419e1f3315c969997417f01dffc4373687d350b",
+  "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
+  "result": true,
+  "profiles": [{
+    "method": "nbody.Body.setVX(double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "nbody.Body.setVX(double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

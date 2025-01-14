@@ -1,0 +1,185 @@
+{
+  "identifier": "HotSpotCompilation-240[havlak.ControlFlowGraph.createNode(int)]",
+  "method": "havlak.ControlFlowGraph.createNode(int)havlak.BasicBlock",
+  "entryBCI": -1,
+  "codeSignature": "1afeb3f643d7cca6289e1bc6cc349da53a1744b7af06eb13f6887ed1531c9ca4",
+  "graphSignature": "032ecd26805eb697dcbbfffdbba1fe76b2282252f9518a7a4a30c319679fb949",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.ControlFlowGraph.createNode(int)havlak.BasicBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.ControlFlowGraph.createNode(int)havlak.BasicBlock",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.33232421875
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 49,
+      "branchTakenProbability": 0.9997070598574358
+    }]
+  },
+  {
+    "method": "havlak.ControlFlowGraph.getNumNodes()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.at(int)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 25,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.9995118140988088
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.atPut(int, java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.9973741794310722
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.5
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 53,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

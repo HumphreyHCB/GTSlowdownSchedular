@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-182[json.JsonPureStringParser.<init>(String)]",
+  "method": "json.JsonPureStringParser.<init>(java.lang.String)void",
+  "entryBCI": -1,
+  "codeSignature": "10d5f62d2230bcac305c1fcb27f92b298b074baea9c3e76ebb8179173c710513",
+  "graphSignature": "a4f4b02c9ccd5efe9ff01c362419933ccaf1cfa8ea447d19c94a6fbe3370fb97",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.<init>(java.lang.String)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.<init>(java.lang.String)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

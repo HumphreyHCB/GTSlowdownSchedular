@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-196[havlak.SimpleLoop.setDepthLevel(int)]",
+  "method": "havlak.SimpleLoop.setDepthLevel(int)void",
+  "entryBCI": -1,
+  "codeSignature": "d05a45311bec3a231b181a5c67d09b51f6b63b945c6100879508e1fe6ba7b5ff",
+  "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.SimpleLoop.setDepthLevel(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.setDepthLevel(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

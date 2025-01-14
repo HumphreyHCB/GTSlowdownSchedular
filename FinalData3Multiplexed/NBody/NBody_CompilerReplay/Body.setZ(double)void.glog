@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-90[nbody.Body.setZ(double)]",
+  "method": "nbody.Body.setZ(double)void",
+  "entryBCI": -1,
+  "codeSignature": "e3a62be742a3bcb3763afcd2843fcd5ba5b9d725326ec479308f8ac3623dd1b9",
+  "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
+  "result": true,
+  "profiles": [{
+    "method": "nbody.Body.setZ(double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "nbody.Body.setZ(double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-107[cd.Aircraft.<init>(CallSign, Vector3D)]",
+  "method": "cd.Aircraft.<init>(cd.CallSign, cd.Vector3D)void",
+  "entryBCI": -1,
+  "codeSignature": "ac4ef005f0dc2435e412ece3d03229bd02b7cf06a447f502f737fae2268f2eef",
+  "graphSignature": "eb5d647d53c9129c8e60bbd473e389385d8049575ca731aaba90c3bc267921fd",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Aircraft.<init>(cd.CallSign, cd.Vector3D)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Aircraft.<init>(cd.CallSign, cd.Vector3D)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

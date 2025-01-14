@@ -1,0 +1,42 @@
+{
+  "identifier": "HotSpotCompilation-86[deltablue.Variable.<init>()]",
+  "method": "deltablue.Variable.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "5ad9a0edc5fe2a6b609299835fa21fde11bdbeecdfffc4f7826f0df9422c34a2",
+  "graphSignature": "b4512f4b39adc0d040427a5fa53901f81d6bf6d76f874fd64a7abdb95ce447ce",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Variable.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Variable.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Strength.absoluteWeakest()deltablue.Strength",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

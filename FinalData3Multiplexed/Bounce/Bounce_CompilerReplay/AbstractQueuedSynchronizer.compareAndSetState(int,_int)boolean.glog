@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-87[java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)]",
+  "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "667c63395e2e25addb2e75b1bc6d461f02eaedce94456a43642a95dba4ba338c",
+  "graphSignature": "62ba2096df83aca87f7ad91c24b632f091a44470ea4acf103a2549455f22f51c",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

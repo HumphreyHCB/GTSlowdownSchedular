@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-130[json.JsonObject.isObject()]",
+  "method": "json.JsonObject.isObject()boolean",
+  "entryBCI": -1,
+  "codeSignature": "3fc7a622327bf8f376cee48e4cd1ceae8922a812781b89d02452ed88494d628c",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonObject.isObject()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonObject.isObject()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

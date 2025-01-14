@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-203[cd.CallSign.<init>(int)]",
+  "method": "cd.CallSign.<init>(int)void",
+  "entryBCI": -1,
+  "codeSignature": "b1a0f5be9a2e0e4aa08462cdb59559a20eef6a396b3f07017be8206b96da1f01",
+  "graphSignature": "26a1cf54af1723285019cfdc205263e5675a8be4ddf321222b7524cad87d33ac",
+  "result": true,
+  "profiles": [{
+    "method": "cd.CallSign.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CallSign.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-86[havlak.UnionFindNode.getDfsNumber()]",
+  "method": "havlak.UnionFindNode.getDfsNumber()int",
+  "entryBCI": -1,
+  "codeSignature": "cc3b9c13056bc9dae7bbb92e03b80aca37b7bd5ffd4870192a1a756066df8e44",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.UnionFindNode.getDfsNumber()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.UnionFindNode.getDfsNumber()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-81[List$Element.setNext(List$Element)]",
+  "method": "List$Element.setNext(List$Element)void",
+  "entryBCI": -1,
+  "codeSignature": "33a002af349ce21bba60decc50e888e67348a89e42c7bf40b94bc657d432652e",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "List$Element.setNext(List$Element)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "List$Element.setNext(List$Element)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

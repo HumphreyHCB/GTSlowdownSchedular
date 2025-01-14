@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-109[som.IdentityDictionary$IdEntry.match(int, Object)]",
+  "method": "som.IdentityDictionary$IdEntry.match(int, java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "c396e18216e1a69c7fc9ed783f854fa92c956858548fccca6b6e451be8f60002",
+  "graphSignature": "38f393d0b64a8f6060412d73ec4641c086c9020989a52cc7afdb292a1fda41b6",
+  "result": true,
+  "profiles": [{
+    "method": "som.IdentityDictionary$IdEntry.match(int, java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.IdentityDictionary$IdEntry.match(int, java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

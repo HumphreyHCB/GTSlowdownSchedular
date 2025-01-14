@@ -1,0 +1,160 @@
+{
+  "identifier": "HotSpotCompilation-129[cd.RedBlackTree.forEach(ForEachInterface)]",
+  "method": "cd.RedBlackTree.forEach(som.ForEachInterface)void",
+  "entryBCI": -1,
+  "codeSignature": "7cc8d88fe4283ce7cc5d34f94791f6f1f44862901564edd30ca94df93236a6fe",
+  "graphSignature": "933579eae449045ce3343ace89dbe15452278738087af5573f52e7409a1a5f17",
+  "result": true,
+  "profiles": [{
+    "method": "cd.RedBlackTree.forEach(som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.RedBlackTree.forEach(som.ForEachInterface)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.0014951569914841058
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/CallSign;",
+          "probability": 0.5455729166666666
+        },
+        {
+          "type": "Lcd/Vector2D;",
+          "probability": 0.4544270833333333
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/CollisionDetector$RemoveAbsentAircraft;",
+          "probability": 0.5455729166666666
+        },
+        {
+          "type": "Lcd/CollisionDetector$CollectCollisions;",
+          "probability": 0.4544270833333333
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.treeMinimum(cd.RedBlackTree$Node)cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.5251635631605436
+    },
+    {
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree$Entry.<init>(java.lang.Object, java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CollisionDetector$RemoveAbsentAircraft.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 284,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CollisionDetector$CollectCollisions.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 178,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree$Node.successor()cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 80,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 0.4518648701425503
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "branchTakenProbability": 0.0011723329425556857
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "branchTakenProbability": 0.4514866979655712
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

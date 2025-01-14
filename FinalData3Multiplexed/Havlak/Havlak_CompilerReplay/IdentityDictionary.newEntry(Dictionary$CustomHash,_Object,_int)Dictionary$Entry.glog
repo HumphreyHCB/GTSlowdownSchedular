@@ -1,0 +1,38 @@
+{
+  "identifier": "HotSpotCompilation-160[som.IdentityDictionary.newEntry(Dictionary$CustomHash, Object, int)]",
+  "method": "som.IdentityDictionary.newEntry(som.Dictionary$CustomHash, java.lang.Object, int)som.Dictionary$Entry",
+  "entryBCI": -1,
+  "codeSignature": "0408b13c2195987ac70d0f5cabdee07e294c513c968e2e2730fdf2337348bcf0",
+  "graphSignature": "c2acc2d963aa16246839d005b083fe7b53b84ffeebe86a805807289f693fa19c",
+  "result": true,
+  "profiles": [{
+    "method": "som.IdentityDictionary.newEntry(som.Dictionary$CustomHash, java.lang.Object, int)som.Dictionary$Entry",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.IdentityDictionary.newEntry(som.Dictionary$CustomHash, java.lang.Object, int)som.Dictionary$Entry",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.IdentityDictionary$IdEntry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary$Entry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

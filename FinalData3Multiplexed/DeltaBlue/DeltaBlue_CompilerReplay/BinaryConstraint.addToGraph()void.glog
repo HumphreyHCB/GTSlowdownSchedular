@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-134[deltablue.BinaryConstraint.addToGraph()]",
+  "method": "deltablue.BinaryConstraint.addToGraph()void",
+  "entryBCI": -1,
+  "codeSignature": "4b9258b6d6fd09a34748192fb2c120e70612bbe206cdb82d3874d602da2f6ae6",
+  "graphSignature": "c54d0c840fc829566f9a1d28d6a3941c2f55dfcdcf8ddcdf0c58b8d42a2cafdb",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.BinaryConstraint.addToGraph()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.BinaryConstraint.addToGraph()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.addConstraint(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 91,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

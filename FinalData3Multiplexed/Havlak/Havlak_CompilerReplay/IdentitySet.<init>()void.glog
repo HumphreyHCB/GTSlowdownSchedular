@@ -1,0 +1,48 @@
+{
+  "identifier": "HotSpotCompilation-142[som.IdentitySet.<init>()]",
+  "method": "som.IdentitySet.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "dc5666d04e6045405b0ad88600b37a554c0dd37ce4e40b97d02d7afafe88aea3",
+  "graphSignature": "fa3e7059fc7f1babad3a21820dbe545b58685ceec9648cc87562bc12cf283fbb",
+  "result": true,
+  "profiles": [{
+    "method": "som.IdentitySet.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.IdentitySet.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

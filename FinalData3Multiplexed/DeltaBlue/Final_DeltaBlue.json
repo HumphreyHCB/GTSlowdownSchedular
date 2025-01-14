@@ -1,0 +1,77 @@
+{
+    "deltablue.EqualityConstraint.execute": {
+        "65535 (Vtune Block 2)": 2,
+        "0 (Vtune Block 3)": 14,
+        "5 (Vtune Block 6)": 3,
+        "2 (Vtune Block 4)": 6
+    },
+    "deltablue.Planner.makePlan": {
+        "14 (Vtune Block 274)": 4,
+        "8 (Vtune Block 269)": 7,
+        "17 (Vtune Block 278)": 92,
+        "49 (Vtune Block 348)": 104,
+        "69 (Vtune Block 303)": 3,
+        "31 (Vtune Block 280)": 13,
+        "34 (Vtune Block 282)": 8,
+        "66 (Vtune Block 300)": 9,
+        "99 (Vtune Block 313)": 4,
+        "112 (Vtune Block 346)": 3,
+        "92 (Vtune Block 308)": 11,
+        "35 (Vtune Block 283)": 14,
+        "Backend Blocks": {
+            "111002 (Vtune Block 321)": 5,
+            "91002 (Vtune Block 307)": 44,
+            "67002 (Vtune Block 301)": 28,
+            "46001 (Vtune Block 286)": 5,
+            "111001 (Vtune Block 317)": 7,
+            "46002 (Vtune Block 290)": 14,
+            "68002 (Vtune Block 302)": 15,
+            "9002 (Vtune Block 270)": 28,
+            "94002 (Vtune Block 310)": 30,
+            "10002 (Vtune Block 271)": 15,
+            "96001 (Vtune Block 312)": 16
+        },
+        "89 (Vtune Block 305)": 5,
+        "16 (Vtune Block 277)": 13,
+        "100 (Vtune Block 314)": 12,
+        "90 (Vtune Block 306)": 8,
+        "65 (Vtune Block 297)": 22,
+        "12 (Vtune Block 273)": 44,
+        "28 (Vtune Block 279)": 8,
+        "48 (Vtune Block 347)": 17,
+        "88 (Vtune Block 304)": 9,
+        "15 (Vtune Block 275)": 11
+    },
+    "deltablue.Planner.change": {
+        "187 (Vtune Block 180)": 13,
+        "115 (Vtune Block 91)": 74,
+        "113 (Vtune Block 83)": 7,
+        "191 (Vtune Block 183)": 15,
+        "Backend Blocks": {
+            "110002 (Vtune Block 80)": 9,
+            "137001 (Vtune Block 96)": 10,
+            "132002 (Vtune Block 85)": 20,
+            "192003 (Vtune Block 188)": 12
+        },
+        "94 (Vtune Block 76)": 24,
+        "95 (Vtune Block 77)": 97,
+        "111 (Vtune Block 81)": 10,
+        "136 (Vtune Block 95)": 40,
+        "116 (Vtune Block 92)": 80,
+        "109 (Vtune Block 79)": 14
+    },
+    "deltablue.Plan.execute": {
+        "100 (Vtune Block 187)": 74,
+        "79 (Vtune Block 174)": 91,
+        "95 (Vtune Block 178)": 10,
+        "Backend Blocks": {
+            "116002 (Vtune Block 182)": 20,
+            "94002 (Vtune Block 177)": 8
+        },
+        "78 (Vtune Block 173)": 14,
+        "99 (Vtune Block 186)": 68,
+        "97 (Vtune Block 180)": 7,
+        "77 (Vtune Block 184)": 10,
+        "93 (Vtune Block 176)": 15
+    }
+}

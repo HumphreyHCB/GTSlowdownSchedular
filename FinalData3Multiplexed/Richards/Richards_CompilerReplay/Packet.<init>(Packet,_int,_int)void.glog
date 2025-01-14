@@ -1,0 +1,32 @@
+{
+  "identifier": "HotSpotCompilation-181[richards.Packet.<init>(Packet, int, int)]",
+  "method": "richards.Packet.<init>(richards.Packet, int, int)void",
+  "entryBCI": -1,
+  "codeSignature": "a81d58fb1144466900ef82ae29ff3b17fc52e8e9b6fd39f9dfac5ca244a1b953",
+  "graphSignature": "f372f5ecbdf9b65c778159df8b2cf06df98df0828316832ade36c047f1898f21",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Packet.<init>(richards.Packet, int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Packet.<init>(richards.Packet, int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

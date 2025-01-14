@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-150[java.util.ImmutableCollections$SetN$SetNIterator.hasNext()]",
+  "method": "java.util.ImmutableCollections$SetN$SetNIterator.hasNext()boolean",
+  "entryBCI": -1,
+  "codeSignature": "5a9eb78438493764b44b077f8019de035d76a115de18427db7a848da89c00cdd",
+  "graphSignature": "a4668e42daf777be6ff8cf681a21bc8c0347b67880e1b480834a554390f35bd0",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.ImmutableCollections$SetN$SetNIterator.hasNext()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.ImmutableCollections$SetN$SetNIterator.hasNext()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.042214912280701754
+    }]
+  }]
+}

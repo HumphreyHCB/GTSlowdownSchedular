@@ -1,0 +1,46 @@
+{
+  "identifier": "HotSpotCompilation-110[java.lang.Integer.valueOf(int)]",
+  "method": "java.lang.Integer.valueOf(int)java.lang.Integer",
+  "entryBCI": -1,
+  "codeSignature": "6306635b0a3f16a03910db1bb59f8f73ead9f0d153d6a110e4234cc69943b988",
+  "graphSignature": "80318623c5c350f04fb064b57e2192a6581ad9ea0d0f5018a78798ab253a471a",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Integer.valueOf(int)java.lang.Integer",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Integer.valueOf(int)java.lang.Integer",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.2826171875
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Integer.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Number.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

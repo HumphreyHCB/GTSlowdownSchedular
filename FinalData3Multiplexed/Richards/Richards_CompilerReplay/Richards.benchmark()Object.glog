@@ -1,0 +1,302 @@
+{
+  "identifier": "HotSpotCompilation-201[Richards.benchmark()]",
+  "method": "Richards.benchmark()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "1c5dae43f779819ce1863a526858b303d9cd233168a1a05d3dce7ce2b31dae79",
+  "graphSignature": "cbd4ec24aa135d2ebc661eddd4a61bc13414b12bced71d44b11e7a4cd4e540fa",
+  "result": true,
+  "profiles": [{
+    "method": "Richards.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Richards.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.fill(java.lang.Object[], java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 171,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.14285714285714285
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler.start()boolean",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 74,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 112,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 140,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 147,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 157,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 167,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "richards.Scheduler.createIdler(int, int, richards.Packet, richards.TaskState)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler$IdleProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.ProcessFunction.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler.createTask(int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": 99,
+    "data": [{
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler.createPacket(richards.Packet, int, int)richards.Packet",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Packet.<init>(richards.Packet, int, int)void",
+    "isMature": false,
+    "compilerIRSize": 70,
+    "data": [{
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler.createWorker(int, int, richards.Packet, richards.TaskState)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler$WorkerProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.createHandler(int, int, richards.Packet, richards.TaskState)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler$HandlerProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.createDevice(int, int, richards.Packet, richards.TaskState)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Scheduler$DeviceProcessFunction.<init>(richards.Scheduler)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.createRunning()richards.TaskState",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.running()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.IdleTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  },
+  {
+    "method": "richards.TaskControlBlock.<init>(richards.TaskControlBlock, int, int, richards.Packet, richards.TaskState, richards.ProcessFunction, richards.RBObject)void",
+    "isMature": false,
+    "compilerIRSize": 49,
+    "data": [{
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.setPacketPending(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskWaiting(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.createWaitingWithPacket()richards.TaskState",
+    "isMature": false,
+    "compilerIRSize": 42,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.waitingWithPacket()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.WorkerTaskDataRecord.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  }]
+}

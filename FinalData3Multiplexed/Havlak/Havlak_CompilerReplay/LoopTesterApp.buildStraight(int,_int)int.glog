@@ -1,0 +1,92 @@
+{
+  "identifier": "HotSpotCompilation-244[havlak.LoopTesterApp.buildStraight(int, int)]",
+  "method": "havlak.LoopTesterApp.buildStraight(int, int)int",
+  "entryBCI": -1,
+  "codeSignature": "e1028b733a3b2ae2e94021e9af7dbb53c62d9e025de73456d5d6f7b3e5cc976e",
+  "graphSignature": "3343bb37f98a11fcc642c235c078b0feecf2207c012828c59e62666ca7bc437f",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.LoopTesterApp.buildStraight(int, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.LoopTesterApp.buildStraight(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.4999511671061627
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.LoopTesterApp.buildConnect(int, int)void",
+    "isMature": false,
+    "compilerIRSize": 51,
+    "data": [{
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlockEdge.<init>(havlak.ControlFlowGraph, int, int)void",
+    "isMature": false,
+    "compilerIRSize": 374,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.addOutEdge(havlak.BasicBlock)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.addInEdge(havlak.BasicBlock)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.ControlFlowGraph.addEdge(havlak.BasicBlockEdge)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

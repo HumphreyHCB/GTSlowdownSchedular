@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-193[java.util.Vector$Itr.hasNext()]",
+  "method": "java.util.Vector$Itr.hasNext()boolean",
+  "entryBCI": -1,
+  "codeSignature": "76fe9e25668b4d17df44e1a2345413e66638fc766de0f0ce26fa70b7d3202dbb",
+  "graphSignature": "fdfdb9b4a6e7609e62bbcedd2349b8b0afc07efecffdd05ecc0f9fde78d60988",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector$Itr.hasNext()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector$Itr.hasNext()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 9.764671418806757E-5
+    }]
+  }]
+}

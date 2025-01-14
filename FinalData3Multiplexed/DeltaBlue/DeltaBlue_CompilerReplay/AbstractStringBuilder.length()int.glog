@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-44[java.lang.AbstractStringBuilder.length()]",
+  "method": "java.lang.AbstractStringBuilder.length()int",
+  "entryBCI": -1,
+  "codeSignature": "b051e49b71be5b4a019e52948a3c689901a5b419083c134e1cbab351b89694ea",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.AbstractStringBuilder.length()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.AbstractStringBuilder.length()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

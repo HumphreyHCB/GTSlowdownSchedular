@@ -1,0 +1,79 @@
+{
+  "identifier": "HotSpotCompilation-241[havlak.LoopTesterApp.buildConnect(int, int)]",
+  "method": "havlak.LoopTesterApp.buildConnect(int, int)void",
+  "entryBCI": -1,
+  "codeSignature": "cc7aec5b193312e3aab2515cc56aea7c0a59e0548c1b3b2a55da531f948c31d7",
+  "graphSignature": "2e4f6db10f565689b6b60a63d3a291b2f992d5c5edb07eb3108cb5f4f290953c",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.LoopTesterApp.buildConnect(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.LoopTesterApp.buildConnect(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlockEdge.<init>(havlak.ControlFlowGraph, int, int)void",
+    "isMature": false,
+    "compilerIRSize": 374,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.addOutEdge(havlak.BasicBlock)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.addInEdge(havlak.BasicBlock)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.ControlFlowGraph.addEdge(havlak.BasicBlockEdge)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

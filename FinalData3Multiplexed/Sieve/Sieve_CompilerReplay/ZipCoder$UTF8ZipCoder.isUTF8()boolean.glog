@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-38[java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()]",
+  "method": "java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()boolean",
+  "entryBCI": -1,
+  "codeSignature": "835b10e71b05ea7cbcbd0ad55c0e176f77cc6fc84ea54b267b634ed05eaba08f",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.zip.ZipCoder$UTF8ZipCoder.isUTF8()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}
