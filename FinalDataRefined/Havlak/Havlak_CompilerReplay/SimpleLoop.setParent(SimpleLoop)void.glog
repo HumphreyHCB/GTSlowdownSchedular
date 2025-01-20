@@ -1,0 +1,255 @@
+{
+  "identifier": "HotSpotCompilation-147[havlak.SimpleLoop.setParent(SimpleLoop)]",
+  "method": "havlak.SimpleLoop.setParent(havlak.SimpleLoop)void",
+  "entryBCI": -1,
+  "codeSignature": "745dbf77b6e761c87bea77e849ecd1ea9a35258225eb210faa3389f69d6bd884",
+  "graphSignature": "44290ed3fd0f3fea47dbeecbe2c0d5b00440f94151585400f8bcbd28f24ea2f8",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.SimpleLoop.setParent(havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.setParent(havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.SimpleLoop.addChildLoop(havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.add(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 298,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 0.5385666861941028
+        },
+        {
+          "type": "Lsom/IdentitySet;",
+          "probability": 0.4614333138058973
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 0.03846904901386448
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.IdentitySet.contains(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "som.IdentitySet$$Lambda/0x00007ff20c00a628.<init>(Object)",
+    "method": "som.IdentitySet$$Lambda/0x00007ff20c00a628.<init>(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.hasSome(som.TestInterface)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.hasSome(som.TestInterface)boolean",
+    "isMature": true,
+    "compilerIRSize": 198,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.5347336177661087
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/IdentitySet$$Lambda.0x00007ff20c00a628;",
+          "probability": 0.5184575593698566
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$4$$Lambda.0x00007ff20c00a408;",
+          "probability": 0.333176581236774
+        },
+        {
+          "type": "Lsom/Set$$Lambda.0x00007ff20c009938;",
+          "probability": 0.14836585939336938
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 25,
+      "branchTakenProbability": 0.9630848812602869
+    }]
+  },
+  {
+    "stableLambdaName": "som.IdentitySet$$Lambda/0x00007ff20c00a628.test(Object)",
+    "method": "som.IdentitySet$$Lambda/0x00007ff20c00a628.test(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.IdentitySet.lambda$contains$0(java.lang.Object, java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9996094512790471
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-152[som.Dictionary.<init>(int)]",
+  "method": "som.Dictionary.<init>(int)void",
+  "entryBCI": -1,
+  "codeSignature": "e0fb12dc7727ef557f791c9a40f9da28bf524409b9fbed74da18eda510b35657",
+  "graphSignature": "ac1f9746e0697ec8461d4f593d5beb30cb9dbc79267c0fab1e4421015ecfff3a",
+  "result": true,
+  "profiles": [{
+    "method": "som.Dictionary.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

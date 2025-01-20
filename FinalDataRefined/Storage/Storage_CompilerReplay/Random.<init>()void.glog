@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-136[som.Random.<init>()]",
+  "method": "som.Random.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "c5a344175f544ff38bc757beb0970ef7acb89164922c8c4a2a3e05f14504815a",
+  "graphSignature": "f14f526f109a5f26e0ccc6762b20156cadba28072b17820f88a8ebef30e78f19",
+  "result": true,
+  "profiles": [{
+    "method": "som.Random.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Random.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-200[havlak.LoopStructureGraph$2.<init>(LoopStructureGraph, int, SimpleLoop)]",
+  "method": "havlak.LoopStructureGraph$2.<init>(havlak.LoopStructureGraph, int, havlak.SimpleLoop)void",
+  "entryBCI": -1,
+  "codeSignature": "97fd1e8ed9a59d5862b12ad747b7ea44b2b8844c0aeb0cd8e44667667ca84402",
+  "graphSignature": "89e6f493b1fe6c70bf61789a031f11ef4c97d85bfbe0c563496281cf360af66f",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.LoopStructureGraph$2.<init>(havlak.LoopStructureGraph, int, havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.LoopStructureGraph$2.<init>(havlak.LoopStructureGraph, int, havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

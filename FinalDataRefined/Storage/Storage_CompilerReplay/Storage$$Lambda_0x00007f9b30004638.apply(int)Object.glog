@@ -1,0 +1,102 @@
+{
+  "identifier": "HotSpotCompilation-87[Storage$$Lambda/0x00007f9b30004638.apply(int)]",
+  "method": "Storage$$Lambda/0x00007f9b30004638.apply(int)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "51c99c8aec11cad79202ff58c3b03fa30b9cdaac1cfdddb972a760b102c0718b",
+  "graphSignature": "19d3003247eda797e66e1d8b83269727eb03f59b5282b24670c291a61bc98fcc",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "Storage$$Lambda/0x00007f9b30004638.apply(int)",
+    "method": "Storage$$Lambda/0x00007f9b30004638.apply(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "Storage$$Lambda/0x00007f9b30004638.apply(int)",
+    "method": "Storage$$Lambda/0x00007f9b30004638.apply(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Storage.lambda$buildTreeDepth$0(int, som.Random, int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Storage.buildTreeDepth(int, som.Random)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 847,
+    "data": [{
+      "bci": 12,
+      "branchTakenProbability": 0.24975590704940442
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$lFgucZzpc71gfY48KtJh01.linkToTargetMethod(Object, int, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$MH/0x00007f9b30007c00.linkToTargetMethod(java.lang.Object, int, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$XOx48OeQEUKzBfim0BpqXD.newInvokeSpecial(Object, Object, int, Object)",
+    "method": "java.lang.invoke.LambdaForm$DMH/0x00007f9b30007400.newInvokeSpecial(java.lang.Object, java.lang.Object, int, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

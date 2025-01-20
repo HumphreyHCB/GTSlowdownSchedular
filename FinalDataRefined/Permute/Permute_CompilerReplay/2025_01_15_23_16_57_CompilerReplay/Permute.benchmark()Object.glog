@@ -1,0 +1,81 @@
+{
+  "identifier": "HotSpotCompilation-118[Permute.benchmark()]",
+  "method": "Permute.benchmark()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "480a77bb1a583bfe556a06121fcefe92d02d184c96618ee0fa3a6ee7235d5765",
+  "graphSignature": "131e300140063ac11daea96f92d6c113b2afd185bbed88cfe39d8cd02184c753",
+  "result": true,
+  "profiles": [{
+    "method": "Permute.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Permute.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Permute.permute(int)void",
+    "isMature": true,
+    "compilerIRSize": 118,
+    "data": [{
+      "bci": 11,
+      "branchTakenProbability": 0.5821128685803554
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "branchTakenProbability": 0.41854097398787404
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Permute.swap(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

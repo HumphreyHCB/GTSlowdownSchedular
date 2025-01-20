@@ -1,0 +1,129 @@
+{
+  "identifier": "HotSpotCompilation-224[deltablue.BinaryConstraint.chooseMethod(int)]",
+  "method": "deltablue.BinaryConstraint.chooseMethod(int)deltablue.Direction",
+  "entryBCI": -1,
+  "codeSignature": "5bfe0c6b392731848763e07bb14433ebce2c5dd2bb20bc60f3f9a116d178bf35",
+  "graphSignature": "81188ea6b28f42710b4579e7bd59bbf8056b2caad40dc6b27daa8c9c782355d1",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.BinaryConstraint.chooseMethod(int)deltablue.Direction",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.BinaryConstraint.chooseMethod(int)deltablue.Direction",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.6667100637937768
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 65,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 69,
+      "branchTakenProbability": 0.5000976371802383
+    },
+    {
+      "bci": 76,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 80,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 91,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 94,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 97,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 133,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 136,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 139,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 189,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 192,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 195,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "deltablue.Strength.weaker(deltablue.Strength)boolean",
+    "isMature": true,
+    "compilerIRSize": 14,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.49990236281976175
+    }]
+  },
+  {
+    "method": "deltablue.Strength.stronger(deltablue.Strength)boolean",
+    "isMature": true,
+    "compilerIRSize": 15,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}
