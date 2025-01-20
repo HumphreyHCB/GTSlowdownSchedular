@@ -26,7 +26,7 @@ public class ConsistencyTest {
         "Storage",
     };
     public static void testAWFYSuite() {
-        int iterations = 50;  // or another value you prefer
+        int iterations = 500;  // or another value you prefer
         boolean lowFootPrint = true;
 
         
@@ -53,9 +53,10 @@ public class ConsistencyTest {
     }
 
     public static void main(String[] args) {
-        //testBenchmark("Towers", 50);
-       // testBenchmark("Richards", 50);
-        testAWFYSuite();
+    //testBenchmark("CD", 50);
+    //    testBenchmark("Havlak", 500);
+      testBenchmark("Bounce", 500);
+    //  testAWFYSuite();
     //     int iterations = 100;
     //     boolean lowFootPrint = true;
     //     String benchmark = "Json";
@@ -85,7 +86,7 @@ public class ConsistencyTest {
             CompilerReplayRunner.run(benchmark, iterations, ID);
 
             // Run marker phase
-            MarkerRunner.run(benchmark, iterations, ID, true);
+            MarkerRunner.run(benchmark, iterations, ID, lowFootPrint);
 
             // Assuming a similar naming convention for log files as in the main method
             String logFilePath = "Tests/TestResults/" + ID + "_" + benchmark + ".txt";

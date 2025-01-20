@@ -84,7 +84,7 @@ public class CompilerReplayRunner {
 
 
         command.add("-cp");
-        command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src/benchmarks_debug.jar");
+        command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
         // Add benchmark and inner benchmark amount
         command.add("Harness");
         command.add(benchmark); // e.g. "Queens"

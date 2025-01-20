@@ -3,12 +3,15 @@ public class GodRunner {
     public static void main(String[] args) {
         //String benchmark = "Sieve";
         int iterations = 500;
-        AWFY();
+        //AWFY();
+        new GTSchedular("Havlak", iterations, true, false, 2);
 
-        //new GTSchedular("Towers", iterations, true, true, 2);
-        //new GTSchedular("Queens", iterations, true, true, 2);
-        //new GTSchedular("Richards", iterations, true, true, 2);
-        //new GTSchedular("Permute", iterations, true, true, 2);
+       //new GTSchedular("List", iterations, true, true, 2);
+
+        //new GTSchedular("NBody", iterations, true, true, 2);
+        //new GTSchedular("Bounce", iterations, true, true, 2);
+        //new GTSchedular("List", iterations, true, true, 2);
+        //new GTSchedular("DeltaBlue", iterations, true, true, 2);
       
 
         
@@ -18,17 +21,17 @@ public class GodRunner {
     public static void AWFY() {
         int iterations = 500;
 
-        //new GTSchedular("Towers", iterations, true, true, 2);
-        //new GTSchedular("Permute", iterations, true, true, 2);
-        //new GTSchedular("NBody", iterations, true, true, 2);
-        //new GTSchedular("Bounce", iterations, true, true, 2);
-        //new GTSchedular("Richards", iterations, true, true, 2);
+       new GTSchedular("Towers", iterations, true, true, 2);
+       new GTSchedular("Permute", iterations, true, true, 2);
+       new GTSchedular("NBody", iterations, true, true, 2);
+       new GTSchedular("Bounce", iterations, true, true, 2);
+        new GTSchedular("Richards", iterations, true, true, 2);
         
 
-        //new GTSchedular("List", iterations, true, true, 2);
-        //new GTSchedular("Mandelbrot", iterations, true, true, 2);
-        //new GTSchedular("Permute", iterations, true, true, 2);
-        //new GTSchedular("Queens", iterations, true, true, 2);
+        new GTSchedular("List", iterations, true, true, 2);
+        new GTSchedular("Mandelbrot", iterations, true, true, 2);
+        new GTSchedular("Permute", iterations, true, true, 2);
+        new GTSchedular("Queens", iterations, true, true, 2);
         new GTSchedular("Storage", iterations, true, true, 2);
         new GTSchedular("CD", iterations, true, true, 2);
         new GTSchedular("DeltaBlue", iterations, true, true, 2);
