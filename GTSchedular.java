@@ -45,7 +45,8 @@ public class GTSchedular {
         MarkerRunner.run(benchmark, iterations, ID, compilerReplay);
         // ID = "2025_01_07_22_40_12";
         //DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
-        DiviningRunnerMultiplexed.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        //DiviningRunnerMultiplexed.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        DiviningRunnerMultiplexed.runComplex(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
         mergeFinalJsonFiles(benchmark, ID);
