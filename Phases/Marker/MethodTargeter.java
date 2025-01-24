@@ -9,51 +9,46 @@ import java.util.Map.Entry;
 /**
  * MethodTargeter
  */
+/**
+ * MethodTargeter
+ */
 public class MethodTargeter {
 
     static double SIGNIFICANT_THRESHOLD = 85.0;
 
     public static List<String> findSignificantMethod(Map<String, Double> methods) {
-        // Calculate the total execution time
+        
+        // 1. Calculate total execution time
         double totalExecutionTime = 0.0;
         for (double time : methods.values()) {
             totalExecutionTime += time;
         }
-    
-        // Determine the dynamic threshold based on the given percentage of the total execution time
-        double threshold = (SIGNIFICANT_THRESHOLD / 100.0) * totalExecutionTime;
-    
-        // Sort the methods map by value in descending order without using streams
-        List<Entry<String, Double>> methodList = new ArrayList<>(methods.entrySet());
-        methodList.sort((e1, e2) -> Double.compare(e2.getValue(), e1.getValue()));
-    
-        List<String> significantMethods = new ArrayList<>();
-        double sum = 0.0;
-    
-        // Iterate over the sorted methods and add method names until the sum is at least the calculated threshold
-        // for (Entry<String, Double> entry : methodList) {
-        //     significantMethods.add(entry.getKey());
-        //     sum += entry.getValue();
-    
-        //     if (sum >= threshold) {
-        //         break;
-        //     }
-        // }
 
-        for (Entry<String, Double> entry : methodList) {
-            if (entry.getValue() < 3) {
+        // 2. Remove unwanted methods:
+        //    - "Interpreter"
+        //    - Methods starting with "G1"
+        methods.entrySet().removeIf(e -> e.getKey().equals("Interpreter") || e.getKey().startsWith("G1"));
+
+        // 3. Determine the threshold
+        double threshold = (SIGNIFICANT_THRESHOLD / 100.0) * totalExecutionTime;
+
+        // 4. Sort the remaining methods in descending order by their runtime
+        List<Map.Entry<String, Double>> sortedMethods = new ArrayList<>(methods.entrySet());
+        sortedMethods.sort((e1, e2) -> Double.compare(e2.getValue(), e1.getValue()));
+
+        // 5. Accumulate until we reach or exceed the threshold
+        double sum = 0.0;
+        List<String> significantMethods = new ArrayList<>();
+        for (Map.Entry<String, Double> entry : sortedMethods) {
+            sum += entry.getValue();
+            significantMethods.add(entry.getKey());
+            if (sum >= threshold) {
                 break;
             }
-
-            significantMethods.add(entry.getKey());
-            sum += entry.getValue();
-    
         }
 
-        // Remove "Interpreter" from methodList
-        methodList.removeIf(entry -> entry.getKey().equals("Interpreter"));
-        methodList.removeIf(entry -> entry.getKey().startsWith("G1"));
-    
         return significantMethods;
     }
 }
+
+
