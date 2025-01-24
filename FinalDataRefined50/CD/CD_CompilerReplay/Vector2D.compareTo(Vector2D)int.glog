@@ -1,0 +1,56 @@
+{
+  "identifier": "HotSpotCompilation-119[cd.Vector2D.compareTo(Vector2D)]",
+  "method": "cd.Vector2D.compareTo(cd.Vector2D)int",
+  "entryBCI": -1,
+  "codeSignature": "8e477cb00209b4b206d60c9569f514c7af8f052d605fa28b30465747f9f33bd6",
+  "graphSignature": "d29363312819e515b40c7d6bb2f720ea04050809190e13aeff025b3fe3aa6c05",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector2D.compareTo(cd.Vector2D)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector2D.compareTo(cd.Vector2D)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": 0.9340884679230544
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Vector2D.compareNumbers(double, double)int",
+    "isMature": true,
+    "compilerIRSize": 23,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.4799843780511619
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 0.8738812042310822
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

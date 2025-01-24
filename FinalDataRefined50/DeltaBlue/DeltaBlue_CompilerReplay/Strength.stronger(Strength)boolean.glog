@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-139[deltablue.Strength.stronger(Strength)]",
+  "method": "deltablue.Strength.stronger(deltablue.Strength)boolean",
+  "entryBCI": -1,
+  "codeSignature": "4ae2778416dbdd6e359732e09f27e29161627bd057623791ff5969b11d76b27d",
+  "graphSignature": "5d68a1170767090f77f712b9fcc61fddba90ad13cf877a66b6a1ed718db849ec",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Strength.stronger(deltablue.Strength)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Strength.stronger(deltablue.Strength)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

@@ -1,0 +1,99 @@
+{
+  "identifier": "HotSpotCompilation-103[json.JsonPureStringParser.isDigit()]",
+  "method": "json.JsonPureStringParser.isDigit()boolean",
+  "entryBCI": -1,
+  "codeSignature": "095dc5e829f99fb7bf11f62947a24bf7b91dd7396bab1d14f49c9289da65b8c2",
+  "graphSignature": "20d42d1298f5546083b83455cf640683fa19a646f1e596d5386af3471f04778d",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.isDigit()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.isDigit()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.039453125
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": 0.12078080520536803
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.18640148011100832
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 0.08527572484366117
+    },
+    {
+      "bci": 54,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 57,
+      "branchTakenProbability": 0.044748290863890615
+    },
+    {
+      "bci": 66,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 69,
+      "branchTakenProbability": 0.2683799609629148
+    },
+    {
+      "bci": 78,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 81,
+      "branchTakenProbability": 0.11249444197421075
+    },
+    {
+      "bci": 90,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 93,
+      "branchTakenProbability": 0.1407815631262525
+    },
+    {
+      "bci": 102,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 105,
+      "branchTakenProbability": 0.12244897959183673
+    },
+    {
+      "bci": 114,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 117,
+      "branchTakenProbability": 0.9269102990033222
+    }]
+  }]
+}

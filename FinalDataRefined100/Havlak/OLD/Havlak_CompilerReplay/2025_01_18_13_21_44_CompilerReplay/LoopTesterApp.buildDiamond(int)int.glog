@@ -1,0 +1,91 @@
+{
+  "identifier": "HotSpotCompilation-248[havlak.LoopTesterApp.buildDiamond(int)]",
+  "method": "havlak.LoopTesterApp.buildDiamond(int)int",
+  "entryBCI": -1,
+  "codeSignature": "12e46914ad3a15898c7c4d39356ef9c88997ea61163e41c9fc34ed351167772e",
+  "graphSignature": "116e16dc474e0f37d2a97f65df1329dd97432ad31f213da8f87a03ca8b2ad457",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.LoopTesterApp.buildDiamond(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.LoopTesterApp.buildDiamond(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 66,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlockEdge.<init>(havlak.ControlFlowGraph, int, int)void",
+    "isMature": false,
+    "compilerIRSize": 374,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.addOutEdge(havlak.BasicBlock)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.addInEdge(havlak.BasicBlock)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.ControlFlowGraph.addEdge(havlak.BasicBlockEdge)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

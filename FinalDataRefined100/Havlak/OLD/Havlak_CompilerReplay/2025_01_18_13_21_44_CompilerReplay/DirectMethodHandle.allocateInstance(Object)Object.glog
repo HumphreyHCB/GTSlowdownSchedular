@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-105[java.lang.invoke.DirectMethodHandle.allocateInstance(Object)]",
+  "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "0bb0345f558f802bbca02512c3b71705a082780a7c24c2400b8a44ac239ab989",
+  "graphSignature": "c25436cb3185768f7240f676067cc3025df29c29a68545106e653232f513f39c",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

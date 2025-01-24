@@ -1,0 +1,203 @@
+{
+  "identifier": "HotSpotCompilation-140[cd.CollisionDetector.isInVoxel(Vector2D, Motion)]",
+  "method": "cd.CollisionDetector.isInVoxel(cd.Vector2D, cd.Motion)boolean",
+  "entryBCI": -1,
+  "codeSignature": "7a3cd09ca379a53488ddd31906e78e6f0debd74c9ed725bb65168ff5d18907ac",
+  "graphSignature": "b4b76765bfe3bedb2def2e17f9020b500fd9eb4b9c7683bf804467fc2d8fee2d",
+  "result": true,
+  "profiles": [{
+    "method": "cd.CollisionDetector.isInVoxel(cd.Vector2D, cd.Motion)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CollisionDetector.isInVoxel(cd.Vector2D, cd.Motion)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.2804621848739496
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "branchTakenProbability": 0.06076642335766423
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "branchTakenProbability": 0.9991257042937634
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 69,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 75,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 79,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 86,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 92,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 102,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 141,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 189,
+      "branchTakenProbability": 0.42547399124939234
+    },
+    {
+      "bci": 208,
+      "branchTakenProbability": 0.7478852698104035
+    },
+    {
+      "bci": 219,
+      "branchTakenProbability": 0.5456999614346317
+    },
+    {
+      "bci": 233,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 240,
+      "branchTakenProbability": 0.46859903381642515
+    },
+    {
+      "bci": 247,
+      "branchTakenProbability": 0.6888429752066115
+    },
+    {
+      "bci": 254,
+      "branchTakenProbability": 0.739175614825078
+    },
+    {
+      "bci": 261,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 268,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 275,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 282,
+      "branchTakenProbability": 0.8042539049518113
+    },
+    {
+      "bci": 293,
+      "branchTakenProbability": 0.200339558573854
+    },
+    {
+      "bci": 307,
+      "branchTakenProbability": 0.7494692144373672
+    },
+    {
+      "bci": 314,
+      "branchTakenProbability": 0.25658885542168675
+    },
+    {
+      "bci": 321,
+      "branchTakenProbability": 0.6166118004558115
+    },
+    {
+      "bci": 328,
+      "branchTakenProbability": 0.473428273706148
+    },
+    {
+      "bci": 335,
+      "branchTakenProbability": 0.09960422163588391
+    },
+    {
+      "bci": 342,
+      "branchTakenProbability": 0.500366568914956
+    },
+    {
+      "bci": 349,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 356,
+      "branchTakenProbability": 0.21445929526123936
+    },
+    {
+      "bci": 363,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 371,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 379,
+      "branchTakenProbability": 0.5204949729311679
+    },
+    {
+      "bci": 387,
+      "branchTakenProbability": 0.42338709677419356
+    },
+    {
+      "bci": 395,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 403,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 411,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

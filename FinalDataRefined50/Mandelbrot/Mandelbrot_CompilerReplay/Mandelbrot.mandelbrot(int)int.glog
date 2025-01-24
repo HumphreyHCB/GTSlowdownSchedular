@@ -1,0 +1,47 @@
+{
+  "identifier": "HotSpotCompilation-118[Mandelbrot.mandelbrot(int)]",
+  "method": "Mandelbrot.mandelbrot(int)int",
+  "entryBCI": -1,
+  "codeSignature": "01417539473537a5980fd086fa68bbee019b3ae2b6f6457b9a8bf965aa7d7713",
+  "graphSignature": "86aee05995d3fc72db542a816e84959ecf31cb43d32965372347155668c99a0d",
+  "result": true,
+  "profiles": [{
+    "method": "Mandelbrot.mandelbrot(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Mandelbrot.mandelbrot(int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 13,
+      "branchTakenProbability": 0.2222222222222222
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.0011098779134295228
+    },
+    {
+      "bci": 75,
+      "branchTakenProbability": 0.17555512144299018
+    },
+    {
+      "bci": 82,
+      "branchTakenProbability": 2.764394597583129E-4
+    },
+    {
+      "bci": 132,
+      "branchTakenProbability": 0.7870037527157812
+    },
+    {
+      "bci": 161,
+      "branchTakenProbability": 0.8759029449898129
+    },
+    {
+      "bci": 181,
+      "branchTakenProbability": 0.9987312328187777
+    }]
+  }]
+}

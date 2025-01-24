@@ -1,0 +1,156 @@
+{
+  "identifier": "HotSpotCompilation-122[richards.Scheduler$IdleProcessFunction.apply(Packet, RBObject)]",
+  "method": "richards.Scheduler$IdleProcessFunction.apply(richards.Packet, richards.RBObject)richards.TaskControlBlock",
+  "entryBCI": -1,
+  "codeSignature": "2a92178784cad3adad5403b4cc6643533122ec1e155e54cf1302884500a3ca18",
+  "graphSignature": "30574d23c30593c04c28fe5f845a6f1271c24a501c279bfff82ff94ba31b4106",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler$IdleProcessFunction.apply(richards.Packet, richards.RBObject)richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler$IdleProcessFunction.apply(richards.Packet, richards.RBObject)richards.TaskControlBlock",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "branchTakenProbability": 0.9999023532858119
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 38,
+      "branchTakenProbability": 0.498046875
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 47,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 62,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 66,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 70,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 78,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.IdleTaskDataRecord.setCount(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.IdleTaskDataRecord.setControl(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.release(int)richards.TaskControlBlock",
+    "isMature": true,
+    "compilerIRSize": 36,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.findTask(int)richards.TaskControlBlock",
+    "isMature": true,
+    "compilerIRSize": 21,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "richards.Scheduler.holdSelf()richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

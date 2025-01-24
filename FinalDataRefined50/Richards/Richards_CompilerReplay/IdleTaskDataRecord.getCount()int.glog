@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-94[richards.IdleTaskDataRecord.getCount()]",
+  "method": "richards.IdleTaskDataRecord.getCount()int",
+  "entryBCI": -1,
+  "codeSignature": "70abad45265a700bd12d8a287cc811f1437e22580839a03fbb16809c42d78ec2",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "richards.IdleTaskDataRecord.getCount()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.IdleTaskDataRecord.getCount()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

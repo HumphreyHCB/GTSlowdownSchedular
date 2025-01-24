@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-201[richards.Scheduler.<init>()]",
+  "method": "richards.Scheduler.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "8ca1e77528ee8457bcfcabad74e44e50e91ba3d2f9d01e7b981711bae2f8bab5",
+  "graphSignature": "a49e05a6ba022a7a47822b0302300668e50fe641226cf5ee232748c191173f4b",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.fill(java.lang.Object[], java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 171,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.14285714285714285
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

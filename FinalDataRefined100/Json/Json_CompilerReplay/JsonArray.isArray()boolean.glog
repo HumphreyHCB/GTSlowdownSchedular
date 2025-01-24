@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-166[json.JsonArray.isArray()]",
+  "method": "json.JsonArray.isArray()boolean",
+  "entryBCI": -1,
+  "codeSignature": "c1a604129d16f5b43958b6f609c867c4a8ef19f2823b162d9929431c7ae67570",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonArray.isArray()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonArray.isArray()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

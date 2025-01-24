@@ -1,0 +1,176 @@
+{
+  "identifier": "HotSpotCompilation-135[jdk.internal.misc.InternalLock.unlock()]",
+  "method": "jdk.internal.misc.InternalLock.unlock()void",
+  "entryBCI": -1,
+  "codeSignature": "302c7da7acdadcb893f1f5c79c33e59ae8543771d01526aa8a51f26549dccc0e",
+  "graphSignature": "86361414adb4a9e4436ae72ae48c068d8f05d73b49e441bd5f4d0c799736d10b",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.misc.InternalLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.misc.InternalLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 3.8102495713469235E-4
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 35,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 26,
+      "branchTakenProbability": 3.8102495713469235E-4
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 3.8102495713469235E-4
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.signalNext(java.util.concurrent.locks.AbstractQueuedSynchronizer$Node)void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 0.9919954259576901
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.35714285714285715
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.9259259259259259
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer$Node.getAndUnsetStatus(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.misc.Unsafe.getAndBitwiseAndInt(java.lang.Object, long, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": -1.0
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.LockSupport.unpark(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Thread.isVirtual()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
+  }]
+}

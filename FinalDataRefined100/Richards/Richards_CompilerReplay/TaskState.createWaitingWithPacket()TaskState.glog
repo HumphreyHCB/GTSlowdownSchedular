@@ -1,0 +1,44 @@
+{
+  "identifier": "HotSpotCompilation-185[richards.TaskState.createWaitingWithPacket()]",
+  "method": "richards.TaskState.createWaitingWithPacket()richards.TaskState",
+  "entryBCI": -1,
+  "codeSignature": "65e0f90d503df45249b036efaa0df30815028495c2b1abc15cec8f386a51d40a",
+  "graphSignature": "d0cea64ec889be5d5b4aab6c84ac4616d6c748517f72931be68bebbfe44f6a05",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskState.createWaitingWithPacket()richards.TaskState",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.createWaitingWithPacket()richards.TaskState",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.waitingWithPacket()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

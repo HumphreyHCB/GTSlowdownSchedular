@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-119[Permute.verifyResult(Object)]",
+  "method": "Permute.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "0bf8737a94e4dfbaa3ba56d2c2e8f3c3337215c8e027fb37505c0182c27bbff5",
+  "graphSignature": "5dad484624d0c017401584cf79b1bfd79b8330c503d6e6abc13f1d9beecdb8d0",
+  "result": true,
+  "profiles": [{
+    "method": "Permute.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Permute.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

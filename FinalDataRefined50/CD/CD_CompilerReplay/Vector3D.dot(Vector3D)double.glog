@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-117[cd.Vector3D.dot(Vector3D)]",
+  "method": "cd.Vector3D.dot(cd.Vector3D)double",
+  "entryBCI": -1,
+  "codeSignature": "6b0eabfdeb6c026d9f514423f9413a2d5035a020de7b35c0cea19e69650aa26b",
+  "graphSignature": "e7216daeac169cafec529a0ec038f7d01fd71b88e462260d398964b103a48858",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector3D.dot(cd.Vector3D)double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector3D.dot(cd.Vector3D)double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

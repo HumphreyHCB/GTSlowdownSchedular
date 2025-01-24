@@ -1,0 +1,35 @@
+{
+  "identifier": "HotSpotCompilation-85[cd.CallSign.compareTo(CallSign)]",
+  "method": "cd.CallSign.compareTo(cd.CallSign)int",
+  "entryBCI": -1,
+  "codeSignature": "4bb76b768c2ecacfca0037cdb72ef5565f64ed08fd0c8a435ca975ade999f725",
+  "graphSignature": "948f4f4b0418f37d80fa6c553bbcbf84993540ab8662c7672b8e6a50ca4e685b",
+  "result": true,
+  "profiles": [{
+    "method": "cd.CallSign.compareTo(cd.CallSign)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CallSign.compareTo(cd.CallSign)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.9418025583439117
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "branchTakenProbability": 0.752514256091239
+    }]
+  }]
+}

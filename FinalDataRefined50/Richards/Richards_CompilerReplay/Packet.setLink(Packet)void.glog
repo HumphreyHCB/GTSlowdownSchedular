@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-81[richards.Packet.setLink(Packet)]",
+  "method": "richards.Packet.setLink(richards.Packet)void",
+  "entryBCI": -1,
+  "codeSignature": "fa7241c9c8d068ad5f19867c9732f4c73d8fe4e167fbd75cf3916f2fa8147e22",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Packet.setLink(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Packet.setLink(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

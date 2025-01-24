@@ -1,0 +1,25 @@
+{
+  "identifier": "HotSpotCompilation-203[deltablue.Planner$$Lambda/0x00007f795c00a900.<init>(Vector)]",
+  "method": "deltablue.Planner$$Lambda/0x00007f795c00a900.<init>(som.Vector)void",
+  "entryBCI": -1,
+  "codeSignature": "115764269fd5c436f91fcf6606261ecbbf85ab42e1bc868a47b267ee90f0656d",
+  "graphSignature": "253fe7deecfb5aebb960b441d60ae51f63e4117866e06a54704f2e03cbbd388e",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007f795c00a900.<init>(Vector)",
+    "method": "deltablue.Planner$$Lambda/0x00007f795c00a900.<init>(som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007f795c00a900.<init>(Vector)",
+    "method": "deltablue.Planner$$Lambda/0x00007f795c00a900.<init>(som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

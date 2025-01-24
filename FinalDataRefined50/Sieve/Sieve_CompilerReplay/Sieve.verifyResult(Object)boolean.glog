@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-94[Sieve.verifyResult(Object)]",
+  "method": "Sieve.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "e1f30654fd41f018595de47b06a3690dd90a7eaa79dba8280be839d3283a7235",
+  "graphSignature": "5dad484624d0c017401584cf79b1bfd79b8330c503d6e6abc13f1d9beecdb8d0",
+  "result": true,
+  "profiles": [{
+    "method": "Sieve.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Sieve.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

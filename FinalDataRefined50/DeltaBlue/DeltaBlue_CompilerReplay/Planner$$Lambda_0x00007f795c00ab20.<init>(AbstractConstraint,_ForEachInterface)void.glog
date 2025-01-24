@@ -1,0 +1,25 @@
+{
+  "identifier": "HotSpotCompilation-205[deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(AbstractConstraint, ForEachInterface)]",
+  "method": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(deltablue.AbstractConstraint, som.ForEachInterface)void",
+  "entryBCI": -1,
+  "codeSignature": "daa26c366ef6c58edd793c743fb37e69d9e05eda8158baa86740d869c2d6ea1a",
+  "graphSignature": "eb5d647d53c9129c8e60bbd473e389385d8049575ca731aaba90c3bc267921fd",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(AbstractConstraint, ForEachInterface)",
+    "method": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(deltablue.AbstractConstraint, som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(AbstractConstraint, ForEachInterface)",
+    "method": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(deltablue.AbstractConstraint, som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

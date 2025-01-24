@@ -1,0 +1,132 @@
+{
+  "identifier": "HotSpotCompilation-177[som.Dictionary.transferEntries(Dictionary$Entry[])]",
+  "method": "som.Dictionary.transferEntries(som.Dictionary$Entry[])void",
+  "entryBCI": -1,
+  "codeSignature": "cb4d02f088d0f7d63330798442b5489a79fd11fa5ec344c2a5cd9c871e1e75f4",
+  "graphSignature": "6b8b3f790856df75d29fe7095c5e5abe8c4d2c6d551c089ff90a202ebbdca1c0",
+  "result": true,
+  "profiles": [{
+    "method": "som.Dictionary.transferEntries(som.Dictionary$Entry[])void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.transferEntries(som.Dictionary$Entry[])void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 0.0011705033164260631
+    },
+    {
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "branchTakenProbability": 0.001171875
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 44,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 52,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary.splitBucket(som.Dictionary$Entry[], int, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 17,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 47,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 59,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 73,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 82,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 92,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 108,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 111,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 117,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 130,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

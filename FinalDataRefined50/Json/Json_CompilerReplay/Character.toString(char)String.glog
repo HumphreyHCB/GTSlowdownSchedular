@@ -1,0 +1,71 @@
+{
+  "identifier": "HotSpotCompilation-87[java.lang.Character.toString(char)]",
+  "method": "java.lang.Character.toString(char)java.lang.String",
+  "entryBCI": -1,
+  "codeSignature": "d4da9efcfd9c73ca3dd0e795bff8053a61f02ad860427e6febf5441bf14350f5",
+  "graphSignature": "01345a1e4b07dcdef44b2799a5f5a6a0b3b0abcfbf66395802224d544303d8ec",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Character.toString(char)java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Character.toString(char)java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.valueOf(char)java.lang.String",
+    "isMature": true,
+    "compilerIRSize": 92,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.<init>(byte[], byte)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

@@ -1,0 +1,620 @@
+{
+  "identifier": "HotSpotCompilation-105[json.JsonPureStringParser.readArray()]",
+  "method": "json.JsonPureStringParser.readArray()json.JsonArray",
+  "entryBCI": -1,
+  "codeSignature": "b7f541005be6212b056c03091acd8de8c372ebc512c855347082be975ca62095",
+  "graphSignature": "f5409de11cbdd789d82b6f6ff961f695f25eb89978e4639037ca0bac9ba79b4a",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.readArray()json.JsonArray",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.readArray()json.JsonArray",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "branchTakenProbability": 0.9985177865612648
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 50,
+      "branchTakenProbability": 0.8004541864139021
+    },
+    {
+      "bci": 59,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.readChar(java.lang.String)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.5918095238095238
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.read()void",
+    "isMature": true,
+    "compilerIRSize": 177,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "branchTakenProbability": 1.9047619047619048E-4
+    },
+    {
+      "bci": 60,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Character.toString(char)java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.length()int",
+    "isMature": false,
+    "compilerIRSize": 12,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.String.charAt(int)char",
+    "isMature": true,
+    "compilerIRSize": 34,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.charAt(byte[], int)char",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.checkIndex(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.valueOf(char)java.lang.String",
+    "isMature": true,
+    "compilerIRSize": 92,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.<init>(byte[], byte)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "json.JsonArray.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": []
+  },
+  {
+    "method": "json.JsonValue.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.skipWhiteSpace()void",
+    "isMature": true,
+    "compilerIRSize": 161,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.isWhiteSpace()boolean",
+    "isMature": true,
+    "compilerIRSize": 160,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "json.JsonPureStringParser.readValue()json.JsonValue",
+    "isMature": true,
+    "compilerIRSize": 596,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "switchProbabilities": [0.3987502440929506,
+      0.0019527436047646943,
+      0.004100761570005858,
+      0.07615700058582309,
+      0.07264206209724663,
+      0.0039054872095293887,
+      0.009177894942394065,
+      0.008787346221441126,
+      0.015426674477641086,
+      0.005858230814294083,
+      0.004100761570005858,
+      0.006053505174770553,
+      0.1628588166373755,
+      9.763718023823472E-4,
+      0.17965241163835188,
+      0.0050771333723882055,
+      0.04452255418863503,
+      0.0]
+    },
+    {
+      "bci": 159,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 162,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 173,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 176,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 187,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 190,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 201,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 204,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 215,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 218,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 229,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 232,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 243,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 246,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 258,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 261,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 273,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 276,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 288,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 291,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 303,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 306,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 318,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 321,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 333,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 336,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 348,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 351,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 363,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 366,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 378,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 381,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 393,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 396,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 403,
+      "switchProbabilities": [0.17965241163835188,
+      0.0050771333723882055,
+      9.763718023823472E-4,
+      0.3987502440929506,
+      0.1628588166373755,
+      0.04452255418863503,
+      0.0019527436047646943,
+      0.004100761570005858,
+      0.07615700058582309,
+      0.07264206209724663,
+      0.0039054872095293887,
+      0.009177894942394065,
+      0.008787346221441126,
+      0.015426674477641086,
+      0.005858230814294083,
+      0.004100761570005858,
+      0.006053505174770553,
+      0.0]
+    },
+    {
+      "bci": 485,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 490,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 495,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 500,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 505,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 510,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 515,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonArray.add(json.JsonValue)json.JsonArray",
+    "isMature": true,
+    "compilerIRSize": 118,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9994141769185706
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

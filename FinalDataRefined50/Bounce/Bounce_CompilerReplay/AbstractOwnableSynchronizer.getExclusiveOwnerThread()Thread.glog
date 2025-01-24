@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-84[java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread()]",
+  "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread()java.lang.Thread",
+  "entryBCI": -1,
+  "codeSignature": "7a47eee746aa0a49cc947864f6d859b9da939f41d5f11fb9bcc4472e89976a4e",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread()java.lang.Thread",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread()java.lang.Thread",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

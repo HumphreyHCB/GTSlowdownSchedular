@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-197[java.lang.Math.max(int, int)]",
+  "method": "java.lang.Math.max(int, int)int",
+  "entryBCI": -1,
+  "codeSignature": "67b22c1295eeb7e1911e955a4efdd76665dd1ffc2ebc4e43766332e3bd26ecfd",
+  "graphSignature": "e207042958b80c4c546097e7a1062b19bfed702462f8d52fe0f843fc639dd518",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Math.max(int, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Math.max(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.32890625
+    }]
+  }]
+}

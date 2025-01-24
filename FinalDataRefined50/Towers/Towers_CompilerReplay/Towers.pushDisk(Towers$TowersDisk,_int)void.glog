@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-81[Towers.pushDisk(Towers$TowersDisk, int)]",
+  "method": "Towers.pushDisk(Towers$TowersDisk, int)void",
+  "entryBCI": -1,
+  "codeSignature": "e447b229675b5d1fefb38a3f14193fd7efa049449b481b8d198698a4d7f70ec1",
+  "graphSignature": "b85c3b6e0dc260ecb25eb3cde99528492059c16e907c6ca2a734525bbd4c69d7",
+  "result": true,
+  "profiles": [{
+    "method": "Towers.pushDisk(Towers$TowersDisk, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.pushDisk(Towers$TowersDisk, int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.011328125
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

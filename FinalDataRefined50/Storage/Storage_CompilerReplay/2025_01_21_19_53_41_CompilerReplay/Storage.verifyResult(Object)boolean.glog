@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-137[Storage.verifyResult(Object)]",
+  "method": "Storage.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "4cbf07c7ce850227f2eaa98f74a28dcb7c15113027936b545f7e7c8ec089578c",
+  "graphSignature": "5dad484624d0c017401584cf79b1bfd79b8330c503d6e6abc13f1d9beecdb8d0",
+  "result": true,
+  "profiles": [{
+    "method": "Storage.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Storage.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

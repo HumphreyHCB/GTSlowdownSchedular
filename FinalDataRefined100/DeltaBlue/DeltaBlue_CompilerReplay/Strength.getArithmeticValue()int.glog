@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-101[deltablue.Strength.getArithmeticValue()]",
+  "method": "deltablue.Strength.getArithmeticValue()int",
+  "entryBCI": -1,
+  "codeSignature": "b7461740b91ed497820783d07ea9e1655c040582743120cc979868f6aad7bc25",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Strength.getArithmeticValue()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Strength.getArithmeticValue()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

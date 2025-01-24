@@ -1,0 +1,20 @@
+{"havlak.HavlakLoopFinder$1.apply": {
+  "26 (Vtune Block 108)": 3,
+  "8 (Vtune Block 100)": 8,
+  "11 (Vtune Block 102)": 4,
+  "7 (Vtune Block 99)": 14,
+  "14 (Vtune Block 104)": 7,
+  "3 (Vtune Block 97)": 4,
+  "15 (Vtune Block 105)": 6,
+  "Backend Blocks": {
+    "26005 (Vtune Block 117)": 3,
+    "26004 (Vtune Block 112)": 4
+  },
+  "65535 (Vtune Block 94)": 2,
+  "12 (Vtune Block 103)": 1,
+  "43 (Vtune Block 118)": 1,
+  "46 (Vtune Block 119)": 2,
+  "9 (Vtune Block 101)": 4,
+  "2 (Vtune Block 96)": 5,
+  "0 (Vtune Block 95)": 2
+}}

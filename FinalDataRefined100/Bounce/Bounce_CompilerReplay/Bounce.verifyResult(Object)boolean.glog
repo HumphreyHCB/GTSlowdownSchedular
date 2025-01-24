@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-94[Bounce.verifyResult(Object)]",
+  "method": "Bounce.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "2aa723c81abbff92812dcd8b54d2bb9642dce1d2e1059d9506fccc5ca6e719c8",
+  "graphSignature": "5dad484624d0c017401584cf79b1bfd79b8330c503d6e6abc13f1d9beecdb8d0",
+  "result": true,
+  "profiles": [{
+    "method": "Bounce.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Bounce.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

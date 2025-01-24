@@ -1,0 +1,72 @@
+{
+  "identifier": "HotSpotCompilation-307[deltablue.BinaryConstraint.inputsDo(ForEachInterface)]",
+  "method": "deltablue.BinaryConstraint.inputsDo(som.ForEachInterface)void",
+  "entryBCI": -1,
+  "codeSignature": "ed140286992dd139d09b7e01c48c2deeef55ef209ca1eaea84770df94bed907f",
+  "graphSignature": "856cce0c4f8ed94fc13761ef5857148a75f949317920b80eb39d0b7e2d85821c",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.BinaryConstraint.inputsDo(som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.BinaryConstraint.inputsDo(som.ForEachInterface)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "branchTakenProbability": 0.4937795351528595
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f795c0095c0;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f795c0095c0;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f795c0095c0.apply(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f795c0095c0.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 34,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.AbstractConstraint.lambda$satisfy$1(int, deltablue.Variable)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.setMark(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

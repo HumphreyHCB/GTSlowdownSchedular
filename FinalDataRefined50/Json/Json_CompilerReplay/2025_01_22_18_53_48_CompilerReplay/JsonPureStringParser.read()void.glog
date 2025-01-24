@@ -1,0 +1,170 @@
+{
+  "identifier": "HotSpotCompilation-97[json.JsonPureStringParser.read()]",
+  "method": "json.JsonPureStringParser.read()void",
+  "entryBCI": -1,
+  "codeSignature": "5c7b61be77373452b1b45525c94ca66b503f79852f46df4b873aba485e629437",
+  "graphSignature": "0034be60928a02772acce27362d9aa06d040d17a60a6e440f6b9dc3c9eda426a",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.read()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.read()void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 48,
+      "branchTakenProbability": 1.9051247856734617E-4
+    },
+    {
+      "bci": 60,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Character.toString(char)java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.length()int",
+    "isMature": false,
+    "compilerIRSize": 12,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.String.charAt(int)char",
+    "isMature": true,
+    "compilerIRSize": 34,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.charAt(byte[], int)char",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.checkIndex(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.valueOf(char)java.lang.String",
+    "isMature": true,
+    "compilerIRSize": 92,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.toBytes(char)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.<init>(byte[], byte)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}
