@@ -1,0 +1,32 @@
+{
+  "identifier": "HotSpotCompilation-176[java.lang.invoke.LambdaForm$MH/0x00007f160800d000.linkToTargetMethod(Object, int, Object, Object, Object)]",
+  "method": "java.lang.invoke.LambdaForm$MH/0x00007f160800d000.linkToTargetMethod(java.lang.Object, int, java.lang.Object, java.lang.Object, java.lang.Object)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "15a32312e3622228060be7b697b1ffd9be5764b7a412bcdf580709181fbeb99a",
+  "graphSignature": "f3c6432ae67f84657044840a5b197c2ee2a86c75876b7a89922e643113c2f348",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "java.lang.invoke.LambdaForm$2yYV6R8hYYAzpQqpzo9unC.linkToTargetMethod(Object, int, Object, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$MH/0x00007f160800d000.linkToTargetMethod(java.lang.Object, int, java.lang.Object, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$2yYV6R8hYYAzpQqpzo9unC.linkToTargetMethod(Object, int, Object, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$MH/0x00007f160800d000.linkToTargetMethod(java.lang.Object, int, java.lang.Object, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  }]
+}

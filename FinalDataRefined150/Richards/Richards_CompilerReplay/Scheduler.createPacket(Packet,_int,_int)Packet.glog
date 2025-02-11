@@ -1,0 +1,41 @@
+{
+  "identifier": "HotSpotCompilation-180[richards.Scheduler.createPacket(Packet, int, int)]",
+  "method": "richards.Scheduler.createPacket(richards.Packet, int, int)richards.Packet",
+  "entryBCI": -1,
+  "codeSignature": "b157cdad2fb114e3dd8cfbfd91a23cb269d45b08b2f159b6227f68c5f85948ea",
+  "graphSignature": "df287b83b50af27f0964ffbf372c0f8138f0460f20a1c1307a349223e091f4ab",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.createPacket(richards.Packet, int, int)richards.Packet",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.createPacket(richards.Packet, int, int)richards.Packet",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.Packet.<init>(richards.Packet, int, int)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.RBObject.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

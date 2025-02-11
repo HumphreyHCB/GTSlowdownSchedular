@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-116[java.lang.invoke.MethodTypeForm.erasedType()]",
+  "method": "java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType",
+  "entryBCI": -1,
+  "codeSignature": "570363ce40ea8b9a4aa032e82b9a7acb96be1e37f14afef7593645ef818e820e",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MethodTypeForm.erasedType()java.lang.invoke.MethodType",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

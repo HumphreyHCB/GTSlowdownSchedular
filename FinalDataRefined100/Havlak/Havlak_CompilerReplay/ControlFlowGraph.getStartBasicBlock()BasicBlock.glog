@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-102[havlak.ControlFlowGraph.getStartBasicBlock()]",
+  "method": "havlak.ControlFlowGraph.getStartBasicBlock()havlak.BasicBlock",
+  "entryBCI": -1,
+  "codeSignature": "70d6793a8858b33c99fc9d015b44c7dfac62b5cae08c21a1bcac682b1ea13578",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.ControlFlowGraph.getStartBasicBlock()havlak.BasicBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.ControlFlowGraph.getStartBasicBlock()havlak.BasicBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

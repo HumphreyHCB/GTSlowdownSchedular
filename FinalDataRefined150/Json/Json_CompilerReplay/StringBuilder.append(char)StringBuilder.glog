@@ -1,0 +1,170 @@
+{
+  "identifier": "HotSpotCompilation-87[java.lang.StringBuilder.append(char)]",
+  "method": "java.lang.StringBuilder.append(char)java.lang.StringBuilder",
+  "entryBCI": -1,
+  "codeSignature": "d48ae0b88b97772c5ff485ef6867fbf76470aec808dcd127138641f00e186384",
+  "graphSignature": "5730d62e4f908b44a275737c26d8beaf0639e12da7602e0100a1304b180c64e8",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.StringBuilder.append(char)java.lang.StringBuilder",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.StringBuilder.append(char)java.lang.StringBuilder",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.AbstractStringBuilder.append(char)java.lang.AbstractStringBuilder",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 41,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.AbstractStringBuilder.ensureCapacityInternal(int)void",
+    "isMature": true,
+    "compilerIRSize": 36,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 0.9591876586604179
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.AbstractStringBuilder.newCapacity(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 38,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.OutOfMemoryError.<init>(java.lang.String)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.VirtualMachineError.<init>(java.lang.String)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Error.<init>(java.lang.String)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(byte[], int)byte[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.AbstractStringBuilder.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.canEncode(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

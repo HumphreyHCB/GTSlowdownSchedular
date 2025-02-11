@@ -1,0 +1,22 @@
+{"havlak.HavlakLoopFinder.identifyEdges": {
+  "11 (Vtune Block 22)": 14,
+  "14 (Vtune Block 25)": 4,
+  "3 (Vtune Block 6)": 6,
+  "16 (Vtune Block 29)": 10,
+  "12 (Vtune Block 23)": 35,
+  "4 (Vtune Block 7)": 1,
+  "1 (Vtune Block 4)": 1,
+  "15 (Vtune Block 26)": 16,
+  "7 (Vtune Block 18)": 5,
+  "Backend Blocks": {
+    "5006 (Vtune Block 12)": 6,
+    "12007 (Vtune Block 24)": 9,
+    "15006 (Vtune Block 27)": 5,
+    "5008 (Vtune Block 17)": 15
+  },
+  "9 (Vtune Block 21)": 17,
+  "13 (Vtune Block 28)": 2,
+  "2 (Vtune Block 5)": 1,
+  "8 (Vtune Block 20)": 4,
+  "5 (Vtune Block 8)": 10
+}}

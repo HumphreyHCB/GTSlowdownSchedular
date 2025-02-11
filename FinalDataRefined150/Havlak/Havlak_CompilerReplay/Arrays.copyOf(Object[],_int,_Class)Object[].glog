@@ -1,0 +1,85 @@
+{
+  "identifier": "HotSpotCompilation-251[java.util.Arrays.copyOf(Object[], int, Class)]",
+  "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+  "entryBCI": -1,
+  "codeSignature": "b38cc9f5505c4701c745a86264706165d6b9195b34afb57f78f676a10c88beac",
+  "graphSignature": "49c53af4704b6458f80b979352734e12d6ac9b3eee99fd4328594adc018938ef",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0154296875
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "[Ljava/lang/invoke/LambdaForm$Name;",
+          "probability": 0.9620253164556962
+        },
+        {
+          "type": "[Ljava/lang/Class;",
+          "probability": 0.0379746835443038
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Class.getComponentType()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": -1.0
+    }]
+  },
+  {
+    "method": "java.lang.Math.min(int, int)int",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.3169302870533099
+    }]
+  }]
+}

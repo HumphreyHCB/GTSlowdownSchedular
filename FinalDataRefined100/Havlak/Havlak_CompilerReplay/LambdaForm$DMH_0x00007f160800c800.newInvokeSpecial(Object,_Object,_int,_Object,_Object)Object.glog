@@ -1,0 +1,55 @@
+{
+  "identifier": "HotSpotCompilation-177[java.lang.invoke.LambdaForm$DMH/0x00007f160800c800.newInvokeSpecial(Object, Object, int, Object, Object)]",
+  "method": "java.lang.invoke.LambdaForm$DMH/0x00007f160800c800.newInvokeSpecial(java.lang.Object, java.lang.Object, int, java.lang.Object, java.lang.Object)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "e27a93aea81d562e4902272ba0999527fe9621eba2ef363641ca03f62ce0444d",
+  "graphSignature": "faf06279989a1978da6f3d589a9686215e82b3e8685b21f33c2fa03bd488674c",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "java.lang.invoke.LambdaForm$ZrJblZiYwX7qsoUqWUkPzE.newInvokeSpecial(Object, Object, int, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$DMH/0x00007f160800c800.newInvokeSpecial(java.lang.Object, java.lang.Object, int, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$ZrJblZiYwX7qsoUqWUkPzE.newInvokeSpecial(Object, Object, int, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$DMH/0x00007f160800c800.newInvokeSpecial(java.lang.Object, java.lang.Object, int, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": 130,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

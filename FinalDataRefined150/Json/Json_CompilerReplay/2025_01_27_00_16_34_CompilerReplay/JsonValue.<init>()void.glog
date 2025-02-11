@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-103[json.JsonValue.<init>()]",
+  "method": "json.JsonValue.<init>()void",
+  "entryBCI": -1,
+  "codeSignature": "681e036b2429a0370c8a624ff38ba1e0499ccacecdd09c8765fc9eb0752fa235",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonValue.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonValue.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

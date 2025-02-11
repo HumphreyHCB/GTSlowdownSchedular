@@ -1,0 +1,71 @@
+{
+  "identifier": "HotSpotCompilation-120[json.JsonObject$HashIndexTable.add(String, int)]",
+  "method": "json.JsonObject$HashIndexTable.add(java.lang.String, int)void",
+  "entryBCI": -1,
+  "codeSignature": "c2bfa28d36aaac6249051d82f957bb24c4ad30654150252b584e51ee66dee7eb",
+  "graphSignature": "8875a9122c120841928d6acca1d52d7b615815fca94b7ed1b02e88a951721634",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonObject$HashIndexTable.add(java.lang.String, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonObject$HashIndexTable.add(java.lang.String, int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonObject$HashIndexTable.hashSlotFor(java.lang.String)int",
+    "isMature": false,
+    "compilerIRSize": 27,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "json.JsonObject$HashIndexTable.stringHash(java.lang.String)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.length()int",
+    "isMature": false,
+    "compilerIRSize": 12,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

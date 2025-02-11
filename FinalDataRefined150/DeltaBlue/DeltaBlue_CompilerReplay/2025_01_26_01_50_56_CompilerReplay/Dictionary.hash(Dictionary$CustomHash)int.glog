@@ -1,0 +1,41 @@
+{
+  "identifier": "HotSpotCompilation-119[som.Dictionary.hash(Dictionary$CustomHash)]",
+  "method": "som.Dictionary.hash(som.Dictionary$CustomHash)int",
+  "entryBCI": -1,
+  "codeSignature": "b2171a9987be3e9c37ba106f9fe8f2ef63c8abe4b3b4fdd2a366408463cb20b9",
+  "graphSignature": "c81484f5ec6f364997974ab752ac7ad9406bd4ab5c94084adedce627cf44a920",
+  "result": true,
+  "profiles": [{
+    "method": "som.Dictionary.hash(som.Dictionary$CustomHash)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.hash(som.Dictionary$CustomHash)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/Strength$Sym;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "deltablue.Strength$Sym.customHash()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-105[richards.WorkerTaskDataRecord.getDestination()]",
+  "method": "richards.WorkerTaskDataRecord.getDestination()int",
+  "entryBCI": -1,
+  "codeSignature": "e90094a911a94b008e510913f1a1bcd77939ef242a0b9da5935bc7262146700b",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "richards.WorkerTaskDataRecord.getDestination()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.WorkerTaskDataRecord.getDestination()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

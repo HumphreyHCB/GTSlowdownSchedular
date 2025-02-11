@@ -1,0 +1,65 @@
+{
+  "identifier": "HotSpotCompilation-188[java.util.Vector$Itr.next()]",
+  "method": "java.util.Vector$Itr.next()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "afce4bcaa059020c452a648b1b17c31f6072d537b1bd7c1ec20c0dbeeb5b311b",
+  "graphSignature": "b0e59f903f5df43c1cd86a198adc2d7f1055b5c1916e29424b042b6ed55fb6c5",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector$Itr.next()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector$Itr.next()java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 52,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.elementData(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector$Itr.checkForComodification()void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

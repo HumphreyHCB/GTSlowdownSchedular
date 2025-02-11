@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-262[havlak.SimpleLoop.setNestingLevel(int)]",
+  "method": "havlak.SimpleLoop.setNestingLevel(int)void",
+  "entryBCI": -1,
+  "codeSignature": "38fd123a35beb30cf4369a554777c385b99fdb01abca6ab0837eb22c5c3eb7f7",
+  "graphSignature": "c4fbefb238c18416c158b6d4050c6ae79388d6c7a417c07551f3d49a5c84279e",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.SimpleLoop.setNestingLevel(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.setNestingLevel(int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 0.500048823357094
+    }]
+  },
+  {
+    "method": "havlak.SimpleLoop.setIsRoot()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,170 @@
+{
+  "identifier": "HotSpotCompilation-128[jdk.internal.org.objectweb.asm.ByteVector.putUTF8(String)]",
+  "method": "jdk.internal.org.objectweb.asm.ByteVector.putUTF8(java.lang.String)jdk.internal.org.objectweb.asm.ByteVector",
+  "entryBCI": -1,
+  "codeSignature": "d1b8b77854e383230f57b5e94e5df6937525ee1a95f8a22bbfe9892b650cbe01",
+  "graphSignature": "ac5a8a322b6f670ea34b6c11ce991f0ba850baa47892dbc32672fe9cc77975a9",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.org.objectweb.asm.ByteVector.putUTF8(java.lang.String)jdk.internal.org.objectweb.asm.ByteVector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.org.objectweb.asm.ByteVector.putUTF8(java.lang.String)jdk.internal.org.objectweb.asm.ByteVector",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.8617886178861789
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 79,
+      "branchTakenProbability": 0.04415882817548646
+    },
+    {
+      "bci": 85,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 93,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 100,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 112,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.length()int",
+    "isMature": false,
+    "compilerIRSize": 12,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": 6,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "jdk.internal.org.objectweb.asm.ByteVector.enlarge(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 47,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.charAt(int)char",
+    "isMature": true,
+    "compilerIRSize": 34,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.StringLatin1.charAt(byte[], int)char",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.String.checkIndex(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

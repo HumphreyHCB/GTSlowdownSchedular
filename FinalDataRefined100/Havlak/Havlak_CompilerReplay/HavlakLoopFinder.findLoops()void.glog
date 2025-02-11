@@ -1,0 +1,1127 @@
+{
+  "identifier": "HotSpotCompilation-184[havlak.HavlakLoopFinder.findLoops()]",
+  "method": "havlak.HavlakLoopFinder.findLoops()void",
+  "entryBCI": -1,
+  "codeSignature": "901af2ff5286428f4dbbf15a1566007544e428131c787a90bdf837d73814d9a9",
+  "graphSignature": "e09197cde356aee5566381927f1367b3118e34a95f1efba5dfba79b4baa1979d",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.HavlakLoopFinder.findLoops()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.findLoops()void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 57,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 65,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 87,
+      "branchTakenProbability": 0.04453006003046322
+    },
+    {
+      "bci": 101,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 115,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 130,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 138,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 143,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 152,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 158,
+      "branchTakenProbability": 0.0409038429820221
+    },
+    {
+      "bci": 174,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 175,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 182,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 188,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 208,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 211,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 218,
+      "branchTakenProbability": 0.7097412088384489
+    },
+    {
+      "bci": 229,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 232,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 235,
+      "branchTakenProbability": 0.5261038726022439
+    },
+    {
+      "bci": 240,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 243,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 254,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 257,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 260,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 272,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 283,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 293,
+      "branchTakenProbability": 0.2901367271476481
+    },
+    {
+      "bci": 301,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 305,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 319,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 323,
+      "branchTakenProbability": 0.14671013633669236
+    },
+    {
+      "bci": 331,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 341,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.ControlFlowGraph.getNumNodes()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.UnionFindNode.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.removeAll()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary.removeAll()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.initAllNodes()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$1.<init>(havlak.HavlakLoopFinder)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.forEach(som.ForEachInterface)void",
+    "isMature": true,
+    "compilerIRSize": 63,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.34481830417227455
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lhavlak/HavlakLoopFinder$1;",
+          "probability": 0.6286976170912079
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$2;",
+          "probability": 0.13804437140509448
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$$Lambda.0x00007f160800a1d8;",
+          "probability": 0.10353327855382087
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$4;",
+          "probability": 0.07785538208709943
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$5;",
+          "probability": 0.025986031224322102
+        },
+        {
+          "type": "Lhavlak/HavlakLoopFinder$3;",
+          "probability": 0.025883319638455218
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$1.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 344,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.doDFS(havlak.BasicBlock, int)int",
+    "isMature": true,
+    "compilerIRSize": 845,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 38,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 41,
+      "branchTakenProbability": 0.4073779457094561
+    },
+    {
+      "bci": 48,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 51,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 62,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 65,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 68,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 73,
+      "branchTakenProbability": 0.375
+    },
+    {
+      "bci": 82,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.identifyEdges(int)void",
+    "isMature": true,
+    "compilerIRSize": 180,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 0.08335814230425721
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 52,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.processEdges(havlak.BasicBlock, int)void",
+    "isMature": true,
+    "compilerIRSize": 125,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.BasicBlock.getNumPred()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$2.<init>(havlak.HavlakLoopFinder, int)void",
+    "isMature": false,
+    "compilerIRSize": 13,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$2.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 669,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9996094512790471
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.stepD(int, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": 316,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.at(int)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 25,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.9995118140988088
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$5.<init>(havlak.HavlakLoopFinder, int, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": 19,
+    "data": [{
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$5.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$5.apply(java.lang.Integer)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 40,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.findSet()havlak.UnionFindNode",
+    "isMature": true,
+    "compilerIRSize": 46,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "branchTakenProbability": 0.841277763913152
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "branchTakenProbability": 0.999475890985325
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 38,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 52,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "havlak.UnionFindNode$$Lambda/0x00007f1608009fb8.<init>(UnionFindNode)",
+    "method": "havlak.UnionFindNode$$Lambda/0x00007f1608009fb8.<init>(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "havlak.UnionFindNode$$Lambda/0x00007f1608009fb8.apply(Object)",
+    "method": "havlak.UnionFindNode$$Lambda/0x00007f1608009fb8.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.lambda$findSet$0(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.union(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$3.<init>(havlak.HavlakLoopFinder, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$3.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$3.apply(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.isEmpty()boolean",
+    "isMature": true,
+    "compilerIRSize": 11,
+    "data": [{
+      "bci": 8,
+      "branchTakenProbability": 0.6211677406756493
+    }]
+  },
+  {
+    "method": "havlak.LoopStructureGraph.createNewLoop(havlak.BasicBlock, boolean)havlak.SimpleLoop",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.SimpleLoop.setCounter(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.<init>(havlak.BasicBlock, boolean)void",
+    "isMature": true,
+    "compilerIRSize": 448,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 52,
+      "branchTakenProbability": 1.4936519790888724E-4
+    },
+    {
+      "bci": 60,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.IdentitySet.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.setLoopAttributes(int, som.Vector, havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": 332,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.setLoop(havlak.SimpleLoop)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.removeFirst()java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 38,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.stepEProcessNonBackPreds(int, som.Vector, som.Vector, havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": 167,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$2yYV6R8hYYAzpQqpzo9unC.linkToTargetMethod(Object, int, Object, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$MH/0x00007f160800d000.linkToTargetMethod(java.lang.Object, int, java.lang.Object, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "stableLambdaName": "java.lang.invoke.LambdaForm$ZrJblZiYwX7qsoUqWUkPzE.newInvokeSpecial(Object, Object, int, Object, Object)",
+    "method": "java.lang.invoke.LambdaForm$DMH/0x00007f160800c800.newInvokeSpecial(java.lang.Object, java.lang.Object, int, java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.forEach(som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(HavlakLoopFinder, int, Vector, Vector)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(havlak.HavlakLoopFinder, int, som.Vector, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": 25,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(Object)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 21,
+    "data": [{
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$1(int, som.Vector, som.Vector, java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 847,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.9578166194707548
+    },
+    {
+      "bci": 47,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 61,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 64,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 67,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 75,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 79,
+      "branchTakenProbability": 0.43511061270262
+    },
+    {
+      "bci": 90,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 93,
+      "branchTakenProbability": 0.0025257081003066933
+    },
+    {
+      "bci": 99,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 105,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a3f8.<init>(UnionFindNode)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a3f8.<init>(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

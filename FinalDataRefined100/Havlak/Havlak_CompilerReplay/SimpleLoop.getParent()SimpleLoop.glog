@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-201[havlak.SimpleLoop.getParent()]",
+  "method": "havlak.SimpleLoop.getParent()havlak.SimpleLoop",
+  "entryBCI": -1,
+  "codeSignature": "311809d6d36276510d31abaaa2288faa11891c3c596bc2673c612df205ea9916",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.SimpleLoop.getParent()havlak.SimpleLoop",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.SimpleLoop.getParent()havlak.SimpleLoop",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

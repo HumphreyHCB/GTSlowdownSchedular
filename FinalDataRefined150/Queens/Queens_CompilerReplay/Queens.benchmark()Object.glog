@@ -1,0 +1,155 @@
+{
+  "identifier": "HotSpotCompilation-83[Queens.benchmark()]",
+  "method": "Queens.benchmark()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "f38b04f6da35e3005a7fdfbcc4b053794cc2f0330b4ed3e9984200f85fc3d8cf",
+  "graphSignature": "c4a039e9d4830e8afca1c95bfbfbe7a474ed7b61b878a8383e800d59fbda2568",
+  "result": true,
+  "profiles": [{
+    "method": "Queens.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Queens.benchmark()java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "branchTakenProbability": 0.09085528262799644
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Queens.queens()boolean",
+    "isMature": false,
+    "compilerIRSize": 304,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 51,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 61,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 66,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.fill(boolean[], boolean)void",
+    "isMature": true,
+    "compilerIRSize": 114,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.06980121630207861
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.fill(int[], int)void",
+    "isMature": true,
+    "compilerIRSize": 92,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.1111218195836546
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Queens.placeQueen(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 919,
+    "data": [{
+      "bci": 5,
+      "branchTakenProbability": 0.10711789957072976
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 0.8713103756708408
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "branchTakenProbability": 0.9913119026933102
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "branchTakenProbability": 0.9386503067484663
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

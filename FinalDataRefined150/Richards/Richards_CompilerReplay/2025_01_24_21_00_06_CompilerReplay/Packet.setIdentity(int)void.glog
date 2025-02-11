@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-86[richards.Packet.setIdentity(int)]",
+  "method": "richards.Packet.setIdentity(int)void",
+  "entryBCI": -1,
+  "codeSignature": "ef9b9970ae9872c9e20807abb10347a135213ed040edbe64670d4bb2e722ce00",
+  "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Packet.setIdentity(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Packet.setIdentity(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

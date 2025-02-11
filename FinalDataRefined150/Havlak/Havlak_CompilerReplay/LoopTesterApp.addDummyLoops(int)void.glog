@@ -1,0 +1,319 @@
+{
+  "identifier": "HotSpotCompilation-245[havlak.LoopTesterApp.addDummyLoops(int)]",
+  "method": "havlak.LoopTesterApp.addDummyLoops(int)void",
+  "entryBCI": -1,
+  "codeSignature": "2e0e9632688e417e2385953452f8c00b9df80fdbd6d12f272bb4855d5bb67042",
+  "graphSignature": "3b208b75425997b9947ca7b620c96ecd632582db551c9af01339a94e03af0215",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.LoopTesterApp.addDummyLoops(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.LoopTesterApp.addDummyLoops(int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 6.509992839007877E-5
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.LoopTesterApp.findLoops(havlak.LoopStructureGraph)void",
+    "isMature": false,
+    "compilerIRSize": 323,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.<init>(havlak.ControlFlowGraph, havlak.LoopStructureGraph)void",
+    "isMature": false,
+    "compilerIRSize": 296,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.IdentityDictionary.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.findLoops()void",
+    "isMature": true,
+    "compilerIRSize": 3049,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 57,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 65,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 87,
+      "branchTakenProbability": 0.04453006003046322
+    },
+    {
+      "bci": 101,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 115,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 130,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 138,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 143,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 152,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 158,
+      "branchTakenProbability": 0.0409038429820221
+    },
+    {
+      "bci": 174,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 175,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 182,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 188,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 208,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 211,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 218,
+      "branchTakenProbability": 0.7097412088384489
+    },
+    {
+      "bci": 229,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 232,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 235,
+      "branchTakenProbability": 0.5261038726022439
+    },
+    {
+      "bci": 240,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 243,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 254,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 257,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 260,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 272,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 283,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 293,
+      "branchTakenProbability": 0.2901367271476481
+    },
+    {
+      "bci": 301,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 305,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 319,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 323,
+      "branchTakenProbability": 0.14671013633669236
+    },
+    {
+      "bci": 331,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 341,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.ControlFlowGraph.getNumNodes()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Set.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.UnionFindNode.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Set.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

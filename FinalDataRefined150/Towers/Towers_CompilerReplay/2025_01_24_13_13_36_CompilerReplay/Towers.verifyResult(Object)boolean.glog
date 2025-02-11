@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-126[Towers.verifyResult(Object)]",
+  "method": "Towers.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "47c9c9d615f264cde377faa958bb475112f0b09bf53473ab51d4ea6d159ec855",
+  "graphSignature": "5dad484624d0c017401584cf79b1bfd79b8330c503d6e6abc13f1d9beecdb8d0",
+  "result": true,
+  "profiles": [{
+    "method": "Towers.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-187[richards.TaskState.waitingWithPacket()]",
+  "method": "richards.TaskState.waitingWithPacket()void",
+  "entryBCI": -1,
+  "codeSignature": "522acca1322d93afdee568ab721872449672c739e4f645d4ea4f01d63b2632d6",
+  "graphSignature": "3097913a84c9f25d24d8ac190ef413316dcc880a190fbfb150b25c07dc206b89",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskState.waitingWithPacket()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.waitingWithPacket()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

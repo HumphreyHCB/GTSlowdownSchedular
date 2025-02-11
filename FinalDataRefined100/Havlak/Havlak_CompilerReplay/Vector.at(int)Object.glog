@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-160[som.Vector.at(int)]",
+  "method": "som.Vector.at(int)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "b85633a6c86a55d2ae89187eb2572b23075d60d1a4f80c59aa0a11fd0d31e1cf",
+  "graphSignature": "358e42e25d2d84a1eb7665403e53ff38f498857d0429f4dcd22d43eb753afd95",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.at(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.at(int)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.9995117664290597
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

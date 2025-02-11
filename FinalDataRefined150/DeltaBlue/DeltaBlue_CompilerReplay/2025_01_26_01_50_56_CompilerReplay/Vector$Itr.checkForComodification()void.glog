@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-189[java.util.Vector$Itr.checkForComodification()]",
+  "method": "java.util.Vector$Itr.checkForComodification()void",
+  "entryBCI": -1,
+  "codeSignature": "e590bd9c56f5acefe8348c82f2944428f2927c3950eb1e606f5927152e9a4c64",
+  "graphSignature": "fc823655ea19ad6e10500ac681c9b9ba46141e2de7152a103dbf865a05d0f9e1",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector$Itr.checkForComodification()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector$Itr.checkForComodification()void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

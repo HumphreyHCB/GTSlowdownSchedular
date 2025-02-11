@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-81[java.util.Arrays.fill(int[], int)]",
+  "method": "java.util.Arrays.fill(int[], int)void",
+  "entryBCI": -1,
+  "codeSignature": "9c5fdf723a947ac024e5834c18bfb1e4f966ca46c496adccec37a76d7805c00a",
+  "graphSignature": "9ab15bf13f5cc1c52b61d24d215c0807029b021aab92d837ab06981b61c2fd48",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Arrays.fill(int[], int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Arrays.fill(int[], int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.11112182888010032
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

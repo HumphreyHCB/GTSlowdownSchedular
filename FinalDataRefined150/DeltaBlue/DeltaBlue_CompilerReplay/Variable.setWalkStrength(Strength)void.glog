@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-107[deltablue.Variable.setWalkStrength(Strength)]",
+  "method": "deltablue.Variable.setWalkStrength(deltablue.Strength)void",
+  "entryBCI": -1,
+  "codeSignature": "8cca4c066737b1bff70894f68f811ee34c0302b9eddf93d9da76482906c55fda",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Variable.setWalkStrength(deltablue.Strength)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Variable.setWalkStrength(deltablue.Strength)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

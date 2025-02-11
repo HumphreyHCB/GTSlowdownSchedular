@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-91[java.security.CodeSource.getLocationNoFragString()]",
+  "method": "java.security.CodeSource.getLocationNoFragString()java.lang.String",
+  "entryBCI": -1,
+  "codeSignature": "de3021148cbc9946312429bfa228ca2bd6bca0d3c1c1185ec4593d80818cc228",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.security.CodeSource.getLocationNoFragString()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.security.CodeSource.getLocationNoFragString()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

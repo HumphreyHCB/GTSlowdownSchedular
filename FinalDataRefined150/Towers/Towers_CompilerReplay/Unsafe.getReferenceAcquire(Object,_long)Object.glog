@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-41[jdk.internal.misc.Unsafe.getReferenceAcquire(Object, long)]",
+  "method": "jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "d28b9bd7bf80117c512175e5818e78d6668dd475d099bdf8111414d1a23d7a51",
+  "graphSignature": "f58498a1d7dce027e02da4b9f889f3c8833b9ee708a1641fa24698adca0ecfc4",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.misc.Unsafe.getReferenceAcquire(java.lang.Object, long)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

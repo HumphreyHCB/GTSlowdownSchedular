@@ -1,0 +1,25 @@
+{
+  "identifier": "HotSpotCompilation-178[havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(HavlakLoopFinder, int, Vector, Vector)]",
+  "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(havlak.HavlakLoopFinder, int, som.Vector, som.Vector)void",
+  "entryBCI": -1,
+  "codeSignature": "1f38f2d2969489b7bf9ea5f956b9640af07d11d64df70e86d4adf9f9267c260a",
+  "graphSignature": "3fae69b7f0989a6ceb1e689bb267c4892f41f6ad2787535e1b550361bbc4992b",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(HavlakLoopFinder, int, Vector, Vector)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(havlak.HavlakLoopFinder, int, som.Vector, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(HavlakLoopFinder, int, Vector, Vector)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.<init>(havlak.HavlakLoopFinder, int, som.Vector, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

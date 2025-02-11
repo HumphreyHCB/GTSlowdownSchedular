@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-142[havlak.HavlakLoopFinder$5.<init>(HavlakLoopFinder, int, Vector)]",
+  "method": "havlak.HavlakLoopFinder$5.<init>(havlak.HavlakLoopFinder, int, som.Vector)void",
+  "entryBCI": -1,
+  "codeSignature": "d9bad938c0685f151efb9310cfbc25bb6a34d49e4e57c938544b6c269cd36c88",
+  "graphSignature": "89e6f493b1fe6c70bf61789a031f11ef4c97d85bfbe0c563496281cf360af66f",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.HavlakLoopFinder$5.<init>(havlak.HavlakLoopFinder, int, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.HavlakLoopFinder$5.<init>(havlak.HavlakLoopFinder, int, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

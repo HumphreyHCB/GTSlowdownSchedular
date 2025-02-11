@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-96[richards.DeviceTaskDataRecord.setPending(Packet)]",
+  "method": "richards.DeviceTaskDataRecord.setPending(richards.Packet)void",
+  "entryBCI": -1,
+  "codeSignature": "4438387ea4b89d64bcc04e72a933d7836702b4c16b623cd8ce856e79ebe49f47",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "richards.DeviceTaskDataRecord.setPending(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.DeviceTaskDataRecord.setPending(richards.Packet)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

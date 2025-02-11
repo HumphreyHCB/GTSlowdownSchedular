@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-98[havlak.UnionFindNode.getLoop()]",
+  "method": "havlak.UnionFindNode.getLoop()havlak.SimpleLoop",
+  "entryBCI": -1,
+  "codeSignature": "d7b183d0f9b9d01645b5c26d9f5af065035a1c6661cb4796ef25c8aaa487945a",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.UnionFindNode.getLoop()havlak.SimpleLoop",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.UnionFindNode.getLoop()havlak.SimpleLoop",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

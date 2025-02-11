@@ -1,0 +1,101 @@
+{
+  "identifier": "HotSpotCompilation-78[Queens.placeQueen(int)]",
+  "method": "Queens.placeQueen(int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "48235dc02fba33935e00a6f68bfa444564e2f532539eda4a004dbad9a5de15ce",
+  "graphSignature": "19f9487144ebc0a8d2133796dcc64c0491872bad25f6ded5a6bbe120bcc87284",
+  "result": true,
+  "profiles": [{
+    "method": "Queens.placeQueen(int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Queens.placeQueen(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "branchTakenProbability": 0.10691760937030734
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 0.8715390651272279
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "branchTakenProbability": 0.9912739965095986
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "branchTakenProbability": 0.9398230088495575
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Queens.getRowColumn(int, int)boolean",
+    "isMature": true,
+    "compilerIRSize": 64,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.6157000585823081
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.2860772357723577
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "branchTakenProbability": 0.5288256227758007
+    }]
+  },
+  {
+    "method": "Queens.setRowColumn(int, int, boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-90[cd.Vector2D.<init>(double, double)]",
+  "method": "cd.Vector2D.<init>(double, double)void",
+  "entryBCI": -1,
+  "codeSignature": "ebd80a3aa251d743aae0a39c12326c206b7860c57c0b9dbb91ab8e3feb4636ec",
+  "graphSignature": "fc6284347c6ed94783fe7dc13dbd903f4f1cca71e97c51aefd00c200ce6e904c",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector2D.<init>(double, double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector2D.<init>(double, double)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

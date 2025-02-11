@@ -1,0 +1,35 @@
+{
+  "identifier": "HotSpotCompilation-77[Permute.swap(int, int)]",
+  "method": "Permute.swap(int, int)void",
+  "entryBCI": -1,
+  "codeSignature": "4d918e65b632dbb5ae8842e9463ddb058f9f3af9c025aef6c3a88bf89b544bb5",
+  "graphSignature": "f8a35138d099c9f8d7e251fc56a9e6adbb9f8a1aab0e74f2981bc61bf06df3bd",
+  "result": true,
+  "profiles": [{
+    "method": "Permute.swap(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Permute.swap(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

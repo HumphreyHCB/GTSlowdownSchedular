@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-99[richards.TaskState.setPacketPending(boolean)]",
+  "method": "richards.TaskState.setPacketPending(boolean)void",
+  "entryBCI": -1,
+  "codeSignature": "0d83a6f208e1dab560d54f349e5fef8ab482d96cc2cd3badbbe535a7b17cca43",
+  "graphSignature": "40046a2fc8956c40d205d4d4ca05be2c141cceed7fdff4d5a950fc95b1d0c077",
+  "result": true,
+  "profiles": [{
+    "method": "richards.TaskState.setPacketPending(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.TaskState.setPacketPending(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

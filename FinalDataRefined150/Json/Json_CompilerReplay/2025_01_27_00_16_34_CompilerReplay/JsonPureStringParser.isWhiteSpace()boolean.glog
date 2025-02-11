@@ -1,0 +1,51 @@
+{
+  "identifier": "HotSpotCompilation-91[json.JsonPureStringParser.isWhiteSpace()]",
+  "method": "json.JsonPureStringParser.isWhiteSpace()boolean",
+  "entryBCI": -1,
+  "codeSignature": "50064b656daff3d9b904a3150933d3592ec39477ebfa4193d9107271a5f0f8ae",
+  "graphSignature": "02c83a883071180cadbc93ef9a162ddcc793deee7889240c22d64aa0cf9c4275",
+  "result": true,
+  "profiles": [{
+    "method": "json.JsonPureStringParser.isWhiteSpace()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "json.JsonPureStringParser.isWhiteSpace()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

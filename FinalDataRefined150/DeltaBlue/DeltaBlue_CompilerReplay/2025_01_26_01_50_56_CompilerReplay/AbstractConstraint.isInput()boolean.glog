@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-227[deltablue.AbstractConstraint.isInput()]",
+  "method": "deltablue.AbstractConstraint.isInput()boolean",
+  "entryBCI": -1,
+  "codeSignature": "63370da651db3e6ce3ffe2cea1f1c3740c905ceba7e88c73833c3b99e3a72497",
+  "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.AbstractConstraint.isInput()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.AbstractConstraint.isInput()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

@@ -1,0 +1,51 @@
+{
+  "identifier": "HotSpotCompilation-80[Bounce$Ball.bounce()]",
+  "method": "Bounce$Ball.bounce()boolean",
+  "entryBCI": -1,
+  "codeSignature": "3efa6048f425b8d9ee94626bd8425cdad8c910f277656d8fa6110aa1311a2b3d",
+  "graphSignature": "c1c892aa2c25e2e61fa648de9ba0fd45c773ec001e759eb202da655ec2b3e901",
+  "result": true,
+  "profiles": [{
+    "method": "Bounce$Ball.bounce()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Bounce$Ball.bounce()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 41,
+      "branchTakenProbability": 0.9275390625
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 68,
+      "branchTakenProbability": 0.9294921875
+    },
+    {
+      "bci": 81,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 94,
+      "branchTakenProbability": 0.9291015625
+    },
+    {
+      "bci": 108,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 121,
+      "branchTakenProbability": 0.9275390625
+    },
+    {
+      "bci": 134,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

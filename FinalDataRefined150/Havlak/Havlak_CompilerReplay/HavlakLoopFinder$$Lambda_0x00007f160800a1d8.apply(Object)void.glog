@@ -1,0 +1,160 @@
+{
+  "identifier": "HotSpotCompilation-180[havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(Object)]",
+  "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "39f7d66e2498b5aac27145233ddbaba0acb1a0e061bff152edd18bc0be7271b8",
+  "graphSignature": "538c9f3bb166d2232beedbc82ea213e759c09079874ec9744eb80f43f5e77224",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(Object)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(Object)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a1d8.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$1(int, som.Vector, som.Vector, java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 560,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.9578083797245824
+    },
+    {
+      "bci": 47,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/Set;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 61,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 64,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 67,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 75,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 79,
+      "branchTakenProbability": 0.4350973794228612
+    },
+    {
+      "bci": 90,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 93,
+      "branchTakenProbability": 0.0025261638397690365
+    },
+    {
+      "bci": 99,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 105,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a3f8.<init>(UnionFindNode)",
+    "method": "havlak.HavlakLoopFinder$$Lambda/0x00007f160800a3f8.<init>(havlak.UnionFindNode)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

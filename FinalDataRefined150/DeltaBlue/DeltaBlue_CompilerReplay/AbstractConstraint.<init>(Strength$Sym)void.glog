@@ -1,0 +1,135 @@
+{
+  "identifier": "HotSpotCompilation-132[deltablue.AbstractConstraint.<init>(Strength$Sym)]",
+  "method": "deltablue.AbstractConstraint.<init>(deltablue.Strength$Sym)void",
+  "entryBCI": -1,
+  "codeSignature": "5afd697e6f38f6fd03bbcc350ac590fe3b0569c7c682cf082cbefcdf5f8bb4d2",
+  "graphSignature": "94c4c70f322c56084cd44e00c267d6ff34dfdfdc435cc74f22b2748f69c4eae8",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.AbstractConstraint.<init>(deltablue.Strength$Sym)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.AbstractConstraint.<init>(deltablue.Strength$Sym)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Strength.of(deltablue.Strength$Sym)deltablue.Strength",
+    "isMature": false,
+    "compilerIRSize": 87,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary.at(som.Dictionary$CustomHash)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 71,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lsom/IdentityDictionary$IdEntry;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 21,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary.hash(som.Dictionary$CustomHash)int",
+    "isMature": true,
+    "compilerIRSize": 17,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/Strength$Sym;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    }]
+  },
+  {
+    "method": "deltablue.Strength$Sym.customHash()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary.getBucket(int)som.Dictionary$Entry",
+    "isMature": false,
+    "compilerIRSize": 22,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Dictionary.getBucketIdx(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.IdentityDictionary$IdEntry.match(int, java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": 24,
+    "data": [{
+      "bci": 5,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

@@ -1,0 +1,29 @@
+{
+  "identifier": "HotSpotCompilation-139[havlak.BasicBlock.getNumPred()]",
+  "method": "havlak.BasicBlock.getNumPred()int",
+  "entryBCI": -1,
+  "codeSignature": "5c07d3732a06b7b443a05697692fac4ab55a7b39d6ae87ca4374f057fd29a9b6",
+  "graphSignature": "b65eb70ce9da6b28dd41488a2b9174bf51963b5e824f8933a3454db0bc6a37e1",
+  "result": true,
+  "profiles": [{
+    "method": "havlak.BasicBlock.getNumPred()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "havlak.BasicBlock.getNumPred()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

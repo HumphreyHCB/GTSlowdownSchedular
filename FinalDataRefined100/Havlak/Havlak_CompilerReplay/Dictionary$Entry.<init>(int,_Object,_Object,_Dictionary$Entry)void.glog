@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-169[som.Dictionary$Entry.<init>(int, Object, Object, Dictionary$Entry)]",
+  "method": "som.Dictionary$Entry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+  "entryBCI": -1,
+  "codeSignature": "324bbe4789a3f20a50b3381a38dcecb04e44623e910a0b663825d004ec64b102",
+  "graphSignature": "82e736a69dc2ea379b062261c69c11c2a88d4687ca11bcc9ed650de469b8043b",
+  "result": true,
+  "profiles": [{
+    "method": "som.Dictionary$Entry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Dictionary$Entry.<init>(int, java.lang.Object, java.lang.Object, som.Dictionary$Entry)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

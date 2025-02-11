@@ -1,0 +1,599 @@
+{
+  "identifier": "HotSpotCompilation-157[cd.RedBlackTree.put(Comparable, Object)]",
+  "method": "cd.RedBlackTree.put(java.lang.Comparable, java.lang.Object)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "9862ebb9c5636ac1204d3252c8d52bf5211d8ca648850f18d2c15478205c1e69",
+  "graphSignature": "d35c92c0f230b58323b5a701bbf644663ebac23dd9392978a6b177ed04117f54",
+  "result": true,
+  "profiles": [{
+    "method": "cd.RedBlackTree.put(java.lang.Comparable, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.RedBlackTree.put(java.lang.Comparable, java.lang.Object)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 0.5283921683511548
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "branchTakenProbability": 0.10013705670721261
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 0.40390290337934315
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 58,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 61,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 64,
+      "branchTakenProbability": 0.8497285212392207
+    },
+    {
+      "bci": 69,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 75,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 82,
+      "branchTakenProbability": 0.47768331562167904
+    },
+    {
+      "bci": 87,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 93,
+      "branchTakenProbability": 0.08138351983723296
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 104,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 112,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 117,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 120,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 131,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 134,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 146,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 149,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 152,
+      "branchTakenProbability": 0.0020429009193054137
+    },
+    {
+      "bci": 157,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 165,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 171,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 177,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 182,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 185,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 191,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 197,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 200,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 203,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 212,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 215,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 218,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 225,
+      "branchTakenProbability": 0.24271753429806428
+    },
+    {
+      "bci": 230,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 236,
+      "branchTakenProbability": 0.32671547338379453
+    },
+    {
+      "bci": 241,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 247,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 255,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 260,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 263,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 269,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 274,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 277,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 289,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 292,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 295,
+      "branchTakenProbability": 0.8905291411042945
+    },
+    {
+      "bci": 300,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 308,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 314,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 320,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 325,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 328,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 334,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 340,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 343,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 346,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 360,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.treeInsert(java.lang.Comparable, java.lang.Object)cd.RedBlackTree$InsertResult",
+    "isMature": true,
+    "compilerIRSize": 674,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.10074083454695118
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/Vector2D;",
+          "probability": 0.5356991972961554
+        },
+        {
+          "type": "Lcd/CallSign;",
+          "probability": 0.46430080270384455
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/Vector2D;",
+          "probability": 0.5356991972961554
+        },
+        {
+          "type": "Lcd/CallSign;",
+          "probability": 0.46430080270384455
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 34,
+      "branchTakenProbability": 0.8964582453175609
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 49,
+      "branchTakenProbability": 0.07618898008875623
+    },
+    {
+      "bci": 54,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 64,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 96,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 108,
+      "branchTakenProbability": 0.844172164624568
+    },
+    {
+      "bci": 122,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 125,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/Vector2D;",
+          "probability": 0.6676590993673241
+        },
+        {
+          "type": "Lcd/CallSign;",
+          "probability": 0.33234090063267585
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 128,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/Vector2D;",
+          "probability": 0.6676590993673241
+        },
+        {
+          "type": "Lcd/CallSign;",
+          "probability": 0.33234090063267585
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 133,
+      "branchTakenProbability": 0.6944547822850763
+    },
+    {
+      "bci": 139,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 148,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree$InsertResult.<init>(boolean, cd.RedBlackTree$Node, java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.rightRotate(cd.RedBlackTree$Node)cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 72,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.9988290398126464
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 40,
+      "branchTakenProbability": 0.7634660421545667
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 59,
+      "branchTakenProbability": 0.9974437627811861
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 67,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 74,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 78,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 83,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 88,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.leftRotate(cd.RedBlackTree$Node)cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 72,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.658069270449521
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 40,
+      "branchTakenProbability": 0.9482758620689655
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 59,
+      "branchTakenProbability": 0.645066045066045
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 67,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 74,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 78,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 83,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 88,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

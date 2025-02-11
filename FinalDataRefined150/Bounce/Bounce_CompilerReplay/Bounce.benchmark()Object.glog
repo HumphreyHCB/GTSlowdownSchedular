@@ -1,0 +1,243 @@
+{
+  "identifier": "HotSpotCompilation-82[Bounce.benchmark()]",
+  "method": "Bounce.benchmark()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "334c12aeda6712ccc913129827b47cfe60c649947f2f85d81d8450550fedab3d",
+  "graphSignature": "169115bf768fb2020707c09572ee173154da190708c68e126072e5d793dbc1b8",
+  "result": true,
+  "profiles": [{
+    "method": "Bounce.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Bounce.benchmark()java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "branchTakenProbability": 0.01935483870967742
+    },
+    {
+      "bci": 56,
+      "branchTakenProbability": 0.009895833333333333
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 68,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 71,
+      "branchTakenProbability": 0.7332982640715413
+    },
+    {
+      "bci": 90,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "Bounce$$Lambda/0x00007f0a24004840.<init>(Random)",
+    "method": "Bounce$$Lambda/0x00007f0a24004840.<init>(som.Random)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Random.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.setAll(java.lang.Object[], java.util.function.IntFunction)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "stableLambdaName": "Bounce$$Lambda/0x00007f0a24004840.apply(int)",
+    "method": "Bounce$$Lambda/0x00007f0a24004840.apply(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Bounce.lambda$benchmark$0(som.Random, int)Bounce$Ball",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Bounce$Ball.<init>(som.Random)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 52,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Random.next()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Bounce$Ball.bounce()boolean",
+    "isMature": true,
+    "compilerIRSize": 69,
+    "data": [{
+      "bci": 41,
+      "branchTakenProbability": 0.9275532122632298
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 68,
+      "branchTakenProbability": 0.9295059558679946
+    },
+    {
+      "bci": 81,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 94,
+      "branchTakenProbability": 0.9291154071470415
+    },
+    {
+      "bci": 108,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 121,
+      "branchTakenProbability": 0.9273579379027533
+    },
+    {
+      "bci": 134,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

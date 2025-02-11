@@ -1,0 +1,82 @@
+{
+  "identifier": "HotSpotCompilation-127[java.util.concurrent.locks.ReentrantLock.unlock()]",
+  "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
+  "entryBCI": -1,
+  "codeSignature": "b0f896d74286e5b6b5f587b541dbc9302d8da3d92204e622649211785fa774ee",
+  "graphSignature": "345928e20117d88255105b75961a45a0f772b133876e72bd45ab080d9734ca62",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": 0.001143074871404077
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(int)boolean",
+    "isMature": true,
+    "compilerIRSize": 35,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 26,
+      "branchTakenProbability": 0.001143074871404077
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 0.001143074871404077
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.signalNext(java.util.concurrent.locks.AbstractQueuedSynchronizer$Node)void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 1.0
+    }]
+  }]
+}

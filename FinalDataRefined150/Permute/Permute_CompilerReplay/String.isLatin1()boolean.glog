@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-32[java.lang.String.isLatin1()]",
+  "method": "java.lang.String.isLatin1()boolean",
+  "entryBCI": -1,
+  "codeSignature": "aff68d19c4b4159a6aa7483c96272547c5a819a4e21a3698c7d4eec8ab0a601b",
+  "graphSignature": "4fcc83da4f6fad300af7f05d1ddac5ec0226e5bc05fc831a3f7ec484a1b056a7",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.String.isLatin1()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

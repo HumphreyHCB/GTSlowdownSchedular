@@ -1,0 +1,33 @@
+{
+  "identifier": "HotSpotCompilation-198[richards.Scheduler.holdSelf()]",
+  "method": "richards.Scheduler.holdSelf()richards.TaskControlBlock",
+  "entryBCI": -1,
+  "codeSignature": "55ec6a3448d0e449538e2d9457c8493cb1c1112019ef719ea9380a9e29f41197",
+  "graphSignature": "732a1a20cf9456cf2e94f560d70683df4aabeb6723a5356007b23bede8470755",
+  "result": true,
+  "profiles": [{
+    "method": "richards.Scheduler.holdSelf()richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "richards.Scheduler.holdSelf()richards.TaskControlBlock",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "richards.TaskState.setTaskHolding(boolean)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

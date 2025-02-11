@@ -1,0 +1,1086 @@
+{
+  "identifier": "HotSpotCompilation-197[cd.CollisionDetector.handleNewFrame(Vector)]",
+  "method": "cd.CollisionDetector.handleNewFrame(som.Vector)som.Vector",
+  "entryBCI": -1,
+  "codeSignature": "87b0725b32c107f3133feadb5f96ddefb3a3ebfd9414ffeb38a8cc5cfea46662",
+  "graphSignature": "6bb821cbad9843d8e6ad46eb990bdbade16d39c665dd6a6a36868a6a4c6c777a",
+  "result": true,
+  "profiles": [{
+    "method": "cd.CollisionDetector.handleNewFrame(som.Vector)som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CollisionDetector.handleNewFrame(som.Vector)som.Vector",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 25,
+      "branchTakenProbability": 8.489812225329604E-4
+    },
+    {
+      "bci": 31,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 63,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 71,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 75,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 78,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 84,
+      "branchTakenProbability": 0.9500199920031988
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 105,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 108,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 137,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 140,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 153,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 181,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 202,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 205,
+      "branchTakenProbability": 0.005939123979213066
+    },
+    {
+      "bci": 212,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 215,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 227,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 230,
+      "branchTakenProbability": 0.3333333333333333
+    },
+    {
+      "bci": 237,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 240,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 255,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 258,
+      "branchTakenProbability": 0.6666666666666666
+    },
+    {
+      "bci": 265,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 268,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 277,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 284,
+      "branchTakenProbability": 0.3140403286034354
+    },
+    {
+      "bci": 295,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 300,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 305,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 308,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.CollisionDetector$RemoveAbsentAircraft.<init>(cd.RedBlackTree, som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.forEach(som.ForEachInterface)void",
+    "isMature": true,
+    "compilerIRSize": 210,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.0014951569914841058
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/CallSign;",
+          "probability": 0.5455729166666666
+        },
+        {
+          "type": "Lcd/Vector2D;",
+          "probability": 0.4544270833333333
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/CollisionDetector$RemoveAbsentAircraft;",
+          "probability": 0.5455729166666666
+        },
+        {
+          "type": "Lcd/CollisionDetector$CollectCollisions;",
+          "probability": 0.4544270833333333
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 45,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.treeMinimum(cd.RedBlackTree$Node)cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.5251635631605436
+    },
+    {
+      "bci": 10,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree$Entry.<init>(java.lang.Object, java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CollisionDetector$RemoveAbsentAircraft.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 284,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CollisionDetector$RemoveAbsentAircraft.apply(cd.RedBlackTree$Entry)void",
+    "isMature": true,
+    "compilerIRSize": 258,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.get(java.lang.Comparable)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 16,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 0.4780316344463972
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.findNode(java.lang.Comparable)cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 337,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 0.044686109738012854
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/Vector2D;",
+          "probability": 0.6937286556969885
+        },
+        {
+          "type": "Lcd/CallSign;",
+          "probability": 0.3062713443030115
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Lcd/Vector2D;",
+          "probability": 0.6937286556969885
+        },
+        {
+          "type": "Lcd/CallSign;",
+          "probability": 0.3062713443030115
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 24,
+      "branchTakenProbability": 0.9541032805546932
+    },
+    {
+      "bci": 30,
+      "branchTakenProbability": 0.8595910841151906
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree$Node.successor()cd.RedBlackTree$Node",
+    "isMature": true,
+    "compilerIRSize": 80,
+    "data": [{
+      "bci": 6,
+      "branchTakenProbability": 0.4518648701425503
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "branchTakenProbability": 0.0011723329425556857
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "branchTakenProbability": 0.4514866979655712
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CollisionDetector.reduceCollisionSet(som.Vector)som.Vector",
+    "isMature": true,
+    "compilerIRSize": 803,
+    "data": [{
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 15,
+      "branchTakenProbability": 9.75609756097561E-4
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.CollisionDetector$CollectCollisions.<init>(som.Vector)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.at(int)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 19,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.RedBlackTree.put(java.lang.Comparable, java.lang.Object)java.lang.Object",
+    "isMature": true,
+    "compilerIRSize": 694,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "branchTakenProbability": 0.5284124194493263
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 31,
+      "branchTakenProbability": 0.10015414918215294
+    },
+    {
+      "bci": 36,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 45,
+      "branchTakenProbability": 0.4038543897216274
+    },
+    {
+      "bci": 50,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 55,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 58,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 61,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 64,
+      "branchTakenProbability": 0.8496966794380587
+    },
+    {
+      "bci": 69,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 75,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 82,
+      "branchTakenProbability": 0.4774296335634626
+    },
+    {
+      "bci": 87,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 93,
+      "branchTakenProbability": 0.08130081300813008
+    },
+    {
+      "bci": 98,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 104,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 112,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 117,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 120,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 131,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 134,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 146,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 149,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 152,
+      "branchTakenProbability": 0.0020429009193054137
+    },
+    {
+      "bci": 157,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 165,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 171,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 177,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 182,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 185,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 191,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 197,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 200,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 203,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 212,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 215,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 218,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 225,
+      "branchTakenProbability": 0.24264913104744013
+    },
+    {
+      "bci": 230,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 236,
+      "branchTakenProbability": 0.3267179359960308
+    },
+    {
+      "bci": 241,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 247,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 255,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 260,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 263,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 269,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 274,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 277,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 289,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 292,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 295,
+      "branchTakenProbability": 0.8905501245926778
+    },
+    {
+      "bci": 300,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 308,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 314,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 320,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 325,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 328,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 334,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 340,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 343,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 346,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 360,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Motion.<init>(cd.CallSign, cd.Vector3D, cd.Vector3D)void",
+    "isMature": false,
+    "compilerIRSize": 22,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9957039640695177
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.05
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "[Ljava/lang/invoke/LambdaForm$Name;",
+          "probability": 0.9620253164556962
+        },
+        {
+          "type": "[Ljava/lang/Class;",
+          "probability": 0.0379746835443038
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Motion.findIntersection(cd.Motion)cd.Vector3D",
+    "isMature": true,
+    "compilerIRSize": 264,
+    "data": [{
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 26,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 38,
+      "branchTakenProbability": 0.022368068577551567
+    },
+    {
+      "bci": 46,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 53,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 56,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 67,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 70,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 97,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 107,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 125,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 143,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 150,
+      "branchTakenProbability": 0.2740101383751199
+    },
+    {
+      "bci": 157,
+      "branchTakenProbability": 0.5272692960936025
+    },
+    {
+      "bci": 164,
+      "branchTakenProbability": 0.4439511653718091
+    },
+    {
+      "bci": 171,
+      "branchTakenProbability": 0.13333333333333333
+    },
+    {
+      "bci": 178,
+      "branchTakenProbability": 0.5204986813713738
+    },
+    {
+      "bci": 185,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 192,
+      "branchTakenProbability": 0.16016624040920716
+    },
+    {
+      "bci": 210,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 213,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 223,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 226,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 235,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 241,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 248,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 253,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 258,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 265,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 270,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 275,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 280,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 287,
+      "branchTakenProbability": 0.002237851662404092
+    },
+    {
+      "bci": 292,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 297,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 302,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 309,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 319,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 322,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 331,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "cd.Vector3D.squaredMagnitude()double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Vector3D.magnitude()double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Collision.<init>(cd.CallSign, cd.CallSign, cd.Vector3D)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}
