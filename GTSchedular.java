@@ -9,7 +9,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -42,11 +46,36 @@ public class GTSchedular {
            CompilerReplayRunner.run(benchmark, iterations, ID);
         }
 
+        // if (compilerReplay) {
+                
+
+        //     String sourcePath = "/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/Havlak/Havlak_CompilerReplay";
+        //     String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
+        //     try {
+        //         // Ensure destination directory exists
+        //         Files.createDirectories(Paths.get(destinationPath));
+
+        //         // Get all files in the source directory
+        //         DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(sourcePath));
+        //         for (Path file : stream) {
+        //             if (Files.isRegularFile(file)) { // Only process files
+        //                 Path destinationFile = Paths.get(destinationPath).resolve(file.getFileName());
+        //                 Files.copy(file, destinationFile, StandardCopyOption.REPLACE_EXISTING);
+        //             }
+        //         }
+        //     } catch (Exception e) {
+        //         e.printStackTrace();
+        //     }
+        // }
+
+
+
         MarkerRunner.run(benchmark, iterations, ID, compilerReplay);
         // ID = "2025_01_07_22_40_12";
         //DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         //DiviningRunnerMultiplexed.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         DiviningRunnerMultiplexed.runComplex(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        //DiviningRunnerMultiplexed.runComplexJumpStart(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
         mergeFinalJsonFiles(benchmark, ID);

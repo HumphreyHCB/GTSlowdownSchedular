@@ -2,12 +2,16 @@ package Phases.Divining;
 
 import java.util.List;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 import GTResources.AWFYBenchmarksLookUp;
 import Phases.Common.RemoveVtuneRun;
+import Phases.Common.SlowdownFileRetriever;
 import Phases.Divining.MarkerPhaseDataLookup.BlockInfo;
 import VTune.VTuneAnalyzer;
 import VTune.VTuneRunner;
@@ -456,6 +460,284 @@ public class DiviningRunnerMultiplexed {
             GTBuildFinalSlowdownFile.writeToFile("Final_" + formattedMethodName.replace("::", "."), RunID);
         } // end for each method
     }
+
+
+    public static void runComplexJumpStart(
+        String Benchmark,
+        int iterations,
+        String RunID,
+        boolean lowFootPrint,
+        boolean compilerReplay,
+        double slowdownAmount) {
+    // 1. Load marker-phase data
+    MarkerPhaseDataLookup.loadData(RunID);
+
+    // 2. Gather all methods
+    List<String> methods = MarkerPhaseDataLookup.getAllMethods();
+
+    Collections.reverse(methods);
+
+    try {
+        SlowdownFileRetriever.loadMethodBlockCostsFromJSON("/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/Havlak/Final_Havlak.json");
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+
+    // 3. For each method, do the new "complex" logic
+    for (String method : methods) {
+
+        // Clean up final slowdown data for each iteration of this method
+        GTBuildFinalSlowdownFile.slowdownData.clear();
+        GTBuildFinalSlowdownFile.backendSlowdownData.clear();
+
+        GTBuildSlowdownFile.slowdownData.clear();
+        GTBuildSlowdownFile.backendSlowdownData.clear();
+
+        // Format the method name as needed for usage elsewhere
+        String formattedMethodName = method.replace(".", "::");
+
+        // 3.1 Get all block infos for this method
+        List<BlockInfo> blocks = MarkerPhaseDataLookup.getBenchmarkEntries(formattedMethodName);
+
+        // 3.2 Create a tracker for each block, if it’s not trivially small
+        // and start each with slowdown guess = 1
+        Map<BlockInfo, BlockSlowdownTracker> trackers = new HashMap<>();
+        Map<BlockInfo, Integer> slowdownGuesses = new HashMap<>();
+
+        for (BlockInfo blockInfo : blocks) {
+            if (blockInfo.baseCpuTime < 0.01) {
+                // Skip extremely small / negligible blocks
+                continue;
+            }
+            // Initialize with slowdown=1
+            slowdownGuesses.put(blockInfo, 1);
+            
+            // as this is a jump start, we can start with a higher guess
+            if (blockInfo.backendBlock) {
+                slowdownGuesses.put(blockInfo, SlowdownFileRetriever.getBackendBlockCost(formattedMethodName.replace("::", "."), blockInfo.vtuneBlock));
+            }
+            else{
+                slowdownGuesses.put(blockInfo, SlowdownFileRetriever.getBlockCost(formattedMethodName.replace("::", "."), blockInfo.vtuneBlock));
+            }
+
+            // Create a tracker using the new class
+            BlockSlowdownTracker tracker = new BlockSlowdownTracker(blockInfo, slowdownAmount);
+            // We also want to record an initial "measurement" of 0 time, just to set it up
+            // or we can leave it until after the first actual measurement
+            trackers.put(blockInfo, tracker);
+        }
+
+        if (trackers.isEmpty()) {
+            // If no valid blocks, just skip
+            continue;
+        }
+
+        // 3.3 We'll iterate until all blocks are done
+        boolean allBlocksCompleted = false;
+        int iterationCounter = 0;
+
+        while (!allBlocksCompleted) {
+            allBlocksCompleted = true; // assume done until proven otherwise
+            iterationCounter++;
+
+            for (Map.Entry<BlockInfo, BlockSlowdownTracker> entry : trackers.entrySet()) {
+                BlockInfo block = entry.getKey();
+                BlockSlowdownTracker tracker = entry.getValue();
+
+                if (!tracker.isDone()) {
+                    // Retrieve or set the slowdown guess
+                    int currentGuess = slowdownGuesses.getOrDefault(block, 1);
+
+                    // Write this entry to the slowdown file
+                    GTBuildSlowdownFile.addEntry(
+                            formattedMethodName,
+                            block.graalID,
+                            block.vtuneBlock,
+                            currentGuess,
+                            block.backendBlock);
+
+                    // Mark that we are not done if at least one block is not done
+                    allBlocksCompleted = false;
+                }
+            }
+
+            // If everything was done before we even run, break the loop
+            if (allBlocksCompleted) {
+                break;
+            }
+
+            // 3.3.2 write out the slowdown file to disk
+            String pathToSlowdownFile = GTBuildSlowdownFile.writeToFile(
+                    "_Iter" + iterationCounter + "_" + formattedMethodName,
+                    RunID);
+
+            // 3.3.3 Run VTune with these slowdowns
+            String uniqueRunID = RunID + "_Iter" + iterationCounter;
+            String runLocation = VTuneRunner.runVtune(
+                    Benchmark,
+                    iterations,
+                    AWFYBenchmarksLookUp.getExtraArgs(Benchmark),
+                    false,
+                    true,
+                    pathToSlowdownFile,
+                    uniqueRunID,
+                    compilerReplay);
+
+            // 3.3.4 Get the CPU times from VTune
+            Map<Integer, Double> blocksSpeeds = VTuneAnalyzer.getCpuTimesForAllBlocks(runLocation,
+                    formattedMethodName);
+
+            // 3.3.5 For each block that is not done, record measurement & see if we
+            // overshot
+            int blocksDoneCount = 0;
+            BlockInfo lastActiveBlock = null;
+
+            for (Map.Entry<BlockInfo, BlockSlowdownTracker> entry : trackers.entrySet()) {
+                BlockInfo block = entry.getKey();
+                BlockSlowdownTracker tracker = entry.getValue();
+
+                if (tracker.isDone()) {
+                    // already finalized
+                    blocksDoneCount++;
+                    continue;
+                }
+
+                // retrieve current guess
+                int currentGuess = slowdownGuesses.get(block);
+
+                // read measured CPU time from the dictionary (or a default)
+                double measuredTime = blocksSpeeds.getOrDefault(block.vtuneBlock, 9999.0);
+
+                // record the measurement in the tracker
+                // (this call sets 'last' to what 'current' was,
+                // and 'current' to the new measurement)
+                tracker.recordMeasurement(currentGuess, measuredTime);
+
+                // see if we overshot enough to finalize
+                Integer maybeFinal = tracker.determineBestSlowdownIfOvershot();
+                if (maybeFinal != null) {
+                    // If we just got a final slowdown, store it
+                    storeFinalSlowdown(
+                            formattedMethodName.replace("::", "."),
+                            block,
+                            maybeFinal);
+                    blocksDoneCount++;
+                } else {
+                    // still under target => we may need to increment
+                    if (tracker.isUnderTarget()) {
+                        // increment slowdown
+                        int newGuess = currentGuess + 1;
+
+                        // We can also replicate your "faster increment" logic:
+                        if (currentGuess > 500) {
+                            newGuess += 100;
+                        } else if (currentGuess > 200) {
+                            newGuess += 50;
+                        } else if (currentGuess > 100) {
+                            newGuess += 10;
+                        } else if (currentGuess > 50) {
+                            newGuess += 5;
+                        } else if (currentGuess > 20) {
+                            newGuess += 1;
+                        }
+
+                        slowdownGuesses.put(block, newGuess);
+                    } else {
+                        // If it's neither under target nor overshot,
+                        // it might already be in the sweet spot.
+                        // This can happen if measuredTime is extremely close
+                        // to targetTime or exactly equals it.
+                        // Mark as final if you want, or keep iterating:
+                        tracker.isDone = true;
+                        storeFinalSlowdown(
+                                formattedMethodName.replace("::", "."),
+                                block,
+                                currentGuess);
+                        blocksDoneCount++;
+                    }
+                }
+
+                lastActiveBlock = tracker.isDone() ? lastActiveBlock : block;
+            }
+
+            // 3.3.6 Check if we only have one block left, refine with Diviner
+            // (like your original code)
+            int totalBlocks = trackers.size();
+            if (blocksDoneCount == totalBlocks - 1) {
+                // Identify the last not-done block
+                BlockInfo notDoneBlock = null;
+                for (BlockInfo b : trackers.keySet()) {
+                    if (!trackers.get(b).isDone()) {
+                        notDoneBlock = b;
+                        break;
+                    }
+                }
+                if (notDoneBlock != null) {
+                    // We do the refined logic
+                    int lastGuess = slowdownGuesses.get(notDoneBlock);
+
+                    // replicate your approach to scale back the guess
+                    if (lastGuess > 500) {
+                        lastGuess -= 100;
+                    } else if (lastGuess > 200) {
+                        lastGuess -= 50;
+                    } else if (lastGuess > 100) {
+                        lastGuess -= 10;
+                    } else if (lastGuess > 50) {
+                        lastGuess -= 5;
+                    } else if (lastGuess > 20) {
+                        lastGuess -= 1;
+                    }
+
+                    // call Diviner
+                    int slowdown = Diviner.DivineComplex(
+                            RunID,
+                            formattedMethodName,
+                            notDoneBlock,
+                            Benchmark,
+                            iterations,
+                            lowFootPrint,
+                            compilerReplay,
+                            slowdownAmount,
+                            slowdownGuesses.get(notDoneBlock),
+                            lastGuess);
+                    // store final
+                    storeFinalSlowdown(
+                            formattedMethodName.replace("::", "."),
+                            notDoneBlock,
+                            slowdown);
+                    trackers.get(notDoneBlock).isDone = true;
+                }
+
+                // We’re effectively done for this method
+                allBlocksCompleted = true;
+            }
+
+            // 3.3.7 If lowFootPrint is set, generate a report & remove VTune runs
+            // (same as your existing logic)
+            if (lowFootPrint) {
+                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID
+                        + "_SlowDown_Data/LowFootPrintDumps";
+                File directory = new File(directoryPath);
+                if (!directory.exists()) {
+                    directory.mkdirs();
+                }
+                String fileName = new File(runLocation).getName();
+                String outputFilePath2 = directoryPath + "/" + fileName + "_" + method + ".txt";
+
+                // Generate VTune method-block report
+                VTuneAnalyzer.generateMethodBlockVTuneReport(fileName, method, outputFilePath2);
+
+                // Clean up
+                RemoveVtuneRun.run(runLocation);
+            }
+        } // end while !allBlocksCompleted
+
+        // 3.4 Write final results for this method
+        GTBuildFinalSlowdownFile.writeToFile("Final_" + formattedMethodName.replace("::", "."), RunID);
+    } // end for each method
+}
 
     /**
      * Helper method to store a final slowdown value for a block
