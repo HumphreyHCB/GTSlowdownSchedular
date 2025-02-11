@@ -14,7 +14,7 @@ import java.util.Map.Entry;
  */
 public class MethodTargeter {
 
-    static double SIGNIFICANT_THRESHOLD = 85.0;
+    static double SIGNIFICANT_THRESHOLD = 90.0;
 
     public static List<String> findSignificantMethod(Map<String, Double> methods) {
         
@@ -40,6 +40,10 @@ public class MethodTargeter {
         double sum = 0.0;
         List<String> significantMethods = new ArrayList<>();
         for (Map.Entry<String, Double> entry : sortedMethods) {
+            if (entry.getValue() < 0.9) {
+                continue;
+                
+            }
             sum += entry.getValue();
             significantMethods.add(entry.getKey());
             if (sum >= threshold) {

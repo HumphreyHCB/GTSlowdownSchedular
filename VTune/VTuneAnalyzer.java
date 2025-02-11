@@ -5,7 +5,7 @@ import java.util.*;
 public class VTuneAnalyzer {
     
     public static Map<String, Double> getAllMethodsFoundByVtune(String RunID) {
-        Map<String, Double> methodPercentages = new LinkedHashMap<>();
+        //Map<String, Double> methodPercentages = new LinkedHashMap<>();
         double totalCpuTime = 0.0;
         Map<String, Double> methodCpuTimes = new LinkedHashMap<>();
     
@@ -44,7 +44,7 @@ public class VTuneAnalyzer {
                     try {
                         String functionName = tokens[2];
                         double cpuTime = Double.parseDouble(tokens[1].replace("s", ""));
-                        methodCpuTimes.put(functionName, cpuTime);
+                        methodCpuTimes.put(functionName.replaceAll("\\([^)]*\\)$", ""), cpuTime + methodCpuTimes.getOrDefault(functionName.replaceAll("\\([^)]*\\)$", ""), 0.0)); // sometimes it may have multiple entries for the same function, e.g. recomp
                         totalCpuTime += cpuTime;
                     } catch (NumberFormatException e) {
                         //System.out.println("Skipping invalid line: " + line);
@@ -63,16 +63,16 @@ public class VTuneAnalyzer {
         }
     
         // Calculate and add percentage of total runtime for each method
-        if (totalCpuTime > 0) {
-            for (Map.Entry<String, Double> entry : methodCpuTimes.entrySet()) {
-                double percentage = (entry.getValue() / totalCpuTime) * 100;
-                methodPercentages.put(entry.getKey().replaceAll("\\([^)]*\\)$", ""), percentage);
-            }
-        } else {
-            System.out.println("No valid data found for CPU time calculation.");
-        }
+        // if (totalCpuTime > 0) {
+       //      for (Map.Entry<String, Double> entry : methodCpuTimes.entrySet()) {
+        //         double percentage = (entry.getValue() / totalCpuTime) * 100;
+        //         methodPercentages.put(entry.getKey().replaceAll("\\([^)]*\\)$", ""), percentage);
+        //     }
+        // } else {
+        //     System.out.println("No valid data found for CPU time calculation.");
+        // }
     
-        return methodPercentages;
+        return methodCpuTimes;
     }
 
 
