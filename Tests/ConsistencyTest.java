@@ -55,8 +55,8 @@ public class ConsistencyTest {
     public static void main(String[] args) {
     //testBenchmark("CD", 50);
     //    testBenchmark("Havlak", 500);
-      testBenchmark("Bounce", 500);
-    //  testAWFYSuite();
+    //  testBenchmark("Bounce", 500);
+      testAWFYSuite();
     //     int iterations = 100;
     //     boolean lowFootPrint = true;
     //     String benchmark = "Json";

@@ -1,11 +1,10 @@
 package VTune;
+import GTResources.AWFYBenchmarksLookUp;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
-import GTResources.AWFYBenchmarksLookUp;
 
 public class VTuneRunner {
 
@@ -60,7 +59,7 @@ public class VTuneRunner {
         command.add("-XX:-TieredCompilation");
         command.add("-XX:-BackgroundCompilation");
 
-
+        //command.add("-Djdk.graal.MixGTSlowdown=false");
 
         if (compilerReplay) {
             command.add("-Djdk.graal.StrictProfiles=false");

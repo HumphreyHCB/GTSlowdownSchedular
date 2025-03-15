@@ -42,31 +42,31 @@ public class GTSchedular {
     /// this method should invoke both the marker and divining phase
     public void schedule() {
 
-       if (compilerReplay) {
-           CompilerReplayRunner.run(benchmark, iterations, ID);
-        }
+    //    if (compilerReplay) {
+    //        CompilerReplayRunner.run(benchmark, iterations, ID);
+    //     }
 
-        // if (compilerReplay) {
+        if (compilerReplay) {
                 
 
-        //     String sourcePath = "/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/Havlak/Havlak_CompilerReplay";
-        //     String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
-        //     try {
-        //         // Ensure destination directory exists
-        //         Files.createDirectories(Paths.get(destinationPath));
+            String sourcePath = "/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/"+ benchmark+"/"+ benchmark + "_CompilerReplay";
+            String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
+            try {
+                // Ensure destination directory exists
+                Files.createDirectories(Paths.get(destinationPath));
 
-        //         // Get all files in the source directory
-        //         DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(sourcePath));
-        //         for (Path file : stream) {
-        //             if (Files.isRegularFile(file)) { // Only process files
-        //                 Path destinationFile = Paths.get(destinationPath).resolve(file.getFileName());
-        //                 Files.copy(file, destinationFile, StandardCopyOption.REPLACE_EXISTING);
-        //             }
-        //         }
-        //     } catch (Exception e) {
-        //         e.printStackTrace();
-        //     }
-        // }
+                // Get all files in the source directory
+                DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(sourcePath));
+                for (Path file : stream) {
+                    if (Files.isRegularFile(file)) { // Only process files
+                        Path destinationFile = Paths.get(destinationPath).resolve(file.getFileName());
+                        Files.copy(file, destinationFile, StandardCopyOption.REPLACE_EXISTING);
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
 
 
@@ -74,11 +74,11 @@ public class GTSchedular {
         // ID = "2025_01_07_22_40_12";
         //DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         //DiviningRunnerMultiplexed.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
-        DiviningRunnerMultiplexed.runComplex(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        //DiviningRunnerMultiplexed.runComplex(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         //DiviningRunnerMultiplexed.runComplexJumpStart(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
-        mergeFinalJsonFiles(benchmark, ID);
+        //mergeFinalJsonFiles(benchmark, ID);
 
     }
 

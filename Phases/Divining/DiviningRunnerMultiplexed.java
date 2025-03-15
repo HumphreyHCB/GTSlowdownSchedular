@@ -36,7 +36,7 @@ public class DiviningRunnerMultiplexed {
             // Keep track of blocks that are still being adjusted
             Map<BlockInfo, Integer> activeBlocks = new HashMap<>();
             for (BlockInfo blockInfo : blocks) {
-                if (blockInfo.baseCpuTime < 0.01) {
+                if (blockInfo.baseCpuTime < 0.0001) {
                     // blocks like these are too unstable, and might not aprea in all ones with no
                     // time
                 } else {
@@ -236,7 +236,7 @@ public class DiviningRunnerMultiplexed {
             Map<BlockInfo, Integer> slowdownGuesses = new HashMap<>();
 
             for (BlockInfo blockInfo : blocks) {
-                if (blockInfo.baseCpuTime < 0.01) {
+                if (blockInfo.baseCpuTime < 0.0001) {
                     // Skip extremely small / negligible blocks
                     continue;
                 }
@@ -506,7 +506,7 @@ public class DiviningRunnerMultiplexed {
         Map<BlockInfo, Integer> slowdownGuesses = new HashMap<>();
 
         for (BlockInfo blockInfo : blocks) {
-            if (blockInfo.baseCpuTime < 0.01) {
+            if (blockInfo.baseCpuTime < 0.0001) {
                 // Skip extremely small / negligible blocks
                 continue;
             }
