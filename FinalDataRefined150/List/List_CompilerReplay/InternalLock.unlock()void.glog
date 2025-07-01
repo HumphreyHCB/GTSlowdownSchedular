@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-137[jdk.internal.misc.InternalLock.unlock()]",
+  "identifier": "HotSpotCompilation-135[jdk.internal.misc.InternalLock.unlock()]",
   "method": "jdk.internal.misc.InternalLock.unlock()void",
   "entryBCI": -1,
-  "codeSignature": "eecf104e9ec3900be438d3b57a74b76a6df0d4f62f7f8d690fe47ac28decda4b",
+  "codeSignature": "5a6f918a126233fe6841a7c5c403e3e70a07f4579233a82caceb3e771391e739",
   "graphSignature": "86361414adb4a9e4436ae72ae48c068d8f05d73b49e441bd5f4d0c799736d10b",
   "result": true,
   "profiles": [{
@@ -39,7 +39,7 @@
     },
     {
       "bci": 5,
-      "branchTakenProbability": 7.620499142693847E-4
+      "branchTakenProbability": 0.0011361484567316796
     },
     {
       "bci": 12,
@@ -85,7 +85,7 @@
     "compilerIRSize": 0,
     "data": [{
       "bci": 1,
-      "branchTakenProbability": 0.9958055290753098
+      "branchTakenProbability": 0.994691943127962
     },
     {
       "bci": 5,
@@ -93,7 +93,7 @@
     },
     {
       "bci": 10,
-      "branchTakenProbability": 0.18181818181818182
+      "branchTakenProbability": 0.26666666666666666
     },
     {
       "bci": 14,
@@ -101,7 +101,7 @@
     },
     {
       "bci": 17,
-      "branchTakenProbability": 0.7777777777777778
+      "branchTakenProbability": 0.7727272727272727
     },
     {
       "bci": 22,

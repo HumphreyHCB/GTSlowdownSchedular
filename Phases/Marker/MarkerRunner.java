@@ -1,13 +1,11 @@
 package Phases.Marker;
 
-import java.util.List;
-import java.util.Map;
-
 import GTResources.AWFYBenchmarksLookUp;
 import Phases.Common.BuildResultsForRun;
 import VTune.VTuneAnalyzer;
-import VTune.VTuneReportRipper;
 import VTune.VTuneRunner;
+import java.util.List;
+import java.util.Map;
 
 public class MarkerRunner {
 

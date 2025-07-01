@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-204[deltablue.Planner.constraintsConsuming(Variable, ForEachInterface)]",
+  "identifier": "HotSpotCompilation-196[deltablue.Planner.constraintsConsuming(Variable, ForEachInterface)]",
   "method": "deltablue.Planner.constraintsConsuming(deltablue.Variable, som.ForEachInterface)void",
   "entryBCI": -1,
-  "codeSignature": "e7eb1e48411f85fe44e5722fba361dcb2e366c7818c4aa8a4eda6c838238b163",
-  "graphSignature": "dec064e67db1e7d74facbddc5fd47039633ac5bce9c1454e1ba65768129953b5",
+  "codeSignature": "495111116788d67c5d5099aee7d3db848970bd940add4a482f78eb23ac82c10b",
+  "graphSignature": "c2ec71108e8dcc189103598247269b0722c9ff591bcd2d322c46e3676f5932fe",
   "result": true,
   "profiles": [{
     "method": "deltablue.Planner.constraintsConsuming(deltablue.Variable, som.ForEachInterface)void",
@@ -26,62 +26,25 @@
     {
       "bci": 16,
       "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object, java.lang.Object)java.lang.Object",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 1,
-      "typeProfile": {
-        "nullSeen": "FALSE",
-        "types": [{
-          "type": "Ljava/lang/invoke/DirectMethodHandle$Constructor;",
-          "probability": 1.0
-        }],
-        "notRecordedProbability": 0.0
-      }
-    }]
-  },
-  {
-    "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object)java.lang.Object",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
+    },
+    {
       "bci": 19,
       "exceptionSeen": "FALSE"
     }]
   },
   {
-    "method": "java.lang.invoke.DirectMethodHandle.allocateInstance(java.lang.Object)java.lang.Object",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 12,
-      "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": []
-  },
-  {
-    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(AbstractConstraint, ForEachInterface)",
-    "method": "deltablue.Planner$$Lambda/0x00007f795c00ab20.<init>(deltablue.AbstractConstraint, som.ForEachInterface)void",
+    "method": "deltablue.Planner$4.<init>(deltablue.Planner, deltablue.AbstractConstraint, som.ForEachInterface)void",
     "isMature": false,
     "compilerIRSize": 0,
     "data": [{
-      "bci": 1,
+      "bci": 16,
       "exceptionSeen": "FALSE"
     }]
   },
   {
     "method": "som.Vector.forEach(som.ForEachInterface)void",
     "isMature": true,
-    "compilerIRSize": 605,
+    "compilerIRSize": 597,
     "data": [{
       "bci": 10,
       "branchTakenProbability": 0.37463426429694113
@@ -96,23 +59,23 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/Planner$$Lambda.0x00007f795c0097d8;",
+          "type": "Ldeltablue/Planner$3;",
           "probability": 0.7326966205243214
         },
         {
-          "type": "Ldeltablue/Planner$$Lambda.0x00007f795c00a6e0;",
+          "type": "Ldeltablue/Planner$5;",
           "probability": 0.13359368958317222
         },
         {
-          "type": "Ldeltablue/Planner$$Lambda.0x00007f795c00ab20;",
+          "type": "Ldeltablue/Planner$4;",
           "probability": 0.13359368958317222
         },
         {
-          "type": "Lsom/Vector$$Lambda.0x00007f795c00a4c0;",
+          "type": "Lsom/Vector$$Lambda.0x00007f07dc00a538;",
           "probability": 7.733353955610548E-5
         },
         {
-          "type": "Ldeltablue/Planner$$Lambda.0x00007f795c009c88;",
+          "type": "Ldeltablue/Planner$2;",
           "probability": 3.866676977805274E-5
         }],
         "notRecordedProbability": 0.0

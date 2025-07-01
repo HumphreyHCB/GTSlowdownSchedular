@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-29[java.lang.String.coder()]",
+  "method": "java.lang.String.coder()byte",
+  "entryBCI": -1,
+  "codeSignature": "6c6d13c7c50b4626ba2abedf64e0ee9f6a5a8562615b0498597b8e0d4dd6e0ba",
+  "graphSignature": "2a89e6f1d8e4a559db871761e4b7a67c4847787f5f9b19d2e9a7cb6b1b60f6ad",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.String.coder()byte",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.String.coder()byte",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

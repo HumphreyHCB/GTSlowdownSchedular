@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-322[java.lang.Math.max(int, int)]",
+  "identifier": "HotSpotCompilation-313[java.lang.Math.max(int, int)]",
   "method": "java.lang.Math.max(int, int)int",
   "entryBCI": -1,
   "codeSignature": "67b22c1295eeb7e1911e955a4efdd76665dd1ffc2ebc4e43766332e3bd26ecfd",
@@ -17,7 +17,7 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 2,
-      "branchTakenProbability": 0.8337890625
+      "branchTakenProbability": 0.8453125
     }]
   }]
 }

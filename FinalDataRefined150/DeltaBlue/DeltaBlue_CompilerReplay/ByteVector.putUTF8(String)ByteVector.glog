@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-275[jdk.internal.org.objectweb.asm.ByteVector.putUTF8(String)]",
+  "identifier": "HotSpotCompilation-270[jdk.internal.org.objectweb.asm.ByteVector.putUTF8(String)]",
   "method": "jdk.internal.org.objectweb.asm.ByteVector.putUTF8(java.lang.String)jdk.internal.org.objectweb.asm.ByteVector",
   "entryBCI": -1,
-  "codeSignature": "5f02dea4edcdf4faf408b0405e20dcd47eb80441b7a574af5590f847ca207372",
+  "codeSignature": "291713bef0034864b1973a299d1c8dad6ea7a4cb768c422e3d59622fd439d30f",
   "graphSignature": "ac5a8a322b6f670ea34b6c11ce991f0ba850baa47892dbc32672fe9cc77975a9",
   "result": true,
   "profiles": [{
@@ -29,7 +29,7 @@
     },
     {
       "bci": 36,
-      "branchTakenProbability": 0.8573770491803279
+      "branchTakenProbability": 0.863849765258216
     },
     {
       "bci": 43,
@@ -45,7 +45,7 @@
     },
     {
       "bci": 79,
-      "branchTakenProbability": 0.043815543743714984
+      "branchTakenProbability": 0.04267111853088481
     },
     {
       "bci": 85,

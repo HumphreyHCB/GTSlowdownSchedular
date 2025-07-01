@@ -1,0 +1,40 @@
+{
+  "identifier": "HotSpotCompilation-325[jdk.internal.util.ArraysSupport.newLength(int, int, int)]",
+  "method": "jdk.internal.util.ArraysSupport.newLength(int, int, int)int",
+  "entryBCI": -1,
+  "codeSignature": "78168e06d143a3dc7ab8e4aa81c4e3d94943158fbe5a536d35a22f5b5f3e3743",
+  "graphSignature": "d21222dffdc81e159e232d08c0d29a52416550b8eb8e65bfc1d5869621a9937e",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.util.ArraysSupport.newLength(int, int, int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.util.ArraysSupport.newLength(int, int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 16,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.Math.max(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.8338215192345245
+    }]
+  }]
+}

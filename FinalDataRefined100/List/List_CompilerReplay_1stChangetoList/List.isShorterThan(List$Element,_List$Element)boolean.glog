@@ -1,0 +1,35 @@
+{
+  "identifier": "HotSpotCompilation-78[List.isShorterThan(List$Element, List$Element)]",
+  "method": "List.isShorterThan(List$Element, List$Element)boolean",
+  "entryBCI": -1,
+  "codeSignature": "d2363acedaa508b39e8c646da265a84f235dbe8317b0978ef70766179c2c444c",
+  "graphSignature": "227cb2badf9e0c25aadb1a98059e93f8ab1918569bdba8e6d747f87de1a5c531",
+  "result": true,
+  "profiles": [{
+    "method": "List.isShorterThan(List$Element, List$Element)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "List.isShorterThan(List$Element, List$Element)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.10071804691239827
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.9620994357500267
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

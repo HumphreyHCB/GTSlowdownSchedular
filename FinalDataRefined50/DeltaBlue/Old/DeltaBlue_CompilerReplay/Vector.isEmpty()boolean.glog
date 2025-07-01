@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-114[som.Vector.isEmpty()]",
+  "method": "som.Vector.isEmpty()boolean",
+  "entryBCI": -1,
+  "codeSignature": "deff326bcffebbd483c27c216892d7aa83fb614f9ea289f63ea8e3e0c28d90b0",
+  "graphSignature": "6afb3a829eac56112fa505d26292aa67cb563d734ee40de2970ad4ee730a6039",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.isEmpty()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.isEmpty()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "branchTakenProbability": 0.6666015625
+    }]
+  }]
+}

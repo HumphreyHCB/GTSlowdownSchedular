@@ -14,7 +14,7 @@ import java.util.Map.Entry;
  */
 public class MethodTargeter {
 
-    static double SIGNIFICANT_THRESHOLD = 90.0;
+    static double SIGNIFICANT_THRESHOLD = 98.0;
 
     public static List<String> findSignificantMethod(Map<String, Double> methods) {
         

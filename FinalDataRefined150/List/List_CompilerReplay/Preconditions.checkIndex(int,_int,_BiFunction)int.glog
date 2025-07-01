@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-77[jdk.internal.util.Preconditions.checkIndex(int, int, BiFunction)]",
+  "identifier": "HotSpotCompilation-35[jdk.internal.util.Preconditions.checkIndex(int, int, BiFunction)]",
   "method": "jdk.internal.util.Preconditions.checkIndex(int, int, java.util.function.BiFunction)int",
   "entryBCI": -1,
   "codeSignature": "3385dde4e72387b4f75c630f1dfc48e9266027d0a0b3acdef294fda3129c526b",

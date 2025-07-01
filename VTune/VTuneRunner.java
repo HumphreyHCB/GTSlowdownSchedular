@@ -1,5 +1,7 @@
 package VTune;
 import GTResources.AWFYBenchmarksLookUp;
+import Phases.GTSchedular;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -31,6 +33,8 @@ public class VTuneRunner {
         command.add("enable-stack-collection=true");
        }
 
+
+
        command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
 
         command.add("--");
@@ -43,11 +47,27 @@ public class VTuneRunner {
             command.add("-Djdk.graal.LIRBlockSlowdownFileName=" + lirBlockSlowdownFileName);
         }
 
-        if (benchmark.equals("Havlak")) {
+        if (benchmark.equals("Havlak") || benchmark.equals("DeltaBlue")) {
             command.add("-Xms8g");
             command.add("-Xmx8g");
     
         }
+        
+        //this should be removed
+       //command.add("-Djdk.graal.SlowdownType=" +  GTSchedular.SLOWDOWN_TYPE);
+       command.add("-Djdk.graal.SlowdownType=RPP");
+       switch (GTSchedular.SLOWDOWN_POS) {
+       case "A":
+            command.add("-Djdk.graal.GTForcePositionOne=true");
+            break;
+         case "B":
+            command.add("-Djdk.graal.GTForcePositionEnd=true");
+            break;
+        default:
+            break;
+       }
+       //command.add("-Djdk.graal.GTForcePositionOne=true");
+       //
 
         // Add other fixed JVM options
         command.add("-Djdk.graal.IsolatedLoopHeaderAlignment=0");

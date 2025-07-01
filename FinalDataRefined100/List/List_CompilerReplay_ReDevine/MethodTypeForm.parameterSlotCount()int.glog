@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-89[java.lang.invoke.MethodTypeForm.parameterSlotCount()]",
+  "method": "java.lang.invoke.MethodTypeForm.parameterSlotCount()int",
+  "entryBCI": -1,
+  "codeSignature": "75a45e55908bce340d585493e740588c32b7105ab2bc42d5e66b92ff7fce2613",
+  "graphSignature": "2a89e6f1d8e4a559db871761e4b7a67c4847787f5f9b19d2e9a7cb6b1b60f6ad",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MethodTypeForm.parameterSlotCount()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MethodTypeForm.parameterSlotCount()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

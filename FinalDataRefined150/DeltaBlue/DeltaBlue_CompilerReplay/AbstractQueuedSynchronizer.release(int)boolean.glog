@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-214[java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)]",
+  "identifier": "HotSpotCompilation-303[java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)]",
   "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
   "entryBCI": -1,
-  "codeSignature": "a66e5734da1405ee667a387a3e00b531774b4074830cc59ae677713f06956023",
-  "graphSignature": "756b43693f4a34d2e97c5ed3ed9a36256fa8cde6d55136929ed2c8856c4f4b3f",
+  "codeSignature": "39d77553913388df021fe9c5c66f32af29526782cb3b1ab499b46085fabda7b4",
+  "graphSignature": "40da5f165fcd46674a19a1a3a252a9a35da458b4478e94c70463c1cbec139f54",
   "result": true,
   "profiles": [{
     "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
@@ -21,7 +21,7 @@
     },
     {
       "bci": 5,
-      "branchTakenProbability": 3.8109756097560977E-4
+      "branchTakenProbability": 0.0011432926829268292
     },
     {
       "bci": 12,
@@ -42,11 +42,11 @@
     },
     {
       "bci": 26,
-      "branchTakenProbability": 3.8109756097560977E-4
+      "branchTakenProbability": 0.0011432926829268292
     },
     {
       "bci": 36,
-      "branchTakenProbability": 3.8109756097560977E-4
+      "branchTakenProbability": 0.0011432926829268292
     }]
   },
   {
@@ -67,92 +67,7 @@
     "compilerIRSize": 0,
     "data": [{
       "bci": 1,
-      "branchTakenProbability": 0.9921845215402211
-    },
-    {
-      "bci": 5,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 10,
-      "branchTakenProbability": 0.0975609756097561
-    },
-    {
-      "bci": 14,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 17,
-      "branchTakenProbability": 0.918918918918919
-    },
-    {
-      "bci": 22,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 27,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 30,
-      "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer$Node.getAndUnsetStatus(int)int",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": []
-  },
-  {
-    "method": "jdk.internal.misc.Unsafe.getAndBitwiseAndInt(java.lang.Object, long, int)int",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 3,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 18,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 21,
-      "branchTakenProbability": -1.0
-    }]
-  },
-  {
-    "method": "java.util.concurrent.locks.LockSupport.unpark(java.lang.Thread)void",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 1,
-      "branchTakenProbability": -1.0
-    },
-    {
-      "bci": 5,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 8,
-      "branchTakenProbability": -1.0
-    },
-    {
-      "bci": 22,
-      "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "java.lang.Thread.isVirtual()boolean",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 1,
-      "typeProfile": {
-        "nullSeen": "UNKNOWN",
-        "types": [],
-        "notRecordedProbability": 1.0
-      }
+      "branchTakenProbability": 1.0
     }]
   }]
 }

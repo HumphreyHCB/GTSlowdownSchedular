@@ -1,0 +1,27 @@
+{
+  "identifier": "HotSpotCompilation-116[java.lang.invoke.DirectMethodHandle.constructorMethod(Object)]",
+  "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "4588c18b3aa2ddbf3c092fdefe2b36ae4742e0a58978b6003be46892c219d5da",
+  "graphSignature": "01832a76041afc94975a3d713d30bcd718a0f7946021153823d30e8d53cbb407",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.DirectMethodHandle.constructorMethod(java.lang.Object)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

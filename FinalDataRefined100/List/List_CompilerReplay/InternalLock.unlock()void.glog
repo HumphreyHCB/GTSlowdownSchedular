@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-137[jdk.internal.misc.InternalLock.unlock()]",
+  "identifier": "HotSpotCompilation-135[jdk.internal.misc.InternalLock.unlock()]",
   "method": "jdk.internal.misc.InternalLock.unlock()void",
   "entryBCI": -1,
-  "codeSignature": "5d20e8b6aed3c5a3670db473f25d76b26e6c7af721c4787d6796d87bcfd7620f",
+  "codeSignature": "3c50b87044199049b8c982dcbfe86ca6eb9f16b8382e2b1a6f62d62b018543ac",
   "graphSignature": "86361414adb4a9e4436ae72ae48c068d8f05d73b49e441bd5f4d0c799736d10b",
   "result": true,
   "profiles": [{
@@ -101,7 +101,7 @@
     },
     {
       "bci": 17,
-      "branchTakenProbability": 0.7727272727272727
+      "branchTakenProbability": 0.7272727272727273
     },
     {
       "bci": 22,

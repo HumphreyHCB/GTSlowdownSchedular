@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-125[Benchmark.innerBenchmarkLoop(int)]",
+  "identifier": "HotSpotCompilation-123[Benchmark.innerBenchmarkLoop(int)]",
   "method": "Benchmark.innerBenchmarkLoop(int)boolean",
   "entryBCI": -1,
-  "codeSignature": "83373d36379422c5bd9953d10687677c75eafa0b815b7a8dbd7bd31b90f59f5a",
+  "codeSignature": "0a5fb56c8c97cd9a47fad55dab87dbadbcb8d5ef5633556a61a0b257a6962266",
   "graphSignature": "7a271abf22a1270f391e80a5947622a55c5b80f49b8c0efec707ed8306ff89bb",
   "result": true,
   "profiles": [{
@@ -51,7 +51,7 @@
   {
     "method": "List.benchmark()java.lang.Object",
     "isMature": false,
-    "compilerIRSize": 403,
+    "compilerIRSize": 352,
     "data": [{
       "bci": 4,
       "exceptionSeen": "FALSE"

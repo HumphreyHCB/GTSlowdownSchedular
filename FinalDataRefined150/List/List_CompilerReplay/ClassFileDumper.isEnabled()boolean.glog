@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-121[jdk.internal.util.ClassFileDumper.isEnabled()]",
+  "identifier": "HotSpotCompilation-119[jdk.internal.util.ClassFileDumper.isEnabled()]",
   "method": "jdk.internal.util.ClassFileDumper.isEnabled()boolean",
   "entryBCI": -1,
-  "codeSignature": "dc2f2f8b73bd6f8b29e111e4a291e9ae1f9d89b246fd816e80554d5c4a04473d",
+  "codeSignature": "f203f036161ba2c3502496bf6eaa3933557bd2bbc3ebf9d60167b5166b3fcf93",
   "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
   "result": true,
   "profiles": [{

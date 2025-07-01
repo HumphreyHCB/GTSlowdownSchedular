@@ -1,0 +1,76 @@
+{
+  "identifier": "HotSpotCompilation-79[List.tail(List$Element, List$Element, List$Element)]",
+  "method": "List.tail(List$Element, List$Element, List$Element)List$Element",
+  "entryBCI": -1,
+  "codeSignature": "b198a76cbd5c31c810618222049075cba0bdc454b1dc60feb665898fc735b7e0",
+  "graphSignature": "bc629c51398748ddebf0eb3ace8698a64c6a063f7723d856ea5eeebc9f61868d",
+  "result": true,
+  "profiles": [{
+    "method": "List.tail(List$Element, List$Element, List$Element)List$Element",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "List.tail(List$Element, List$Element, List$Element)List$Element",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "branchTakenProbability": 0.7494140625
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 37,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 40,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "List.isShorterThan(List$Element, List$Element)boolean",
+    "isMature": true,
+    "compilerIRSize": 60,
+    "data": [{
+      "bci": 10,
+      "branchTakenProbability": 0.10074626865671642
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.9621236301734227
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 29,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

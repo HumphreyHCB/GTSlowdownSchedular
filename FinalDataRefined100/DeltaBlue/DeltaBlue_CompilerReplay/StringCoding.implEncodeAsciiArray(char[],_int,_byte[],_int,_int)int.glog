@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-333[java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)]",
+  "identifier": "HotSpotCompilation-323[java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)]",
   "method": "java.lang.StringCoding.implEncodeAsciiArray(char[], int, byte[], int, int)int",
   "entryBCI": -1,
   "codeSignature": "77964bcdbb3bc95c66882eedb1d0ec870784288456b3efa0c268902c5a463a63",

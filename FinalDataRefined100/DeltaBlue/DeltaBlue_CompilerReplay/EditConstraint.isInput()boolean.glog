@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-318[deltablue.EditConstraint.isInput()]",
+  "identifier": "HotSpotCompilation-309[deltablue.EditConstraint.isInput()]",
   "method": "deltablue.EditConstraint.isInput()boolean",
   "entryBCI": -1,
-  "codeSignature": "17238220901c42979248b24455410326a5b71410c6426a11805f23bc37b04eac",
+  "codeSignature": "b67564e7881add4047ff3f84f235a7a74ee3f8ac563bfb4fec0d639d50a3ece1",
   "graphSignature": "53d4769a31fdffbc178cfbdf0ff454d5e37ea9db7d0a46604ecac26b60bad021",
   "result": true,
   "profiles": [{

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-60[java.lang.invoke.MemberName.getDeclaringClass()]",
+  "method": "java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class",
+  "entryBCI": -1,
+  "codeSignature": "77af10db18d906f2caff7e0fd380ba5368784c9668f6b0e01173bb7b8c9b878b",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MemberName.getDeclaringClass()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

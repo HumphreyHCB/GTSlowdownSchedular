@@ -1,0 +1,77 @@
+{
+  "identifier": "HotSpotCompilation-94[Sieve.benchmark()]",
+  "method": "Sieve.benchmark()java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "6bd019d853b73faef57b5d24f36db3d35558714ad80c6ba78446746e5103a97f",
+  "graphSignature": "cb4a102852e4a4bed6952b612ec548afebfc8f716fb4643ea78a421607b53034",
+  "result": true,
+  "profiles": [{
+    "method": "Sieve.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Sieve.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.fill(boolean[], boolean)void",
+    "isMature": true,
+    "compilerIRSize": 154,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 1.9527436047646945E-4
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Sieve.sieve(boolean[], int)int",
+    "isMature": true,
+    "compilerIRSize": 108,
+    "data": [{
+      "bci": 8,
+      "branchTakenProbability": 2.0E-4
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.8661732346469294
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.06065276518585675
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-38[java.lang.StringLatin1.equals(byte[], byte[])]",
+  "identifier": "HotSpotCompilation-34[java.lang.StringLatin1.equals(byte[], byte[])]",
   "method": "java.lang.StringLatin1.equals(byte[], byte[])boolean",
   "entryBCI": -1,
   "codeSignature": "cd66d543421d3dd905d4390d120065fdfc0f807b59e902689dd3cbd0598fd0be",
@@ -25,7 +25,7 @@
     },
     {
       "bci": 4,
-      "branchTakenProbability": 0.8589564732142857
+      "branchTakenProbability": 0.8597935267857143
     },
     {
       "bci": 11,
@@ -33,7 +33,7 @@
     },
     {
       "bci": 12,
-      "branchTakenProbability": 0.041406548604917826
+      "branchTakenProbability": 0.04275788348476751
     },
     {
       "bci": 17,
@@ -45,7 +45,7 @@
     },
     {
       "bci": 21,
-      "branchTakenProbability": 0.9088250930356193
+      "branchTakenProbability": 0.9043830262423227
     }]
   }]
 }

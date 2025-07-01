@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-223[java.util.concurrent.locks.ReentrantLock.unlock()]",
+  "identifier": "HotSpotCompilation-305[java.util.concurrent.locks.ReentrantLock.unlock()]",
   "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
   "entryBCI": -1,
-  "codeSignature": "e702a4ac29dea2fcd6f71865a30bc93b62f12aecaaa056ba3503a68868c17a44",
-  "graphSignature": "e11adbd25f2a0310e3d8c9ff6987ba468e773e968f793c4deb6a0ac9a8a4a0c9",
+  "codeSignature": "b37c7ff0a4c3033147d9adc55c8f39076d8ab4d3a7e31a7344c9adeadab13cdb",
+  "graphSignature": "345928e20117d88255105b75961a45a0f772b133876e72bd45ab080d9734ca62",
   "result": true,
   "profiles": [{
     "method": "java.util.concurrent.locks.ReentrantLock.unlock()void",
@@ -30,7 +30,7 @@
     },
     {
       "bci": 5,
-      "branchTakenProbability": 3.8102495713469235E-4
+      "branchTakenProbability": 0.001143074871404077
     },
     {
       "bci": 12,
@@ -51,11 +51,11 @@
     },
     {
       "bci": 26,
-      "branchTakenProbability": 3.8102495713469235E-4
+      "branchTakenProbability": 0.001143074871404077
     },
     {
       "bci": 36,
-      "branchTakenProbability": 3.8102495713469235E-4
+      "branchTakenProbability": 0.001143074871404077
     }]
   },
   {
@@ -76,92 +76,7 @@
     "compilerIRSize": 0,
     "data": [{
       "bci": 1,
-      "branchTakenProbability": 0.9919954259576901
-    },
-    {
-      "bci": 5,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 10,
-      "branchTakenProbability": 0.11904761904761904
-    },
-    {
-      "bci": 14,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 17,
-      "branchTakenProbability": 0.918918918918919
-    },
-    {
-      "bci": 22,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 27,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 30,
-      "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer$Node.getAndUnsetStatus(int)int",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": []
-  },
-  {
-    "method": "jdk.internal.misc.Unsafe.getAndBitwiseAndInt(java.lang.Object, long, int)int",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 3,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 18,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 21,
-      "branchTakenProbability": -1.0
-    }]
-  },
-  {
-    "method": "java.util.concurrent.locks.LockSupport.unpark(java.lang.Thread)void",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 1,
-      "branchTakenProbability": -1.0
-    },
-    {
-      "bci": 5,
-      "exceptionSeen": "FALSE"
-    },
-    {
-      "bci": 8,
-      "branchTakenProbability": -1.0
-    },
-    {
-      "bci": 22,
-      "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "java.lang.Thread.isVirtual()boolean",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 1,
-      "typeProfile": {
-        "nullSeen": "UNKNOWN",
-        "types": [],
-        "notRecordedProbability": 1.0
-      }
+      "branchTakenProbability": 1.0
     }]
   }]
 }

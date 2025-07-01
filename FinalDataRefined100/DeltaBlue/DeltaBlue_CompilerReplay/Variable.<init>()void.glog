@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-86[deltablue.Variable.<init>()]",
+  "identifier": "HotSpotCompilation-84[deltablue.Variable.<init>()]",
   "method": "deltablue.Variable.<init>()void",
   "entryBCI": -1,
-  "codeSignature": "16904645db3b0ef134e6eab96e839a01f65c21b0eb12c471a518e37a361b90c7",
+  "codeSignature": "85c9df627b6882a32aa1e65200f5eef4ce17990096e86cd26d142d093d12f90f",
   "graphSignature": "b4512f4b39adc0d040427a5fa53901f81d6bf6d76f874fd64a7abdb95ce447ce",
   "result": true,
   "profiles": [{

@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-136[jdk.internal.misc.InternalLock.lock()]",
+  "identifier": "HotSpotCompilation-134[jdk.internal.misc.InternalLock.lock()]",
   "method": "jdk.internal.misc.InternalLock.lock()void",
   "entryBCI": -1,
-  "codeSignature": "74219a28d998f3737a733d1562d38aaca1e7eec53afcef86d466f4ac4688f620",
+  "codeSignature": "b2b6b5440f41a5a5312391f4d661dd3e259afc65b28bd1d9f73b5175fbb8974f",
   "graphSignature": "84b98d3374e0e979a6743aa40de0f03976b75a164c853412113438235f4f0788",
   "result": true,
   "profiles": [{

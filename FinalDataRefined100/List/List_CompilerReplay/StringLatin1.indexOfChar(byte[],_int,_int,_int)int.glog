@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-115[java.lang.StringLatin1.indexOfChar(byte[], int, int, int)]",
+  "identifier": "HotSpotCompilation-113[java.lang.StringLatin1.indexOfChar(byte[], int, int, int)]",
   "method": "java.lang.StringLatin1.indexOfChar(byte[], int, int, int)int",
   "entryBCI": -1,
   "codeSignature": "ef74d133946ff6f5799fa722a9468cff7187798c2a9c09bec6ddec2933847877",

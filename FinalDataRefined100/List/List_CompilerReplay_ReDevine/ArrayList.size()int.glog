@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-99[java.util.ArrayList.size()]",
+  "method": "java.util.ArrayList.size()int",
+  "entryBCI": -1,
+  "codeSignature": "edc1e220f92e799b0b0fa05dc9d31f3bb49dedecb3a225aaffb8409a8a7a96a3",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.ArrayList.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.ArrayList.size()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

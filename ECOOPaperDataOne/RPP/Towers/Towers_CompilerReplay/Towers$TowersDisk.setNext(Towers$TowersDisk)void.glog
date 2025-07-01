@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-78[Towers$TowersDisk.setNext(Towers$TowersDisk)]",
+  "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+  "entryBCI": -1,
+  "codeSignature": "bffc55791cc9a861175815d0b9343b2e52e83aa9eb9419f026c2f1a62a8f96be",
+  "graphSignature": "7962b7ff0ab6fb75ecbef15f2b6b831a5cc21ec87fdd8ca1544aee217588d037",
+  "result": true,
+  "profiles": [{
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

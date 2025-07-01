@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-325[jdk.internal.util.ArraysSupport.newLength(int, int, int)]",
+  "identifier": "HotSpotCompilation-316[jdk.internal.util.ArraysSupport.newLength(int, int, int)]",
   "method": "jdk.internal.util.ArraysSupport.newLength(int, int, int)int",
   "entryBCI": -1,
   "codeSignature": "78168e06d143a3dc7ab8e4aa81c4e3d94943158fbe5a536d35a22f5b5f3e3743",
@@ -34,7 +34,7 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 2,
-      "branchTakenProbability": 0.8338215192345245
+      "branchTakenProbability": 0.8453427065026362
     }]
   }]
 }

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-46[java.lang.Enum.ordinal()]",
+  "method": "java.lang.Enum.ordinal()int",
+  "entryBCI": -1,
+  "codeSignature": "4ff91a9336e7e8f1faaf0ff93943203c94936bcc8512a2529ab9638060769787",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Enum.ordinal()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Enum.ordinal()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

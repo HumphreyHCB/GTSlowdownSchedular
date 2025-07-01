@@ -1,0 +1,39 @@
+{
+  "identifier": "HotSpotCompilation-79[Sieve.sieve(boolean[], int)]",
+  "method": "Sieve.sieve(boolean[], int)int",
+  "entryBCI": -1,
+  "codeSignature": "b421e758706dfd8c00c75b0c6ad5363855ae14a2fa35aaae0e247aed39957f40",
+  "graphSignature": "214c905efc2be14c51073530256cff8576cb3211a68a5e4f71ac22024f2002b5",
+  "result": true,
+  "profiles": [{
+    "method": "Sieve.sieve(boolean[], int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Sieve.sieve(boolean[], int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "branchTakenProbability": 2.0E-4
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.8661732346469294
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.06065276518585675
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

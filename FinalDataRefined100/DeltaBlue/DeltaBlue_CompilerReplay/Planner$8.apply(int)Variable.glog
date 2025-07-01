@@ -1,0 +1,51 @@
+{
+  "identifier": "HotSpotCompilation-83[deltablue.Planner$8.apply(int)]",
+  "method": "deltablue.Planner$8.apply(int)deltablue.Variable",
+  "entryBCI": -1,
+  "codeSignature": "c497d6b36271dc33494b1ee0298b1966ec3a95983974c50d19af91a90ef068d9",
+  "graphSignature": "97996bff0344924d132197c4a465a28cccc97d06e870904c48d1b425f11162c8",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Planner$8.apply(int)deltablue.Variable",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Planner$8.apply(int)deltablue.Variable",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Strength.absoluteWeakest()deltablue.Strength",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

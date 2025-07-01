@@ -1,0 +1,96 @@
+{
+  "identifier": "HotSpotCompilation-243[deltablue.Planner$5.apply(AbstractConstraint)]",
+  "method": "deltablue.Planner$5.apply(deltablue.AbstractConstraint)void",
+  "entryBCI": -1,
+  "codeSignature": "75f9f5151d8ac1194d572f31ccb46ae5b3bd59166482c4653e66a02067d1165c",
+  "graphSignature": "f6b0bee12b6ce9082a0881bff842f663ec6bac4b34108f52d253f432167f4f07",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Planner$5.apply(deltablue.AbstractConstraint)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Planner$5.apply(deltablue.AbstractConstraint)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "Ldeltablue/ScaleConstraint;",
+          "probability": 0.6494140625
+        },
+        {
+          "type": "Ldeltablue/EqualityConstraint;",
+          "probability": 0.35
+        },
+        {
+          "type": "Ldeltablue/StayConstraint;",
+          "probability": 5.859375E-4
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 4,
+      "branchTakenProbability": 0.9994140625
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.BinaryConstraint.isSatisfied()boolean",
+    "isMature": true,
+    "compilerIRSize": 9,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 9.643201542912247E-5
+    }]
+  },
+  {
+    "method": "deltablue.UnaryConstraint.isSatisfied()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 119,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.9982425307557118
+    },
+    {
+      "bci": 22,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

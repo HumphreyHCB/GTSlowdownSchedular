@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-104[cd.RedBlackTree$Entry.<init>(Object, Object)]",
+  "method": "cd.RedBlackTree$Entry.<init>(java.lang.Object, java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "b7d7dd1a74aee75996f72d8d83590ea6c373a301edd7f971951cf7ac1afa0aa2",
+  "graphSignature": "eb5d647d53c9129c8e60bbd473e389385d8049575ca731aaba90c3bc267921fd",
+  "result": true,
+  "profiles": [{
+    "method": "cd.RedBlackTree$Entry.<init>(java.lang.Object, java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.RedBlackTree$Entry.<init>(java.lang.Object, java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

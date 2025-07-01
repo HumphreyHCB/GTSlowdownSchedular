@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-74[java.lang.invoke.MethodHandle.type()]",
   "method": "java.lang.invoke.MethodHandle.type()java.lang.invoke.MethodType",
   "entryBCI": -1,
-  "codeSignature": "023dd11be81d0cccfe37844796212af9662fb8c75e22c5573cdd346912b47230",
+  "codeSignature": "79a9344082aa7abc7271f2119ee9945041b060fd6e56c11f2fec9571806c46d7",
   "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
   "result": true,
   "profiles": [{

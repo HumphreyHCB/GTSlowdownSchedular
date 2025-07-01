@@ -1,0 +1,45 @@
+{
+  "identifier": "HotSpotCompilation-186[deltablue.EqualityConstraint.execute()]",
+  "method": "deltablue.EqualityConstraint.execute()void",
+  "entryBCI": -1,
+  "codeSignature": "d130ab62376bf48bcc983fe318ef73e120f3c06c25b9ff4dc47a4cd3eff5cb93",
+  "graphSignature": "d62c7370df66456ed96d8f67fd360e4ed3a807d8f4db633303a9175d75dfc3c8",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.EqualityConstraint.execute()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.EqualityConstraint.execute()void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "branchTakenProbability": 0.4998535299287179
+    },
+    {
+      "bci": 18,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 21,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 38,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.setValue(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

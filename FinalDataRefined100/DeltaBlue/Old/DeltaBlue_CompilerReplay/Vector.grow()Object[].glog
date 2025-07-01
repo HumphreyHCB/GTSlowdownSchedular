@@ -1,0 +1,113 @@
+{
+  "identifier": "HotSpotCompilation-327[java.util.Vector.grow()]",
+  "method": "java.util.Vector.grow()java.lang.Object[]",
+  "entryBCI": -1,
+  "codeSignature": "65d2318de3fce6e635e435520b20e96f0a1f4c674b4c2245d70bc528837f3128",
+  "graphSignature": "02ac5587521ef0fc0f1a6f07199da061eb063ff79fa7ca2348ccdd903f626562",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector.grow()java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector.grow()java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.grow(int)java.lang.Object[]",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 25,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int)java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "jdk.internal.util.ArraysSupport.newLength(int, int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 16,
+      "branchTakenProbability": 0.0
+    }]
+  },
+  {
+    "method": "java.lang.Math.max(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.8338215192345245
+    }]
+  },
+  {
+    "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 32,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 35,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Math.min(int, int)int",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.4141769185705917
+    }]
+  }]
+}

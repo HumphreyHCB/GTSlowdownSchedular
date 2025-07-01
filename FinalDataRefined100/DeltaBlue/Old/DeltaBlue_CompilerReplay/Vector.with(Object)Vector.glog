@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-147[som.Vector.with(Object)]",
+  "method": "som.Vector.with(java.lang.Object)som.Vector",
+  "entryBCI": -1,
+  "codeSignature": "249871b7a250d919bd05e098328af28490b1dc5bd1113cba4357c4054b618195",
+  "graphSignature": "5a5d136da3161806362c2dac1e0ac6c2682d0dbe312e147503adc71fd7a44e30",
+  "result": true,
+  "profiles": [{
+    "method": "som.Vector.with(java.lang.Object)som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "som.Vector.with(java.lang.Object)som.Vector",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.append(java.lang.Object)void",
+    "isMature": true,
+    "compilerIRSize": 91,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 39,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

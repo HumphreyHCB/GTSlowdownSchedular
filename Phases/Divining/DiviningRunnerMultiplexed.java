@@ -478,7 +478,7 @@ public class DiviningRunnerMultiplexed {
     Collections.reverse(methods);
 
     try {
-        SlowdownFileRetriever.loadMethodBlockCostsFromJSON("/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/Havlak/Final_Havlak.json");
+        SlowdownFileRetriever.loadMethodBlockCostsFromJSON("/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/"+Benchmark+"/Final_"+Benchmark+".json");
     } catch (IOException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
@@ -506,7 +506,7 @@ public class DiviningRunnerMultiplexed {
         Map<BlockInfo, Integer> slowdownGuesses = new HashMap<>();
 
         for (BlockInfo blockInfo : blocks) {
-            if (blockInfo.baseCpuTime < 0.0001) {
+            if (blockInfo.baseCpuTime < 0.01) {
                 // Skip extremely small / negligible blocks
                 continue;
             }

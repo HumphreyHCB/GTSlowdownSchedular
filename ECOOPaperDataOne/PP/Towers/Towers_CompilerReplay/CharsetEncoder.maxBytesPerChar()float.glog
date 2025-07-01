@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-145[java.nio.charset.CharsetEncoder.maxBytesPerChar()]",
+  "method": "java.nio.charset.CharsetEncoder.maxBytesPerChar()float",
+  "entryBCI": -1,
+  "codeSignature": "4dced5ff71a3af091208c8acd367b43d351bfb69813e866d6ef5d64a0c5315bf",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.nio.charset.CharsetEncoder.maxBytesPerChar()float",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.nio.charset.CharsetEncoder.maxBytesPerChar()float",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

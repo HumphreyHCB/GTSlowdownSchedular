@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-42[java.util.Objects.requireNonNull(Object)]",
+  "identifier": "HotSpotCompilation-40[java.util.Objects.requireNonNull(Object)]",
   "method": "java.util.Objects.requireNonNull(java.lang.Object)java.lang.Object",
   "entryBCI": -1,
   "codeSignature": "7a9fc6f5f66da63df351766a114316e3d4f9a39609be9010391512bb291a9d0a",

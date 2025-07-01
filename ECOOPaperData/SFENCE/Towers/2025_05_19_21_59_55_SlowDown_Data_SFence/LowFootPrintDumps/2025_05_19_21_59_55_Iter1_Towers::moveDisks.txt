@@ -1,0 +1,1787 @@
+vtune: Using result path `/home/hb478/repos/GTSlowdownSchedular/Data/2025_05_19_21_59_55_Iter1'
+vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions 50 % Finalizing results                               vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Column filter is ON.
+Basic Block     Assembly                                                            CPU Time
+--------------  ------------------------------------------------------------------  --------
+0x7f3a9cac3c60  Block 1                                                                     
+0x7f3a9cac3c60  mov r10d, dword ptr [rsi+0x8]                                               
+0x7f3a9cac3c64  mov r12, 0x7f3a2b000000                                                     
+0x7f3a9cac3c6e  add r10, r12                                                                
+0x7f3a9cac3c71  xor r12, r12                                                                
+0x7f3a9cac3c74  cmp rax, r10                                                                
+0x7f3a9cac3c77  jnz 0x7f3a9ca4e080 <ic_miss_stub>                                           
+0x7f3a9cac3c7d  Block 2                                                              17.726s
+0x7f3a9cac3c7d  mov rax, rax                                                          5.227s
+0x7f3a9cac3c80  mov dword ptr [rsp-0x14000], eax                                      0.493s
+0x7f3a9cac3c87  sub rsp, 0x48                                                         8.234s
+0x7f3a9cac3c8b  nop                                                                   0.006s
+0x7f3a9cac3c8c  cmp dword ptr [r15+0x20], 0x1                                         0.194s
+0x7f3a9cac3c94  jnz 0x7f3a9cac4fdb <Block 266>                                        3.571s
+0x7f3a9cac3c9a  Block 3                                                              33.194s
+0x7f3a9cac3c9a  sfence                                                                1.974s
+0x7f3a9cac3c9d  mov qword ptr [rsp+0x40], rbp                                        10.550s
+0x7f3a9cac3ca2  mov dword ptr [rsp+0x34], ecx                                        12.460s
+0x7f3a9cac3ca6  mov dword ptr [rsp+0x30], r8d                                         4.225s
+0x7f3a9cac3cab  mov r10d, dword ptr [rsi+0xc]                                         1.541s
+0x7f3a9cac3caf  mov r11d, dword ptr [rsi+0x10]                                        0.129s
+0x7f3a9cac3cb3  mov r9d, r11d                                                         0.234s
+0x7f3a9cac3cb6  shl r9, 0x3                                                           0.982s
+0x7f3a9cac3cba  inc r10d                                                              0.849s
+0x7f3a9cac3cbd  data16 nop                                                            0.137s
+0x7f3a9cac3cc0  cmp edx, 0x1                                                          0.115s
+0x7f3a9cac3cc3  jnz 0x7f3a9cac3f9b <Block 45>                                               
+0x7f3a9cac3cc9  Block 4                                                               5.558s
+0x7f3a9cac3cc9  sfence                                                                0.894s
+0x7f3a9cac3ccc  mov r11d, dword ptr [r11*8+0xc]                                       2.015s
+0x7f3a9cac3cd4  cmp r11d, ecx                                                         2.649s
+0x7f3a9cac3cd7  jbe 0x7f3a9cac4e25 <Block 244>                                              
+0x7f3a9cac3cdd  Block 5                                                               3.751s
+0x7f3a9cac3cdd  sfence                                                                1.307s
+0x7f3a9cac3ce0  cmp r11d, r8d                                                         2.444s
+0x7f3a9cac3ce3  jbe 0x7f3a9cac4e25 <Block 244>                                              
+0x7f3a9cac3ce9  Block 6                                                               9.972s
+0x7f3a9cac3ce9  sfence                                                                0.606s
+0x7f3a9cac3cec  mov r11d, ecx                                                         2.510s
+0x7f3a9cac3cef  mov ebx, dword ptr [r9+r11*4+0x10]                                    0.133s
+0x7f3a9cac3cf4  mov edi, dword ptr [rbx*8+0x10]                                       0.357s
+0x7f3a9cac3cfb  mov edx, dword ptr [rbx*8+0xc]                                        5.856s
+0x7f3a9cac3d02  cmp byte ptr [r15+0x40], 0x0                                          0.274s
+0x7f3a9cac3d07  jz 0x7f3a9cac3d3c <Block 10>                                          0.237s
+0x7f3a9cac3d0d  Block 7                                                                     
+0x7f3a9cac3d0d  mov eax, dword ptr [r9+r11*4+0x10]                                          
+0x7f3a9cac3d12  shl rax, 0x3                                                                
+0x7f3a9cac3d16  test rax, rax                                                               
+0x7f3a9cac3d19  jz 0x7f3a9cac3d3c <Block 10>                                                
+0x7f3a9cac3d1f  Block 8                                                                     
+0x7f3a9cac3d1f  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac3d23  cmp rcx, 0x0                                                                
+0x7f3a9cac3d27  jz 0x7f3a9cac4feb <Block 269>                                               
+0x7f3a9cac3d2d  Block 9                                                                     
+0x7f3a9cac3d2d  sub rcx, 0x8                                                                
+0x7f3a9cac3d31  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac3d35  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac3d39  mov qword ptr [rcx], rax                                                    
+0x7f3a9cac3d3c  Block 10                                                              5.625s
+0x7f3a9cac3d3c  mov dword ptr [r9+r11*4+0x10], edi                                    0.308s
+0x7f3a9cac3d41  shl rdi, 0x3                                                          2.751s
+0x7f3a9cac3d45  lea rcx, ptr [r9+r11*4+0x10]                                          0.026s
+0x7f3a9cac3d4a  sfence                                                                0.057s
+0x7f3a9cac3d4d  mov r11, rcx                                                          2.311s
+0x7f3a9cac3d50  xor r11, rdi                                                          0.019s
+0x7f3a9cac3d53  shr r11, 0x15                                                         0.008s
+0x7f3a9cac3d57  jz 0x7f3a9cac3dab <Block 16>                                          0.145s
+0x7f3a9cac3d5d  Block 11                                                              0.018s
+0x7f3a9cac3d5d  test rdi, rdi                                                         0.018s
+0x7f3a9cac3d60  jz 0x7f3a9cac3dab <Block 16>                                                
+0x7f3a9cac3d66  Block 12                                                                  0s
+0x7f3a9cac3d66  mov r11, rcx                                                                
+0x7f3a9cac3d69  shr r11, 0x9                                                                
+0x7f3a9cac3d6d  mov rax, 0x7f3a8986d000                                                     
+0x7f3a9cac3d77  add r11, rax                                                              0s
+0x7f3a9cac3d7a  cmp byte ptr [r11], 0x2                                                     
+0x7f3a9cac3d7e  jz 0x7f3a9cac3dab <Block 16>                                                
+0x7f3a9cac3d80  Block 13                                                                    
+0x7f3a9cac3d80  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac3d85  cmp byte ptr [r11], 0x0                                                     
+0x7f3a9cac3d89  jz 0x7f3a9cac3dab <Block 16>                                                
+0x7f3a9cac3d8b  Block 14                                                                    
+0x7f3a9cac3d8b  mov byte ptr [r11], 0x0                                                     
+0x7f3a9cac3d8f  mov rax, qword ptr [r15+0x48]                                               
+0x7f3a9cac3d93  test rax, rax                                                               
+0x7f3a9cac3d96  jz 0x7f3a9cac4ffa <Block 272>                                               
+0x7f3a9cac3d9c  Block 15                                                                    
+0x7f3a9cac3d9c  sub rax, 0x8                                                                
+0x7f3a9cac3da0  mov qword ptr [r15+0x48], rax                                               
+0x7f3a9cac3da4  add rax, qword ptr [r15+0x58]                                               
+0x7f3a9cac3da8  mov qword ptr [rax], r11                                                    
+0x7f3a9cac3dab  Block 16                                                              7.563s
+0x7f3a9cac3dab  sfence                                                                1.962s
+0x7f3a9cac3dae  cmp byte ptr [r15+0x40], 0x0                                          3.386s
+0x7f3a9cac3db3  jz 0x7f3a9cac3deb <Block 20>                                          2.215s
+0x7f3a9cac3db9  Block 17                                                                    
+0x7f3a9cac3db9  mov r11d, dword ptr [rbx*8+0x10]                                            
+0x7f3a9cac3dc1  shl r11, 0x3                                                                
+0x7f3a9cac3dc5  test r11, r11                                                               
+0x7f3a9cac3dc8  jz 0x7f3a9cac3deb <Block 20>                                                
+0x7f3a9cac3dce  Block 18                                                                    
+0x7f3a9cac3dce  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac3dd2  cmp rcx, 0x0                                                                
+0x7f3a9cac3dd6  jz 0x7f3a9cac500b <Block 275>                                               
+0x7f3a9cac3ddc  Block 19                                                                    
+0x7f3a9cac3ddc  sub rcx, 0x8                                                                
+0x7f3a9cac3de0  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac3de4  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac3de8  mov qword ptr [rcx], r11                                                    
+0x7f3a9cac3deb  Block 20                                                              8.388s
+0x7f3a9cac3deb  mov dword ptr [rbx*8+0x10], 0x0                                       1.379s
+0x7f3a9cac3df6  mov r11d, r8d                                                         2.864s
+0x7f3a9cac3df9  mov ecx, dword ptr [r9+r11*4+0x10]                                    0.065s
+0x7f3a9cac3dfe  sfence                                                                1.912s
+0x7f3a9cac3e01  mov edi, ebx                                                          1.809s
+0x7f3a9cac3e03  shl rdi, 0x3                                                          0.018s
+0x7f3a9cac3e07  test ecx, ecx                                                         0.342s
+0x7f3a9cac3e09  jz 0x7f3a9cac3e1f <Block 22>                                                
+0x7f3a9cac3e0f  Block 21                                                              3.726s
+0x7f3a9cac3e0f  sfence                                                                0.761s
+0x7f3a9cac3e12  cmp edx, dword ptr [rcx*8+0xc]                                        2.965s
+0x7f3a9cac3e19  jnl 0x7f3a9cac4f67 <Block 260>                                              
+0x7f3a9cac3e1f  Block 22                                                              7.105s
+0x7f3a9cac3e1f  sfence                                                                5.135s
+0x7f3a9cac3e22  cmp byte ptr [r15+0x40], 0x0                                          1.276s
+0x7f3a9cac3e27  jz 0x7f3a9cac3e63 <Block 26>                                          0.693s
+0x7f3a9cac3e2d  Block 23                                                                    
+0x7f3a9cac3e2d  mov r8d, dword ptr [rbx*8+0x10]                                             
+0x7f3a9cac3e35  shl r8, 0x3                                                                 
+0x7f3a9cac3e39  test r8, r8                                                                 
+0x7f3a9cac3e3c  nop dword ptr [rax]                                                         
+0x7f3a9cac3e40  jz 0x7f3a9cac3e63 <Block 26>                                                
+0x7f3a9cac3e46  Block 24                                                                    
+0x7f3a9cac3e46  mov rdx, qword ptr [r15+0x28]                                               
+0x7f3a9cac3e4a  cmp rdx, 0x0                                                                
+0x7f3a9cac3e4e  jz 0x7f3a9cac501a <Block 278>                                               
+0x7f3a9cac3e54  Block 25                                                                    
+0x7f3a9cac3e54  sub rdx, 0x8                                                                
+0x7f3a9cac3e58  mov qword ptr [r15+0x28], rdx                                               
+0x7f3a9cac3e5c  add rdx, qword ptr [r15+0x38]                                               
+0x7f3a9cac3e60  mov qword ptr [rdx], r8                                                     
+0x7f3a9cac3e63  Block 26                                                              6.699s
+0x7f3a9cac3e63  mov dword ptr [rbx*8+0x10], ecx                                       1.161s
+0x7f3a9cac3e6a  shl rcx, 0x3                                                          1.816s
+0x7f3a9cac3e6e  sfence                                                                0.274s
+0x7f3a9cac3e71  mov rdx, rdi                                                          1.874s
+0x7f3a9cac3e74  xor rdx, rcx                                                          0.376s
+0x7f3a9cac3e77  shr rdx, 0x15                                                         0.243s
+0x7f3a9cac3e7b  nop dword ptr [rax+rax*1]                                             0.028s
+0x7f3a9cac3e80  jz 0x7f3a9cac3ed5 <Block 32>                                          0.927s
+0x7f3a9cac3e86  Block 27                                                              0.005s
+0x7f3a9cac3e86  test rcx, rcx                                                         0.005s
+0x7f3a9cac3e89  jz 0x7f3a9cac3ed5 <Block 32>                                                
+0x7f3a9cac3e8f  Block 28                                                                    
+0x7f3a9cac3e8f  mov rdx, rdi                                                                
+0x7f3a9cac3e92  shr rdx, 0x9                                                                
+0x7f3a9cac3e96  mov r8, 0x7f3a8986d000                                                      
+0x7f3a9cac3ea0  add rdx, r8                                                                 
+0x7f3a9cac3ea3  cmp byte ptr [rdx], 0x2                                                     
+0x7f3a9cac3ea6  jz 0x7f3a9cac3ed5 <Block 32>                                                
+0x7f3a9cac3ea8  Block 29                                                                    
+0x7f3a9cac3ea8  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac3ead  cmp byte ptr [rdx], 0x0                                                     
+0x7f3a9cac3eb0  jz 0x7f3a9cac3ed5 <Block 32>                                                
+0x7f3a9cac3eb2  Block 30                                                                    
+0x7f3a9cac3eb2  mov byte ptr [rdx], 0x0                                                     
+0x7f3a9cac3eb5  mov r8, qword ptr [r15+0x48]                                                
+0x7f3a9cac3eb9  test r8, r8                                                                 
+0x7f3a9cac3ebc  nop dword ptr [rax]                                                         
+0x7f3a9cac3ec0  jz 0x7f3a9cac502b <Block 281>                                               
+0x7f3a9cac3ec6  Block 31                                                                    
+0x7f3a9cac3ec6  sub r8, 0x8                                                                 
+0x7f3a9cac3eca  mov qword ptr [r15+0x48], r8                                                
+0x7f3a9cac3ece  add r8, qword ptr [r15+0x58]                                                
+0x7f3a9cac3ed2  mov qword ptr [r8], rdx                                                     
+0x7f3a9cac3ed5  Block 32                                                              4.111s
+0x7f3a9cac3ed5  sfence                                                                0.641s
+0x7f3a9cac3ed8  cmp byte ptr [r15+0x40], 0x0                                          2.535s
+0x7f3a9cac3edd  data16 nop                                                            0.622s
+0x7f3a9cac3ee0  jz 0x7f3a9cac3f15 <Block 36>                                          0.314s
+0x7f3a9cac3ee6  Block 33                                                                    
+0x7f3a9cac3ee6  mov ecx, dword ptr [r9+r11*4+0x10]                                          
+0x7f3a9cac3eeb  shl rcx, 0x3                                                                
+0x7f3a9cac3eef  test rcx, rcx                                                               
+0x7f3a9cac3ef2  jz 0x7f3a9cac3f15 <Block 36>                                                
+0x7f3a9cac3ef8  Block 34                                                                    
+0x7f3a9cac3ef8  mov rdx, qword ptr [r15+0x28]                                               
+0x7f3a9cac3efc  cmp rdx, 0x0                                                                
+0x7f3a9cac3f00  jz 0x7f3a9cac503a <Block 284>                                               
+0x7f3a9cac3f06  Block 35                                                                    
+0x7f3a9cac3f06  sub rdx, 0x8                                                                
+0x7f3a9cac3f0a  mov qword ptr [r15+0x28], rdx                                               
+0x7f3a9cac3f0e  add rdx, qword ptr [r15+0x38]                                               
+0x7f3a9cac3f12  mov qword ptr [rdx], rcx                                                    
+0x7f3a9cac3f15  Block 36                                                             12.975s
+0x7f3a9cac3f15  mov dword ptr [r9+r11*4+0x10], ebx                                    2.028s
+0x7f3a9cac3f1a  lea rdx, ptr [r9+r11*4+0x10]                                          5.883s
+0x7f3a9cac3f1f  sfence                                                                0.026s
+0x7f3a9cac3f22  mov rcx, rdx                                                          3.546s
+0x7f3a9cac3f25  xor rcx, rdi                                                          0.265s
+0x7f3a9cac3f28  shr rcx, 0x15                                                         0.010s
+0x7f3a9cac3f2c  jz 0x7f3a9cac3f7d <Block 42>                                          1.218s
+0x7f3a9cac3f32  Block 37                                                                  0s
+0x7f3a9cac3f32  test rdi, rdi                                                             0s
+0x7f3a9cac3f35  jz 0x7f3a9cac3f7d <Block 42>                                                
+0x7f3a9cac3f3b  Block 38                                                                  0s
+0x7f3a9cac3f3b  mov rcx, rdx                                                                
+0x7f3a9cac3f3e  shr rcx, 0x9                                                                
+0x7f3a9cac3f42  mov r8, 0x7f3a8986d000                                                      
+0x7f3a9cac3f4c  add rcx, r8                                                                 
+0x7f3a9cac3f4f  cmp byte ptr [rcx], 0x2                                                     
+0x7f3a9cac3f52  jz 0x7f3a9cac3f7d <Block 42>                                              0s
+0x7f3a9cac3f54  Block 39                                                                    
+0x7f3a9cac3f54  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac3f59  cmp byte ptr [rcx], 0x0                                                     
+0x7f3a9cac3f5c  jz 0x7f3a9cac3f7d <Block 42>                                                
+0x7f3a9cac3f5e  Block 40                                                                    
+0x7f3a9cac3f5e  mov byte ptr [rcx], 0x0                                                     
+0x7f3a9cac3f61  mov r8, qword ptr [r15+0x48]                                                
+0x7f3a9cac3f65  test r8, r8                                                                 
+0x7f3a9cac3f68  jz 0x7f3a9cac504b <Block 287>                                               
+0x7f3a9cac3f6e  Block 41                                                                    
+0x7f3a9cac3f6e  sub r8, 0x8                                                                 
+0x7f3a9cac3f72  mov qword ptr [r15+0x48], r8                                                
+0x7f3a9cac3f76  add r8, qword ptr [r15+0x58]                                                
+0x7f3a9cac3f7a  mov qword ptr [r8], rcx                                                     
+0x7f3a9cac3f7d  Block 42                                                              1.730s
+0x7f3a9cac3f7d  mov dword ptr [rsi+0xc], r10d                                         1.730s
+0x7f3a9cac3f81  Block 43                                                              9.773s
+0x7f3a9cac3f81  sfence                                                                4.610s
+0x7f3a9cac3f84  mov rbp, qword ptr [rsp+0x40]                                         4.469s
+0x7f3a9cac3f89  add rsp, 0x48                                                         0.686s
+0x7f3a9cac3f8d  cmp rsp, qword ptr [r15+0x450]                                        0.009s
+0x7f3a9cac3f94  jnbe 0x7f3a9cac505a <Block 290>                                             
+0x7f3a9cac3f9a  Block 44                                                              0.677s
+0x7f3a9cac3f9a  ret                                                                   0.677s
+0x7f3a9cac3f9b  Block 45                                                              6.297s
+0x7f3a9cac3f9b  sfence                                                                0.173s
+0x7f3a9cac3f9e  mov qword ptr [rsp+0x8], rsi                                          2.624s
+0x7f3a9cac3fa3  mov ebx, edx                                                          0.729s
+0x7f3a9cac3fa5  dec ebx                                                               0.025s
+0x7f3a9cac3fa7  lea edi, ptr [rdx-0x2]                                                0.003s
+0x7f3a9cac3faa  mov eax, ecx                                                          0.207s
+0x7f3a9cac3fac  add eax, r8d                                                          0.290s
+0x7f3a9cac3faf  mov ebp, 0x3                                                          0.040s
+0x7f3a9cac3fb4  sub ebp, eax                                                          0.003s
+0x7f3a9cac3fb6  mov dword ptr [rsp+0x28], ebp                                         0.198s
+0x7f3a9cac3fba  nop word ptr [rax+rax*1]                                              2.001s
+0x7f3a9cac3fc0  cmp edx, 0x2                                                          0.003s
+0x7f3a9cac3fc3  jnz 0x7f3a9cac4b05 <Block 203>                                              
+0x7f3a9cac3fc9  Block 46                                                                    
+0x7f3a9cac3fc9  mov r11d, dword ptr [r11*8+0xc]                                             
+0x7f3a9cac3fd1  cmp r11d, ecx                                                               
+0x7f3a9cac3fd4  jbe 0x7f3a9cac4e25 <Block 244>                                              
+0x7f3a9cac3fda  Block 47                                                                    
+0x7f3a9cac3fda  nop word ptr [rax+rax*1]                                                    
+0x7f3a9cac3fe0  cmp r11d, ebp                                                               
+0x7f3a9cac3fe3  jbe 0x7f3a9cac4e25 <Block 244>                                              
+0x7f3a9cac3fe9  Block 48                                                                    
+0x7f3a9cac3fe9  mov r11d, ecx                                                               
+0x7f3a9cac3fec  mov eax, dword ptr [r9+r11*4+0x10]                                          
+0x7f3a9cac3ff1  mov r13d, dword ptr [rax*8+0x10]                                            
+0x7f3a9cac3ff9  mov r14d, dword ptr [rax*8+0xc]                                             
+0x7f3a9cac4001  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac4006  jz 0x7f3a9cac403b <Block 52>                                                
+0x7f3a9cac400c  Block 49                                                                    
+0x7f3a9cac400c  mov ecx, dword ptr [r9+r11*4+0x10]                                          
+0x7f3a9cac4011  shl rcx, 0x3                                                                
+0x7f3a9cac4015  test rcx, rcx                                                               
+0x7f3a9cac4018  jz 0x7f3a9cac403b <Block 52>                                                
+0x7f3a9cac401e  Block 50                                                                    
+0x7f3a9cac401e  mov r8, qword ptr [r15+0x28]                                                
+0x7f3a9cac4022  cmp r8, 0x0                                                                 
+0x7f3a9cac4026  jz 0x7f3a9cac506e <Block 292>                                               
+0x7f3a9cac402c  Block 51                                                                    
+0x7f3a9cac402c  sub r8, 0x8                                                                 
+0x7f3a9cac4030  mov qword ptr [r15+0x28], r8                                                
+0x7f3a9cac4034  add r8, qword ptr [r15+0x38]                                                
+0x7f3a9cac4038  mov qword ptr [r8], rcx                                                     
+0x7f3a9cac403b  Block 52                                                                    
+0x7f3a9cac403b  mov dword ptr [r9+r11*4+0x10], r13d                                         
+0x7f3a9cac4040  shl r13, 0x3                                                                
+0x7f3a9cac4044  lea rcx, ptr [r9+r11*4+0x10]                                                
+0x7f3a9cac4049  mov r8, rcx                                                                 
+0x7f3a9cac404c  xor r8, r13                                                                 
+0x7f3a9cac404f  shr r8, 0x15                                                                
+0x7f3a9cac4053  jz 0x7f3a9cac40ab <Block 58>                                                
+0x7f3a9cac4059  Block 53                                                                    
+0x7f3a9cac4059  test r13, r13                                                               
+0x7f3a9cac405c  nop dword ptr [rax]                                                         
+0x7f3a9cac4060  jz 0x7f3a9cac40ab <Block 58>                                                
+0x7f3a9cac4066  Block 54                                                                    
+0x7f3a9cac4066  mov r8, rcx                                                                 
+0x7f3a9cac4069  shr r8, 0x9                                                                 
+0x7f3a9cac406d  mov r11, 0x7f3a8986d000                                                     
+0x7f3a9cac4077  add r8, r11                                                                 
+0x7f3a9cac407a  cmp byte ptr [r8], 0x2                                                      
+0x7f3a9cac407e  jz 0x7f3a9cac40ab <Block 58>                                                
+0x7f3a9cac4080  Block 55                                                                    
+0x7f3a9cac4080  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4085  cmp byte ptr [r8], 0x0                                                      
+0x7f3a9cac4089  jz 0x7f3a9cac40ab <Block 58>                                                
+0x7f3a9cac408b  Block 56                                                                    
+0x7f3a9cac408b  mov byte ptr [r8], 0x0                                                      
+0x7f3a9cac408f  mov r11, qword ptr [r15+0x48]                                               
+0x7f3a9cac4093  test r11, r11                                                               
+0x7f3a9cac4096  jz 0x7f3a9cac507d <Block 295>                                               
+0x7f3a9cac409c  Block 57                                                                    
+0x7f3a9cac409c  sub r11, 0x8                                                                
+0x7f3a9cac40a0  mov qword ptr [r15+0x48], r11                                               
+0x7f3a9cac40a4  add r11, qword ptr [r15+0x58]                                               
+0x7f3a9cac40a8  mov qword ptr [r11], r8                                                     
+0x7f3a9cac40ab  Block 58                                                                    
+0x7f3a9cac40ab  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac40b0  jz 0x7f3a9cac40e8 <Block 62>                                                
+0x7f3a9cac40b6  Block 59                                                                    
+0x7f3a9cac40b6  mov r8d, dword ptr [rax*8+0x10]                                             
+0x7f3a9cac40be  shl r8, 0x3                                                                 
+0x7f3a9cac40c2  test r8, r8                                                                 
+0x7f3a9cac40c5  jz 0x7f3a9cac40e8 <Block 62>                                                
+0x7f3a9cac40cb  Block 60                                                                    
+0x7f3a9cac40cb  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac40cf  cmp rcx, 0x0                                                                
+0x7f3a9cac40d3  jz 0x7f3a9cac508c <Block 298>                                               
+0x7f3a9cac40d9  Block 61                                                                    
+0x7f3a9cac40d9  sub rcx, 0x8                                                                
+0x7f3a9cac40dd  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac40e1  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac40e5  mov qword ptr [rcx], r8                                                     
+0x7f3a9cac40e8  Block 62                                                                    
+0x7f3a9cac40e8  mov dword ptr [rax*8+0x10], 0x0                                             
+0x7f3a9cac40f3  mov r11d, dword ptr [r9+rbp*4+0x10]                                         
+0x7f3a9cac40f8  mov r8d, eax                                                                
+0x7f3a9cac40fb  shl r8, 0x3                                                                 
+0x7f3a9cac40ff  nop                                                                         
+0x7f3a9cac4100  test r11d, r11d                                                             
+0x7f3a9cac4103  jz 0x7f3a9cac4117 <Block 64>                                                
+0x7f3a9cac4109  Block 63                                                                    
+0x7f3a9cac4109  cmp r14d, dword ptr [r11*8+0xc]                                             
+0x7f3a9cac4111  jnl 0x7f3a9cac4fb4 <Block 264>                                              
+0x7f3a9cac4117  Block 64                                                                    
+0x7f3a9cac4117  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac411c  nop dword ptr [rax]                                                         
+0x7f3a9cac4120  jz 0x7f3a9cac4158 <Block 68>                                                
+0x7f3a9cac4126  Block 65                                                                    
+0x7f3a9cac4126  mov r13d, dword ptr [rax*8+0x10]                                            
+0x7f3a9cac412e  shl r13, 0x3                                                                
+0x7f3a9cac4132  test r13, r13                                                               
+0x7f3a9cac4135  jz 0x7f3a9cac4158 <Block 68>                                                
+0x7f3a9cac413b  Block 66                                                                    
+0x7f3a9cac413b  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac413f  cmp rcx, 0x0                                                                
+0x7f3a9cac4143  jz 0x7f3a9cac509b <Block 301>                                               
+0x7f3a9cac4149  Block 67                                                                    
+0x7f3a9cac4149  sub rcx, 0x8                                                                
+0x7f3a9cac414d  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac4151  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4155  mov qword ptr [rcx], r13                                                    
+0x7f3a9cac4158  Block 68                                                                    
+0x7f3a9cac4158  mov dword ptr [rax*8+0x10], r11d                                            
+0x7f3a9cac4160  shl r11, 0x3                                                                
+0x7f3a9cac4164  mov rcx, r8                                                                 
+0x7f3a9cac4167  xor rcx, r11                                                                
+0x7f3a9cac416a  shr rcx, 0x15                                                               
+0x7f3a9cac416e  jz 0x7f3a9cac41c0 <Block 74>                                                
+0x7f3a9cac4174  Block 69                                                                    
+0x7f3a9cac4174  test r11, r11                                                               
+0x7f3a9cac4177  jz 0x7f3a9cac41c0 <Block 74>                                                
+0x7f3a9cac417d  Block 70                                                                    
+0x7f3a9cac417d  mov rcx, r8                                                                 
+0x7f3a9cac4180  shr rcx, 0x9                                                                
+0x7f3a9cac4184  mov r13, 0x7f3a8986d000                                                     
+0x7f3a9cac418e  add rcx, r13                                                                
+0x7f3a9cac4191  cmp byte ptr [rcx], 0x2                                                     
+0x7f3a9cac4194  jz 0x7f3a9cac41c0 <Block 74>                                                
+0x7f3a9cac4196  Block 71                                                                    
+0x7f3a9cac4196  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac419b  cmp byte ptr [rcx], 0x0                                                     
+0x7f3a9cac419e  jz 0x7f3a9cac41c0 <Block 74>                                                
+0x7f3a9cac41a0  Block 72                                                                    
+0x7f3a9cac41a0  mov byte ptr [rcx], 0x0                                                     
+0x7f3a9cac41a3  mov r13, qword ptr [r15+0x48]                                               
+0x7f3a9cac41a7  test r13, r13                                                               
+0x7f3a9cac41aa  jz 0x7f3a9cac50ab <Block 304>                                               
+0x7f3a9cac41b0  Block 73                                                                    
+0x7f3a9cac41b0  sub r13, 0x8                                                                
+0x7f3a9cac41b4  mov qword ptr [r15+0x48], r13                                               
+0x7f3a9cac41b8  add r13, qword ptr [r15+0x58]                                               
+0x7f3a9cac41bc  mov qword ptr [r13], rcx                                                    
+0x7f3a9cac41c0  Block 74                                                                    
+0x7f3a9cac41c0  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac41c5  jz 0x7f3a9cac41fa <Block 78>                                                
+0x7f3a9cac41cb  Block 75                                                                    
+0x7f3a9cac41cb  mov r11d, dword ptr [r9+rbp*4+0x10]                                         
+0x7f3a9cac41d0  shl r11, 0x3                                                                
+0x7f3a9cac41d4  test r11, r11                                                               
+0x7f3a9cac41d7  jz 0x7f3a9cac41fa <Block 78>                                                
+0x7f3a9cac41dd  Block 76                                                                    
+0x7f3a9cac41dd  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac41e1  cmp rcx, 0x0                                                                
+0x7f3a9cac41e5  jz 0x7f3a9cac50ba <Block 307>                                               
+0x7f3a9cac41eb  Block 77                                                                    
+0x7f3a9cac41eb  sub rcx, 0x8                                                                
+0x7f3a9cac41ef  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac41f3  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac41f7  mov qword ptr [rcx], r11                                                    
+0x7f3a9cac41fa  Block 78                                                                    
+0x7f3a9cac41fa  mov dword ptr [r9+rbp*4+0x10], eax                                          
+0x7f3a9cac41ff  lea rcx, ptr [r9+rbp*4+0x10]                                                
+0x7f3a9cac4204  mov r11, rcx                                                                
+0x7f3a9cac4207  xor r11, r8                                                                 
+0x7f3a9cac420a  shr r11, 0x15                                                               
+0x7f3a9cac420e  jz 0x7f3a9cac4262 <Block 84>                                                
+0x7f3a9cac4214  Block 79                                                                    
+0x7f3a9cac4214  test r8, r8                                                                 
+0x7f3a9cac4217  jz 0x7f3a9cac4262 <Block 84>                                                
+0x7f3a9cac421d  Block 80                                                                    
+0x7f3a9cac421d  mov r11, rcx                                                                
+0x7f3a9cac4220  shr r11, 0x9                                                                
+0x7f3a9cac4224  mov r9, 0x7f3a8986d000                                                      
+0x7f3a9cac422e  add r11, r9                                                                 
+0x7f3a9cac4231  cmp byte ptr [r11], 0x2                                                     
+0x7f3a9cac4235  jz 0x7f3a9cac4262 <Block 84>                                                
+0x7f3a9cac4237  Block 81                                                                    
+0x7f3a9cac4237  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac423c  cmp byte ptr [r11], 0x0                                                     
+0x7f3a9cac4240  jz 0x7f3a9cac4262 <Block 84>                                                
+0x7f3a9cac4242  Block 82                                                                    
+0x7f3a9cac4242  mov byte ptr [r11], 0x0                                                     
+0x7f3a9cac4246  mov r9, qword ptr [r15+0x48]                                                
+0x7f3a9cac424a  test r9, r9                                                                 
+0x7f3a9cac424d  jz 0x7f3a9cac50cb <Block 310>                                               
+0x7f3a9cac4253  Block 83                                                                    
+0x7f3a9cac4253  sub r9, 0x8                                                                 
+0x7f3a9cac4257  mov qword ptr [r15+0x48], r9                                                
+0x7f3a9cac425b  add r9, qword ptr [r15+0x58]                                                
+0x7f3a9cac425f  mov qword ptr [r9], r11                                                     
+0x7f3a9cac4262  Block 84                                                                    
+0x7f3a9cac4262  mov dword ptr [rsi+0xc], r10d                                               
+0x7f3a9cac4266  mov dword ptr [rsp+0x24], edi                                               
+0x7f3a9cac426a  mov dword ptr [rsp+0x20], ebx                                               
+0x7f3a9cac426e  mov dword ptr [rsp+0x2c], edx                                               
+0x7f3a9cac4272  Block 85                                                              4.024s
+0x7f3a9cac4272  sfence                                                                0.001s
+0x7f3a9cac4275  mov edx, dword ptr [rsi+0x10]                                         0.414s
+0x7f3a9cac4278  mov r10d, dword ptr [rdx*8+0xc]                                       1.007s
+0x7f3a9cac4280  cmp r10d, dword ptr [rsp+0x34]                                        2.602s
+0x7f3a9cac4285  jbe 0x7f3a9cac4e4d <Block 246>                                              
+0x7f3a9cac428b  Block 86                                                              0.691s
+0x7f3a9cac428b  sfence                                                                0.522s
+0x7f3a9cac428e  cmp r10d, dword ptr [rsp+0x30]                                        0.169s
+0x7f3a9cac4293  jbe 0x7f3a9cac4e4d <Block 246>                                              
+0x7f3a9cac4299  Block 87                                                              4.800s
+0x7f3a9cac4299  sfence                                                                0.413s
+0x7f3a9cac429c  shl rdx, 0x3                                                          0.118s
+0x7f3a9cac42a0  mov ecx, dword ptr [rsp+0x34]                                         0.060s
+0x7f3a9cac42a4  mov r11d, dword ptr [rdx+rcx*4+0x10]                                  0.340s
+0x7f3a9cac42a9  mov r8d, dword ptr [r11*8+0x10]                                       1.268s
+0x7f3a9cac42b1  mov r9d, dword ptr [r11*8+0xc]                                        2.539s
+0x7f3a9cac42b9  cmp byte ptr [r15+0x40], 0x0                                          0.025s
+0x7f3a9cac42be  data16 nop                                                            0.037s
+0x7f3a9cac42c0  jz 0x7f3a9cac42f5 <Block 91>                                                
+0x7f3a9cac42c6  Block 88                                                                    
+0x7f3a9cac42c6  mov edi, dword ptr [rdx+rcx*4+0x10]                                         
+0x7f3a9cac42ca  shl rdi, 0x3                                                                
+0x7f3a9cac42ce  test rdi, rdi                                                               
+0x7f3a9cac42d1  jz 0x7f3a9cac42f5 <Block 91>                                                
+0x7f3a9cac42d7  Block 89                                                                    
+0x7f3a9cac42d7  mov rbx, qword ptr [r15+0x28]                                               
+0x7f3a9cac42db  cmp rbx, 0x0                                                                
+0x7f3a9cac42df  nop                                                                         
+0x7f3a9cac42e0  jz 0x7f3a9cac50da <Block 313>                                               
+0x7f3a9cac42e6  Block 90                                                                    
+0x7f3a9cac42e6  sub rbx, 0x8                                                                
+0x7f3a9cac42ea  mov qword ptr [r15+0x28], rbx                                               
+0x7f3a9cac42ee  add rbx, qword ptr [r15+0x38]                                               
+0x7f3a9cac42f2  mov qword ptr [rbx], rdi                                                    
+0x7f3a9cac42f5  Block 91                                                              1.639s
+0x7f3a9cac42f5  mov dword ptr [rdx+rcx*4+0x10], r8d                                   0.540s
+0x7f3a9cac42fa  shl r8, 0x3                                                           0.533s
+0x7f3a9cac42fe  lea rcx, ptr [rdx+rcx*4+0x10]                                         0.007s
+0x7f3a9cac4303  sfence                                                                      
+0x7f3a9cac4306  mov rbx, rcx                                                          0.536s
+0x7f3a9cac4309  xor rbx, r8                                                           0.003s
+0x7f3a9cac430c  shr rbx, 0x15                                                         0.001s
+0x7f3a9cac4310  jz 0x7f3a9cac4361 <Block 97>                                          0.019s
+0x7f3a9cac4316  Block 92                                                              0.073s
+0x7f3a9cac4316  test r8, r8                                                           0.073s
+0x7f3a9cac4319  jz 0x7f3a9cac4361 <Block 97>                                                
+0x7f3a9cac431f  Block 93                                                                    
+0x7f3a9cac431f  mov rbx, rcx                                                                
+0x7f3a9cac4322  shr rbx, 0x9                                                                
+0x7f3a9cac4326  mov rdi, 0x7f3a8986d000                                                     
+0x7f3a9cac4330  add rbx, rdi                                                                
+0x7f3a9cac4333  cmp byte ptr [rbx], 0x2                                                     
+0x7f3a9cac4336  jz 0x7f3a9cac4361 <Block 97>                                                
+0x7f3a9cac4338  Block 94                                                                    
+0x7f3a9cac4338  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac433d  cmp byte ptr [rbx], 0x0                                                     
+0x7f3a9cac4340  jz 0x7f3a9cac4361 <Block 97>                                                
+0x7f3a9cac4342  Block 95                                                                    
+0x7f3a9cac4342  mov byte ptr [rbx], 0x0                                                     
+0x7f3a9cac4345  mov rdi, qword ptr [r15+0x48]                                               
+0x7f3a9cac4349  test rdi, rdi                                                               
+0x7f3a9cac434c  jz 0x7f3a9cac50eb <Block 316>                                               
+0x7f3a9cac4352  Block 96                                                                    
+0x7f3a9cac4352  sub rdi, 0x8                                                                
+0x7f3a9cac4356  mov qword ptr [r15+0x48], rdi                                               
+0x7f3a9cac435a  add rdi, qword ptr [r15+0x58]                                               
+0x7f3a9cac435e  mov qword ptr [rdi], rbx                                                    
+0x7f3a9cac4361  Block 97                                                              1.627s
+0x7f3a9cac4361  sfence                                                                0.539s
+0x7f3a9cac4364  cmp byte ptr [r15+0x40], 0x0                                          0.139s
+0x7f3a9cac4369  jz 0x7f3a9cac43a3 <Block 101>                                         0.949s
+0x7f3a9cac436f  Block 98                                                                    
+0x7f3a9cac436f  mov r8d, dword ptr [r11*8+0x10]                                             
+0x7f3a9cac4377  shl r8, 0x3                                                                 
+0x7f3a9cac437b  test r8, r8                                                                 
+0x7f3a9cac437e  data16 nop                                                                  
+0x7f3a9cac4380  jz 0x7f3a9cac43a3 <Block 101>                                               
+0x7f3a9cac4386  Block 99                                                                    
+0x7f3a9cac4386  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac438a  cmp rcx, 0x0                                                                
+0x7f3a9cac438e  jz 0x7f3a9cac50fa <Block 319>                                               
+0x7f3a9cac4394  Block 100                                                                   
+0x7f3a9cac4394  sub rcx, 0x8                                                                
+0x7f3a9cac4398  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac439c  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac43a0  mov qword ptr [rcx], r8                                                     
+0x7f3a9cac43a3  Block 101                                                             5.878s
+0x7f3a9cac43a3  mov dword ptr [r11*8+0x10], 0x0                                       0.471s
+0x7f3a9cac43af  mov ebx, dword ptr [rsp+0x30]                                         2.588s
+0x7f3a9cac43b3  mov r8d, dword ptr [rdx+rbx*4+0x10]                                   0.097s
+0x7f3a9cac43b8  sfence                                                                2.198s
+0x7f3a9cac43bb  mov ecx, r11d                                                         0.068s
+0x7f3a9cac43be  shl rcx, 0x3                                                          0.002s
+0x7f3a9cac43c2  test r8d, r8d                                                         0.454s
+0x7f3a9cac43c5  jz 0x7f3a9cac43dc <Block 103>                                               
+0x7f3a9cac43cb  Block 102                                                             0.280s
+0x7f3a9cac43cb  sfence                                                                0.040s
+0x7f3a9cac43ce  cmp r9d, dword ptr [r8*8+0xc]                                         0.240s
+0x7f3a9cac43d6  jnl 0x7f3a9cac4f40 <Block 258>                                              
+0x7f3a9cac43dc  Block 103                                                             3.685s
+0x7f3a9cac43dc  sfence                                                                2.996s
+0x7f3a9cac43df  cmp byte ptr [r15+0x40], 0x0                                          0.040s
+0x7f3a9cac43e4  jz 0x7f3a9cac441c <Block 107>                                         0.649s
+0x7f3a9cac43ea  Block 104                                                                   
+0x7f3a9cac43ea  mov edi, dword ptr [r11*8+0x10]                                             
+0x7f3a9cac43f2  shl rdi, 0x3                                                                
+0x7f3a9cac43f6  test rdi, rdi                                                               
+0x7f3a9cac43f9  jz 0x7f3a9cac441c <Block 107>                                               
+0x7f3a9cac43ff  Block 105                                                                   
+0x7f3a9cac43ff  mov r9, qword ptr [r15+0x28]                                                
+0x7f3a9cac4403  cmp r9, 0x0                                                                 
+0x7f3a9cac4407  jz 0x7f3a9cac510b <Block 322>                                               
+0x7f3a9cac440d  Block 106                                                                   
+0x7f3a9cac440d  sub r9, 0x8                                                                 
+0x7f3a9cac4411  mov qword ptr [r15+0x28], r9                                                
+0x7f3a9cac4415  add r9, qword ptr [r15+0x38]                                                
+0x7f3a9cac4419  mov qword ptr [r9], rdi                                                     
+0x7f3a9cac441c  Block 107                                                             2.560s
+0x7f3a9cac441c  mov dword ptr [r11*8+0x10], r8d                                       0.500s
+0x7f3a9cac4424  shl r8, 0x3                                                           0.761s
+0x7f3a9cac4428  sfence                                                                0.007s
+0x7f3a9cac442b  mov r9, rcx                                                           1.230s
+0x7f3a9cac442e  xor r9, r8                                                            0.040s
+0x7f3a9cac4431  shr r9, 0x15                                                          0.009s
+0x7f3a9cac4435  jz 0x7f3a9cac448b <Block 113>                                         0.013s
+0x7f3a9cac443b  Block 108                                                             0.018s
+0x7f3a9cac443b  test r8, r8                                                           0.013s
+0x7f3a9cac443e  data16 nop                                                            0.004s
+0x7f3a9cac4440  jz 0x7f3a9cac448b <Block 113>                                         0.001s
+0x7f3a9cac4446  Block 109                                                                   
+0x7f3a9cac4446  mov r9, rcx                                                                 
+0x7f3a9cac4449  shr r9, 0x9                                                                 
+0x7f3a9cac444d  mov rdi, 0x7f3a8986d000                                                     
+0x7f3a9cac4457  add r9, rdi                                                                 
+0x7f3a9cac445a  cmp byte ptr [r9], 0x2                                                      
+0x7f3a9cac445e  jz 0x7f3a9cac448b <Block 113>                                               
+0x7f3a9cac4460  Block 110                                                                   
+0x7f3a9cac4460  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4465  cmp byte ptr [r9], 0x0                                                      
+0x7f3a9cac4469  jz 0x7f3a9cac448b <Block 113>                                               
+0x7f3a9cac446b  Block 111                                                                   
+0x7f3a9cac446b  mov byte ptr [r9], 0x0                                                      
+0x7f3a9cac446f  mov rdi, qword ptr [r15+0x48]                                               
+0x7f3a9cac4473  test rdi, rdi                                                               
+0x7f3a9cac4476  jz 0x7f3a9cac511a <Block 325>                                               
+0x7f3a9cac447c  Block 112                                                                   
+0x7f3a9cac447c  sub rdi, 0x8                                                                
+0x7f3a9cac4480  mov qword ptr [r15+0x48], rdi                                               
+0x7f3a9cac4484  add rdi, qword ptr [r15+0x58]                                               
+0x7f3a9cac4488  mov qword ptr [rdi], r9                                                     
+0x7f3a9cac448b  Block 113                                                             2.681s
+0x7f3a9cac448b  sfence                                                                0.605s
+0x7f3a9cac448e  cmp byte ptr [r15+0x40], 0x0                                          1.066s
+0x7f3a9cac4493  jz 0x7f3a9cac44c8 <Block 117>                                         1.010s
+0x7f3a9cac4499  Block 114                                                                   
+0x7f3a9cac4499  mov r9d, dword ptr [rdx+rbx*4+0x10]                                         
+0x7f3a9cac449e  shl r9, 0x3                                                                 
+0x7f3a9cac44a2  test r9, r9                                                                 
+0x7f3a9cac44a5  jz 0x7f3a9cac44c8 <Block 117>                                               
+0x7f3a9cac44ab  Block 115                                                                   
+0x7f3a9cac44ab  mov r8, qword ptr [r15+0x28]                                                
+0x7f3a9cac44af  cmp r8, 0x0                                                                 
+0x7f3a9cac44b3  jz 0x7f3a9cac512b <Block 328>                                               
+0x7f3a9cac44b9  Block 116                                                                   
+0x7f3a9cac44b9  sub r8, 0x8                                                                 
+0x7f3a9cac44bd  mov qword ptr [r15+0x28], r8                                                
+0x7f3a9cac44c1  add r8, qword ptr [r15+0x38]                                                
+0x7f3a9cac44c5  mov qword ptr [r8], r9                                                      
+0x7f3a9cac44c8  Block 117                                                             4.682s
+0x7f3a9cac44c8  mov dword ptr [rdx+rbx*4+0x10], r11d                                  0.483s
+0x7f3a9cac44cd  lea r8, ptr [rdx+rbx*4+0x10]                                          1.954s
+0x7f3a9cac44d2  sfence                                                                0.006s
+0x7f3a9cac44d5  mov r11, r8                                                           1.730s
+0x7f3a9cac44d8  xor r11, rcx                                                          0.124s
+0x7f3a9cac44db  shr r11, 0x15                                                               
+0x7f3a9cac44df  nop                                                                   0.213s
+0x7f3a9cac44e0  jz 0x7f3a9cac4535 <Block 123>                                         0.172s
+0x7f3a9cac44e6  Block 118                                                                   
+0x7f3a9cac44e6  test rcx, rcx                                                               
+0x7f3a9cac44e9  jz 0x7f3a9cac4535 <Block 123>                                               
+0x7f3a9cac44ef  Block 119                                                             0.001s
+0x7f3a9cac44ef  mov r11, r8                                                                 
+0x7f3a9cac44f2  shr r11, 0x9                                                                
+0x7f3a9cac44f6  mov r9, 0x7f3a8986d000                                                      
+0x7f3a9cac4500  add r11, r9                                                                 
+0x7f3a9cac4503  cmp byte ptr [r11], 0x2                                                     
+0x7f3a9cac4507  jz 0x7f3a9cac4535 <Block 123>                                         0.001s
+0x7f3a9cac4509  Block 120                                                                   
+0x7f3a9cac4509  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac450e  cmp byte ptr [r11], 0x0                                                     
+0x7f3a9cac4512  jz 0x7f3a9cac4535 <Block 123>                                               
+0x7f3a9cac4514  Block 121                                                                   
+0x7f3a9cac4514  mov byte ptr [r11], 0x0                                                     
+0x7f3a9cac4518  mov r9, qword ptr [r15+0x48]                                                
+0x7f3a9cac451c  test r9, r9                                                                 
+0x7f3a9cac451f  nop                                                                         
+0x7f3a9cac4520  jz 0x7f3a9cac513a <Block 331>                                               
+0x7f3a9cac4526  Block 122                                                                   
+0x7f3a9cac4526  sub r9, 0x8                                                                 
+0x7f3a9cac452a  mov qword ptr [r15+0x48], r9                                                
+0x7f3a9cac452e  add r9, qword ptr [r15+0x58]                                                
+0x7f3a9cac4532  mov qword ptr [r9], r11                                                     
+0x7f3a9cac4535  Block 123                                                             5.755s
+0x7f3a9cac4535  sfence                                                                0.593s
+0x7f3a9cac4538  mov r11d, dword ptr [rsi+0xc]                                         1.182s
+0x7f3a9cac453c  mov ecx, r11d                                                         0.050s
+0x7f3a9cac453f  inc ecx                                                               0.117s
+0x7f3a9cac4541  mov dword ptr [rsi+0xc], ecx                                          0.801s
+0x7f3a9cac4544  cmp dword ptr [rsp+0x2c], 0x2                                         2.948s
+0x7f3a9cac4549  jnz 0x7f3a9cac47e5 <Block 162>                                        0.065s
+0x7f3a9cac454f  Block 124                                                                   
+0x7f3a9cac454f  cmp r10d, dword ptr [rsp+0x28]                                              
+0x7f3a9cac4554  jbe 0x7f3a9cac4f8d <Block 262>                                              
+0x7f3a9cac455a  Block 125                                                                   
+0x7f3a9cac455a  mov ebp, dword ptr [rsp+0x28]                                               
+0x7f3a9cac455e  mov r10d, dword ptr [rdx+rbp*4+0x10]                                        
+0x7f3a9cac4563  mov ecx, dword ptr [r10*8+0x10]                                             
+0x7f3a9cac456b  mov r8d, dword ptr [r10*8+0xc]                                              
+0x7f3a9cac4573  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac4578  jz 0x7f3a9cac45ac <Block 129>                                               
+0x7f3a9cac457e  Block 126                                                                   
+0x7f3a9cac457e  mov edi, dword ptr [rdx+rbp*4+0x10]                                         
+0x7f3a9cac4582  shl rdi, 0x3                                                                
+0x7f3a9cac4586  test rdi, rdi                                                               
+0x7f3a9cac4589  jz 0x7f3a9cac45ac <Block 129>                                               
+0x7f3a9cac458f  Block 127                                                                   
+0x7f3a9cac458f  mov r9, qword ptr [r15+0x28]                                                
+0x7f3a9cac4593  cmp r9, 0x0                                                                 
+0x7f3a9cac4597  jz 0x7f3a9cac514b <Block 334>                                               
+0x7f3a9cac459d  Block 128                                                                   
+0x7f3a9cac459d  sub r9, 0x8                                                                 
+0x7f3a9cac45a1  mov qword ptr [r15+0x28], r9                                                
+0x7f3a9cac45a5  add r9, qword ptr [r15+0x38]                                                
+0x7f3a9cac45a9  mov qword ptr [r9], rdi                                                     
+0x7f3a9cac45ac  Block 129                                                                   
+0x7f3a9cac45ac  mov dword ptr [rdx+rbp*4+0x10], ecx                                         
+0x7f3a9cac45b0  shl rcx, 0x3                                                                
+0x7f3a9cac45b4  lea r9, ptr [rdx+rbp*4+0x10]                                                
+0x7f3a9cac45b9  mov rdi, r9                                                                 
+0x7f3a9cac45bc  xor rdi, rcx                                                                
+0x7f3a9cac45bf  shr rdi, 0x15                                                               
+0x7f3a9cac45c3  jz 0x7f3a9cac4615 <Block 135>                                               
+0x7f3a9cac45c9  Block 130                                                                   
+0x7f3a9cac45c9  test rcx, rcx                                                               
+0x7f3a9cac45cc  jz 0x7f3a9cac4615 <Block 135>                                               
+0x7f3a9cac45d2  Block 131                                                                   
+0x7f3a9cac45d2  mov rdi, r9                                                                 
+0x7f3a9cac45d5  shr rdi, 0x9                                                                
+0x7f3a9cac45d9  mov rax, 0x7f3a8986d000                                                     
+0x7f3a9cac45e3  add rdi, rax                                                                
+0x7f3a9cac45e6  cmp byte ptr [rdi], 0x2                                                     
+0x7f3a9cac45e9  jz 0x7f3a9cac4615 <Block 135>                                               
+0x7f3a9cac45eb  Block 132                                                                   
+0x7f3a9cac45eb  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac45f0  cmp byte ptr [rdi], 0x0                                                     
+0x7f3a9cac45f3  jz 0x7f3a9cac4615 <Block 135>                                               
+0x7f3a9cac45f5  Block 133                                                                   
+0x7f3a9cac45f5  mov byte ptr [rdi], 0x0                                                     
+0x7f3a9cac45f8  mov rax, qword ptr [r15+0x48]                                               
+0x7f3a9cac45fc  test rax, rax                                                               
+0x7f3a9cac45ff  nop                                                                         
+0x7f3a9cac4600  jz 0x7f3a9cac515a <Block 337>                                               
+0x7f3a9cac4606  Block 134                                                                   
+0x7f3a9cac4606  sub rax, 0x8                                                                
+0x7f3a9cac460a  mov qword ptr [r15+0x48], rax                                               
+0x7f3a9cac460e  add rax, qword ptr [r15+0x58]                                               
+0x7f3a9cac4612  mov qword ptr [rax], rdi                                                    
+0x7f3a9cac4615  Block 135                                                                   
+0x7f3a9cac4615  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac461a  jz 0x7f3a9cac4655 <Block 139>                                               
+0x7f3a9cac4620  Block 136                                                                   
+0x7f3a9cac4620  mov r9d, dword ptr [r10*8+0x10]                                             
+0x7f3a9cac4628  shl r9, 0x3                                                                 
+0x7f3a9cac462c  test r9, r9                                                                 
+0x7f3a9cac462f  jz 0x7f3a9cac4655 <Block 139>                                               
+0x7f3a9cac4635  Block 137                                                                   
+0x7f3a9cac4635  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac4639  cmp rcx, 0x0                                                                
+0x7f3a9cac463d  data16 nop                                                                  
+0x7f3a9cac4640  jz 0x7f3a9cac516b <Block 340>                                               
+0x7f3a9cac4646  Block 138                                                                   
+0x7f3a9cac4646  sub rcx, 0x8                                                                
+0x7f3a9cac464a  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac464e  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4652  mov qword ptr [rcx], r9                                                     
+0x7f3a9cac4655  Block 139                                                                   
+0x7f3a9cac4655  mov dword ptr [r10*8+0x10], 0x0                                             
+0x7f3a9cac4661  mov r9d, dword ptr [rdx+rbx*4+0x10]                                         
+0x7f3a9cac4666  mov ecx, r10d                                                               
+0x7f3a9cac4669  shl rcx, 0x3                                                                
+0x7f3a9cac466d  test r9d, r9d                                                               
+0x7f3a9cac4670  jz 0x7f3a9cac468e <Block 141>                                               
+0x7f3a9cac4676  Block 140                                                                   
+0x7f3a9cac4676  nop word ptr [rax+rax*1]                                                    
+0x7f3a9cac4680  cmp r8d, dword ptr [r9*8+0xc]                                               
+0x7f3a9cac4688  jnl 0x7f3a9cac4ed7 <Block 252>                                              
+0x7f3a9cac468e  Block 141                                                                   
+0x7f3a9cac468e  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac4693  jz 0x7f3a9cac46cb <Block 145>                                               
+0x7f3a9cac4699  Block 142                                                                   
+0x7f3a9cac4699  mov edi, dword ptr [r10*8+0x10]                                             
+0x7f3a9cac46a1  shl rdi, 0x3                                                                
+0x7f3a9cac46a5  test rdi, rdi                                                               
+0x7f3a9cac46a8  jz 0x7f3a9cac46cb <Block 145>                                               
+0x7f3a9cac46ae  Block 143                                                                   
+0x7f3a9cac46ae  mov r8, qword ptr [r15+0x28]                                                
+0x7f3a9cac46b2  cmp r8, 0x0                                                                 
+0x7f3a9cac46b6  jz 0x7f3a9cac517a <Block 343>                                               
+0x7f3a9cac46bc  Block 144                                                                   
+0x7f3a9cac46bc  sub r8, 0x8                                                                 
+0x7f3a9cac46c0  mov qword ptr [r15+0x28], r8                                                
+0x7f3a9cac46c4  add r8, qword ptr [r15+0x38]                                                
+0x7f3a9cac46c8  mov qword ptr [r8], rdi                                                     
+0x7f3a9cac46cb  Block 145                                                                   
+0x7f3a9cac46cb  mov dword ptr [r10*8+0x10], r9d                                             
+0x7f3a9cac46d3  shl r9, 0x3                                                                 
+0x7f3a9cac46d7  mov r8, rcx                                                                 
+0x7f3a9cac46da  xor r8, r9                                                                  
+0x7f3a9cac46dd  shr r8, 0x15                                                                
+0x7f3a9cac46e1  jz 0x7f3a9cac4735 <Block 151>                                               
+0x7f3a9cac46e7  Block 146                                                                   
+0x7f3a9cac46e7  test r9, r9                                                                 
+0x7f3a9cac46ea  jz 0x7f3a9cac4735 <Block 151>                                               
+0x7f3a9cac46f0  Block 147                                                                   
+0x7f3a9cac46f0  mov r8, rcx                                                                 
+0x7f3a9cac46f3  shr r8, 0x9                                                                 
+0x7f3a9cac46f7  mov rdi, 0x7f3a8986d000                                                     
+0x7f3a9cac4701  add r8, rdi                                                                 
+0x7f3a9cac4704  cmp byte ptr [r8], 0x2                                                      
+0x7f3a9cac4708  jz 0x7f3a9cac4735 <Block 151>                                               
+0x7f3a9cac470a  Block 148                                                                   
+0x7f3a9cac470a  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac470f  cmp byte ptr [r8], 0x0                                                      
+0x7f3a9cac4713  jz 0x7f3a9cac4735 <Block 151>                                               
+0x7f3a9cac4715  Block 149                                                                   
+0x7f3a9cac4715  mov byte ptr [r8], 0x0                                                      
+0x7f3a9cac4719  mov rdi, qword ptr [r15+0x48]                                               
+0x7f3a9cac471d  test rdi, rdi                                                               
+0x7f3a9cac4720  jz 0x7f3a9cac518b <Block 346>                                               
+0x7f3a9cac4726  Block 150                                                                   
+0x7f3a9cac4726  sub rdi, 0x8                                                                
+0x7f3a9cac472a  mov qword ptr [r15+0x48], rdi                                               
+0x7f3a9cac472e  add rdi, qword ptr [r15+0x58]                                               
+0x7f3a9cac4732  mov qword ptr [rdi], r8                                                     
+0x7f3a9cac4735  Block 151                                                                   
+0x7f3a9cac4735  cmp byte ptr [r15+0x40], 0x0                                                
+0x7f3a9cac473a  jz 0x7f3a9cac476f <Block 155>                                               
+0x7f3a9cac4740  Block 152                                                                   
+0x7f3a9cac4740  mov r9d, dword ptr [rdx+rbx*4+0x10]                                         
+0x7f3a9cac4745  shl r9, 0x3                                                                 
+0x7f3a9cac4749  test r9, r9                                                                 
+0x7f3a9cac474c  jz 0x7f3a9cac476f <Block 155>                                               
+0x7f3a9cac4752  Block 153                                                                   
+0x7f3a9cac4752  mov r8, qword ptr [r15+0x28]                                                
+0x7f3a9cac4756  cmp r8, 0x0                                                                 
+0x7f3a9cac475a  jz 0x7f3a9cac519a <Block 349>                                               
+0x7f3a9cac4760  Block 154                                                                   
+0x7f3a9cac4760  sub r8, 0x8                                                                 
+0x7f3a9cac4764  mov qword ptr [r15+0x28], r8                                                
+0x7f3a9cac4768  add r8, qword ptr [r15+0x38]                                                
+0x7f3a9cac476c  mov qword ptr [r8], r9                                                      
+0x7f3a9cac476f  Block 155                                                                   
+0x7f3a9cac476f  mov dword ptr [rdx+rbx*4+0x10], r10d                                        
+0x7f3a9cac4774  lea rdx, ptr [rdx+rbx*4+0x10]                                               
+0x7f3a9cac4779  mov r8, rdx                                                                 
+0x7f3a9cac477c  xor r8, rcx                                                                 
+0x7f3a9cac477f  shr r8, 0x15                                                                
+0x7f3a9cac4783  jz 0x7f3a9cac47d7 <Block 161>                                               
+0x7f3a9cac4789  Block 156                                                                   
+0x7f3a9cac4789  test rcx, rcx                                                               
+0x7f3a9cac478c  jz 0x7f3a9cac47d7 <Block 161>                                               
+0x7f3a9cac4792  Block 157                                                                   
+0x7f3a9cac4792  mov r8, rdx                                                                 
+0x7f3a9cac4795  shr r8, 0x9                                                                 
+0x7f3a9cac4799  mov r10, 0x7f3a8986d000                                                     
+0x7f3a9cac47a3  add r8, r10                                                                 
+0x7f3a9cac47a6  cmp byte ptr [r8], 0x2                                                      
+0x7f3a9cac47aa  jz 0x7f3a9cac47d7 <Block 161>                                               
+0x7f3a9cac47ac  Block 158                                                                   
+0x7f3a9cac47ac  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac47b1  cmp byte ptr [r8], 0x0                                                      
+0x7f3a9cac47b5  jz 0x7f3a9cac47d7 <Block 161>                                               
+0x7f3a9cac47b7  Block 159                                                                   
+0x7f3a9cac47b7  mov byte ptr [r8], 0x0                                                      
+0x7f3a9cac47bb  mov r10, qword ptr [r15+0x48]                                               
+0x7f3a9cac47bf  test r10, r10                                                               
+0x7f3a9cac47c2  jz 0x7f3a9cac51ab <Block 352>                                               
+0x7f3a9cac47c8  Block 160                                                                   
+0x7f3a9cac47c8  sub r10, 0x8                                                                
+0x7f3a9cac47cc  mov qword ptr [r15+0x48], r10                                               
+0x7f3a9cac47d0  add r10, qword ptr [r15+0x58]                                               
+0x7f3a9cac47d4  mov qword ptr [r10], r8                                                     
+0x7f3a9cac47d7  Block 161                                                                   
+0x7f3a9cac47d7  lea edx, ptr [r11+0x2]                                                      
+0x7f3a9cac47db  mov dword ptr [rsi+0xc], edx                                                
+0x7f3a9cac47de  data16 nop                                                                  
+0x7f3a9cac47e0  jmp 0x7f3a9cac3f81 <Block 43>                                               
+0x7f3a9cac47e5  Block 162                                                             6.838s
+0x7f3a9cac47e5  sfence                                                                0.566s
+0x7f3a9cac47e8  mov qword ptr [rsp+0x18], rbx                                         3.089s
+0x7f3a9cac47ed  mov ebp, dword ptr [rsp+0x28]                                         0.167s
+0x7f3a9cac47f1  mov r8d, dword ptr [rsp+0x30]                                         0.032s
+0x7f3a9cac47f6  add r8d, ebp                                                          0.038s
+0x7f3a9cac47f9  mov edx, 0x3                                                          0.484s
+0x7f3a9cac47fe  sub edx, r8d                                                          0.018s
+0x7f3a9cac4801  mov r10, rsi                                                          0.173s
+0x7f3a9cac4804  mov r11d, edx                                                               
+0x7f3a9cac4807  mov edx, dword ptr [rsp+0x24]                                         0.317s
+0x7f3a9cac480b  mov ecx, ebp                                                          0.041s
+0x7f3a9cac480d  mov r8d, r11d                                                         0.191s
+0x7f3a9cac4810  mov dword ptr [rsp+0x14], r11d                                              
+0x7f3a9cac4815  data16 nop                                                            1.721s
+0x7f3a9cac4817  call 0x7f3a9ca4e380 <resolve_opt_virtual_call>                        0.001s
+0x7f3a9cac481c  Block 163                                                             6.497s
+0x7f3a9cac481c  nop dword ptr [rax+rax*1+0x7000e0c]                                   2.467s
+0x7f3a9cac4824  sfence                                                                0.079s
+0x7f3a9cac4827  mov rsi, qword ptr [rsp+0x8]                                          0.005s
+0x7f3a9cac482c  mov edx, dword ptr [rsi+0x10]                                         0.571s
+0x7f3a9cac482f  mov ecx, dword ptr [rdx*8+0xc]                                        0.750s
+0x7f3a9cac4836  cmp ecx, dword ptr [rsp+0x28]                                         2.625s
+0x7f3a9cac483a  jbe 0x7f3a9cac4e74 <Block 248>                                              
+0x7f3a9cac4840  Block 164                                                             0.641s
+0x7f3a9cac4840  sfence                                                                0.619s
+0x7f3a9cac4843  cmp ecx, dword ptr [rsp+0x30]                                         0.022s
+0x7f3a9cac4847  jbe 0x7f3a9cac4e74 <Block 248>                                              
+0x7f3a9cac484d  Block 165                                                             3.163s
+0x7f3a9cac484d  sfence                                                                0.374s
+0x7f3a9cac4850  mov rbx, qword ptr [rsp+0x18]                                         0.130s
+0x7f3a9cac4855  mov ebp, dword ptr [rsp+0x28]                                         0.063s
+0x7f3a9cac4859  shl rdx, 0x3                                                          0.382s
+0x7f3a9cac485d  mov r10d, dword ptr [rdx+rbp*4+0x10]                                  0.119s
+0x7f3a9cac4862  mov ecx, dword ptr [r10*8+0x10]                                       0.020s
+0x7f3a9cac486a  mov r8d, dword ptr [r10*8+0xc]                                        2.000s
+0x7f3a9cac4872  cmp byte ptr [r15+0x40], 0x0                                          0.042s
+0x7f3a9cac4877  jz 0x7f3a9cac48ac <Block 169>                                         0.035s
+0x7f3a9cac487d  Block 166                                                                   
+0x7f3a9cac487d  mov r9d, dword ptr [rdx+rbp*4+0x10]                                         
+0x7f3a9cac4882  shl r9, 0x3                                                                 
+0x7f3a9cac4886  test r9, r9                                                                 
+0x7f3a9cac4889  jz 0x7f3a9cac48ac <Block 169>                                               
+0x7f3a9cac488f  Block 167                                                                   
+0x7f3a9cac488f  mov r11, qword ptr [r15+0x28]                                               
+0x7f3a9cac4893  cmp r11, 0x0                                                                
+0x7f3a9cac4897  jz 0x7f3a9cac51ba <Block 355>                                               
+0x7f3a9cac489d  Block 168                                                                   
+0x7f3a9cac489d  sub r11, 0x8                                                                
+0x7f3a9cac48a1  mov qword ptr [r15+0x28], r11                                               
+0x7f3a9cac48a5  add r11, qword ptr [r15+0x38]                                               
+0x7f3a9cac48a9  mov qword ptr [r11], r9                                                     
+0x7f3a9cac48ac  Block 169                                                             2.384s
+0x7f3a9cac48ac  mov dword ptr [rdx+rbp*4+0x10], ecx                                   0.010s
+0x7f3a9cac48b0  shl rcx, 0x3                                                          1.462s
+0x7f3a9cac48b4  lea r11, ptr [rdx+rbp*4+0x10]                                         0.007s
+0x7f3a9cac48b9  sfence                                                                0.002s
+0x7f3a9cac48bc  mov r9, r11                                                           0.883s
+0x7f3a9cac48bf  xor r9, rcx                                                           0.005s
+0x7f3a9cac48c2  shr r9, 0x15                                                          0.001s
+0x7f3a9cac48c6  jz 0x7f3a9cac491a <Block 175>                                         0.015s
+0x7f3a9cac48cc  Block 170                                                             0.130s
+0x7f3a9cac48cc  test rcx, rcx                                                         0.130s
+0x7f3a9cac48cf  jz 0x7f3a9cac491a <Block 175>                                               
+0x7f3a9cac48d5  Block 171                                                                   
+0x7f3a9cac48d5  mov r9, r11                                                                 
+0x7f3a9cac48d8  shr r9, 0x9                                                                 
+0x7f3a9cac48dc  mov rdi, 0x7f3a8986d000                                                     
+0x7f3a9cac48e6  add r9, rdi                                                                 
+0x7f3a9cac48e9  cmp byte ptr [r9], 0x2                                                      
+0x7f3a9cac48ed  jz 0x7f3a9cac491a <Block 175>                                               
+0x7f3a9cac48ef  Block 172                                                                   
+0x7f3a9cac48ef  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac48f4  cmp byte ptr [r9], 0x0                                                      
+0x7f3a9cac48f8  jz 0x7f3a9cac491a <Block 175>                                               
+0x7f3a9cac48fa  Block 173                                                                   
+0x7f3a9cac48fa  mov byte ptr [r9], 0x0                                                      
+0x7f3a9cac48fe  mov rdi, qword ptr [r15+0x48]                                               
+0x7f3a9cac4902  test rdi, rdi                                                               
+0x7f3a9cac4905  jz 0x7f3a9cac51cb <Block 358>                                               
+0x7f3a9cac490b  Block 174                                                                   
+0x7f3a9cac490b  sub rdi, 0x8                                                                
+0x7f3a9cac490f  mov qword ptr [r15+0x48], rdi                                               
+0x7f3a9cac4913  add rdi, qword ptr [r15+0x58]                                               
+0x7f3a9cac4917  mov qword ptr [rdi], r9                                                     
+0x7f3a9cac491a  Block 175                                                             2.291s
+0x7f3a9cac491a  sfence                                                                0.599s
+0x7f3a9cac491d  cmp byte ptr [r15+0x40], 0x0                                          1.597s
+0x7f3a9cac4922  jz 0x7f3a9cac495a <Block 179>                                         0.095s
+0x7f3a9cac4928  Block 176                                                                   
+0x7f3a9cac4928  mov r11d, dword ptr [r10*8+0x10]                                            
+0x7f3a9cac4930  shl r11, 0x3                                                                
+0x7f3a9cac4934  test r11, r11                                                               
+0x7f3a9cac4937  jz 0x7f3a9cac495a <Block 179>                                               
+0x7f3a9cac493d  Block 177                                                                   
+0x7f3a9cac493d  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac4941  cmp rcx, 0x0                                                                
+0x7f3a9cac4945  jz 0x7f3a9cac51da <Block 361>                                               
+0x7f3a9cac494b  Block 178                                                                   
+0x7f3a9cac494b  sub rcx, 0x8                                                                
+0x7f3a9cac494f  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac4953  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4957  mov qword ptr [rcx], r11                                                    
+0x7f3a9cac495a  Block 179                                                             3.243s
+0x7f3a9cac495a  mov dword ptr [r10*8+0x10], 0x0                                       0.498s
+0x7f3a9cac4966  mov r11d, dword ptr [rdx+rbx*4+0x10]                                  1.486s
+0x7f3a9cac496b  sfence                                                                0.492s
+0x7f3a9cac496e  mov r9d, r10d                                                         0.668s
+0x7f3a9cac4971  shl r9, 0x3                                                           0.020s
+0x7f3a9cac4975  test r11d, r11d                                                       0.080s
+0x7f3a9cac4978  jz 0x7f3a9cac498f <Block 181>                                               
+0x7f3a9cac497e  Block 180                                                             0.648s
+0x7f3a9cac497e  sfence                                                                0.021s
+0x7f3a9cac4981  cmp r8d, dword ptr [r11*8+0xc]                                        0.627s
+0x7f3a9cac4989  jnl 0x7f3a9cac4f1d <Block 256>                                              
+0x7f3a9cac498f  Block 181                                                             3.791s
+0x7f3a9cac498f  sfence                                                                2.455s
+0x7f3a9cac4992  cmp byte ptr [r15+0x40], 0x0                                          0.690s
+0x7f3a9cac4997  jz 0x7f3a9cac49cf <Block 185>                                         0.646s
+0x7f3a9cac499d  Block 182                                                                   
+0x7f3a9cac499d  mov r8d, dword ptr [r10*8+0x10]                                             
+0x7f3a9cac49a5  shl r8, 0x3                                                                 
+0x7f3a9cac49a9  test r8, r8                                                                 
+0x7f3a9cac49ac  jz 0x7f3a9cac49cf <Block 185>                                               
+0x7f3a9cac49b2  Block 183                                                                   
+0x7f3a9cac49b2  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac49b6  cmp rcx, 0x0                                                                
+0x7f3a9cac49ba  jz 0x7f3a9cac51eb <Block 364>                                               
+0x7f3a9cac49c0  Block 184                                                                   
+0x7f3a9cac49c0  sub rcx, 0x8                                                                
+0x7f3a9cac49c4  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac49c8  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac49cc  mov qword ptr [rcx], r8                                                     
+0x7f3a9cac49cf  Block 185                                                             3.758s
+0x7f3a9cac49cf  mov dword ptr [r10*8+0x10], r11d                                      0.459s
+0x7f3a9cac49d7  shl r11, 0x3                                                          1.804s
+0x7f3a9cac49db  sfence                                                                0.034s
+0x7f3a9cac49de  mov rcx, r9                                                           1.181s
+0x7f3a9cac49e1  xor rcx, r11                                                          0.122s
+0x7f3a9cac49e4  shr rcx, 0x15                                                         0.018s
+0x7f3a9cac49e8  jz 0x7f3a9cac4a39 <Block 191>                                         0.140s
+0x7f3a9cac49ee  Block 186                                                                   
+0x7f3a9cac49ee  test r11, r11                                                               
+0x7f3a9cac49f1  jz 0x7f3a9cac4a39 <Block 191>                                               
+0x7f3a9cac49f7  Block 187                                                                   
+0x7f3a9cac49f7  mov rcx, r9                                                                 
+0x7f3a9cac49fa  shr rcx, 0x9                                                                
+0x7f3a9cac49fe  mov r8, 0x7f3a8986d000                                                      
+0x7f3a9cac4a08  add rcx, r8                                                                 
+0x7f3a9cac4a0b  cmp byte ptr [rcx], 0x2                                                     
+0x7f3a9cac4a0e  jz 0x7f3a9cac4a39 <Block 191>                                               
+0x7f3a9cac4a10  Block 188                                                                   
+0x7f3a9cac4a10  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4a15  cmp byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4a18  jz 0x7f3a9cac4a39 <Block 191>                                               
+0x7f3a9cac4a1a  Block 189                                                                   
+0x7f3a9cac4a1a  mov byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4a1d  mov r8, qword ptr [r15+0x48]                                                
+0x7f3a9cac4a21  test r8, r8                                                                 
+0x7f3a9cac4a24  jz 0x7f3a9cac51fa <Block 367>                                               
+0x7f3a9cac4a2a  Block 190                                                                   
+0x7f3a9cac4a2a  sub r8, 0x8                                                                 
+0x7f3a9cac4a2e  mov qword ptr [r15+0x48], r8                                                
+0x7f3a9cac4a32  add r8, qword ptr [r15+0x58]                                                
+0x7f3a9cac4a36  mov qword ptr [r8], rcx                                                     
+0x7f3a9cac4a39  Block 191                                                             2.617s
+0x7f3a9cac4a39  sfence                                                                0.540s
+0x7f3a9cac4a3c  cmp byte ptr [r15+0x40], 0x0                                          0.970s
+0x7f3a9cac4a41  jz 0x7f3a9cac4a76 <Block 195>                                         1.107s
+0x7f3a9cac4a47  Block 192                                                                   
+0x7f3a9cac4a47  mov r8d, dword ptr [rdx+rbx*4+0x10]                                         
+0x7f3a9cac4a4c  shl r8, 0x3                                                                 
+0x7f3a9cac4a50  test r8, r8                                                                 
+0x7f3a9cac4a53  jz 0x7f3a9cac4a76 <Block 195>                                               
+0x7f3a9cac4a59  Block 193                                                                   
+0x7f3a9cac4a59  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac4a5d  cmp rcx, 0x0                                                                
+0x7f3a9cac4a61  jz 0x7f3a9cac520b <Block 370>                                               
+0x7f3a9cac4a67  Block 194                                                                   
+0x7f3a9cac4a67  sub rcx, 0x8                                                                
+0x7f3a9cac4a6b  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac4a6f  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4a73  mov qword ptr [rcx], r8                                                     
+0x7f3a9cac4a76  Block 195                                                             5.443s
+0x7f3a9cac4a76  mov dword ptr [rdx+rbx*4+0x10], r10d                                  0.464s
+0x7f3a9cac4a7b  lea rdx, ptr [rdx+rbx*4+0x10]                                         2.782s
+0x7f3a9cac4a80  sfence                                                                0.026s
+0x7f3a9cac4a83  mov rcx, rdx                                                          2.166s
+0x7f3a9cac4a86  xor rcx, r9                                                           0.001s
+0x7f3a9cac4a89  shr rcx, 0x15                                                         0.004s
+0x7f3a9cac4a8d  jz 0x7f3a9cac4ade <Block 201>                                               
+0x7f3a9cac4a93  Block 196                                                                   
+0x7f3a9cac4a93  test r9, r9                                                                 
+0x7f3a9cac4a96  jz 0x7f3a9cac4ade <Block 201>                                               
+0x7f3a9cac4a9c  Block 197                                                             0.002s
+0x7f3a9cac4a9c  mov rcx, rdx                                                                
+0x7f3a9cac4a9f  shr rcx, 0x9                                                                
+0x7f3a9cac4aa3  mov r8, 0x7f3a8986d000                                                      
+0x7f3a9cac4aad  add rcx, r8                                                                 
+0x7f3a9cac4ab0  cmp byte ptr [rcx], 0x2                                                     
+0x7f3a9cac4ab3  jz 0x7f3a9cac4ade <Block 201>                                         0.002s
+0x7f3a9cac4ab5  Block 198                                                                   
+0x7f3a9cac4ab5  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4aba  cmp byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4abd  jz 0x7f3a9cac4ade <Block 201>                                               
+0x7f3a9cac4abf  Block 199                                                                   
+0x7f3a9cac4abf  mov byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4ac2  mov r8, qword ptr [r15+0x48]                                                
+0x7f3a9cac4ac6  test r8, r8                                                                 
+0x7f3a9cac4ac9  jz 0x7f3a9cac521a <Block 373>                                               
+0x7f3a9cac4acf  Block 200                                                                   
+0x7f3a9cac4acf  sub r8, 0x8                                                                 
+0x7f3a9cac4ad3  mov qword ptr [r15+0x48], r8                                                
+0x7f3a9cac4ad7  add r8, qword ptr [r15+0x58]                                                
+0x7f3a9cac4adb  mov qword ptr [r8], rcx                                                     
+0x7f3a9cac4ade  Block 201                                                             6.183s
+0x7f3a9cac4ade  inc dword ptr [rsi+0xc]                                               0.533s
+0x7f3a9cac4ae1  mov edx, dword ptr [rsp+0x24]                                         2.040s
+0x7f3a9cac4ae5  mov ecx, dword ptr [rsp+0x14]                                         0.016s
+0x7f3a9cac4ae9  mov r8d, dword ptr [rsp+0x30]                                         0.027s
+0x7f3a9cac4aee  sfence                                                                0.098s
+0x7f3a9cac4af1  data16 nop                                                            3.463s
+0x7f3a9cac4af3  call 0x7f3a9ca4e380 <resolve_opt_virtual_call>                        0.006s
+0x7f3a9cac4af8  Block 202                                                             3.064s
+0x7f3a9cac4af8  nop dword ptr [rax+rax*1+0xa0010e8]                                   2.949s
+0x7f3a9cac4b00  jmp 0x7f3a9cac3f81 <Block 43>                                         0.115s
+0x7f3a9cac4b05  Block 203                                                             7.665s
+0x7f3a9cac4b05  sfence                                                                0.261s
+0x7f3a9cac4b08  mov dword ptr [rsp+0x20], ebx                                         4.872s
+0x7f3a9cac4b0c  mov dword ptr [rsp+0x2c], edx                                         0.651s
+0x7f3a9cac4b10  mov r10, rsi                                                          0.499s
+0x7f3a9cac4b13  mov edx, edi                                                                
+0x7f3a9cac4b15  mov r9d, ecx                                                          0.215s
+0x7f3a9cac4b18  mov eax, r8d                                                          0.132s
+0x7f3a9cac4b1b  mov dword ptr [rsp+0x24], edi                                         0.139s
+0x7f3a9cac4b1f  nop                                                                   0.844s
+0x7f3a9cac4b20  data16 nop                                                            0.014s
+0x7f3a9cac4b23  call 0x7f3a9ca4e380 <resolve_opt_virtual_call>                        0.038s
+0x7f3a9cac4b28  Block 204                                                             6.165s
+0x7f3a9cac4b28  nop dword ptr [rax+rax*1+0xb001118]                                   3.009s
+0x7f3a9cac4b30  sfence                                                                0.079s
+0x7f3a9cac4b33  mov rsi, qword ptr [rsp+0x8]                                          0.005s
+0x7f3a9cac4b38  mov edx, dword ptr [rsi+0x10]                                         0.520s
+0x7f3a9cac4b3b  mov ecx, dword ptr [rdx*8+0xc]                                        0.517s
+0x7f3a9cac4b42  cmp ecx, dword ptr [rsp+0x34]                                         2.035s
+0x7f3a9cac4b46  jbe 0x7f3a9cac4e9f <Block 250>                                              
+0x7f3a9cac4b4c  Block 205                                                             0.816s
+0x7f3a9cac4b4c  sfence                                                                0.667s
+0x7f3a9cac4b4f  cmp ecx, dword ptr [rsp+0x28]                                         0.149s
+0x7f3a9cac4b53  jbe 0x7f3a9cac4e9f <Block 250>                                              
+0x7f3a9cac4b59  Block 206                                                             3.910s
+0x7f3a9cac4b59  sfence                                                                0.259s
+0x7f3a9cac4b5c  mov ebp, dword ptr [rsp+0x28]                                         0.297s
+0x7f3a9cac4b60  shl rdx, 0x3                                                          0.076s
+0x7f3a9cac4b64  mov ecx, dword ptr [rsp+0x34]                                         0.229s
+0x7f3a9cac4b68  mov r10d, dword ptr [rdx+rcx*4+0x10]                                  0.172s
+0x7f3a9cac4b6d  mov r8d, dword ptr [r10*8+0x10]                                       0.592s
+0x7f3a9cac4b75  mov r11d, dword ptr [r10*8+0xc]                                       2.199s
+0x7f3a9cac4b7d  cmp byte ptr [r15+0x40], 0x0                                          0.062s
+0x7f3a9cac4b82  jz 0x7f3a9cac4bb6 <Block 210>                                         0.024s
+0x7f3a9cac4b88  Block 207                                                                   
+0x7f3a9cac4b88  mov ebx, dword ptr [rdx+rcx*4+0x10]                                         
+0x7f3a9cac4b8c  shl rbx, 0x3                                                                
+0x7f3a9cac4b90  test rbx, rbx                                                               
+0x7f3a9cac4b93  jz 0x7f3a9cac4bb6 <Block 210>                                               
+0x7f3a9cac4b99  Block 208                                                                   
+0x7f3a9cac4b99  mov r9, qword ptr [r15+0x28]                                                
+0x7f3a9cac4b9d  cmp r9, 0x0                                                                 
+0x7f3a9cac4ba1  jz 0x7f3a9cac522b <Block 376>                                               
+0x7f3a9cac4ba7  Block 209                                                                   
+0x7f3a9cac4ba7  sub r9, 0x8                                                                 
+0x7f3a9cac4bab  mov qword ptr [r15+0x28], r9                                                
+0x7f3a9cac4baf  add r9, qword ptr [r15+0x38]                                                
+0x7f3a9cac4bb3  mov qword ptr [r9], rbx                                                     
+0x7f3a9cac4bb6  Block 210                                                             2.097s
+0x7f3a9cac4bb6  mov dword ptr [rdx+rcx*4+0x10], r8d                                   0.004s
+0x7f3a9cac4bbb  shl r8, 0x3                                                           1.236s
+0x7f3a9cac4bbf  lea rcx, ptr [rdx+rcx*4+0x10]                                         0.009s
+0x7f3a9cac4bc4  sfence                                                                0.010s
+0x7f3a9cac4bc7  mov r9, rcx                                                           0.612s
+0x7f3a9cac4bca  xor r9, r8                                                            0.014s
+0x7f3a9cac4bcd  shr r9, 0x15                                                          0.006s
+0x7f3a9cac4bd1  jz 0x7f3a9cac4c25 <Block 216>                                         0.207s
+0x7f3a9cac4bd7  Block 211                                                             0.001s
+0x7f3a9cac4bd7  test r8, r8                                                           0.001s
+0x7f3a9cac4bda  jz 0x7f3a9cac4c25 <Block 216>                                               
+0x7f3a9cac4be0  Block 212                                                                 0s
+0x7f3a9cac4be0  mov r9, rcx                                                                 
+0x7f3a9cac4be3  shr r9, 0x9                                                                 
+0x7f3a9cac4be7  mov rbx, 0x7f3a8986d000                                                     
+0x7f3a9cac4bf1  add r9, rbx                                                                 
+0x7f3a9cac4bf4  cmp byte ptr [r9], 0x2                                                      
+0x7f3a9cac4bf8  jz 0x7f3a9cac4c25 <Block 216>                                             0s
+0x7f3a9cac4bfa  Block 213                                                                   
+0x7f3a9cac4bfa  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4bff  cmp byte ptr [r9], 0x0                                                      
+0x7f3a9cac4c03  jz 0x7f3a9cac4c25 <Block 216>                                               
+0x7f3a9cac4c05  Block 214                                                                   
+0x7f3a9cac4c05  mov byte ptr [r9], 0x0                                                      
+0x7f3a9cac4c09  mov rbx, qword ptr [r15+0x48]                                               
+0x7f3a9cac4c0d  test rbx, rbx                                                               
+0x7f3a9cac4c10  jz 0x7f3a9cac523a <Block 379>                                               
+0x7f3a9cac4c16  Block 215                                                                   
+0x7f3a9cac4c16  sub rbx, 0x8                                                                
+0x7f3a9cac4c1a  mov qword ptr [r15+0x48], rbx                                               
+0x7f3a9cac4c1e  add rbx, qword ptr [r15+0x58]                                               
+0x7f3a9cac4c22  mov qword ptr [rbx], r9                                                     
+0x7f3a9cac4c25  Block 216                                                             1.727s
+0x7f3a9cac4c25  sfence                                                                0.494s
+0x7f3a9cac4c28  cmp byte ptr [r15+0x40], 0x0                                          1.118s
+0x7f3a9cac4c2d  jz 0x7f3a9cac4c65 <Block 220>                                         0.115s
+0x7f3a9cac4c33  Block 217                                                                   
+0x7f3a9cac4c33  mov r8d, dword ptr [r10*8+0x10]                                             
+0x7f3a9cac4c3b  shl r8, 0x3                                                                 
+0x7f3a9cac4c3f  test r8, r8                                                                 
+0x7f3a9cac4c42  jz 0x7f3a9cac4c65 <Block 220>                                               
+0x7f3a9cac4c48  Block 218                                                                   
+0x7f3a9cac4c48  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac4c4c  cmp rcx, 0x0                                                                
+0x7f3a9cac4c50  jz 0x7f3a9cac524b <Block 382>                                               
+0x7f3a9cac4c56  Block 219                                                                   
+0x7f3a9cac4c56  sub rcx, 0x8                                                                
+0x7f3a9cac4c5a  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac4c5e  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4c62  mov qword ptr [rcx], r8                                                     
+0x7f3a9cac4c65  Block 220                                                             2.759s
+0x7f3a9cac4c65  mov dword ptr [r10*8+0x10], 0x0                                       0.363s
+0x7f3a9cac4c71  mov r8d, dword ptr [rdx+rbp*4+0x10]                                   0.893s
+0x7f3a9cac4c76  sfence                                                                0.737s
+0x7f3a9cac4c79  mov r9d, r10d                                                         0.645s
+0x7f3a9cac4c7c  shl r9, 0x3                                                           0.045s
+0x7f3a9cac4c80  test r8d, r8d                                                         0.077s
+0x7f3a9cac4c83  jz 0x7f3a9cac4c9a <Block 222>                                               
+0x7f3a9cac4c89  Block 221                                                             1.658s
+0x7f3a9cac4c89  sfence                                                                0.372s
+0x7f3a9cac4c8c  cmp r11d, dword ptr [r8*8+0xc]                                        1.286s
+0x7f3a9cac4c94  jnl 0x7f3a9cac4efa <Block 254>                                              
+0x7f3a9cac4c9a  Block 222                                                             3.153s
+0x7f3a9cac4c9a  sfence                                                                1.914s
+0x7f3a9cac4c9d  cmp byte ptr [r15+0x40], 0x0                                          0.381s
+0x7f3a9cac4ca2  jz 0x7f3a9cac4cda <Block 226>                                         0.858s
+0x7f3a9cac4ca8  Block 223                                                                   
+0x7f3a9cac4ca8  mov r11d, dword ptr [r10*8+0x10]                                            
+0x7f3a9cac4cb0  shl r11, 0x3                                                                
+0x7f3a9cac4cb4  test r11, r11                                                               
+0x7f3a9cac4cb7  jz 0x7f3a9cac4cda <Block 226>                                               
+0x7f3a9cac4cbd  Block 224                                                                   
+0x7f3a9cac4cbd  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac4cc1  cmp rcx, 0x0                                                                
+0x7f3a9cac4cc5  jz 0x7f3a9cac525a <Block 385>                                               
+0x7f3a9cac4ccb  Block 225                                                                   
+0x7f3a9cac4ccb  sub rcx, 0x8                                                                
+0x7f3a9cac4ccf  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac4cd3  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4cd7  mov qword ptr [rcx], r11                                                    
+0x7f3a9cac4cda  Block 226                                                             3.235s
+0x7f3a9cac4cda  mov dword ptr [r10*8+0x10], r8d                                       0.398s
+0x7f3a9cac4ce2  shl r8, 0x3                                                           1.131s
+0x7f3a9cac4ce6  sfence                                                                0.045s
+0x7f3a9cac4ce9  mov rcx, r9                                                           1.373s
+0x7f3a9cac4cec  xor rcx, r8                                                           0.080s
+0x7f3a9cac4cef  shr rcx, 0x15                                                         0.035s
+0x7f3a9cac4cf3  jz 0x7f3a9cac4d48 <Block 232>                                         0.174s
+0x7f3a9cac4cf9  Block 227                                                             0.025s
+0x7f3a9cac4cf9  test r8, r8                                                           0.016s
+0x7f3a9cac4cfc  nop dword ptr [rax]                                                   0.005s
+0x7f3a9cac4d00  jz 0x7f3a9cac4d48 <Block 232>                                         0.004s
+0x7f3a9cac4d06  Block 228                                                                   
+0x7f3a9cac4d06  mov rcx, r9                                                                 
+0x7f3a9cac4d09  shr rcx, 0x9                                                                
+0x7f3a9cac4d0d  mov r11, 0x7f3a8986d000                                                     
+0x7f3a9cac4d17  add rcx, r11                                                                
+0x7f3a9cac4d1a  cmp byte ptr [rcx], 0x2                                                     
+0x7f3a9cac4d1d  jz 0x7f3a9cac4d48 <Block 232>                                               
+0x7f3a9cac4d1f  Block 229                                                                   
+0x7f3a9cac4d1f  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4d24  cmp byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4d27  jz 0x7f3a9cac4d48 <Block 232>                                               
+0x7f3a9cac4d29  Block 230                                                                   
+0x7f3a9cac4d29  mov byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4d2c  mov r11, qword ptr [r15+0x48]                                               
+0x7f3a9cac4d30  test r11, r11                                                               
+0x7f3a9cac4d33  jz 0x7f3a9cac526b <Block 388>                                               
+0x7f3a9cac4d39  Block 231                                                                   
+0x7f3a9cac4d39  sub r11, 0x8                                                                
+0x7f3a9cac4d3d  mov qword ptr [r15+0x48], r11                                               
+0x7f3a9cac4d41  add r11, qword ptr [r15+0x58]                                               
+0x7f3a9cac4d45  mov qword ptr [r11], rcx                                                    
+0x7f3a9cac4d48  Block 232                                                             2.493s
+0x7f3a9cac4d48  sfence                                                                0.586s
+0x7f3a9cac4d4b  cmp byte ptr [r15+0x40], 0x0                                          1.162s
+0x7f3a9cac4d50  jz 0x7f3a9cac4d85 <Block 236>                                         0.745s
+0x7f3a9cac4d56  Block 233                                                                   
+0x7f3a9cac4d56  mov r8d, dword ptr [rdx+rbp*4+0x10]                                         
+0x7f3a9cac4d5b  shl r8, 0x3                                                                 
+0x7f3a9cac4d5f  test r8, r8                                                                 
+0x7f3a9cac4d62  jz 0x7f3a9cac4d85 <Block 236>                                               
+0x7f3a9cac4d68  Block 234                                                                   
+0x7f3a9cac4d68  mov rcx, qword ptr [r15+0x28]                                               
+0x7f3a9cac4d6c  cmp rcx, 0x0                                                                
+0x7f3a9cac4d70  jz 0x7f3a9cac527a <Block 391>                                               
+0x7f3a9cac4d76  Block 235                                                                   
+0x7f3a9cac4d76  sub rcx, 0x8                                                                
+0x7f3a9cac4d7a  mov qword ptr [r15+0x28], rcx                                               
+0x7f3a9cac4d7e  add rcx, qword ptr [r15+0x38]                                               
+0x7f3a9cac4d82  mov qword ptr [rcx], r8                                                     
+0x7f3a9cac4d85  Block 236                                                             3.559s
+0x7f3a9cac4d85  mov dword ptr [rdx+rbp*4+0x10], r10d                                  0.453s
+0x7f3a9cac4d8a  lea rdx, ptr [rdx+rbp*4+0x10]                                         0.648s
+0x7f3a9cac4d8f  sfence                                                                0.052s
+0x7f3a9cac4d92  mov rcx, rdx                                                          1.898s
+0x7f3a9cac4d95  xor rcx, r9                                                           0.012s
+0x7f3a9cac4d98  shr rcx, 0x15                                                         0.016s
+0x7f3a9cac4d9c  nop dword ptr [rax]                                                   0.001s
+0x7f3a9cac4da0  jz 0x7f3a9cac4df5 <Block 242>                                         0.479s
+0x7f3a9cac4da6  Block 237                                                                   
+0x7f3a9cac4da6  test r9, r9                                                                 
+0x7f3a9cac4da9  jz 0x7f3a9cac4df5 <Block 242>                                               
+0x7f3a9cac4daf  Block 238                                                                 0s
+0x7f3a9cac4daf  mov rcx, rdx                                                                
+0x7f3a9cac4db2  shr rcx, 0x9                                                                
+0x7f3a9cac4db6  mov r8, 0x7f3a8986d000                                                      
+0x7f3a9cac4dc0  add rcx, r8                                                                 
+0x7f3a9cac4dc3  cmp byte ptr [rcx], 0x2                                                     
+0x7f3a9cac4dc6  jz 0x7f3a9cac4df5 <Block 242>                                             0s
+0x7f3a9cac4dc8  Block 239                                                                   
+0x7f3a9cac4dc8  lock add dword ptr [rsp], 0x0                                               
+0x7f3a9cac4dcd  cmp byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4dd0  jz 0x7f3a9cac4df5 <Block 242>                                               
+0x7f3a9cac4dd2  Block 240                                                                   
+0x7f3a9cac4dd2  mov byte ptr [rcx], 0x0                                                     
+0x7f3a9cac4dd5  mov r8, qword ptr [r15+0x48]                                                
+0x7f3a9cac4dd9  test r8, r8                                                                 
+0x7f3a9cac4ddc  nop dword ptr [rax]                                                         
+0x7f3a9cac4de0  jz 0x7f3a9cac528b <Block 394>                                               
+0x7f3a9cac4de6  Block 241                                                                   
+0x7f3a9cac4de6  sub r8, 0x8                                                                 
+0x7f3a9cac4dea  mov qword ptr [r15+0x48], r8                                                
+0x7f3a9cac4dee  add r8, qword ptr [r15+0x58]                                                
+0x7f3a9cac4df2  mov qword ptr [r8], rcx                                                     
+0x7f3a9cac4df5  Block 242                                                             4.670s
+0x7f3a9cac4df5  inc dword ptr [rsi+0xc]                                               0.016s
+0x7f3a9cac4df8  mov r10, rsi                                                          2.316s
+0x7f3a9cac4dfb  mov edx, dword ptr [rsp+0x24]                                         0.006s
+0x7f3a9cac4dff  mov ecx, dword ptr [rsp+0x30]                                         0.122s
+0x7f3a9cac4e03  mov r8d, ebp                                                          0.606s
+0x7f3a9cac4e06  sfence                                                                0.330s
+0x7f3a9cac4e09  data16 nop                                                            1.237s
+0x7f3a9cac4e0b  call 0x7f3a9ca4e380 <resolve_opt_virtual_call>                        0.039s
+0x7f3a9cac4e10  Block 243                                                             3.846s
+0x7f3a9cac4e10  nop dword ptr [rax+rax*1+0xe001400]                                   3.177s
+0x7f3a9cac4e18  sfence                                                                0.068s
+0x7f3a9cac4e1b  mov rsi, qword ptr [rsp+0x8]                                          0.008s
+0x7f3a9cac4e20  jmp 0x7f3a9cac4272 <Block 85>                                         0.593s
+0x7f3a9cac4e25  Block 244                                                                   
+0x7f3a9cac4e25  mov dword ptr [rsp+0x2c], edx                                               
+0x7f3a9cac4e29  mov dword ptr [r15+0x484], 0xffffffe5                                       
+0x7f3a9cac4e34  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac4e3f  nop                                                                         
+0x7f3a9cac4e40  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4e45  Block 245                                                                   
+0x7f3a9cac4e45  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4e4d  Block 246                                                                   
+0x7f3a9cac4e4d  mov ebp, dword ptr [rsp+0x28]                                               
+0x7f3a9cac4e51  mov dword ptr [r15+0x484], 0xffffffe5                                       
+0x7f3a9cac4e5c  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac4e67  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4e6c  Block 247                                                                   
+0x7f3a9cac4e6c  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4e74  Block 248                                                                   
+0x7f3a9cac4e74  mov edx, dword ptr [rsp+0x14]                                               
+0x7f3a9cac4e78  mov ebp, dword ptr [rsp+0x28]                                               
+0x7f3a9cac4e7c  mov dword ptr [r15+0x484], 0xffffffe5                                       
+0x7f3a9cac4e87  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac4e92  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4e97  Block 249                                                                   
+0x7f3a9cac4e97  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4e9f  Block 250                                                                   
+0x7f3a9cac4e9f  mov ebp, dword ptr [rsp+0x28]                                               
+0x7f3a9cac4ea3  mov ebx, dword ptr [rsp+0x20]                                               
+0x7f3a9cac4ea7  mov r8d, dword ptr [rsp+0x30]                                               
+0x7f3a9cac4eac  mov ecx, dword ptr [rsp+0x34]                                               
+0x7f3a9cac4eb0  mov edx, dword ptr [rsp+0x2c]                                               
+0x7f3a9cac4eb4  mov dword ptr [r15+0x484], 0xffffffe5                                       
+0x7f3a9cac4ebf  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac4eca  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4ecf  Block 251                                                                   
+0x7f3a9cac4ecf  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4ed7  Block 252                                                                   
+0x7f3a9cac4ed7  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac4ee2  mov qword ptr [r15+0x490], 0x294                                            
+0x7f3a9cac4eed  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4ef2  Block 253                                                                   
+0x7f3a9cac4ef2  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4efa  Block 254                                                                   
+0x7f3a9cac4efa  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac4f05  mov qword ptr [r15+0x490], 0x294                                            
+0x7f3a9cac4f10  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4f15  Block 255                                                                   
+0x7f3a9cac4f15  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4f1d  Block 256                                                                   
+0x7f3a9cac4f1d  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac4f28  mov qword ptr [r15+0x490], 0x294                                            
+0x7f3a9cac4f33  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4f38  Block 257                                                                   
+0x7f3a9cac4f38  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4f40  Block 258                                                                   
+0x7f3a9cac4f40  mov ebp, dword ptr [rsp+0x28]                                               
+0x7f3a9cac4f44  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac4f4f  mov qword ptr [r15+0x490], 0x294                                            
+0x7f3a9cac4f5a  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4f5f  Block 259                                                                   
+0x7f3a9cac4f5f  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4f67  Block 260                                                                   
+0x7f3a9cac4f67  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac4f72  mov qword ptr [r15+0x490], 0x294                                            
+0x7f3a9cac4f7d  data16 nop                                                                  
+0x7f3a9cac4f80  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4f85  Block 261                                                                   
+0x7f3a9cac4f85  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4f8d  Block 262                                                                   
+0x7f3a9cac4f8d  mov ebp, dword ptr [rsp+0x28]                                               
+0x7f3a9cac4f91  mov dword ptr [r15+0x484], 0xffffffe5                                       
+0x7f3a9cac4f9c  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac4fa7  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4fac  Block 263                                                                   
+0x7f3a9cac4fac  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4fb4  Block 264                                                                   
+0x7f3a9cac4fb4  mov dword ptr [rsp+0x2c], edx                                               
+0x7f3a9cac4fb8  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac4fc3  mov qword ptr [r15+0x490], 0x294                                            
+0x7f3a9cac4fce  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac4fd3  Block 265                                                                   
+0x7f3a9cac4fd3  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac4fdb  Block 266                                                                   
+0x7f3a9cac4fdb  mov qword ptr [rsp+0x40], rbp                                               
+0x7f3a9cac4fe0  call 0x7f3a9ca34220 <nmethod_entry_barrier>                                 
+0x7f3a9cac4fe5  Block 267                                                                   
+0x7f3a9cac4fe5  jmp 0x7f3a9cac3c9a <Block 3>                                                
+0x7f3a9cac4fea  Block 268                                                                   
+0x7f3a9cac4fea  hlt                                                                         
+0x7f3a9cac4feb  Block 269                                                                   
+0x7f3a9cac4feb  mov qword ptr [rsp], rax                                                    
+0x7f3a9cac4fef  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac4ff4  Block 270                                                                   
+0x7f3a9cac4ff4  jmp 0x7f3a9cac3d3c <Block 10>                                               
+0x7f3a9cac4ff9  Block 271                                                                   
+0x7f3a9cac4ff9  hlt                                                                         
+0x7f3a9cac4ffa  Block 272                                                                   
+0x7f3a9cac4ffa  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac4ffe  data16 nop                                                                  
+0x7f3a9cac5000  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5005  Block 273                                                                   
+0x7f3a9cac5005  jmp 0x7f3a9cac3dab <Block 16>                                               
+0x7f3a9cac500a  Block 274                                                                   
+0x7f3a9cac500a  hlt                                                                         
+0x7f3a9cac500b  Block 275                                                                   
+0x7f3a9cac500b  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac500f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5014  Block 276                                                                   
+0x7f3a9cac5014  jmp 0x7f3a9cac3deb <Block 20>                                               
+0x7f3a9cac5019  Block 277                                                                   
+0x7f3a9cac5019  hlt                                                                         
+0x7f3a9cac501a  Block 278                                                                   
+0x7f3a9cac501a  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac501e  data16 nop                                                                  
+0x7f3a9cac5020  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5025  Block 279                                                                   
+0x7f3a9cac5025  jmp 0x7f3a9cac3e63 <Block 26>                                               
+0x7f3a9cac502a  Block 280                                                                   
+0x7f3a9cac502a  hlt                                                                         
+0x7f3a9cac502b  Block 281                                                                   
+0x7f3a9cac502b  mov qword ptr [rsp], rdx                                                    
+0x7f3a9cac502f  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5034  Block 282                                                                   
+0x7f3a9cac5034  jmp 0x7f3a9cac3ed5 <Block 32>                                               
+0x7f3a9cac5039  Block 283                                                                   
+0x7f3a9cac5039  hlt                                                                         
+0x7f3a9cac503a  Block 284                                                                   
+0x7f3a9cac503a  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac503e  data16 nop                                                                  
+0x7f3a9cac5040  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5045  Block 285                                                                   
+0x7f3a9cac5045  jmp 0x7f3a9cac3f15 <Block 36>                                               
+0x7f3a9cac504a  Block 286                                                                   
+0x7f3a9cac504a  hlt                                                                         
+0x7f3a9cac504b  Block 287                                                                   
+0x7f3a9cac504b  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac504f  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5054  Block 288                                                                   
+0x7f3a9cac5054  jmp 0x7f3a9cac3f7d <Block 42>                                               
+0x7f3a9cac5059  Block 289                                                                   
+0x7f3a9cac5059  hlt                                                                         
+0x7f3a9cac505a  Block 290                                                                   
+0x7f3a9cac505a  lea rcx, ptr [rip-0x10d4]                                                   
+0x7f3a9cac5061  mov qword ptr [r15+0x468], rcx                                              
+0x7f3a9cac5068  jmp 0x7f3a9ca55000 <SafepointBlob>                                          
+0x7f3a9cac506d  Block 291                                                                   
+0x7f3a9cac506d  hlt                                                                         
+0x7f3a9cac506e  Block 292                                                                   
+0x7f3a9cac506e  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac5072  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5077  Block 293                                                                   
+0x7f3a9cac5077  jmp 0x7f3a9cac403b <Block 52>                                               
+0x7f3a9cac507c  Block 294                                                                   
+0x7f3a9cac507c  hlt                                                                         
+0x7f3a9cac507d  Block 295                                                                   
+0x7f3a9cac507d  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac5081  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5086  Block 296                                                                   
+0x7f3a9cac5086  jmp 0x7f3a9cac40ab <Block 58>                                               
+0x7f3a9cac508b  Block 297                                                                   
+0x7f3a9cac508b  hlt                                                                         
+0x7f3a9cac508c  Block 298                                                                   
+0x7f3a9cac508c  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac5090  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5095  Block 299                                                                   
+0x7f3a9cac5095  jmp 0x7f3a9cac40e8 <Block 62>                                               
+0x7f3a9cac509a  Block 300                                                                   
+0x7f3a9cac509a  hlt                                                                         
+0x7f3a9cac509b  Block 301                                                                   
+0x7f3a9cac509b  mov qword ptr [rsp], r13                                                    
+0x7f3a9cac509f  nop                                                                         
+0x7f3a9cac50a0  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac50a5  Block 302                                                                   
+0x7f3a9cac50a5  jmp 0x7f3a9cac4158 <Block 68>                                               
+0x7f3a9cac50aa  Block 303                                                                   
+0x7f3a9cac50aa  hlt                                                                         
+0x7f3a9cac50ab  Block 304                                                                   
+0x7f3a9cac50ab  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac50af  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac50b4  Block 305                                                                   
+0x7f3a9cac50b4  jmp 0x7f3a9cac41c0 <Block 74>                                               
+0x7f3a9cac50b9  Block 306                                                                   
+0x7f3a9cac50b9  hlt                                                                         
+0x7f3a9cac50ba  Block 307                                                                   
+0x7f3a9cac50ba  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac50be  data16 nop                                                                  
+0x7f3a9cac50c0  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac50c5  Block 308                                                                   
+0x7f3a9cac50c5  jmp 0x7f3a9cac41fa <Block 78>                                               
+0x7f3a9cac50ca  Block 309                                                                   
+0x7f3a9cac50ca  hlt                                                                         
+0x7f3a9cac50cb  Block 310                                                                   
+0x7f3a9cac50cb  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac50cf  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac50d4  Block 311                                                                   
+0x7f3a9cac50d4  jmp 0x7f3a9cac4262 <Block 84>                                               
+0x7f3a9cac50d9  Block 312                                                                   
+0x7f3a9cac50d9  hlt                                                                         
+0x7f3a9cac50da  Block 313                                                                   
+0x7f3a9cac50da  mov qword ptr [rsp], rdi                                                    
+0x7f3a9cac50de  data16 nop                                                                  
+0x7f3a9cac50e0  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac50e5  Block 314                                                                   
+0x7f3a9cac50e5  jmp 0x7f3a9cac42f5 <Block 91>                                               
+0x7f3a9cac50ea  Block 315                                                                   
+0x7f3a9cac50ea  hlt                                                                         
+0x7f3a9cac50eb  Block 316                                                                   
+0x7f3a9cac50eb  mov qword ptr [rsp], rbx                                                    
+0x7f3a9cac50ef  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac50f4  Block 317                                                                   
+0x7f3a9cac50f4  jmp 0x7f3a9cac4361 <Block 97>                                               
+0x7f3a9cac50f9  Block 318                                                                   
+0x7f3a9cac50f9  hlt                                                                         
+0x7f3a9cac50fa  Block 319                                                                   
+0x7f3a9cac50fa  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac50fe  data16 nop                                                                  
+0x7f3a9cac5100  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5105  Block 320                                                                   
+0x7f3a9cac5105  jmp 0x7f3a9cac43a3 <Block 101>                                              
+0x7f3a9cac510a  Block 321                                                                   
+0x7f3a9cac510a  hlt                                                                         
+0x7f3a9cac510b  Block 322                                                                   
+0x7f3a9cac510b  mov qword ptr [rsp], rdi                                                    
+0x7f3a9cac510f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5114  Block 323                                                                   
+0x7f3a9cac5114  jmp 0x7f3a9cac441c <Block 107>                                              
+0x7f3a9cac5119  Block 324                                                                   
+0x7f3a9cac5119  hlt                                                                         
+0x7f3a9cac511a  Block 325                                                                   
+0x7f3a9cac511a  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac511e  data16 nop                                                                  
+0x7f3a9cac5120  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5125  Block 326                                                                   
+0x7f3a9cac5125  jmp 0x7f3a9cac448b <Block 113>                                              
+0x7f3a9cac512a  Block 327                                                                   
+0x7f3a9cac512a  hlt                                                                         
+0x7f3a9cac512b  Block 328                                                                   
+0x7f3a9cac512b  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac512f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5134  Block 329                                                                   
+0x7f3a9cac5134  jmp 0x7f3a9cac44c8 <Block 117>                                              
+0x7f3a9cac5139  Block 330                                                                   
+0x7f3a9cac5139  hlt                                                                         
+0x7f3a9cac513a  Block 331                                                                   
+0x7f3a9cac513a  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac513e  data16 nop                                                                  
+0x7f3a9cac5140  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5145  Block 332                                                                   
+0x7f3a9cac5145  jmp 0x7f3a9cac4535 <Block 123>                                              
+0x7f3a9cac514a  Block 333                                                                   
+0x7f3a9cac514a  hlt                                                                         
+0x7f3a9cac514b  Block 334                                                                   
+0x7f3a9cac514b  mov qword ptr [rsp], rdi                                                    
+0x7f3a9cac514f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5154  Block 335                                                                   
+0x7f3a9cac5154  jmp 0x7f3a9cac45ac <Block 129>                                              
+0x7f3a9cac5159  Block 336                                                                   
+0x7f3a9cac5159  hlt                                                                         
+0x7f3a9cac515a  Block 337                                                                   
+0x7f3a9cac515a  mov qword ptr [rsp], rdi                                                    
+0x7f3a9cac515e  data16 nop                                                                  
+0x7f3a9cac5160  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5165  Block 338                                                                   
+0x7f3a9cac5165  jmp 0x7f3a9cac4615 <Block 135>                                              
+0x7f3a9cac516a  Block 339                                                                   
+0x7f3a9cac516a  hlt                                                                         
+0x7f3a9cac516b  Block 340                                                                   
+0x7f3a9cac516b  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac516f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5174  Block 341                                                                   
+0x7f3a9cac5174  jmp 0x7f3a9cac4655 <Block 139>                                              
+0x7f3a9cac5179  Block 342                                                                   
+0x7f3a9cac5179  hlt                                                                         
+0x7f3a9cac517a  Block 343                                                                   
+0x7f3a9cac517a  mov qword ptr [rsp], rdi                                                    
+0x7f3a9cac517e  data16 nop                                                                  
+0x7f3a9cac5180  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5185  Block 344                                                                   
+0x7f3a9cac5185  jmp 0x7f3a9cac46cb <Block 145>                                              
+0x7f3a9cac518a  Block 345                                                                   
+0x7f3a9cac518a  hlt                                                                         
+0x7f3a9cac518b  Block 346                                                                   
+0x7f3a9cac518b  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac518f  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5194  Block 347                                                                   
+0x7f3a9cac5194  jmp 0x7f3a9cac4735 <Block 151>                                              
+0x7f3a9cac5199  Block 348                                                                   
+0x7f3a9cac5199  hlt                                                                         
+0x7f3a9cac519a  Block 349                                                                   
+0x7f3a9cac519a  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac519e  data16 nop                                                                  
+0x7f3a9cac51a0  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac51a5  Block 350                                                                   
+0x7f3a9cac51a5  jmp 0x7f3a9cac476f <Block 155>                                              
+0x7f3a9cac51aa  Block 351                                                                   
+0x7f3a9cac51aa  hlt                                                                         
+0x7f3a9cac51ab  Block 352                                                                   
+0x7f3a9cac51ab  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac51af  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac51b4  Block 353                                                                   
+0x7f3a9cac51b4  jmp 0x7f3a9cac47d7 <Block 161>                                              
+0x7f3a9cac51b9  Block 354                                                                   
+0x7f3a9cac51b9  hlt                                                                         
+0x7f3a9cac51ba  Block 355                                                                   
+0x7f3a9cac51ba  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac51be  data16 nop                                                                  
+0x7f3a9cac51c0  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac51c5  Block 356                                                                   
+0x7f3a9cac51c5  jmp 0x7f3a9cac48ac <Block 169>                                              
+0x7f3a9cac51ca  Block 357                                                                   
+0x7f3a9cac51ca  hlt                                                                         
+0x7f3a9cac51cb  Block 358                                                                   
+0x7f3a9cac51cb  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac51cf  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac51d4  Block 359                                                                   
+0x7f3a9cac51d4  jmp 0x7f3a9cac491a <Block 175>                                              
+0x7f3a9cac51d9  Block 360                                                                   
+0x7f3a9cac51d9  hlt                                                                         
+0x7f3a9cac51da  Block 361                                                                   
+0x7f3a9cac51da  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac51de  data16 nop                                                                  
+0x7f3a9cac51e0  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac51e5  Block 362                                                                   
+0x7f3a9cac51e5  jmp 0x7f3a9cac495a <Block 179>                                              
+0x7f3a9cac51ea  Block 363                                                                   
+0x7f3a9cac51ea  hlt                                                                         
+0x7f3a9cac51eb  Block 364                                                                   
+0x7f3a9cac51eb  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac51ef  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac51f4  Block 365                                                                   
+0x7f3a9cac51f4  jmp 0x7f3a9cac49cf <Block 185>                                              
+0x7f3a9cac51f9  Block 366                                                                   
+0x7f3a9cac51f9  hlt                                                                         
+0x7f3a9cac51fa  Block 367                                                                   
+0x7f3a9cac51fa  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac51fe  data16 nop                                                                  
+0x7f3a9cac5200  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5205  Block 368                                                                   
+0x7f3a9cac5205  jmp 0x7f3a9cac4a39 <Block 191>                                              
+0x7f3a9cac520a  Block 369                                                                   
+0x7f3a9cac520a  hlt                                                                         
+0x7f3a9cac520b  Block 370                                                                   
+0x7f3a9cac520b  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac520f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5214  Block 371                                                                   
+0x7f3a9cac5214  jmp 0x7f3a9cac4a76 <Block 195>                                              
+0x7f3a9cac5219  Block 372                                                                   
+0x7f3a9cac5219  hlt                                                                         
+0x7f3a9cac521a  Block 373                                                                   
+0x7f3a9cac521a  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac521e  data16 nop                                                                  
+0x7f3a9cac5220  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5225  Block 374                                                                   
+0x7f3a9cac5225  jmp 0x7f3a9cac4ade <Block 201>                                              
+0x7f3a9cac522a  Block 375                                                                   
+0x7f3a9cac522a  hlt                                                                         
+0x7f3a9cac522b  Block 376                                                                   
+0x7f3a9cac522b  mov qword ptr [rsp], rbx                                                    
+0x7f3a9cac522f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5234  Block 377                                                                   
+0x7f3a9cac5234  jmp 0x7f3a9cac4bb6 <Block 210>                                              
+0x7f3a9cac5239  Block 378                                                                   
+0x7f3a9cac5239  hlt                                                                         
+0x7f3a9cac523a  Block 379                                                                   
+0x7f3a9cac523a  mov qword ptr [rsp], r9                                                     
+0x7f3a9cac523e  data16 nop                                                                  
+0x7f3a9cac5240  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5245  Block 380                                                                   
+0x7f3a9cac5245  jmp 0x7f3a9cac4c25 <Block 216>                                              
+0x7f3a9cac524a  Block 381                                                                   
+0x7f3a9cac524a  hlt                                                                         
+0x7f3a9cac524b  Block 382                                                                   
+0x7f3a9cac524b  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac524f  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5254  Block 383                                                                   
+0x7f3a9cac5254  jmp 0x7f3a9cac4c65 <Block 220>                                              
+0x7f3a9cac5259  Block 384                                                                   
+0x7f3a9cac5259  hlt                                                                         
+0x7f3a9cac525a  Block 385                                                                   
+0x7f3a9cac525a  mov qword ptr [rsp], r11                                                    
+0x7f3a9cac525e  data16 nop                                                                  
+0x7f3a9cac5260  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5265  Block 386                                                                   
+0x7f3a9cac5265  jmp 0x7f3a9cac4cda <Block 226>                                              
+0x7f3a9cac526a  Block 387                                                                   
+0x7f3a9cac526a  hlt                                                                         
+0x7f3a9cac526b  Block 388                                                                   
+0x7f3a9cac526b  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac526f  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5274  Block 389                                                                   
+0x7f3a9cac5274  jmp 0x7f3a9cac4d48 <Block 232>                                              
+0x7f3a9cac5279  Block 390                                                                   
+0x7f3a9cac5279  hlt                                                                         
+0x7f3a9cac527a  Block 391                                                                   
+0x7f3a9cac527a  mov qword ptr [rsp], r8                                                     
+0x7f3a9cac527e  data16 nop                                                                  
+0x7f3a9cac5280  call 0x7f3a9cac0400 <Stub<write_barrier_pre-stack-only>                     
+0x7f3a9cac5285  Block 392                                                                   
+0x7f3a9cac5285  jmp 0x7f3a9cac4d85 <Block 236>                                              
+0x7f3a9cac528a  Block 393                                                                   
+0x7f3a9cac528a  hlt                                                                         
+0x7f3a9cac528b  Block 394                                                                   
+0x7f3a9cac528b  mov qword ptr [rsp], rcx                                                    
+0x7f3a9cac528f  call 0x7f3a9cac0e00 <Stub<write_barrier_post-stack-only>                    
+0x7f3a9cac5294  Block 395                                                                   
+0x7f3a9cac5294  jmp 0x7f3a9cac4df5 <Block 242>                                              
+0x7f3a9cac5299  Block 396                                                                   
+0x7f3a9cac5299  hlt                                                                         
+0x7f3a9cac529a  mov dword ptr [r15+0x484], 0xfffffff5                                       
+0x7f3a9cac52a5  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac52b0  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac52b5  Block 397                                                                   
+0x7f3a9cac52b5  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac52bd  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac52c8  mov qword ptr [r15+0x490], 0x14                                             
+0x7f3a9cac52d3  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac52d8  Block 398                                                                   
+0x7f3a9cac52d8  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac52e0  mov dword ptr [r15+0x484], 0xfffffff5                                       
+0x7f3a9cac52eb  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac52f6  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac52fb  Block 399                                                                   
+0x7f3a9cac52fb  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac5303  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac530e  mov qword ptr [r15+0x490], 0x14                                             
+0x7f3a9cac5319  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac531e  Block 400                                                                   
+0x7f3a9cac531e  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac5326  mov dword ptr [r15+0x484], 0xfffffff5                                       
+0x7f3a9cac5331  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac533c  nop dword ptr [rax]                                                         
+0x7f3a9cac5340  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac5345  Block 401                                                                   
+0x7f3a9cac5345  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac534d  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac5358  mov qword ptr [r15+0x490], 0x14                                             
+0x7f3a9cac5363  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac5368  Block 402                                                                   
+0x7f3a9cac5368  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac5370  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac537b  mov qword ptr [r15+0x490], 0x14                                             
+0x7f3a9cac5386  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac538b  Block 403                                                                   
+0x7f3a9cac538b  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac5393  mov dword ptr [r15+0x484], 0xfffffff5                                       
+0x7f3a9cac539e  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac53a9  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac53ae  Block 404                                                                   
+0x7f3a9cac53ae  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac53b6  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac53c1  mov qword ptr [r15+0x490], 0x14                                             
+0x7f3a9cac53cc  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac53d1  Block 405                                                                   
+0x7f3a9cac53d1  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac53d9  mov dword ptr [r15+0x484], 0xfffffff5                                       
+0x7f3a9cac53e4  mov qword ptr [r15+0x490], 0x0                                              
+0x7f3a9cac53ef  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac53f4  Block 406                                                                   
+0x7f3a9cac53f4  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac53fc  mov dword ptr [r15+0x484], 0xffffffed                                       
+0x7f3a9cac5407  mov qword ptr [r15+0x490], 0x14                                             
+0x7f3a9cac5412  call 0x7f3a9ca5417a                                                         
+0x7f3a9cac5417  Block 407                                                                   
+0x7f3a9cac5417  nop dword ptr [rax+rax*1]                                                   
+0x7f3a9cac541f  nop                                                                         
+0x7f3a9cac5420  call 0x7f3a9cab4600 <Stub<ExceptionHandlerStub::exceptionHandler>>          
+0x7f3a9cac5425  Block 408                                                                   
+0x7f3a9cac5425  hlt                                                                         
+0x7f3a9cac5426  call 0x7f3a9ca53f20 <DeoptimizationBlob>                                    
+0x7f3a9cac542b  Block 409                                                                   
+0x7f3a9cac542b  hlt                                                                         
+0x7f3a9cac542c  hlt                                                                         
+0x7f3a9cac542d  hlt                                                                         
+0x7f3a9cac542e  hlt                                                                         
+0x7f3a9cac542f  hlt                                                                         
+0x7f3a9cac5430  mov rbx, 0x0                                                                
+0x7f3a9cac543a  Block 410                                                                   
+0x7f3a9cac543a  jmp 0x7f3a9cac543a <Block 410>                                              
+0x7f3a9cac543f  Block 411                                                                   
+0x7f3a9cac543f  mov rbx, 0x0                                                                
+0x7f3a9cac5449  Block 412                                                                   
+0x7f3a9cac5449  jmp 0x7f3a9cac5449 <Block 412>                                              
+0x7f3a9cac544e  Block 413                                                                   
+0x7f3a9cac544e  mov rbx, 0x0                                                                
+0x7f3a9cac5458  Block 414                                                                   
+0x7f3a9cac5458  jmp 0x7f3a9cac5458 <Block 414>                                              
+0x7f3a9cac545d  Block 415                                                                   
+0x7f3a9cac545d  mov rbx, 0x0                                                                
+0x7f3a9cac5467  Block 416                                                                   
+0x7f3a9cac5467  jmp 0x7f3a9cac5467 <Block 416>                                              
+vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            

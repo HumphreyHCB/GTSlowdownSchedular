@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-134[deltablue.BinaryConstraint.addToGraph()]",
+  "identifier": "HotSpotCompilation-125[deltablue.BinaryConstraint.addToGraph()]",
   "method": "deltablue.BinaryConstraint.addToGraph()void",
   "entryBCI": -1,
-  "codeSignature": "28e12f8c8fad55cdbfb20ab0080b8b29b0ad1258f60e7bcfcbc7e0958c31c8a3",
+  "codeSignature": "e7de21d6b013f9e4c969aa7335482448a1db8a8da25ccc5121dbecd1af09ec84",
   "graphSignature": "c54d0c840fc829566f9a1d28d6a3941c2f55dfcdcf8ddcdf0c58b8d42a2cafdb",
   "result": true,
   "profiles": [{

@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-132[java.util.concurrent.locks.ReentrantLock$Sync.lock()]",
+  "identifier": "HotSpotCompilation-130[java.util.concurrent.locks.ReentrantLock$Sync.lock()]",
   "method": "java.util.concurrent.locks.ReentrantLock$Sync.lock()void",
   "entryBCI": -1,
-  "codeSignature": "2008b06eb08861ce612995020ae6d26711fb5c2bb6d048c9fcf50e8757904c9c",
-  "graphSignature": "62314a39fabab7fa6699420e733b688e776c1f11b615a33260a1f5a99dfd4802",
+  "codeSignature": "c1dafb9edcb185d83cd7aa5c40ad455d8e8d1e466bae43d65a59d19c7d160608",
+  "graphSignature": "6f92b6e73f77402e185502d1a560f7b517884d9bec73850ecdb5d25d27b01ee5",
   "result": true,
   "profiles": [{
     "method": "java.util.concurrent.locks.ReentrantLock$Sync.lock()void",
@@ -21,7 +21,24 @@
     },
     {
       "bci": 4,
-      "branchTakenProbability": 1.0
+      "branchTakenProbability": 0.9998094512195121
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 5,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 15,
+      "exceptionSeen": "FALSE"
     }]
   },
   {
@@ -34,11 +51,11 @@
     },
     {
       "bci": 10,
-      "branchTakenProbability": 7.621951219512195E-4
+      "branchTakenProbability": 9.527439024390244E-4
     },
     {
       "bci": 25,
-      "branchTakenProbability": 0.0
+      "branchTakenProbability": 0.2
     },
     {
       "bci": 36,
@@ -65,5 +82,304 @@
     "isMature": false,
     "compilerIRSize": -1,
     "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.tryAcquire(int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 13,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 17,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(java.util.concurrent.locks.AbstractQueuedSynchronizer$Node, int, boolean, boolean, boolean, long)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 0,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 22,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 26,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 40,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 49,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 60,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 65,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 68,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 72,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 80,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 83,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 86,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 94,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 99,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 103,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 126,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 150,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 155,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 160,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 171,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 176,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 180,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 184,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 189,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 194,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    },
+    {
+      "bci": 206,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 210,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 213,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 219,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 224,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 228,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 241,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 257,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 263,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 269,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 275,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 282,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 285,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 290,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 299,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 307,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 312,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 322,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 329,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 332,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 337,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 357,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 361,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 369,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 378,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 384,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 388,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 400,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 405,
+      "branchTakenProbability": -1.0
+    },
+    {
+      "bci": 420,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireShared(int)int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ExclusiveNode.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer$Node.<init>()void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer$Node.setPrevRelaxed(java.util.concurrent.locks.AbstractQueuedSynchronizer$Node)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.lang.Thread.interrupted()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 0,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 3,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "UNKNOWN",
+        "types": [],
+        "notRecordedProbability": 1.0
+      }
+    }]
   }]
 }

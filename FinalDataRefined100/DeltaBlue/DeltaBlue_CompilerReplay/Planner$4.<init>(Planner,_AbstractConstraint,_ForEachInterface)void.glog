@@ -1,0 +1,23 @@
+{
+  "identifier": "HotSpotCompilation-197[deltablue.Planner$4.<init>(Planner, AbstractConstraint, ForEachInterface)]",
+  "method": "deltablue.Planner$4.<init>(deltablue.Planner, deltablue.AbstractConstraint, som.ForEachInterface)void",
+  "entryBCI": -1,
+  "codeSignature": "1804419167bb4a328d683d5651fbd8c7d18e1df11dd38c4587ebd7ac60bc4603",
+  "graphSignature": "7592409fa1143b210e843fe61df290fdca6ceb75368418417b3ff553538e41f3",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Planner$4.<init>(deltablue.Planner, deltablue.AbstractConstraint, som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Planner$4.<init>(deltablue.Planner, deltablue.AbstractConstraint, som.ForEachInterface)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

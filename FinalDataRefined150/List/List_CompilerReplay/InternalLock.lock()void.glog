@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-136[jdk.internal.misc.InternalLock.lock()]",
+  "identifier": "HotSpotCompilation-134[jdk.internal.misc.InternalLock.lock()]",
   "method": "jdk.internal.misc.InternalLock.lock()void",
   "entryBCI": -1,
-  "codeSignature": "1f482b28b6401831d72836f51e8c57b16ab970b9a942da4193f66fc2b724b006",
+  "codeSignature": "c2dfc01ece02fcb522502368ead397154b6f5e2b4eadb594058daf76d03ad0e5",
   "graphSignature": "84b98d3374e0e979a6743aa40de0f03976b75a164c853412113438235f4f0788",
   "result": true,
   "profiles": [{
@@ -32,14 +32,14 @@
   {
     "method": "java.util.concurrent.locks.ReentrantLock$Sync.lock()void",
     "isMature": true,
-    "compilerIRSize": 55,
+    "compilerIRSize": 43,
     "data": [{
       "bci": 1,
       "exceptionSeen": "FALSE"
     },
     {
       "bci": 4,
-      "branchTakenProbability": 0.999428462564298
+      "branchTakenProbability": 0.9998094875214326
     }]
   },
   {
@@ -62,18 +62,18 @@
   {
     "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
     "isMature": true,
-    "compilerIRSize": 38,
+    "compilerIRSize": 40,
     "data": [{
       "bci": 0,
       "exceptionSeen": "FALSE"
     },
     {
       "bci": 10,
-      "branchTakenProbability": 0.0013335873499714232
+      "branchTakenProbability": 9.525623928367308E-4
     },
     {
       "bci": 25,
-      "branchTakenProbability": 0.42857142857142855
+      "branchTakenProbability": 0.2
     },
     {
       "bci": 36,

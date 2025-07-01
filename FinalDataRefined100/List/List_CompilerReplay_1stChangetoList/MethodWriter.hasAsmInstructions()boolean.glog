@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-154[jdk.internal.org.objectweb.asm.MethodWriter.hasAsmInstructions()]",
+  "method": "jdk.internal.org.objectweb.asm.MethodWriter.hasAsmInstructions()boolean",
+  "entryBCI": -1,
+  "codeSignature": "02b6d721f754b789c036bfce06ecee5740f9570abfbcbad523f7710116a2de84",
+  "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
+  "result": true,
+  "profiles": [{
+    "method": "jdk.internal.org.objectweb.asm.MethodWriter.hasAsmInstructions()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "jdk.internal.org.objectweb.asm.MethodWriter.hasAsmInstructions()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

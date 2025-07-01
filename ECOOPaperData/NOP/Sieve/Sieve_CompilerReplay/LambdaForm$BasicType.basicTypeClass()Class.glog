@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-96[java.lang.invoke.LambdaForm$BasicType.basicTypeClass()]",
+  "method": "java.lang.invoke.LambdaForm$BasicType.basicTypeClass()java.lang.Class",
+  "entryBCI": -1,
+  "codeSignature": "195a7f9a3a1e250b7ebe31597c04a670551978b7582732371e5f130d0394f310",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.LambdaForm$BasicType.basicTypeClass()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.LambdaForm$BasicType.basicTypeClass()java.lang.Class",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

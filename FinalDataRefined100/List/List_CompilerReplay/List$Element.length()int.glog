@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-85[List$Element.length()]",
+  "identifier": "HotSpotCompilation-78[List$Element.length()]",
   "method": "List$Element.length()int",
   "entryBCI": -1,
-  "codeSignature": "38123b211bd30724e7ae65f166299b4f7b01f40bb2e2118a1fae702de29c6b76",
-  "graphSignature": "daf97c65dffff8dab8ddb1f08b6c6380d3623c8629212fbba4c271e906d14a8a",
+  "codeSignature": "31b89c89f7c9b94a098cc1bd857b4766763c67eaa94533bcdd770cfec0ff8bfa",
+  "graphSignature": "59014a5ecd46e0107a7d3a014339ef27fa4c05b2ca2eb7888d8db9ee8d1eed2c",
   "result": true,
   "profiles": [{
     "method": "List$Element.length()int",
@@ -16,11 +16,11 @@
     "isMature": true,
     "compilerIRSize": 0,
     "data": [{
-      "bci": 4,
-      "branchTakenProbability": 0.9
+      "bci": 7,
+      "branchTakenProbability": 0.8646484375
     },
     {
-      "bci": 14,
+      "bci": 17,
       "exceptionSeen": "FALSE"
     }]
   }]

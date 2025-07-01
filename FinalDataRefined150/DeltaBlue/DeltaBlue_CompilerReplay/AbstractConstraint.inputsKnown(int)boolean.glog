@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-252[deltablue.AbstractConstraint.inputsKnown(int)]",
+  "identifier": "HotSpotCompilation-233[deltablue.AbstractConstraint.inputsKnown(int)]",
   "method": "deltablue.AbstractConstraint.inputsKnown(int)boolean",
   "entryBCI": -1,
-  "codeSignature": "4030ef6ba582b7164f7b7011da88c486bce213dace4d2d0a40f314501e76406d",
+  "codeSignature": "18eefd9cd5dbdb5efc1e1d3fff33c727b7821cf6854c0c8c52e45c9a9c7b9a2e",
   "graphSignature": "eac668ec67bed34cc1e20e0fdebcc60bf9d2cf23225d66808f5fa706152aea15",
   "result": true,
   "profiles": [{
@@ -78,8 +78,8 @@
     "data": []
   },
   {
-    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007fe94c00a2a8.<init>(int)",
-    "method": "deltablue.AbstractConstraint$$Lambda/0x00007fe94c00a2a8.<init>(int)void",
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc00a320.<init>(int)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc00a320.<init>(int)void",
     "isMature": false,
     "compilerIRSize": -1,
     "data": [{
@@ -101,7 +101,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007fe94c00a2a8;",
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f07dc00a320;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -113,7 +113,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007fe94c00a2a8;",
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f07dc00a320;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -127,8 +127,8 @@
     "data": []
   },
   {
-    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007fe94c00a2a8.test(Object)",
-    "method": "deltablue.AbstractConstraint$$Lambda/0x00007fe94c00a2a8.test(java.lang.Object)boolean",
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc00a320.test(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc00a320.test(java.lang.Object)boolean",
     "isMature": false,
     "compilerIRSize": 47,
     "data": [{

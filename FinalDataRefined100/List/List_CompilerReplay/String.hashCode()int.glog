@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-37[java.lang.String.hashCode()]",
+  "identifier": "HotSpotCompilation-34[java.lang.String.hashCode()]",
   "method": "java.lang.String.hashCode()int",
   "entryBCI": -1,
-  "codeSignature": "0ff17fca4e01a600c480241d9582793041680801acc9d82a2a9dba62da048e62",
+  "codeSignature": "070ba2064ea3bb2897ee543480a48b5db8cf21baa26b71830ace8cd363f0a69d",
   "graphSignature": "3e22bb20a6438722ab8786b6bd3b9e76c61422246daa1eff27924b06e644aaa6",
   "result": true,
   "profiles": [{

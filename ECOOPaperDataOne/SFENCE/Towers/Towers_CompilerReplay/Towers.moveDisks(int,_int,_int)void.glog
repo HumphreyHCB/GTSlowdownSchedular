@@ -1,0 +1,116 @@
+{
+  "identifier": "HotSpotCompilation-82[Towers.moveDisks(int, int, int)]",
+  "method": "Towers.moveDisks(int, int, int)void",
+  "entryBCI": -1,
+  "codeSignature": "79f095eb180926678359b9e933d11810b30a2bd752edc03f290e38b6e3fe079f",
+  "graphSignature": "d99488adb5285bcd3000ad53f4482033b18825851d2826d4824eb0abaee0f099",
+  "result": true,
+  "profiles": [{
+    "method": "Towers.moveDisks(int, int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.moveDisks(int, int, int)void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "branchTakenProbability": 0.4998046875
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 28,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 44,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers.moveTopDisk(int, int)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers.popDiskFrom(int)Towers$TowersDisk",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.pushDisk(Towers$TowersDisk, int)void",
+    "isMature": true,
+    "compilerIRSize": 52,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.011325912907635228
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

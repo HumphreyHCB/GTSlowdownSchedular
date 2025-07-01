@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-134[java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()]",
+  "identifier": "HotSpotCompilation-131[java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()]",
   "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
   "entryBCI": -1,
-  "codeSignature": "65d1d9fe24b445dfaf738f910e061020427e7929e305399a0484666256374616",
-  "graphSignature": "a74fc2af349dd86ce0c95028eb142ff712d786aedc15d0d7a0ceaf921281354a",
+  "codeSignature": "77c8a518531499dcdf0414894cd36ce1da9d6af279a9f83cc402aaf96008d6e4",
+  "graphSignature": "f7fc4ceecd6ea90df5d2729ea49c125b0efdf802adb13fc20481a5ab09de1e6a",
   "result": true,
   "profiles": [{
     "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
@@ -21,11 +21,11 @@
     },
     {
       "bci": 10,
-      "branchTakenProbability": 0.0011432926829268292
+      "branchTakenProbability": 7.621951219512195E-4
     },
     {
       "bci": 25,
-      "branchTakenProbability": 0.3333333333333333
+      "branchTakenProbability": 0.0
     },
     {
       "bci": 36,

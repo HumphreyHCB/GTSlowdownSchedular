@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-140[java.nio.Buffer.capacity()]",
+  "identifier": "HotSpotCompilation-138[java.nio.Buffer.capacity()]",
   "method": "java.nio.Buffer.capacity()int",
   "entryBCI": -1,
-  "codeSignature": "d6068fcc1aa0f0d6759fa9298fd28c5a5dd9ef1e6f001c0436776f73a1dd760e",
+  "codeSignature": "42cb9dd7cca900f78d94031bf68746d4a25761821adf229264806e22edd1ae15",
   "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
   "result": true,
   "profiles": [{

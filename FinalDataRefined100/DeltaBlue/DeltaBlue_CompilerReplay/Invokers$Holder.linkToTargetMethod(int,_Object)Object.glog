@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-121[java.lang.invoke.Invokers$Holder.linkToTargetMethod(int, Object)]",
+  "identifier": "HotSpotCompilation-113[java.lang.invoke.Invokers$Holder.linkToTargetMethod(int, Object)]",
   "method": "java.lang.invoke.Invokers$Holder.linkToTargetMethod(int, java.lang.Object)java.lang.Object",
   "entryBCI": -1,
   "codeSignature": "df463d2ab927d444b38368f73015c61ca774c2da6075a93241157037872ffd13",

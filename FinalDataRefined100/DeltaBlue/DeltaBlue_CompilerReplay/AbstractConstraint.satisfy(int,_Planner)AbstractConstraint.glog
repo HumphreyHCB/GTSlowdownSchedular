@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-311[deltablue.AbstractConstraint.satisfy(int, Planner)]",
+  "identifier": "HotSpotCompilation-291[deltablue.AbstractConstraint.satisfy(int, Planner)]",
   "method": "deltablue.AbstractConstraint.satisfy(int, deltablue.Planner)deltablue.AbstractConstraint",
   "entryBCI": -1,
-  "codeSignature": "dba49d4cfc1f48f46ba0d524405f90a0e38883928193a15f9b1dbb2822dffc08",
+  "codeSignature": "30daff9317c65b20671ca09f40be4dcccd3de505cb964c4a2778c906ad11795b",
   "graphSignature": "7f12dc3a1e479863fa6ae30362f012c449bf1433f432014c5d4c50e8be9b4ae6",
   "result": true,
   "profiles": [{
@@ -206,8 +206,8 @@
     "data": []
   },
   {
-    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f03d40095c0.<init>(int)",
-    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f03d40095c0.<init>(int)void",
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.<init>(int)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.<init>(int)void",
     "isMature": false,
     "compilerIRSize": -1,
     "data": [{
@@ -411,7 +411,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f03d40095c0;",
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f07dc009618;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -423,7 +423,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f03d40095c0;",
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f07dc009618;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -500,8 +500,8 @@
     }]
   },
   {
-    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f03d40095c0.apply(Object)",
-    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f03d40095c0.apply(java.lang.Object)void",
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(java.lang.Object)void",
     "isMature": false,
     "compilerIRSize": 34,
     "data": [{
@@ -548,7 +548,7 @@
   {
     "method": "deltablue.Planner.addPropagate(deltablue.AbstractConstraint, int)boolean",
     "isMature": true,
-    "compilerIRSize": 754,
+    "compilerIRSize": 759,
     "data": [{
       "bci": 1,
       "exceptionSeen": "FALSE"

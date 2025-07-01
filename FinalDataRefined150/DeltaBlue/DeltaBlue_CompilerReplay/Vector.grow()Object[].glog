@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-327[java.util.Vector.grow()]",
+  "identifier": "HotSpotCompilation-318[java.util.Vector.grow()]",
   "method": "java.util.Vector.grow()java.lang.Object[]",
   "entryBCI": -1,
-  "codeSignature": "b8052c5d9f908ea6b93bbf910e87edf980ed6aca65f6494a57b55e637c840a9f",
+  "codeSignature": "c5030b4f59621612dab81b46874ddf6f8af62697e4132114e4d2592bb47d92c6",
   "graphSignature": "02ac5587521ef0fc0f1a6f07199da061eb063ff79fa7ca2348ccdd903f626562",
   "result": true,
   "profiles": [{
@@ -73,7 +73,7 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 2,
-      "branchTakenProbability": 0.8338215192345245
+      "branchTakenProbability": 0.8453427065026362
     }]
   },
   {
@@ -107,7 +107,7 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 2,
-      "branchTakenProbability": 0.4141769185705917
+      "branchTakenProbability": 0.4108572544424917
     }]
   }]
 }

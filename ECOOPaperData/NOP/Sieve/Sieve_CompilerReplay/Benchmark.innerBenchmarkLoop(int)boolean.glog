@@ -1,0 +1,131 @@
+{
+  "identifier": "HotSpotCompilation-133[Benchmark.innerBenchmarkLoop(int)]",
+  "method": "Benchmark.innerBenchmarkLoop(int)boolean",
+  "entryBCI": -1,
+  "codeSignature": "a35eb710acd23bd4e67089c1dd7bf0792437d2dfeaf7b65ffdfcaecd973a287c",
+  "graphSignature": "6808a8f6b19c5bd391235af81e11533462a77bcafb9b1dfd6745784ee9eb3749",
+  "result": true,
+  "profiles": [{
+    "method": "Benchmark.innerBenchmarkLoop(int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Benchmark.innerBenchmarkLoop(int)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "branchTakenProbability": 1.301913813305559E-4
+    },
+    {
+      "bci": 9,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "LSieve;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE",
+      "typeProfile": {
+        "nullSeen": "FALSE",
+        "types": [{
+          "type": "LSieve;",
+          "probability": 1.0
+        }],
+        "notRecordedProbability": 0.0
+      }
+    },
+    {
+      "bci": 15,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "Sieve.benchmark()java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": 283,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Arrays.fill(boolean[], boolean)void",
+    "isMature": true,
+    "compilerIRSize": 154,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "branchTakenProbability": 1.9527436047646945E-4
+    },
+    {
+      "bci": 13,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Sieve.sieve(boolean[], int)int",
+    "isMature": true,
+    "compilerIRSize": 108,
+    "data": [{
+      "bci": 8,
+      "branchTakenProbability": 2.0E-4
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 17,
+      "branchTakenProbability": 0.8661732346469294
+    },
+    {
+      "bci": 33,
+      "branchTakenProbability": 0.06065276518585675
+    },
+    {
+      "bci": 42,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Sieve.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": 45,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-343[java.lang.String.hashCode()]",
+  "identifier": "HotSpotCompilation-335[java.lang.String.hashCode()]",
   "method": "java.lang.String.hashCode()int",
   "entryBCI": -1,
-  "codeSignature": "47180021f8a98a8a19525bfa63574dae36b540aa7b427e05c22414c146135c93",
+  "codeSignature": "9a0e90679b56c65d6a4ab92760318d690c54ab513fd8d23aae10928ff3fe2db3",
   "graphSignature": "4d20582f6ab8bed0d83522cbea8884ed146c2ba75320d109970e3664ee35be21",
   "result": true,
   "profiles": [{
@@ -17,11 +17,11 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 6,
-      "branchTakenProbability": 0.841861408907978
+      "branchTakenProbability": 0.8410159288443978
     },
     {
       "bci": 13,
-      "branchTakenProbability": 0.03015397775876818
+      "branchTakenProbability": 0.029993618379068283
     },
     {
       "bci": 17,
@@ -64,8 +64,8 @@
     {
       "bci": 2,
       "switchProbabilities": [0.0,
-      3.4352456200618345E-4,
-      0.9996564754379939]
+      3.405994550408719E-4,
+      0.9996594005449592]
     },
     {
       "bci": 34,

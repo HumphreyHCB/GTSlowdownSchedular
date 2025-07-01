@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-139[deltablue.Strength.stronger(Strength)]",
+  "identifier": "HotSpotCompilation-130[deltablue.Strength.stronger(Strength)]",
   "method": "deltablue.Strength.stronger(deltablue.Strength)boolean",
   "entryBCI": -1,
-  "codeSignature": "961704ea2403e494f2ca250da6b821a967f5e84ad75154f0fb26a1b5f999b6cd",
+  "codeSignature": "5c4c089da223abd3f1be4bb142baa6c10f92cd323b8072b530222ba025ded514",
   "graphSignature": "5d68a1170767090f77f712b9fcc61fddba90ad13cf877a66b6a1ed718db849ec",
   "result": true,
   "profiles": [{

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-164[java.net.URL.getProtocol()]",
+  "method": "java.net.URL.getProtocol()java.lang.String",
+  "entryBCI": -1,
+  "codeSignature": "ed7e6e9d1a1555c8ae843dc178ef4619a6fc9972ba9809f96674b69e562891ff",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.net.URL.getProtocol()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.net.URL.getProtocol()java.lang.String",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

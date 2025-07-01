@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-59[java.lang.String.equals(Object)]",
+  "identifier": "HotSpotCompilation-55[java.lang.String.equals(Object)]",
   "method": "java.lang.String.equals(java.lang.Object)boolean",
   "entryBCI": -1,
-  "codeSignature": "9fe62b92e4dc4c600cb41eccd38b403084dade14354710c2b66381791d85406c",
+  "codeSignature": "4194d26f1826a585ea0e52735eaa8a8356208a0fcb721a6617d20a4e7ae62ff9",
   "graphSignature": "4c609eb6df537dd4055d7bd8758e6088351cb9cc47b118ef627e4c0368adeb1b",
   "result": true,
   "profiles": [{
@@ -66,7 +66,7 @@
     },
     {
       "bci": 4,
-      "branchTakenProbability": 0.8588366578323336
+      "branchTakenProbability": 0.8596735946436044
     },
     {
       "bci": 11,
@@ -74,7 +74,7 @@
     },
     {
       "bci": 12,
-      "branchTakenProbability": 0.041156419643984345
+      "branchTakenProbability": 0.042482795129698256
     },
     {
       "bci": 17,
@@ -86,7 +86,7 @@
     },
     {
       "bci": 21,
-      "branchTakenProbability": 0.9096774193548387
+      "branchTakenProbability": 0.9053213545266068
     }]
   }]
 }

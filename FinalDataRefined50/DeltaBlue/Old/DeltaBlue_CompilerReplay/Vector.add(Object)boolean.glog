@@ -1,0 +1,53 @@
+{
+  "identifier": "HotSpotCompilation-182[java.util.Vector.add(Object)]",
+  "method": "java.util.Vector.add(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "d095a3ae1076750c641cdddeafd8930dc836c8889308170a663605c97bb3000a",
+  "graphSignature": "29c4c03d40cf626d60e66dfeb20deec1f60e5db0c9a0e78b1704bf70bde07b13",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.Vector.add(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.Vector.add(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 20,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.add(java.lang.Object, java.lang.Object[], int)void",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 3,
+      "branchTakenProbability": 0.999609375
+    },
+    {
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.Vector.grow()java.lang.Object[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 7,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

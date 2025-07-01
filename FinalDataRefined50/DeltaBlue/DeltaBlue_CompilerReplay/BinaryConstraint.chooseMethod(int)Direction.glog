@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-224[deltablue.BinaryConstraint.chooseMethod(int)]",
+  "identifier": "HotSpotCompilation-205[deltablue.BinaryConstraint.chooseMethod(int)]",
   "method": "deltablue.BinaryConstraint.chooseMethod(int)deltablue.Direction",
   "entryBCI": -1,
-  "codeSignature": "db4380dc1704a67f5ef00cb78d78c3f4cd401473ef236a057a6438ad8ce5a651",
+  "codeSignature": "646ad4fffd157449be7b222e2bae7e2728c6c213f967307befec1abe32dba4ce",
   "graphSignature": "81188ea6b28f42710b4579e7bd59bbf8056b2caad40dc6b27daa8c9c782355d1",
   "result": true,
   "profiles": [{

@@ -2,7 +2,7 @@
 
 # Path variables
 DATA_DIR="./Data"
-FINAL_DATA_DIR="./FinalData2"
+FINAL_DATA_DIR="./FinalDataRefined150"
 
 # List of benchmarks (from AWFY suite)
 BENCHMARKS=("Bounce" "CD" "DeltaBlue" "Havlak" "Json" "List" "Mandelbrot" "NBody" "Permute" "Queens" "Richards" "Sieve" "Storage" "Towers")

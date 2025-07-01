@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-53[sun.invoke.util.Wrapper.basicTypeChar()]",
+  "identifier": "HotSpotCompilation-51[sun.invoke.util.Wrapper.basicTypeChar()]",
   "method": "sun.invoke.util.Wrapper.basicTypeChar()char",
   "entryBCI": -1,
-  "codeSignature": "384cdf1065b0fb2effcd3b367cd5eede506bcbd2a8c14fed5cc1ba372250c020",
+  "codeSignature": "054092f359e534a54471d96466c627eae8ad604cd84c19c9ed346d3888efb673",
   "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
   "result": true,
   "profiles": [{

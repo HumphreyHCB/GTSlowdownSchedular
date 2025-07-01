@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-84[java.lang.Integer.valueOf(int)]",
+  "identifier": "HotSpotCompilation-83[java.lang.Integer.valueOf(int)]",
   "method": "java.lang.Integer.valueOf(int)java.lang.Integer",
   "entryBCI": -1,
   "codeSignature": "2d79567e69e041352096139de4aa57d24d42c8252f83c3b0df55b6ee4c323d7d",

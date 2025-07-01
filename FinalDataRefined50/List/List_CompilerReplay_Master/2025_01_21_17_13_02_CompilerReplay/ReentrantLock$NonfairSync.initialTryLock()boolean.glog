@@ -1,0 +1,56 @@
+{
+  "identifier": "HotSpotCompilation-134[java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()]",
+  "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
+  "entryBCI": -1,
+  "codeSignature": "fb8e7a24855473e62c69f78d94e62c6593e020b3cac7026d2a006b36bbfd2cab",
+  "graphSignature": "f7fc4ceecd6ea90df5d2729ea49c125b0efdf802adb13fc20481a5ab09de1e6a",
+  "result": true,
+  "profiles": [{
+    "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.ReentrantLock$NonfairSync.initialTryLock()boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 0,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 10,
+      "branchTakenProbability": 7.621951219512195E-4
+    },
+    {
+      "bci": 25,
+      "branchTakenProbability": 0.0
+    },
+    {
+      "bci": 36,
+      "branchTakenProbability": 1.0
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(int, int)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 9,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread(java.lang.Thread)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.setState(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

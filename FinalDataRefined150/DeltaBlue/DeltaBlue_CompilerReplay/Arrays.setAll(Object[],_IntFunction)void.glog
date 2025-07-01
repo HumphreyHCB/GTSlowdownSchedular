@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-315[java.util.Arrays.setAll(Object[], IntFunction)]",
+  "identifier": "HotSpotCompilation-295[java.util.Arrays.setAll(Object[], IntFunction)]",
   "method": "java.util.Arrays.setAll(java.lang.Object[], java.util.function.IntFunction)void",
   "entryBCI": -1,
-  "codeSignature": "1bc161e51b584f7c5d3c4adedab85ee1153451db91de8ac190d630731d270cae",
+  "codeSignature": "c6c51b8b7f91c8f8709e00d705b0c47946981ec60fa32dcf868d5961d78ad8ea",
   "graphSignature": "39da8fb219f37d71fbe5cf57c0cc36a52ae5e924eaff6e43e0d559635398618b",
   "result": true,
   "profiles": [{
@@ -29,7 +29,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/Planner$$Lambda.0x00007fe94c007000;",
+          "type": "Ldeltablue/Planner$8;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -50,14 +50,13 @@
     }]
   },
   {
-    "stableLambdaName": "deltablue.Planner$$Lambda/0x00007fe94c007000.apply(int)",
-    "method": "deltablue.Planner$$Lambda/0x00007fe94c007000.apply(int)java.lang.Object",
+    "method": "deltablue.Planner$8.apply(int)java.lang.Object",
     "isMature": false,
-    "compilerIRSize": 129,
+    "compilerIRSize": 130,
     "data": []
   },
   {
-    "method": "deltablue.Planner.lambda$chainTest$7(int)deltablue.Variable",
+    "method": "deltablue.Planner$8.apply(int)deltablue.Variable",
     "isMature": false,
     "compilerIRSize": -1,
     "data": [{

@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-35[java.lang.String.charAt(int)]",
+  "identifier": "HotSpotCompilation-30[java.lang.String.charAt(int)]",
   "method": "java.lang.String.charAt(int)char",
   "entryBCI": -1,
-  "codeSignature": "de25a0d23be86850980c4531091be11c515aeab07451aee68337ff06b0599a43",
+  "codeSignature": "74b358e69e73dd1bff21eb7aa0bc8814fd83f95d6c53ec63bf46c8d3bce39b39",
   "graphSignature": "778db864a17bd528ac77621268246101f794fdf5ee12d8a061cabcef80be5086",
   "result": true,
   "profiles": [{

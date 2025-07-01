@@ -2,7 +2,7 @@
   "identifier": "HotSpotCompilation-31[java.lang.String.coder()]",
   "method": "java.lang.String.coder()byte",
   "entryBCI": -1,
-  "codeSignature": "b9536784b743fd53f299359b73076a3da5ecbcd275a35f344cb41447e93412dc",
+  "codeSignature": "94c2a7dd2ae6dedfab397bdcd8239c0b017b908d7dde194cf5053c52f10979e3",
   "graphSignature": "2a89e6f1d8e4a559db871761e4b7a67c4847787f5f9b19d2e9a7cb6b1b60f6ad",
   "result": true,
   "profiles": [{

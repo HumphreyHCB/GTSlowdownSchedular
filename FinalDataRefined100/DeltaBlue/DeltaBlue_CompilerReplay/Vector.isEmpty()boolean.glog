@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-114[som.Vector.isEmpty()]",
+  "identifier": "HotSpotCompilation-106[som.Vector.isEmpty()]",
   "method": "som.Vector.isEmpty()boolean",
   "entryBCI": -1,
-  "codeSignature": "78332d504de4501833f0b300330251429bb430ac647b0e9d13d746c49e36d4ea",
+  "codeSignature": "29662ba9e2cf14f2f9c5a1a492359ea15378c0f2fcd3e2f86b04f0e2a9175a88",
   "graphSignature": "6afb3a829eac56112fa505d26292aa67cb563d734ee40de2970ad4ee730a6039",
   "result": true,
   "profiles": [{

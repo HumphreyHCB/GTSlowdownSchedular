@@ -1,0 +1,57 @@
+{
+  "identifier": "HotSpotCompilation-82[deltablue.Planner$8.apply(int)]",
+  "method": "deltablue.Planner$8.apply(int)java.lang.Object",
+  "entryBCI": -1,
+  "codeSignature": "df4a10848aab224f49bed3982818176f195a03866a0502979287405676d5bb69",
+  "graphSignature": "8b3048506c08572de79c121b4c1dfc14ce6d08abaa1650f8b4e6cd05bd984836",
+  "result": true,
+  "profiles": [{
+    "method": "deltablue.Planner$8.apply(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Planner$8.apply(int)java.lang.Object",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "deltablue.Planner$8.apply(int)deltablue.Variable",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 4,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.<init>()void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "som.Vector.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Strength.absoluteWeakest()deltablue.Strength",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

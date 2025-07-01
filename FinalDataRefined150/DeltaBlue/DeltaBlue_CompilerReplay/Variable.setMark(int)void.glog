@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-104[deltablue.Variable.setMark(int)]",
+  "identifier": "HotSpotCompilation-96[deltablue.Variable.setMark(int)]",
   "method": "deltablue.Variable.setMark(int)void",
   "entryBCI": -1,
-  "codeSignature": "c0305b33d8aebf18b2fa7e6e3bc4387dd385a25214e7f6da7f276221811cd7df",
+  "codeSignature": "d54b708738898cf0162399bfba9b79fb1ce42c128941d8a6070930c53043349c",
   "graphSignature": "7f6dcff6fd78e83ea6df209389aa081d814cd868ff78090cb894216a1bee9a73",
   "result": true,
   "profiles": [{

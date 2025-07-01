@@ -1,0 +1,75 @@
+{
+  "identifier": "HotSpotCompilation-87[Towers.buildTowerAt(int, int)]",
+  "method": "Towers.buildTowerAt(int, int)void",
+  "entryBCI": -1,
+  "codeSignature": "35a50a4374bfc47442ca7b605d9dc412d4209a55ec9b641c01e51045f0e7a6cb",
+  "graphSignature": "7b21b196b251cbc63f3e77e59b6a84b00ae119da7980d4d1289b384105a839b9",
+  "result": true,
+  "profiles": [{
+    "method": "Towers.buildTowerAt(int, int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.buildTowerAt(int, int)void",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "branchTakenProbability": 0.06663020690912405
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.<init>(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers.pushDisk(Towers$TowersDisk, int)void",
+    "isMature": true,
+    "compilerIRSize": 52,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 0.011325912907635228
+    },
+    {
+      "bci": 12,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 16,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 19,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 34,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 43,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

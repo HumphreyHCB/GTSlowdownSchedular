@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-53[java.lang.invoke.MethodType$ConcurrentWeakInternSet$WeakEntry.hashCode()]",
+  "method": "java.lang.invoke.MethodType$ConcurrentWeakInternSet$WeakEntry.hashCode()int",
+  "entryBCI": -1,
+  "codeSignature": "bea259231d7a3a2c06aff19ad5d7a90473a9af968462665bcac3c4c65f6dadf2",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MethodType$ConcurrentWeakInternSet$WeakEntry.hashCode()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MethodType$ConcurrentWeakInternSet$WeakEntry.hashCode()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

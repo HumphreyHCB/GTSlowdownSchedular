@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-142[java.lang.StringLatin1.inflate(byte[], int, char[], int, int)]",
+  "identifier": "HotSpotCompilation-140[java.lang.StringLatin1.inflate(byte[], int, char[], int, int)]",
   "method": "java.lang.StringLatin1.inflate(byte[], int, char[], int, int)void",
   "entryBCI": -1,
   "codeSignature": "5fd4303e33a9e1b0822b439ed1ca0c8ff73b95725686104b80399fe7b5f8678c",

@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-85[java.lang.Integer.intValue()]",
+  "method": "java.lang.Integer.intValue()int",
+  "entryBCI": -1,
+  "codeSignature": "6c8d50e8fa86d44015628b0cbe34b2e1624c2bb10cd0ec1a664a117f0c283b34",
+  "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.Integer.intValue()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.Integer.intValue()int",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

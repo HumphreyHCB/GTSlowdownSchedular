@@ -1,0 +1,46 @@
+{
+  "identifier": "HotSpotCompilation-82[List.makeList(int)]",
+  "method": "List.makeList(int)List$Element",
+  "entryBCI": -1,
+  "codeSignature": "bd5bb51f682e9f31cefe297ad008a6d93470fa3f34396ce33e93973ba4ea896b",
+  "graphSignature": "6daaafe2891aa49c6fb9c0a6179c2552797a94fe86690239acbb36d2b41a7b90",
+  "result": true,
+  "profiles": [{
+    "method": "List.makeList(int)List$Element",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "List.makeList(int)List$Element",
+    "isMature": true,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "branchTakenProbability": 0.91171875
+    },
+    {
+      "bci": 11,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 23,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "List$Element.<init>(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "List$Element.setNext(List$Element)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

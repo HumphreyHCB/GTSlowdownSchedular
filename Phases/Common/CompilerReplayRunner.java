@@ -66,7 +66,7 @@ public class CompilerReplayRunner {
         command.add("-XX:-BackgroundCompilation");
         command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
 
-        if (benchmark.equals("Havlak")) {
+        if (benchmark.equals("Havlak") || benchmark.equals("DeltaBlue")) {
             command.add("-Xms8g");
             command.add("-Xmx8g");
     

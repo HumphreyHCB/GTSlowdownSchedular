@@ -1,0 +1,31 @@
+{
+  "identifier": "HotSpotCompilation-86[List.verifyResult(Object)]",
+  "method": "List.verifyResult(java.lang.Object)boolean",
+  "entryBCI": -1,
+  "codeSignature": "b0ee78de5f6fe0d9e88ba96efecb553b2c2ab4b48e93c6312d4ef1abd5704e5c",
+  "graphSignature": "5dad484624d0c017401584cf79b1bfd79b8330c503d6e6abc13f1d9beecdb8d0",
+  "result": true,
+  "profiles": [{
+    "method": "List.verifyResult(java.lang.Object)boolean",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "List.verifyResult(java.lang.Object)boolean",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 3,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 6,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 9,
+      "branchTakenProbability": 0.0
+    }]
+  }]
+}

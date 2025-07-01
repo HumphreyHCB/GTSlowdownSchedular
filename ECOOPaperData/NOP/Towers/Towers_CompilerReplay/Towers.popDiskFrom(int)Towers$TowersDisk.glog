@@ -1,0 +1,45 @@
+{
+  "identifier": "HotSpotCompilation-84[Towers.popDiskFrom(int)]",
+  "method": "Towers.popDiskFrom(int)Towers$TowersDisk",
+  "entryBCI": -1,
+  "codeSignature": "787584bdfa66806ec0a68f6cddcfb31714383c1a822a76ec08bbf6e0e21e1cba",
+  "graphSignature": "e11187ae6015f429b05d9bc269f0ddd2b476572a1922b0a5a6e8de4bdbda6736",
+  "result": true,
+  "profiles": [{
+    "method": "Towers.popDiskFrom(int)Towers$TowersDisk",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "Towers.popDiskFrom(int)Towers$TowersDisk",
+    "isMature": true,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 8,
+      "branchTakenProbability": 1.0
+    },
+    {
+      "bci": 27,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 30,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 33,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "Towers$TowersDisk.setNext(Towers$TowersDisk)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

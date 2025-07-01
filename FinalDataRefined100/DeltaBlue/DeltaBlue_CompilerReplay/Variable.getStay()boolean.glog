@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-102[deltablue.Variable.getStay()]",
+  "identifier": "HotSpotCompilation-94[deltablue.Variable.getStay()]",
   "method": "deltablue.Variable.getStay()boolean",
   "entryBCI": -1,
-  "codeSignature": "27c3f0cbe267e8111cae689d3042b4c91ad7c5ea79d5f78dbda218ead7704345",
+  "codeSignature": "a28287a7e5bebef5c631430bb5db5c16590806c14f787f06c28b066557b29681",
   "graphSignature": "84932e69dc30550c650357abc17e9ab829f3a4eab0efcb8b7994f6ac04079ca6",
   "result": true,
   "profiles": [{

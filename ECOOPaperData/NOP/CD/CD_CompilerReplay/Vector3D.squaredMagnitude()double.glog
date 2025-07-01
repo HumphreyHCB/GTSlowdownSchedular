@@ -1,0 +1,40 @@
+{
+  "identifier": "HotSpotCompilation-130[cd.Vector3D.squaredMagnitude()]",
+  "method": "cd.Vector3D.squaredMagnitude()double",
+  "entryBCI": -1,
+  "codeSignature": "4308809e69678b9e3aa4d53bac5a05df498443d2448b5968d8fd78aa1541a143",
+  "graphSignature": "e401e63c9edd34d872fc631047d4439ec9d2e9a988853e20ab071a656688380d",
+  "result": true,
+  "profiles": [{
+    "method": "cd.Vector3D.squaredMagnitude()double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "cd.Vector3D.squaredMagnitude()double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "cd.Vector3D.dot(cd.Vector3D)double",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 14,
+      "exceptionSeen": "FALSE"
+    },
+    {
+      "bci": 24,
+      "exceptionSeen": "FALSE"
+    }]
+  }]
+}

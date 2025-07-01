@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-83[List.makeList(int)]",
+  "identifier": "HotSpotCompilation-82[List.makeList(int)]",
   "method": "List.makeList(int)List$Element",
   "entryBCI": -1,
-  "codeSignature": "2995489b9446447c3fc46ac35ebccc3707b8e31bd5b714508e9b1c41e52d2cc5",
+  "codeSignature": "f9f3e9b66e9cf813fa729a24137cf5bb107b9a61e43dc768d8bf66d400845de1",
   "graphSignature": "6daaafe2891aa49c6fb9c0a6179c2552797a94fe86690239acbb36d2b41a7b90",
   "result": true,
   "profiles": [{
@@ -20,20 +20,15 @@
       "branchTakenProbability": 0.91171875
     },
     {
-      "bci": 11,
+      "bci": 13,
       "exceptionSeen": "FALSE"
     },
     {
-      "bci": 23,
+      "bci": 16,
       "exceptionSeen": "FALSE"
-    }]
-  },
-  {
-    "method": "List$Element.<init>(java.lang.Object)void",
-    "isMature": false,
-    "compilerIRSize": -1,
-    "data": [{
-      "bci": 1,
+    },
+    {
+      "bci": 25,
       "exceptionSeen": "FALSE"
     }]
   },
@@ -42,5 +37,14 @@
     "isMature": false,
     "compilerIRSize": -1,
     "data": []
+  },
+  {
+    "method": "List$Element.<init>(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": 0,
+    "data": [{
+      "bci": 1,
+      "exceptionSeen": "FALSE"
+    }]
   }]
 }

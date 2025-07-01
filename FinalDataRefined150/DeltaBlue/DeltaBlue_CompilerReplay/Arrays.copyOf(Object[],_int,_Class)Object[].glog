@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-321[java.util.Arrays.copyOf(Object[], int, Class)]",
+  "identifier": "HotSpotCompilation-312[java.util.Arrays.copyOf(Object[], int, Class)]",
   "method": "java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class)java.lang.Object[]",
   "entryBCI": -1,
   "codeSignature": "bfaf87d50f27bdd046e759aa31669568488a4c4d7ab5114dae7ed9495fffcb34",
@@ -42,7 +42,7 @@
     "compilerIRSize": -1,
     "data": [{
       "bci": 2,
-      "branchTakenProbability": 0.4141769185705917
+      "branchTakenProbability": 0.4108572544424917
     }]
   }]
 }

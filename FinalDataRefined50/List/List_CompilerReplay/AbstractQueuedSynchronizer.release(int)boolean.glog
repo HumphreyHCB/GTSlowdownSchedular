@@ -1,9 +1,9 @@
 {
-  "identifier": "HotSpotCompilation-131[java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)]",
+  "identifier": "HotSpotCompilation-129[java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)]",
   "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
   "entryBCI": -1,
-  "codeSignature": "3d76b04542c9def59cfdbe12c92db53312e867a8768119e7b6c3c6928ee752c8",
-  "graphSignature": "7aa962b93de83e74f2ae5c08c38fe8ad83eb13be2836da91db4856ed2612b90a",
+  "codeSignature": "059f22da6b3573d7fa58c3f51b2d10ba40d207b43b292bc4b71e40de56c6a181",
+  "graphSignature": "756b43693f4a34d2e97c5ed3ed9a36256fa8cde6d55136929ed2c8856c4f4b3f",
   "result": true,
   "profiles": [{
     "method": "java.util.concurrent.locks.AbstractQueuedSynchronizer.release(int)boolean",
@@ -75,7 +75,7 @@
     },
     {
       "bci": 10,
-      "branchTakenProbability": 0.0
+      "branchTakenProbability": 0.09523809523809523
     },
     {
       "bci": 14,
@@ -83,7 +83,7 @@
     },
     {
       "bci": 17,
-      "branchTakenProbability": 0.8095238095238095
+      "branchTakenProbability": 0.7894736842105263
     },
     {
       "bci": 22,

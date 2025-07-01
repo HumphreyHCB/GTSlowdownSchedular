@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-218[java.util.concurrent.locks.ReentrantLock.lock()]",
+  "identifier": "HotSpotCompilation-299[java.util.concurrent.locks.ReentrantLock.lock()]",
   "method": "java.util.concurrent.locks.ReentrantLock.lock()void",
   "entryBCI": -1,
-  "codeSignature": "a56ebbd0b1e4c21ca23f0938012a826293bab704d8e0f98ae4b1acfbe940b92d",
+  "codeSignature": "86a73d31448d4955cefbb4da35c8d5a9705d281e17bd9be077d9bf688a7da6e1",
   "graphSignature": "a3cc86773e477aed32ccc0c110dce07be544d2efc4652794b5ae9b62141c00b4",
   "result": true,
   "profiles": [{
@@ -43,7 +43,7 @@
     },
     {
       "bci": 10,
-      "branchTakenProbability": 3.8109756097560977E-4
+      "branchTakenProbability": 0.0011432926829268292
     },
     {
       "bci": 25,

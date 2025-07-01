@@ -1,0 +1,40 @@
+{
+  "identifier": "HotSpotCompilation-134[deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(Object)]",
+  "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(java.lang.Object)void",
+  "entryBCI": -1,
+  "codeSignature": "221860b9baf5fc7270cecbb817fd29ede4857557234a79b2f942884322a41ab4",
+  "graphSignature": "9f08af09575a831892a516ae5125f1c2ff42dfd4c264dd868b67a014cfb4f47a",
+  "result": true,
+  "profiles": [{
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(java.lang.Object)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 5,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.AbstractConstraint.lambda$satisfy$1(int, deltablue.Variable)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": [{
+      "bci": 2,
+      "exceptionSeen": "FALSE"
+    }]
+  },
+  {
+    "method": "deltablue.Variable.setMark(int)void",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

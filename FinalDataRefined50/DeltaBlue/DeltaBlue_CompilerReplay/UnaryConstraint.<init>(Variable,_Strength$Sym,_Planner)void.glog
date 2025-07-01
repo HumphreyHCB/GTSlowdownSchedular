@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-236[deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner)]",
+  "identifier": "HotSpotCompilation-217[deltablue.UnaryConstraint.<init>(Variable, Strength$Sym, Planner)]",
   "method": "deltablue.UnaryConstraint.<init>(deltablue.Variable, deltablue.Strength$Sym, deltablue.Planner)void",
   "entryBCI": -1,
-  "codeSignature": "7c851f068b7350216f35aad5067b4adf99c78639f64125e90fb2e7c0607fa938",
+  "codeSignature": "f8f0bae4e4c0ea1c5649714ca6b6885380d2284d9ecd46554490b111e3e3aa0c",
   "graphSignature": "f7c1db580046b883ca932c7f6577ba5f6eec583d1f431c544104c38ded35e378",
   "result": true,
   "profiles": [{
@@ -466,8 +466,8 @@
     "data": []
   },
   {
-    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f795c0095c0.<init>(int)",
-    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f795c0095c0.<init>(int)void",
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.<init>(int)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.<init>(int)void",
     "isMature": false,
     "compilerIRSize": -1,
     "data": [{
@@ -573,7 +573,7 @@
   {
     "method": "deltablue.Planner.addPropagate(deltablue.AbstractConstraint, int)boolean",
     "isMature": true,
-    "compilerIRSize": 754,
+    "compilerIRSize": 759,
     "data": [{
       "bci": 1,
       "exceptionSeen": "FALSE"
@@ -824,7 +824,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f795c0095c0;",
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f07dc009618;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -836,7 +836,7 @@
       "typeProfile": {
         "nullSeen": "FALSE",
         "types": [{
-          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f795c0095c0;",
+          "type": "Ldeltablue/AbstractConstraint$$Lambda.0x00007f07dc009618;",
           "probability": 1.0
         }],
         "notRecordedProbability": 0.0
@@ -907,8 +907,8 @@
     }]
   },
   {
-    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f795c0095c0.apply(Object)",
-    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f795c0095c0.apply(java.lang.Object)void",
+    "stableLambdaName": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(Object)",
+    "method": "deltablue.AbstractConstraint$$Lambda/0x00007f07dc009618.apply(java.lang.Object)void",
     "isMature": false,
     "compilerIRSize": 34,
     "data": [{

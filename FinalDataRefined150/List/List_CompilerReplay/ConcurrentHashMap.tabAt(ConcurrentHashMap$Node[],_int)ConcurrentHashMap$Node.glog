@@ -1,5 +1,5 @@
 {
-  "identifier": "HotSpotCompilation-40[java.util.concurrent.ConcurrentHashMap.tabAt(ConcurrentHashMap$Node[], int)]",
+  "identifier": "HotSpotCompilation-38[java.util.concurrent.ConcurrentHashMap.tabAt(ConcurrentHashMap$Node[], int)]",
   "method": "java.util.concurrent.ConcurrentHashMap.tabAt(java.util.concurrent.ConcurrentHashMap$Node[], int)java.util.concurrent.ConcurrentHashMap$Node",
   "entryBCI": -1,
   "codeSignature": "e494189c81092e0cd646a17b3ef34cf909fe43245aebbdaf8d97986bfd2375a5",
@@ -26,11 +26,11 @@
         "nullSeen": "TRUE",
         "types": [{
           "type": "Ljava/util/concurrent/ConcurrentHashMap$Node;",
-          "probability": 0.7314459049544995
+          "probability": 0.7315002021835827
         },
         {
           "type": "Ljava/util/concurrent/ConcurrentHashMap$ForwardingNode;",
-          "probability": 0.2685540950455005
+          "probability": 0.2684997978164173
         }],
         "notRecordedProbability": 0.0
       }

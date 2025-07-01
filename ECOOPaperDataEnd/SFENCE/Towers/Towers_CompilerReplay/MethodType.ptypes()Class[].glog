@@ -1,0 +1,20 @@
+{
+  "identifier": "HotSpotCompilation-91[java.lang.invoke.MethodType.ptypes()]",
+  "method": "java.lang.invoke.MethodType.ptypes()java.lang.Class[]",
+  "entryBCI": -1,
+  "codeSignature": "34019df5b230f0c827cf7ad5693a3e73dd4368ea59daee26eddbec138225bbb0",
+  "graphSignature": "560fbceb5a3b763c5375266b0b25d6acc286fd9983237703f8164fa672f6f318",
+  "result": true,
+  "profiles": [{
+    "method": "java.lang.invoke.MethodType.ptypes()java.lang.Class[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  },
+  {
+    "method": "java.lang.invoke.MethodType.ptypes()java.lang.Class[]",
+    "isMature": false,
+    "compilerIRSize": -1,
+    "data": []
+  }]
+}

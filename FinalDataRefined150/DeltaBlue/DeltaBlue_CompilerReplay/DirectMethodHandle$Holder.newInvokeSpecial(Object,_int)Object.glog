@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-122[java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object, int)]",
+  "identifier": "HotSpotCompilation-114[java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(Object, int)]",
   "method": "java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, int)java.lang.Object",
   "entryBCI": -1,
-  "codeSignature": "2baf03e3ca5f14de56fb198d3f935f57dc8135db5196f1ce1044d56d08c20601",
+  "codeSignature": "7cb8eab895b29a0bda72ae2166222fd08ec9d959ce4cfc35b0208de6931ef011",
   "graphSignature": "16bbb3b4e9181291e1d4ab5d55c092aa20f13aaee48a8b2c92bbcd2a603a4e3b",
   "result": true,
   "profiles": [{

@@ -1,8 +1,8 @@
 {
-  "identifier": "HotSpotCompilation-78[java.util.zip.Inflater$InflaterZStreamRef.address()]",
+  "identifier": "HotSpotCompilation-77[java.util.zip.Inflater$InflaterZStreamRef.address()]",
   "method": "java.util.zip.Inflater$InflaterZStreamRef.address()long",
   "entryBCI": -1,
-  "codeSignature": "00e8598159e3954aa531b863b6434700a1acc54942cf92f82b7715d603cc4f7c",
+  "codeSignature": "faed77041d37b3bbf661932270cb47e867fc1cfcbd07a43f0b60b5a23d9253e2",
   "graphSignature": "e7bde89e8dace6a59b4eb25e44651c8d1fee56fcd42d84ff29a6eeb4cd17eb9c",
   "result": true,
   "profiles": [{
