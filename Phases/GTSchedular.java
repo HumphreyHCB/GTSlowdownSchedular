@@ -27,20 +27,15 @@ public class GTSchedular {
     public String ID;
     public double slowdownAmount;
 
-    public static String SLOWDOWN_TYPE = "MOV";
-    public static String SLOWDOWN_POS = "A";
 
     // Parameterized constructor
-    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay, double slowdownAmount, 
-            String slowdownType, String slowdownPos) {
+    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay, double slowdownAmount) {
         this.benchmark = benchmarkString;
         this.iterations = iterations;
         this.lowFootPrint = lowFootPrint;
         this.compilerReplay = compilerReplay;
         this.slowdownAmount = slowdownAmount;
         ID = generateId();
-        SLOWDOWN_TYPE = slowdownType;
-        SLOWDOWN_POS = slowdownPos;
 
         schedule();
 

@@ -53,22 +53,6 @@ public class VTuneRunner {
     
         }
         
-        //this should be removed
-       //command.add("-Djdk.graal.SlowdownType=" +  GTSchedular.SLOWDOWN_TYPE);
-       command.add("-Djdk.graal.SlowdownType=RPP");
-       switch (GTSchedular.SLOWDOWN_POS) {
-       case "A":
-            command.add("-Djdk.graal.GTForcePositionOne=true");
-            break;
-         case "B":
-            command.add("-Djdk.graal.GTForcePositionEnd=true");
-            break;
-        default:
-            break;
-       }
-       //command.add("-Djdk.graal.GTForcePositionOne=true");
-       //
-
         // Add other fixed JVM options
         command.add("-Djdk.graal.IsolatedLoopHeaderAlignment=0");
         command.add("-Djdk.graal.LoopHeaderAlignment=0");
