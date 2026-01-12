@@ -1,0 +1,14 @@
+{"Mandelbrot.mandelbrot": {
+    "3 (Vtune Block 258)": 1,
+    "9 (Vtune Block 263)": 1,
+    "19 (Vtune Block 268)": 7,
+    "4 (Vtune Block 259)": 35,
+    "6 (Vtune Block 260)": 9,
+    "10 (Vtune Block 264)": 181,
+    "8 (Vtune Block 262)": 6,
+    "15 (Vtune Block 266)": 18,
+    "11 (Vtune Block 265)": 23,
+    "16 (Vtune Block 270)": 3,
+    "2 (Vtune Block 257)": 3,
+    "7 (Vtune Block 261)": 6
+}}

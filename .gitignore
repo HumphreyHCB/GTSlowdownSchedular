@@ -6,3 +6,4 @@ SaveProfiles
 DataBackup
 Tests/
 FinalData3MultiplexedAdHoc/
+*.glog

@@ -1,0 +1,1150 @@
+{
+    "java::util::stream::StreamSpliterators$WrappingSpliterator::tryAdvance": [
+        {
+            "BaseCpuTime": "0.017",
+            "GraalID": "88",
+            "Backend Block": false,
+            "Assembler": "Block 247\nvpblendd xmm0, xmm0, xmm0, 0x58\nvpblendd xmm0, xmm0, xmm0, 0x0\nmovsxd rdx, dword ptr [r12+rdx*8+0x10]\nnop\ncmp rdx, r11\njle 0x7f6a529ba89f <Block 323>",
+            "VtuneBlock": "247"
+        },
+        {
+            "BaseCpuTime": "0.026",
+            "GraalID": "45",
+            "Backend Block": false,
+            "Assembler": "Block 210\nvpblendd xmm0, xmm0, xmm0, 0x2d\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x24]\nmov r11d, dword ptr [r12+r10*8+0x8]\nmov dword ptr [r12+rcx*8+0x10], r12d\nmov dword ptr [r12+rcx*8+0x14], r12d\nmov r9d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2d\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea r11, ptr [r9+r11*1]\ncmp r11, qword ptr [rip-0x2ed]\njz 0x7f6a529b9805 <Block 213>",
+            "VtuneBlock": "210"
+        },
+        {
+            "BaseCpuTime": "0.020",
+            "GraalID": "89",
+            "Backend Block": false,
+            "Assembler": "Block 248\nvpblendd xmm0, xmm0, xmm0, 0x59\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rdx, qword ptr [rsp+0x28]\nmov byte ptr [rdx+0xc], 0x1\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x59\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\nnop dword ptr [rax+rax*1]\njz 0x7f6a529b9e35 <Block 252>",
+            "VtuneBlock": "248"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "46",
+            "Backend Block": false,
+            "Assembler": "Block 213\nvpblendd xmm0, xmm0, xmm0, 0x2e\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov dword ptr [rsp+0x44], r8d\nmov r10d, dword ptr [r12+r10*8+0xc]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f5974005ee0\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "213"
+        },
+        {
+            "BaseCpuTime": "0.004",
+            "GraalID": "47",
+            "Backend Block": false,
+            "Assembler": "Block 305\nvpblendd xmm0, xmm0, xmm0, 0x2f\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov dword ptr [rsp+0x44], r8d\ncmp qword ptr [r12+r10*8+0x18], 0x0\njz 0x7f6a529b9f5f <Block 261>",
+            "VtuneBlock": "305"
+        },
+        {
+            "BaseCpuTime": "0.010",
+            "GraalID": "49",
+            "Backend Block": false,
+            "Assembler": "Block 306\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov esi, dword ptr [r12+r10*8+0xc]\ntest dword ptr [r12+rsi*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rsi, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nnop\nmov rax, 0x7f5974006048\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "306"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "27005",
+            "Backend Block": true,
+            "Assembler": "Block 313\nnop dword ptr [rax+rax*1+0x25001388]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov rsi, qword ptr [rsp+0x10]\nmov rdx, rax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nnop\nmov rax, 0x7f5974006070\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "313"
+        },
+        {
+            "BaseCpuTime": "0.018",
+            "GraalID": "90",
+            "Backend Block": false,
+            "Assembler": "Block 258\nvpblendd xmm0, xmm0, xmm0, 0x5a\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rbp, qword ptr [rsp+0x50]\nadd rsp, 0x58\nnop dword ptr [rax+rax*1]\ncmp rsp, qword ptr [r15+0x28]\njnbe 0x7f6a529babeb <Block 370>",
+            "VtuneBlock": "258"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "50",
+            "Backend Block": false,
+            "Assembler": "Block 215\nvpblendd xmm0, xmm0, xmm0, 0x32\nvpblendd xmm0, xmm0, xmm0, 0x0\ntest eax, eax\njnz 0x7f6a529b9f5f <Block 261>",
+            "VtuneBlock": "215"
+        },
+        {
+            "BaseCpuTime": "0.043",
+            "GraalID": "51",
+            "Backend Block": false,
+            "Assembler": "Block 216\nvpblendd xmm0, xmm0, xmm0, 0x33\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]\nmov r10d, dword ptr [rsi+0x28]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x33\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x33\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x33\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nnop\nmov rax, 0x7f5974005f08\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "216"
+        },
+        {
+            "BaseCpuTime": "0.029",
+            "GraalID": "55",
+            "Backend Block": false,
+            "Assembler": "Block 261\nvpblendd xmm0, xmm0, xmm0, 0x37\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]\ncmp byte ptr [rsi+0xd], 0x0\njz 0x7f6a529ba235 <Block 278>",
+            "VtuneBlock": "261"
+        },
+        {
+            "BaseCpuTime": "0.019",
+            "GraalID": "56",
+            "Backend Block": false,
+            "Assembler": "Block 278\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x24]\nmov r11d, dword ptr [r12+r10*8+0x8]\nmov r8d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea r11, ptr [r8+r11*1]\ncmp r11, qword ptr [rip-0xd73]\njz 0x7f6a529ba286 <Block 280>",
+            "VtuneBlock": "278"
+        },
+        {
+            "BaseCpuTime": "0.017",
+            "GraalID": "57",
+            "Backend Block": false,
+            "Assembler": "Block 280\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [r12+r10*8+0xc]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f5974005ff8\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "280"
+        },
+        {
+            "BaseCpuTime": "0.110",
+            "GraalID": "59",
+            "Backend Block": false,
+            "Assembler": "Block 220\nvpblendd xmm0, xmm0, xmm0, 0x3b\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x2c]\nmov r11d, dword ptr [r12+r10*8+0x14]\nmov r10d, dword ptr [r12+r10*8+0x10]\ntest r11d, r11d\njnz 0x7f6a529baa85 <Block 343>",
+            "VtuneBlock": "220"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "16",
+            "Backend Block": false,
+            "Assembler": "Block 289\nvpblendd xmm0, xmm0, xmm0, 0x10\nvpblendd xmm0, xmm0, xmm0, 0x0\nnop dword ptr [rax]\ntest esi, esi\njz 0x7f6a529ba90d <Block 328>",
+            "VtuneBlock": "289"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "19",
+            "Backend Block": false,
+            "Assembler": "Block 290\nvpblendd xmm0, xmm0, xmm0, 0x13\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x13\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529ba50a <Block 294>",
+            "VtuneBlock": "290"
+        },
+        {
+            "BaseCpuTime": "0.009",
+            "GraalID": "0",
+            "Backend Block": false,
+            "Assembler": "Block 191\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x50], rbp\nmov qword ptr [rsp+0x30], rsi\nmov qword ptr [rsp+0x28], rdx\nmov r8d, dword ptr [rdx+0x8]\nmov ecx, dword ptr [rsi+0x2c]\ntest ecx, ecx\njz 0x7f6a529b9f8e <Block 263>",
+            "VtuneBlock": "191"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "1",
+            "Backend Block": false,
+            "Assembler": "Block 263\nvpblendd xmm0, xmm0, xmm0, 0x1\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov dword ptr [rsp+0x44], r8d\ncmp byte ptr [rsi+0xd], 0x0\njnz 0x7f6a529ba96d <Block 332>",
+            "VtuneBlock": "263"
+        },
+        {
+            "BaseCpuTime": "0.002",
+            "GraalID": "2",
+            "Backend Block": false,
+            "Assembler": "Block 264\nvpblendd xmm0, xmm0, xmm0, 0x2\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x20]\nnop dword ptr [rax]\ntest r10d, r10d\njz 0x7f6a529ba385 <Block 284>",
+            "VtuneBlock": "264"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "3",
+            "Backend Block": false,
+            "Assembler": "Block 284\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x1c]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nnop\nmov rax, 0x7f5974006020\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "284"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "5",
+            "Backend Block": false,
+            "Assembler": "Block 286\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov esi, dword ptr [rax+0x8]\nmov r10d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea rsi, ptr [r10+rsi*1]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov r10, 0x9c230450\nnop dword ptr [rax]\ncmp r10, qword ptr [rsi+0x20]\njnz 0x7f6a529ba6ad <Block 309>",
+            "VtuneBlock": "286"
+        },
+        {
+            "BaseCpuTime": "0.028",
+            "GraalID": "7",
+            "Backend Block": false,
+            "Assembler": "Block 309\nvpblendd xmm0, xmm0, xmm0, 0x7\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rdx, qword ptr [rsi+0xa8]\nmov rcx, rdx\nshl rcx, 0x29\ntest rcx, rcx\njnl 0x7f6a529ba7ed <Block 315>",
+            "VtuneBlock": "309"
+        },
+        {
+            "BaseCpuTime": "0.036",
+            "GraalID": "8",
+            "Backend Block": false,
+            "Assembler": "Block 310\nvpblendd xmm0, xmm0, xmm0, 0x8\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r8, qword ptr [rsi+0x28]\npopcnt rsi, rcx\nmov r11d, esi\nmov rsi, qword ptr [r8+r11*8]\ncmp r10, rsi\njnz 0x7f6a529ba805 <Block 316>",
+            "VtuneBlock": "310"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "9",
+            "Backend Block": false,
+            "Assembler": "Block 311\nvpblendd xmm0, xmm0, xmm0, 0x9\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov esi, 0x1\njmp 0x7f6a529ba47b <Block 288>",
+            "VtuneBlock": "311"
+        },
+        {
+            "BaseCpuTime": "0.024",
+            "GraalID": "60",
+            "Backend Block": false,
+            "Assembler": "Block 221\nvpblendd xmm0, xmm0, xmm0, 0x3c\nvpblendd xmm0, xmm0, xmm0, 0x0\ntest r10d, r10d\njnz 0x7f6a529b9cdf <Block 241>",
+            "VtuneBlock": "221"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "61",
+            "Backend Block": false,
+            "Assembler": "Block 222\nvpblendd xmm0, xmm0, xmm0, 0x3d\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x24]\nmov r11d, dword ptr [r12+r10*8+0x8]\nmov r8d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3d\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea r11, ptr [r8+r11*1]\ncmp r11, qword ptr [rip-0x4c7]\njz 0x7f6a529b99df <Block 225>",
+            "VtuneBlock": "222"
+        },
+        {
+            "BaseCpuTime": "0.031",
+            "GraalID": "89005",
+            "Backend Block": true,
+            "Assembler": "Block 252\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x59\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nshl rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x59\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov esi, r8d\nmov esi, dword ptr [rcx+rsi*4+0x10]\nmov dword ptr [rdx+0x10], esi\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x59\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nshl rsi, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x59\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nmov rcx, rdx\nxor rcx, rsi\nshr rcx, 0x17\njz 0x7f6a529b9f03 <Block 258>",
+            "VtuneBlock": "252"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "62",
+            "Backend Block": false,
+            "Assembler": "Block 225\nvpblendd xmm0, xmm0, xmm0, 0x3e\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [r12+r10*8+0xc]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f5974005f30\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "225"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "63",
+            "Backend Block": false,
+            "VtuneBlock": "237"
+        },
+        {
+            "BaseCpuTime": "0.006",
+            "GraalID": "65",
+            "Backend Block": false,
+            "Assembler": "Block 238\nvpblendd xmm0, xmm0, xmm0, 0x41\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [r12+r10*8+0xc]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x41\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x41\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x41\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f5974005fa8\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "238"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "21",
+            "Backend Block": false,
+            "Assembler": "Block 265\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10, rsi\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ndata16 nop\ncall 0x7f6a5233f6e0 <Shared Runtime resolve_opt_virtual_call_blob>",
+            "VtuneBlock": "265"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "19005",
+            "Backend Block": true,
+            "Assembler": "Block 304\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x13\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nmov dword ptr [rsi+0x1c], r12d\njmp 0x7f6a529b9fc9 <Block 265>",
+            "VtuneBlock": "304"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "66",
+            "Backend Block": false,
+            "Assembler": "Block 227\nvpblendd xmm0, xmm0, xmm0, 0x42\nvpblendd xmm0, xmm0, xmm0, 0x0\ntest eax, eax\njnz 0x7f6a529b9cc9 <Block 240>",
+            "VtuneBlock": "227"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "22",
+            "Backend Block": false,
+            "Assembler": "Block 267\nvpblendd xmm0, xmm0, xmm0, 0x16\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r11d, dword ptr [rsi+0x24]\nmov r8d, dword ptr [r12+r11*8+0x8]\nmov qword ptr [rsi+0x10], r12\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x16\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x16\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov r9d, r11d\nshl r9, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x16\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov rsi, r10\nmov qword ptr [rsp+0x20], r9\nmov dword ptr [rsp+0x1c], r11d\nmov dword ptr [rsp+0x40], r8d\nmov qword ptr [rsp+0x10], r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x16\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\ncall 0x7f6a5233f6e0 <Shared Runtime resolve_opt_virtual_call_blob>",
+            "VtuneBlock": "267"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "19004",
+            "Backend Block": true,
+            "Assembler": "Block 300\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x13\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529ba5f5 <Block 304>",
+            "VtuneBlock": "300"
+        },
+        {
+            "BaseCpuTime": "0.004",
+            "GraalID": "67",
+            "Backend Block": false,
+            "Assembler": "Block 228\nvpblendd xmm0, xmm0, xmm0, 0x43\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]\nmov r10d, dword ptr [rsi+0x28]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x43\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x43\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x43\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nnop\nmov rax, 0x7f5974005f58\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "228"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "68",
+            "Backend Block": false,
+            "Assembler": "Block 231\nvpblendd xmm0, xmm0, xmm0, 0x44\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]",
+            "VtuneBlock": "231"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "24",
+            "Backend Block": false,
+            "Assembler": "Block 269\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10, qword ptr [rsp+0x10]\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ndata16 nop\ncall 0x7f6a5233f6e0 <Shared Runtime resolve_opt_virtual_call_blob>",
+            "VtuneBlock": "269"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "25",
+            "Backend Block": false,
+            "Assembler": "Block 271\nvpblendd xmm0, xmm0, xmm0, 0x19\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r8d, dword ptr [rsp+0x40]\nmov esi, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x19\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea r8, ptr [rsi+r8*1]\ncmp r8, qword ptr [rip-0xc5d]\ndata16 nop\njz 0x7f6a529ba178 <Block 274>",
+            "VtuneBlock": "271"
+        },
+        {
+            "BaseCpuTime": "0.009",
+            "GraalID": "26",
+            "Backend Block": false,
+            "Assembler": "Block 274\nvpblendd xmm0, xmm0, xmm0, 0x1a\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r11d, dword ptr [rsp+0x1c]\nmov esi, dword ptr [r12+r11*8+0xc]\ntest dword ptr [r12+rsi*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1a\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rsi, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1a\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rdx, rax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1a\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov rax, 0x7f5974005fd0\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "274"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "21002",
+            "Backend Block": true,
+            "Assembler": "Block 266\nnop dword ptr [rax+rax*1+0x15000bf0]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, qword ptr [rsp+0x30]\nmov r10d, dword ptr [rsi+0x20]\ncmp dword ptr [r12+r10*8+0x8], 0x1031a08\njnz 0x7f6a529ba8de <Block 326>",
+            "VtuneBlock": "266"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "27",
+            "Backend Block": false,
+            "Assembler": "Block 312\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r11d, dword ptr [rsp+0x1c]\nmov ecx, dword ptr [r12+r11*8+0xc]\ntest dword ptr [r12+rcx*8], eax\nmov r10, qword ptr [r12+r11*8+0x20]\nmov r11, qword ptr [r12+r11*8+0x18]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, rax\nmov rdx, r10\nmov qword ptr [rsp+0x10], rcx\nmov rcx, r11\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\ncall 0x7f6a5233fce0 <Shared Runtime resolve_static_call_blob>",
+            "VtuneBlock": "312"
+        },
+        {
+            "BaseCpuTime": "0.723",
+            "GraalID": "40002",
+            "Backend Block": true,
+            "Assembler": "Block 201\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x28\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [r12+r10*8+0x10], r12d\nlfence\nrdtsc\nlfence\nmov eax, eax\nmov edx, edx\nshl rdx, 0x20\nor rax, rdx\nmov qword ptr [rsp+0x38], rax\nmov edx, 0x1\njmp 0x7f6a529b978a <Block 208>",
+            "VtuneBlock": "201"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "28",
+            "Backend Block": false,
+            "Assembler": "Block 276\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ndata16 nop\ncall 0x7f6a5233f6e0 <Shared Runtime resolve_opt_virtual_call_blob>",
+            "VtuneBlock": "276"
+        },
+        {
+            "BaseCpuTime": "0.002",
+            "GraalID": "19003",
+            "Backend Block": true,
+            "Assembler": "Block 294\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x13\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov r10, rax\nshr r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x13\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov dword ptr [rsi+0x20], r10d\nmov r10, rsi\nxor r10, rax\nshr r10, 0x17\njz 0x7f6a529ba5a4 <Block 300>",
+            "VtuneBlock": "294"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "57004",
+            "Backend Block": true,
+            "Assembler": "Block 281\nnop dword ptr [rax+rax*1+0x1f000ef4]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov rsi, qword ptr [rsp+0x30]\nmov byte ptr [rsi+0xd], 0x1\njmp 0x7f6a529b9939 <Block 219>",
+            "VtuneBlock": "281"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "71",
+            "Backend Block": false,
+            "Assembler": "Block 232\nvpblendd xmm0, xmm0, xmm0, 0x47\nvpblendd xmm0, xmm0, xmm0, 0x0\ncmp byte ptr [rsi+0xd], 0x0\njnz 0x7f6a529ba32a <Block 282>",
+            "VtuneBlock": "232"
+        },
+        {
+            "BaseCpuTime": "0.249",
+            "GraalID": "74",
+            "Backend Block": false,
+            "Assembler": "Block 282\nvpblendd xmm0, xmm0, xmm0, 0x4a\nvpblendd xmm0, xmm0, xmm0, 0x0\nlfence\nrdtsc\nlfence\nmov r9, qword ptr [rsp+0x38]\nmov r10d, eax\nshl rdx, 0x20\nor r10, rdx\nxor rdx, rdx\ncmp r10, r9\nsub r10, r9\ncmovb r10, rdx\nmov r11, qword ptr [rip-0xe51]\nlock add qword ptr [r11], r10\nmov eax, r12d\njmp 0x7f6a529b9d1f <Block 242>",
+            "VtuneBlock": "282"
+        },
+        {
+            "BaseCpuTime": "1.159",
+            "GraalID": "75",
+            "Backend Block": false,
+            "Assembler": "Block 241\nvpblendd xmm0, xmm0, xmm0, 0x4b\nvpblendd xmm0, xmm0, xmm0, 0x0\nlfence\nrdtsc\nlfence\nmov r9, qword ptr [rsp+0x38]\nmov r10d, eax\nshl rdx, 0x20\nor r10, rdx\nxor rdx, rdx\ncmp r10, r9\nsub r10, r9\ncmovb r10, rdx\nmov r11, qword ptr [rip-0x806]\nlock add qword ptr [r11], r10\nmov eax, 0x1",
+            "VtuneBlock": "241"
+        },
+        {
+            "BaseCpuTime": "0.041",
+            "GraalID": "32",
+            "Backend Block": false,
+            "Assembler": "Block 192\nvpblendd xmm0, xmm0, xmm0, 0x20\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov eax, dword ptr [r12+rcx*8+0x20]\nmov r10d, 0x1\nadd r10, qword ptr [rsi+0x10]\nmov qword ptr [rsi+0x10], r10\ncmp dword ptr [r12+rcx*8+0x14], 0x0\njnz 0x7f6a529bab2e <Block 350>",
+            "VtuneBlock": "192"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "33",
+            "Backend Block": false,
+            "Assembler": "Block 193\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r11d, dword ptr [r12+rcx*8+0x10]\nmovsxd r9, r11d\nnop\ncmp r9, r10\njnle 0x7f6a529baad4 <Block 346>",
+            "VtuneBlock": "193"
+        },
+        {
+            "BaseCpuTime": "0.016",
+            "GraalID": "35",
+            "Backend Block": false,
+            "Assembler": "Block 194\nvpblendd xmm0, xmm0, xmm0, 0x23\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsi+0x10], r12\nnop dword ptr [rax]\ntest eax, eax\njnz 0x7f6a529baa0a <Block 338>",
+            "VtuneBlock": "194"
+        },
+        {
+            "BaseCpuTime": "0.010",
+            "GraalID": "36",
+            "Backend Block": false,
+            "Assembler": "Block 195\nvpblendd xmm0, xmm0, xmm0, 0x24\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x24\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov ebx, ecx\nshl rbx, 0x3\ncmp r11d, 0x1\njl 0x7f6a529b97a5 <Block 210>",
+            "VtuneBlock": "195"
+        },
+        {
+            "BaseCpuTime": "0.027",
+            "GraalID": "38",
+            "Backend Block": false,
+            "Assembler": "Block 196\nvpblendd xmm0, xmm0, xmm0, 0x26\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [r12+rcx*8+0x1c]\nmov r9d, dword ptr [r12+r10*8+0xc]\ntest r9d, r9d\njz 0x7f6a529baa4d <Block 341>",
+            "VtuneBlock": "196"
+        },
+        {
+            "BaseCpuTime": "0.028",
+            "GraalID": "84",
+            "Backend Block": false,
+            "Assembler": "Block 243\nvpblendd xmm0, xmm0, xmm0, 0x54\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x30]\nmov edx, dword ptr [rsi+0x2c]\ncmp dword ptr [r12+rdx*8+0x8], 0x321440\njnz 0x7f6a529ba9ed <Block 337>",
+            "VtuneBlock": "243"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "40",
+            "Backend Block": false,
+            "Assembler": "Block 197\nvpblendd xmm0, xmm0, xmm0, 0x28\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x28\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529b9699 <Block 201>",
+            "VtuneBlock": "197"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "41",
+            "Backend Block": false,
+            "Assembler": "Block 208\nvpblendd xmm0, xmm0, xmm0, 0x29\nvpblendd xmm0, xmm0, xmm0, 0x0\ncmp r11d, edx\njle 0x7f6a529b9f2b <Block 260>",
+            "VtuneBlock": "208"
+        },
+        {
+            "BaseCpuTime": "0.019",
+            "GraalID": "86",
+            "Backend Block": false,
+            "Assembler": "Block 245\nvpblendd xmm0, xmm0, xmm0, 0x56\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov ecx, dword ptr [r12+rdx*8+0x1c]\nmov r10d, dword ptr [r12+rcx*8+0xc]\nmov r11, qword ptr [rsi+0x10]\nmov r8d, r11d\ncmp r10d, r8d\njbe 0x7f6a529ba9a1 <Block 334>",
+            "VtuneBlock": "245"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "87",
+            "Backend Block": false,
+            "Assembler": "Block 246\nvpblendd xmm0, xmm0, xmm0, 0x57\nvpblendd xmm0, xmm0, xmm0, 0x0\ncmp dword ptr [r12+rdx*8+0x14], 0x0\njnz 0x7f6a529baa67 <Block 342>",
+            "VtuneBlock": "246"
+        }
+    ],
+    "io::reactivex::rxjava3::core::Single::subscribe": [
+        {
+            "BaseCpuTime": "0.014",
+            "GraalID": "23",
+            "Backend Block": false,
+            "Assembler": "Block 260\nvpblendd xmm0, xmm0, xmm0, 0x17\nvpblendd xmm0, xmm0, xmm0, 0x0\nmovzx r10d, byte ptr [r12+r8*8+0xc]\nnop dword ptr [rax]\ntest r10d, r10d\njnz 0x7f6a529bdfa7 <Block 371>",
+            "VtuneBlock": "260"
+        },
+        {
+            "BaseCpuTime": "0.041",
+            "GraalID": "24",
+            "Backend Block": false,
+            "Assembler": "Block 261\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov dword ptr [rsp+0x24], r9d\nmov ebp, dword ptr [r12+r8*8+0x10]\nmov eax, dword ptr [r12+rbp*8+0x1c]\nmov r13d, dword ptr [r12+rbp*8+0x10]\nmov r14d, dword ptr [r12+rbp*8+0x14]\nmov esi, dword ptr [r12+rax*8+0xc]\nmov r10, qword ptr [rdx]\nmov r9, r10\nand r9, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rax, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov ecx, ebp\nshl rcx, 0x3\nnop word ptr [rax+rax*1]\ncmp r9, 0x2\njz 0x7f6a529bd979 <Block 315>",
+            "VtuneBlock": "261"
+        },
+        {
+            "BaseCpuTime": "0.032",
+            "GraalID": "26",
+            "Backend Block": false,
+            "Assembler": "Block 262\nvpblendd xmm0, xmm0, xmm0, 0x1a\nvpblendd xmm0, xmm0, xmm0, 0x0\nshr r10, 0xb\nand r10, 0x7fffffff\nmov r10d, r10d\ntest r10d, r10d\njz 0x7f6a529bd979 <Block 315>",
+            "VtuneBlock": "262"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "49",
+            "Backend Block": false,
+            "Assembler": "Block 275\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [r12+r11*8+0xc]\ntest r10d, r10d\njnz 0x7f6a529bded2 <Block 363>",
+            "VtuneBlock": "275"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "55002",
+            "Backend Block": true,
+            "Assembler": "Block 301\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x37\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [r12+r8*8+0x18], r11d\nmov rsi, r9\nxor rsi, rbx\nshr rsi, 0x17\njz 0x7f6a529bd67c <Block 307>",
+            "VtuneBlock": "301"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "80006",
+            "Backend Block": true,
+            "Assembler": "Block 309\nnop dword ptr [rax+rax*1+0xd000b00]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov r10, rax\nmov rsi, qword ptr [rsp+0x18]\nmov r11d, dword ptr [rsi+0xc]\nmov edx, dword ptr [r12+r11*8+0x8]\nmov ebx, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nlea rdx, ptr [rbx+rdx*1]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x6\nsfence\nmov rbx, 0x7f6a18961bb0\nnop dword ptr [rax]\ncmp rbx, qword ptr [rdx+0x38]\njnz 0x7f6a529bdcc2 <Block 342>",
+            "VtuneBlock": "309"
+        },
+        {
+            "BaseCpuTime": "0.281",
+            "GraalID": "50",
+            "Backend Block": false,
+            "Assembler": "Block 276\nvpblendd xmm0, xmm0, xmm0, 0x32\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov esi, 0x1\nmov eax, r12d\nlock cmpxchg dword ptr [r12+r11*8+0xc], esi\nsetz r10b\nmovzx r10d, r10b\nmov r8d, dword ptr [r12+r11*8+0x14]\ncmp dword ptr [r12+r8*8+0x8], 0x114c100\njnz 0x7f6a529bdf8a <Block 370>",
+            "VtuneBlock": "276"
+        },
+        {
+            "BaseCpuTime": "0.014",
+            "GraalID": "51",
+            "Backend Block": false,
+            "Assembler": "Block 277\nvpblendd xmm0, xmm0, xmm0, 0x33\nvpblendd xmm0, xmm0, xmm0, 0x0\ntest r10d, r10d\njz 0x7f6a529bdeb8 <Block 362>",
+            "VtuneBlock": "277"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "30",
+            "Backend Block": false,
+            "Assembler": "Block 263\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nimul r9d, r10d, 0x9e3779b9\nmov dword ptr [rsp+0x3c], r10d\nmov r10d, r9d\nshr r10d, 0x10\nxor r9d, r10d\nand r9d, r13d\ncmp esi, r9d\njbe 0x7f6a529bdd0c <Block 345>",
+            "VtuneBlock": "263"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "53",
+            "Backend Block": false,
+            "Assembler": "Block 278\nvpblendd xmm0, xmm0, xmm0, 0x35\nvpblendd xmm0, xmm0, xmm0, 0x0\ncmp byte ptr [r12+r8*8+0xc], 0x0\njnz 0x7f6a529bde3d <Block 357>",
+            "VtuneBlock": "278"
+        },
+        {
+            "BaseCpuTime": "0.018",
+            "GraalID": "31",
+            "Backend Block": false,
+            "Assembler": "Block 264\nvpblendd xmm0, xmm0, xmm0, 0x1f\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, r9d\ninc r10d\nand r10d, r13d\ncmp esi, r10d\njbe 0x7f6a529bdcf2 <Block 344>",
+            "VtuneBlock": "264"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "54",
+            "Backend Block": false,
+            "Assembler": "Block 279\nvpblendd xmm0, xmm0, xmm0, 0x36\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov esi, dword ptr [r12+r8*8+0x18]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x36\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov r9d, r8d\nshl r9, 0x3\ndata16 nop\ntest esi, esi\njz 0x7f6a529bd58e <Block 297>",
+            "VtuneBlock": "279"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "32",
+            "Backend Block": false,
+            "Assembler": "Block 265\nvpblendd xmm0, xmm0, xmm0, 0x20\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov esi, dword ptr [rax+r9*4+0x10]\ncmp dword ptr [r12+rsi*8+0x8], 0x114cc98\njnz 0x7f6a529bdc76 <Block 339>",
+            "VtuneBlock": "265"
+        },
+        {
+            "BaseCpuTime": "0.312",
+            "GraalID": "10",
+            "Backend Block": false,
+            "Assembler": "Block 258\nvpblendd xmm0, xmm0, xmm0, 0xa\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rax, r10\nor rax, 0x1\nand r10, 0xfffffffffffffffe\nlock cmpxchg qword ptr [rdi], r10\njnz 0x7f6a529bdb4b <Block 329>",
+            "VtuneBlock": "258"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "33",
+            "Backend Block": false,
+            "Assembler": "Block 266\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rsi, 0x3\ncmp rsi, rdx\njnz 0x7f6a529bde20 <Block 356>",
+            "VtuneBlock": "266"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "55",
+            "Backend Block": false,
+            "Assembler": "Block 297\nvpblendd xmm0, xmm0, xmm0, 0x37\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x28], rbx\nmov dword ptr [rsp+0x14], r11d\nmov rbx, qword ptr [rsp+0x30]\nmov r11d, dword ptr [rsp+0x24]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x37\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529bd603 <Block 301>",
+            "VtuneBlock": "297"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "34",
+            "Backend Block": false,
+            "Assembler": "Block 267\nvpblendd xmm0, xmm0, xmm0, 0x22\nvpblendd xmm0, xmm0, xmm0, 0x0\ndec r14d\nmov dword ptr [r12+rbp*8+0x14], r14d\nmov esi, dword ptr [rax+r10*4+0x10]\ntest esi, esi\njnz 0x7f6a529bddcf <Block 353>",
+            "VtuneBlock": "267"
+        },
+        {
+            "BaseCpuTime": "0.049",
+            "GraalID": "56",
+            "Backend Block": false,
+            "Assembler": "Block 280\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x18], r9\nmov qword ptr [rsp+0x28], rbx\nmov dword ptr [rsp+0x14], r11d\nmov edx, dword ptr [r12+r8*8+0x14]\ntest dword ptr [r12+rdx*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rdx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov ecx, esi\nshl rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov rsi, rdx\nmov rdx, rcx\nmov rcx, qword ptr [rsp+0x30]\nmov dword ptr [rsp+0x24], r8d\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\ndata16 nop\nmov rax, 0x7f69f4084860\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "280"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "35",
+            "Backend Block": false,
+            "Assembler": "Block 268\nvpblendd xmm0, xmm0, xmm0, 0x23\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x23\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529bd1c9 <Block 272>",
+            "VtuneBlock": "268"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "13",
+            "Backend Block": false,
+            "Assembler": "Block 259\nvpblendd xmm0, xmm0, xmm0, 0xd\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [r15+rsi*1], rdi\nlea eax, ptr [rsi+0x8]\nmov dword ptr [r15+0x7d0], eax",
+            "VtuneBlock": "259"
+        },
+        {
+            "BaseCpuTime": "0.308",
+            "GraalID": "57",
+            "Backend Block": false,
+            "Assembler": "Block 291\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r11d, dword ptr [rsp+0x14]\nmov esi, dword ptr [r12+r11*8+0x1c]\ntest dword ptr [r12+rsi*8], eax\nmov r10d, 0xffffffff\nlock xadd dword ptr [r12+rsi*8+0xc], r10d\nmov esi, dword ptr [r12+r11*8+0x28]\ntest dword ptr [r12+rsi*8], eax\ncmp r10d, 0x1\njz 0x7f6a529bdf06 <Block 365>",
+            "VtuneBlock": "291"
+        },
+        {
+            "BaseCpuTime": "0.008",
+            "GraalID": "36",
+            "Backend Block": false,
+            "Assembler": "Block 273\nvpblendd xmm0, xmm0, xmm0, 0x24\nvpblendd xmm0, xmm0, xmm0, 0x0\nlea rsi, ptr [rax-0x8]\nmov dword ptr [r15+0x7d0], esi\ncmp rdi, qword ptr [r15+rax*1-0x10]\njz 0x7f6a529bd24f <Block 275>",
+            "VtuneBlock": "273"
+        },
+        {
+            "BaseCpuTime": "0.306",
+            "GraalID": "38",
+            "Backend Block": false,
+            "Assembler": "Block 274\nvpblendd xmm0, xmm0, xmm0, 0x26\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rax, r8\nand rax, 0xfffffffffffffffc\nor r8, 0x1\nlock cmpxchg qword ptr [rdi], r8\njnz 0x7f6a529bdb05 <Block 326>",
+            "VtuneBlock": "274"
+        },
+        {
+            "BaseCpuTime": "0.014",
+            "GraalID": "0",
+            "Backend Block": false,
+            "Assembler": "Block 243\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x50], rbp\nmov eax, dword ptr [rdx+0x8]\nmov r10, 0x7ffc171b8\nmov ecx, dword ptr [r10+0xcc]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov r11d, ecx\nshl r11, 0x3\nnop word ptr [rax+rax*1]\ntest ecx, ecx\njnz 0x7f6a529bdd8d <Block 350>",
+            "VtuneBlock": "243"
+        },
+        {
+            "BaseCpuTime": "0.036",
+            "GraalID": "1",
+            "Backend Block": false,
+            "Assembler": "Block 244\nvpblendd xmm0, xmm0, xmm0, 0x1\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov ecx, dword ptr [rsi+0x8]\nmov r8d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea rcx, ptr [r8+rcx*1]\ncmp rcx, qword ptr [rip-0xe0]\njz 0x7f6a529bcdf8 <Block 247>",
+            "VtuneBlock": "244"
+        },
+        {
+            "BaseCpuTime": "0.020",
+            "GraalID": "56006",
+            "Backend Block": true,
+            "Assembler": "Block 281\nnop dword ptr [rax+rax*1+0x80007b0]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\ntest dword ptr [rax], eax\nmov r8d, dword ptr [rsp+0x24]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x6\nsfence\ncmp byte ptr [r15+0x48], 0x0\nnop dword ptr [rax]\njz 0x7f6a529bd435 <Block 285>",
+            "VtuneBlock": "281"
+        },
+        {
+            "BaseCpuTime": "0.015",
+            "GraalID": "56008",
+            "Backend Block": true,
+            "Assembler": "Block 285\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x7\nsfence\nmov rsi, rax\nshr rsi, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x8\nsfence\nmov dword ptr [r12+r8*8+0x18], esi\nmov r9, qword ptr [rsp+0x18]\nmov rsi, r9\nxor rsi, rax\nshr rsi, 0x17\njz 0x7f6a529bd4d5 <Block 291>",
+            "VtuneBlock": "285"
+        },
+        {
+            "BaseCpuTime": "0.306",
+            "GraalID": "3",
+            "Backend Block": false,
+            "Assembler": "Block 248\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov ecx, 0xffd0be7a\nmov eax, r12d\nlock cmpxchg dword ptr [rdx+0xc], ecx\nsetz r10b\nmovzx r10d, r10b\nmov rax, 0x7fe85f3d0\nmov rcx, rdx\nxor rcx, rax\nshr rcx, 0x17\njz 0x7f6a529bce8e <Block 253>",
+            "VtuneBlock": "248"
+        },
+        {
+            "BaseCpuTime": "0.036",
+            "GraalID": "5",
+            "Backend Block": false,
+            "Assembler": "Block 254\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r9d, dword ptr [rsi+0xc]\nmovzx r10d, byte ptr [r12+r8*8+0xc]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov ebx, r11d\nshl rbx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov ecx, r9d\nshl rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov qword ptr [rsp+0x30], rcx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov edi, r8d\nshl rdi, 0x3\nnop dword ptr [rax]\ntest r10d, r10d\njnz 0x7f6a529bde81 <Block 360>",
+            "VtuneBlock": "254"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "6",
+            "Backend Block": false,
+            "Assembler": "Block 255\nvpblendd xmm0, xmm0, xmm0, 0x6\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10, qword ptr [r12+r8*8]\nlea rbp, ptr [rsp+0x40]\nmov esi, dword ptr [r15+0x7d0]\ntest r10b, 0x2\njnz 0x7f6a529bd9d5 <Block 317>",
+            "VtuneBlock": "255"
+        },
+        {
+            "BaseCpuTime": "0.032",
+            "GraalID": "35002",
+            "Backend Block": true,
+            "Assembler": "Block 272\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x23\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [rax+r9*4+0x10], r12d\nlea r10, ptr [rsp+0x40]\nmov r9d, dword ptr [r15+0x7d0]\nmov r8, qword ptr [r12+r8*8]\nmov eax, r9d\nnop dword ptr [rax]\ncmp rdi, qword ptr [r15+rax*1-0x8]\njnz 0x7f6a529bda48 <Block 320>",
+            "VtuneBlock": "272"
+        },
+        {
+            "BaseCpuTime": "0.014",
+            "GraalID": "7",
+            "Backend Block": false,
+            "Assembler": "Block 256\nvpblendd xmm0, xmm0, xmm0, 0x7\nvpblendd xmm0, xmm0, xmm0, 0x0\nnop dword ptr [rax+rax*1]\ncmp esi, 0x820\njnb 0x7f6a529bdab3 <Block 323>",
+            "VtuneBlock": "256"
+        },
+        {
+            "BaseCpuTime": "0.008",
+            "GraalID": "80",
+            "Backend Block": false,
+            "Assembler": "Block 308\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x28], r10\nmov qword ptr [rsp+0x30], rdx\nmov r8d, dword ptr [rsi+0x10]\ntest dword ptr [r12+r8*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r8, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov qword ptr [rsp+0x18], rsi\nmov rsi, r8\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x50\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f69f4084888\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "308"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "81",
+            "Backend Block": false,
+            "Assembler": "Block 310\nvpblendd xmm0, xmm0, xmm0, 0x51\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rdx, qword ptr [rsp+0x28]\ntest dword ptr [r10], eax\nmov r8d, dword ptr [rsi+0x14]\nmov esi, dword ptr [rdx+0xc8]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x51\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov r9d, r11d\nshl r9, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x51\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov ecx, esi\nshl rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x51\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov ebx, r8d\nshl rbx, 0x3\ntest esi, esi\njnz 0x7f6a529bdf35 <Block 367>",
+            "VtuneBlock": "310"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "84",
+            "Backend Block": false,
+            "Assembler": "Block 312\nvpblendd xmm0, xmm0, xmm0, 0x54\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [r15+0x1c8], rdx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x54\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nprefetchw zmmword ptr [rsi+0xe0]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x54\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov qword ptr [rsi], 0x1\nmov dword ptr [rsi+0x8], 0x1132f28\nmov dword ptr [rsi+0xc], r12d\nmov qword ptr [rsi+0x10], r12\nmov qword ptr [rsi+0x18], r12\nmov rdx, rsi\nmov rcx, qword ptr [rsp+0x30]",
+            "VtuneBlock": "312"
+        },
+        {
+            "BaseCpuTime": "0.017",
+            "GraalID": "85",
+            "Backend Block": false,
+            "Assembler": "Block 313\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshr r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [rdx+0x18], r10d\nmov dword ptr [rdx+0x14], r8d\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov rsi, rcx\nshr rsi, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov dword ptr [rdx+0x10], esi\nmov esi, dword ptr [r12+r11*8+0x8]\nmov ebx, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nlea rsi, ptr [rbx+rsi*1]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x55\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x6\nsfence\nmov rbx, qword ptr [rsi+0x200]\nmov rax, qword ptr [rbx+0x40]\nmov rsi, r9\ncall rax",
+            "VtuneBlock": "313"
+        },
+        {
+            "BaseCpuTime": "0.275",
+            "GraalID": "63",
+            "Backend Block": false,
+            "Assembler": "Block 294\nvpblendd xmm0, xmm0, xmm0, 0x3f\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov eax, 0xffffffff\nmov r10d, eax\nlock xadd dword ptr [r12+r11*8+0xc], r10d\ncmp r10d, 0x1\njnz 0x7f6a529bdd5b <Block 348>",
+            "VtuneBlock": "294"
+        },
+        {
+            "BaseCpuTime": "0.019",
+            "GraalID": "86",
+            "Backend Block": false,
+            "Assembler": "Block 295\nvpblendd xmm0, xmm0, xmm0, 0x56\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rbp, qword ptr [rsp+0x50]\nadd rsp, 0x58\ncmp rsp, qword ptr [r15+0x28]\njnbe 0x7f6a529be086 <Block 390>",
+            "VtuneBlock": "295"
+        }
+    ],
+    "oopDesc::klass(void) const": [],
+    "__memset_avx2_unaligned_erms": [],
+    "io::reactivex::rxjava3::internal::operators::observable::ObservableFlatMapSingle$FlatMapSingleObserver::onNext": [
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "22",
+            "Backend Block": false,
+            "Assembler": "Block 380\nvpblendd xmm0, xmm0, xmm0, 0x16\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rax, qword ptr [r15+0x1c8]\nlea rdx, ptr [rax+0x20]\ncmp rdx, qword ptr [r15+0x1d8]\njnbe 0x7f6a529c19e6 <Block 423>",
+            "VtuneBlock": "380"
+        },
+        {
+            "BaseCpuTime": "0.035",
+            "GraalID": "45",
+            "Backend Block": false,
+            "Assembler": "Block 356\nvpblendd xmm0, xmm0, xmm0, 0x2d\nvpblendd xmm0, xmm0, xmm0, 0x0\nmovsxd rcx, ecx\nmov rcx, qword ptr [rbp+rcx*1]\ncmp rcx, r8\nsetz r8b\nmovzx r8d, r8b",
+            "VtuneBlock": "356"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "46",
+            "Backend Block": false,
+            "Assembler": "Block 357\nvpblendd xmm0, xmm0, xmm0, 0x2e\nvpblendd xmm0, xmm0, xmm0, 0x0\ntest r8d, r8d\njz 0x7f6a529c1cb1 <Block 444>",
+            "VtuneBlock": "357"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "24",
+            "Backend Block": false,
+            "Assembler": "Block 381\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [r15+0x1c8], rdx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nprefetchw zmmword ptr [rax+0xe0]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x18\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov qword ptr [rax], 0x1\nmov dword ptr [rax+0x8], 0x114cef8\nmov dword ptr [rax+0xc], r12d\nmov qword ptr [rax+0x10], r12\nmov qword ptr [rax+0x18], r12\nmov r8, rax",
+            "VtuneBlock": "381"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "25",
+            "Backend Block": false,
+            "Assembler": "Block 382\nvpblendd xmm0, xmm0, xmm0, 0x19\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov dword ptr [r8+0x18], 0xc\nmov dword ptr [r8+0x10], 0xf\nvmovss xmm0, dword ptr [rip-0x71e]\nvmovss dword ptr [r8+0xc], xmm0\nmov rax, qword ptr [r15+0x1c8]\nlea rdx, ptr [rax+0x50]\ncmp rdx, qword ptr [r15+0x1d8]\njnbe 0x7f6a529c19b2 <Block 421>",
+            "VtuneBlock": "382"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "27",
+            "Backend Block": false,
+            "Assembler": "Block 383\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [r15+0x1c8], rdx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nprefetchw zmmword ptr [rax+0x110]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nprefetchw zmmword ptr [rax+0x150]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nprefetchw zmmword ptr [rax+0x190]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x6\nsfence\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x7\nsfence\nprefetchw zmmword ptr [rax+0x1d0]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1b\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x8\nsfence\nmov qword ptr [rax], 0x1\nmov dword ptr [rax+0x8], 0x172428\nmov dword ptr [rax+0xc], 0x10\nmov qword ptr [rax+0x10], r12\nmov qword ptr [rax+0x18], r12\nmov qword ptr [rax+0x20], r12\nmov qword ptr [rax+0x28], r12\nmov qword ptr [rax+0x30], r12\nmov qword ptr [rax+0x38], r12\nmov qword ptr [rax+0x40], r12\nmov qword ptr [rax+0x48], r12",
+            "VtuneBlock": "383"
+        },
+        {
+            "BaseCpuTime": "0.004",
+            "GraalID": "28",
+            "Backend Block": false,
+            "Assembler": "Block 384\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov rdx, rax\nshr rdx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [r8+0x1c], edx\nmov rdx, r8\nxor rdx, rax\nshr rdx, 0x17\njz 0x7f6a529c167a <Block 389>",
+            "VtuneBlock": "384"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "29",
+            "Backend Block": false,
+            "Assembler": "Block 352\nvpblendd xmm0, xmm0, xmm0, 0x1d\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1d\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rax, 0x3",
+            "VtuneBlock": "352"
+        },
+        {
+            "BaseCpuTime": "0.024",
+            "GraalID": "50",
+            "Backend Block": false,
+            "Assembler": "Block 358\nvpblendd xmm0, xmm0, xmm0, 0x32\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rdx]\nmov r8d, dword ptr [rax+0x10]\nmov rcx, rsi\nand rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x32\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov ebp, r10d\nshl rbp, 0x3\ncmp rcx, 0x2\njz 0x7f6a529c17e5 <Block 403>",
+            "VtuneBlock": "358"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "73",
+            "Backend Block": false,
+            "Assembler": "Block 375\nvpblendd xmm0, xmm0, xmm0, 0x49\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, rbx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x49\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nnop\nnop\ndata16 nop\ncall 0x7f6a5233f6e0 <Shared Runtime resolve_opt_virtual_call_blob>",
+            "VtuneBlock": "375"
+        },
+        {
+            "BaseCpuTime": "0.028",
+            "GraalID": "30",
+            "Backend Block": false,
+            "Assembler": "Block 353\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rax+0x1c]\nmov r8d, dword ptr [r12+r10*8+0x8]\nmov edi, dword ptr [r12+r10*8+0xc]\nmov rdx, qword ptr [r15+0x1c8]\nlea rcx, ptr [rdx+0x18]\nmov rbp, 0x9d14cc98\nnop\ncmp rcx, qword ptr [r15+0x1d8]\njnbe 0x7f6a529c1812 <Block 405>",
+            "VtuneBlock": "353"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "52",
+            "Backend Block": false,
+            "Assembler": "Block 359\nvpblendd xmm0, xmm0, xmm0, 0x34\nvpblendd xmm0, xmm0, xmm0, 0x0\nshr rsi, 0xb\nand rsi, 0x7fffffff\nmov esi, esi\ntest esi, esi\njz 0x7f6a529c17e5 <Block 403>",
+            "VtuneBlock": "359"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "54",
+            "Backend Block": false,
+            "Assembler": "Block 403\nvpblendd xmm0, xmm0, xmm0, 0x36\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x18], rax\nmov rsi, rdx\ncall 0x7f6a524e76e0 <Stub<identity_hashcode>",
+            "VtuneBlock": "403"
+        },
+        {
+            "BaseCpuTime": "0.028",
+            "GraalID": "32",
+            "Backend Block": false,
+            "Assembler": "Block 354\nvpblendd xmm0, xmm0, xmm0, 0x20\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [r15+0x1c8], rcx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x20\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nprefetchw zmmword ptr [rdx+0xd8]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x20\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov qword ptr [rdx], 0x1\nmov dword ptr [rdx+0x8], 0x114cc98\nmov dword ptr [rdx+0xc], r12d\nmov qword ptr [rdx+0x10], r12",
+            "VtuneBlock": "354"
+        },
+        {
+            "BaseCpuTime": "0.019",
+            "GraalID": "10",
+            "Backend Block": false,
+            "Assembler": "Block 349\nvpblendd xmm0, xmm0, xmm0, 0xa\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [r15+rcx*1], r11\nlea eax, ptr [rcx+0x8]\nmov dword ptr [r15+0x7d0], eax",
+            "VtuneBlock": "349"
+        },
+        {
+            "BaseCpuTime": "0.019",
+            "GraalID": "33",
+            "Backend Block": false,
+            "Assembler": "Block 355\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov rcx, rsi\nshr rcx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [rdx+0x10], ecx\nmov ecx, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nlea r8, ptr [rcx+r8*1]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov r8, qword ptr [r8+0xe0]\nmov ecx, dword ptr [r8+0x14]\ncmp ecx, 0x20\njz 0x7f6a529c13ce <Block 378>",
+            "VtuneBlock": "355"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "56",
+            "Backend Block": false,
+            "Assembler": "Block 360\nvpblendd xmm0, xmm0, xmm0, 0x38\nvpblendd xmm0, xmm0, xmm0, 0x0\nimul r10d, esi, 0x9e3779b9\nmov ecx, r10d\nshr ecx, 0x10\nxor r10d, ecx\nand r10d, r8d\ncmp edi, r10d\njbe 0x7f6a529c1d70 <Block 451>",
+            "VtuneBlock": "360"
+        },
+        {
+            "BaseCpuTime": "0.023",
+            "GraalID": "57",
+            "Backend Block": false,
+            "Assembler": "Block 361\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov ecx, dword ptr [rbp+r10*4+0x10]\ntest ecx, ecx\njnz 0x7f6a529c1be5 <Block 436>",
+            "VtuneBlock": "361"
+        },
+        {
+            "BaseCpuTime": "0.029",
+            "GraalID": "59",
+            "Backend Block": false,
+            "Assembler": "Block 372\nvpblendd xmm0, xmm0, xmm0, 0x3b\nvpblendd xmm0, xmm0, xmm0, 0x0\nlea r10, ptr [rsp+0x60]\nmov r8d, dword ptr [r15+0x7d0]\nmov r9, qword ptr [r12+r9*8]\nmov eax, r8d\ncmp r11, qword ptr [r15+rax*1-0x8]\njnz 0x7f6a529c18dc <Block 412>",
+            "VtuneBlock": "372"
+        },
+        {
+            "BaseCpuTime": "0.028",
+            "GraalID": "0",
+            "Backend Block": false,
+            "Assembler": "Block 341\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov qword ptr [rsp+0x70], rbp\nmov qword ptr [rsp+0x38], rsi\nmov r10d, dword ptr [rsi+0x24]\ntest dword ptr [r12+r10*8], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f69f4084de0\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "341"
+        },
+        {
+            "BaseCpuTime": "0.265",
+            "GraalID": "1",
+            "Backend Block": false,
+            "Assembler": "Block 343\nvpblendd xmm0, xmm0, xmm0, 0x1\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x38]\nmov edx, dword ptr [rsi+0x1c]\ntest dword ptr [r12+rdx*8], eax\nmov r10d, 0x1\nlock xadd dword ptr [r12+rdx*8+0xc], r10d\nmovzx r11d, byte ptr [rsi+0x11]\nmov r9d, dword ptr [rsi+0x18]\ntest dword ptr [r12+r9*8], eax\nnop dword ptr [rax+rax*1]\ntest r11d, r11d\njnz 0x7f6a529c1d3c <Block 449>",
+            "VtuneBlock": "343"
+        },
+        {
+            "BaseCpuTime": "0.011",
+            "GraalID": "2",
+            "Backend Block": false,
+            "Assembler": "Block 344\nvpblendd xmm0, xmm0, xmm0, 0x2\nvpblendd xmm0, xmm0, xmm0, 0x0\nmovzx r10d, byte ptr [r12+r9*8+0xc]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nmov r11d, r9d\nshl r11, 0x3\nnop word ptr [rax+rax*1]\ntest r10d, r10d\njnz 0x7f6a529c1c2e <Block 439>",
+            "VtuneBlock": "344"
+        },
+        {
+            "BaseCpuTime": "0.012",
+            "GraalID": "3",
+            "Backend Block": false,
+            "Assembler": "Block 345\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10, qword ptr [r12+r9*8]\nlea r8, ptr [rsp+0x60]\nmov ecx, dword ptr [r15+0x7d0]\ntest r10b, 0x2\njnz 0x7f6a529c1847 <Block 407>",
+            "VtuneBlock": "345"
+        },
+        {
+            "BaseCpuTime": "0.014",
+            "GraalID": "4",
+            "Backend Block": false,
+            "Assembler": "Block 346\nvpblendd xmm0, xmm0, xmm0, 0x4\nvpblendd xmm0, xmm0, xmm0, 0x0\nnop dword ptr [rax+rax*1]\ncmp ecx, 0x820\njnb 0x7f6a529c1925 <Block 415>",
+            "VtuneBlock": "346"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "28005",
+            "Backend Block": true,
+            "Assembler": "Block 393\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov rax, r8\nshr rax, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nmov dword ptr [r12+r9*8+0x10], eax\nmov rax, r11\nxor rax, r8\nshr rax, 0x17\njz 0x7f6a529c175b <Block 398>",
+            "VtuneBlock": "393"
+        },
+        {
+            "BaseCpuTime": "0.032",
+            "GraalID": "58003",
+            "Backend Block": true,
+            "Assembler": "Block 366\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3a\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, rdx\nshr rsi, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x3a\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov dword ptr [rbp+r10*4+0x10], esi\nlea rsi, ptr [rbp+r10*4+0x10]\nmov r8, rsi\nxor r8, rdx\nshr r8, 0x17\njz 0x7f6a529c12ee <Block 371>",
+            "VtuneBlock": "366"
+        },
+        {
+            "BaseCpuTime": "0.279",
+            "GraalID": "7",
+            "Backend Block": false,
+            "Assembler": "Block 348\nvpblendd xmm0, xmm0, xmm0, 0x7\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rdx, r10\nor rdx, 0x1\nand r10, 0xfffffffffffffffe\nmov rbx, rax\nmov rax, rdx\nlock cmpxchg qword ptr [r11], r10\njnz 0x7f6a529c1992 <Block 420>",
+            "VtuneBlock": "348"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "28003",
+            "Backend Block": true,
+            "Assembler": "Block 389\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1c\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529c16cc <Block 393>",
+            "VtuneBlock": "389"
+        },
+        {
+            "BaseCpuTime": "0.020",
+            "GraalID": "60",
+            "Backend Block": false,
+            "Assembler": "Block 373\nvpblendd xmm0, xmm0, xmm0, 0x3c\nvpblendd xmm0, xmm0, xmm0, 0x0\nlea rsi, ptr [rax-0x8]\nmov dword ptr [r15+0x7d0], esi\ncmp r11, qword ptr [r15+rax*1-0x10]\njz 0x7f6a529c1377 <Block 375>",
+            "VtuneBlock": "373"
+        },
+        {
+            "BaseCpuTime": "0.245",
+            "GraalID": "62",
+            "Backend Block": false,
+            "Assembler": "Block 374\nvpblendd xmm0, xmm0, xmm0, 0x3e\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rax, r9\nand rax, 0xfffffffffffffffc\nor r9, 0x1\nlock cmpxchg qword ptr [r11], r9\njnz 0x7f6a529c1959 <Block 417>",
+            "VtuneBlock": "374"
+        },
+        {
+            "BaseCpuTime": "0.017",
+            "GraalID": "20",
+            "Backend Block": false,
+            "Assembler": "Block 350\nvpblendd xmm0, xmm0, xmm0, 0x14\nvpblendd xmm0, xmm0, xmm0, 0x0\nmovzx r10d, byte ptr [r12+r9*8+0xc]\nnop\ntest r10d, r10d\njnz 0x7f6a529c1cc7 <Block 445>",
+            "VtuneBlock": "350"
+        }
+    ],
+    "io::reactivex::rxjava3::internal::operators::observable::ObservableFromIterable$FromIterableDisposable::run": [
+        {
+            "BaseCpuTime": "0.002",
+            "GraalID": "22",
+            "Backend Block": false,
+            "VtuneBlock": "893"
+        },
+        {
+            "BaseCpuTime": "0.075",
+            "GraalID": "23",
+            "Backend Block": false,
+            "Assembler": "Block 898\nvpblendd xmm0, xmm0, xmm0, 0x17\nvpblendd xmm0, xmm0, xmm0, 0x0\nlfence\nrdtsc\nlfence\nmov r9, qword ptr [rsp+0x28]\nmov r10d, eax\nshl rdx, 0x20\nor r10, rdx\nxor rdx, rdx\ncmp r10, r9\nsub r10, r9\ncmovb r10, rdx\nmov r11, qword ptr [rip-0xb1e]\nlock add qword ptr [r11], r10\nmov rdx, rcx\ndata16 nop\njmp 0x7f6a529b6501 <Block 829>",
+            "VtuneBlock": "898"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "45",
+            "Backend Block": false,
+            "Assembler": "Block 904\nvpblendd xmm0, xmm0, xmm0, 0x2d\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r8d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2d\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea rdx, ptr [r8+rdx*1]\ncmp rdx, qword ptr [rip-0xc36]\ndata16 nop\njz 0x7f6a529b6f92 <Block 909>",
+            "VtuneBlock": "904"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "21004",
+            "Backend Block": true,
+            "Assembler": "Block 886\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov edx, dword ptr [rdi+rdx*4+0x10]\nmov dword ptr [r12+r11*8+0x14], edx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov ebx, edx\nshl rbx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov rbp, r10\nxor rbp, rbx\nshr rbp, 0x17\ndata16 nop\njz 0x7f6a529b6d96 <Block 892>",
+            "VtuneBlock": "886"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "46",
+            "Backend Block": false,
+            "Assembler": "Block 909\nvpblendd xmm0, xmm0, xmm0, 0x2e\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov edx, dword ptr [r12+r11*8+0x10]\ntest dword ptr [r12+rdx*8], eax\ncmp byte ptr [r12+r11*8+0xc], 0x0\njnz 0x7f6a529b73cd <Block 932>",
+            "VtuneBlock": "909"
+        },
+        {
+            "BaseCpuTime": "0.002",
+            "GraalID": "47",
+            "Backend Block": false,
+            "Assembler": "Block 910\nvpblendd xmm0, xmm0, xmm0, 0x2f\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov byte ptr [r12+r11*8+0xc], 0x1\nmov esi, dword ptr [r12+r11*8+0x18]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2f\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rdx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2f\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov r10d, esi\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2f\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov rsi, rdx\nmov rdx, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2f\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\ndata16 nop\nmov rax, 0x7f5974005970\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "910"
+        },
+        {
+            "BaseCpuTime": "0.034",
+            "GraalID": "49",
+            "Backend Block": false,
+            "Assembler": "Block 914\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r11d, dword ptr [r12+r11*8+0x14]\nmov byte ptr [r12+r11*8+0x19], r12b\nlock add dword ptr [rsp-0x40], 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r11, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r11\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x31\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nnop\ndata16 nop\ncall 0x7f6a5233f6e0 <Shared Runtime resolve_opt_virtual_call_blob>",
+            "VtuneBlock": "914"
+        },
+        {
+            "BaseCpuTime": "0.006",
+            "GraalID": "5003",
+            "Backend Block": true,
+            "Assembler": "Block 828\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov edx, dword ptr [r12+r11*8+0x10]\nmov dword ptr [r12+r11*8+0x10], r12d\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nshl rdx, 0x3",
+            "VtuneBlock": "828"
+        },
+        {
+            "BaseCpuTime": "0.004",
+            "GraalID": "14010",
+            "Backend Block": true,
+            "Assembler": "Block 866\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0xa\nsfence\nshl rcx, 0x3\ntest r8d, r8d\njnz 0x7f6a529b6e59 <Block 900>",
+            "VtuneBlock": "866"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "29",
+            "Backend Block": false,
+            "Assembler": "Block 900\nvpblendd xmm0, xmm0, xmm0, 0x1d\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rdx, rcx\njmp 0x7f6a529b6501 <Block 829>",
+            "VtuneBlock": "900"
+        },
+        {
+            "BaseCpuTime": "0.057",
+            "GraalID": "30004",
+            "Backend Block": true,
+            "Assembler": "Block 830\nnop dword ptr [rax+rax*1+0x3000370]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov rsi, qword ptr [rsp+0x20]\nmovzx r10d, byte ptr [rsi+0xc]\nmov r11d, dword ptr [rsi+0x14]\nmov edx, dword ptr [r12+r11*8+0x8]\ntest r10d, r10d\njnz 0x7f6a529b742a <Block 936>",
+            "VtuneBlock": "830"
+        },
+        {
+            "BaseCpuTime": "0.318",
+            "GraalID": "30",
+            "Backend Block": false,
+            "Assembler": "Block 829\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r10d, dword ptr [rsi+0x10]\ntest dword ptr [r12+r10*8], eax\ntest dword ptr [rdx], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov rsi, r10\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1e\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\ndata16 nop\nmov rax, 0x7f5974005920\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "829"
+        },
+        {
+            "BaseCpuTime": "0.027",
+            "GraalID": "31",
+            "Backend Block": false,
+            "Assembler": "Block 831\nvpblendd xmm0, xmm0, xmm0, 0x1f\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r8d, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x1f\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea rdx, ptr [r8+rdx*1]\ncmp rdx, qword ptr [rip-0x2e9]\njz 0x7f6a529b660e <Block 835>",
+            "VtuneBlock": "831"
+        },
+        {
+            "BaseCpuTime": "0.038",
+            "GraalID": "32",
+            "Backend Block": false,
+            "Assembler": "Block 835\nvpblendd xmm0, xmm0, xmm0, 0x20\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov edx, dword ptr [r12+r11*8+0x14]\ntest dword ptr [r12+rdx*8], eax\ncmp byte ptr [r12+r11*8+0xc], 0x0\njnz 0x7f6a529b74ef <Block 944>",
+            "VtuneBlock": "835"
+        },
+        {
+            "BaseCpuTime": "0.029",
+            "GraalID": "33",
+            "Backend Block": false,
+            "Assembler": "Block 836\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rdx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov r10d, r11d\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nmov rsi, rdx\nmov rdx, r10\nmov qword ptr [rsp+0x18], r10\nmov dword ptr [rsp+0x14], r11d\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\ndata16 nop\nmov rax, 0x7f5974005948\ncall 0x7f6a5233f9e0 <Shared Runtime resolve_virtual_call_blob>",
+            "VtuneBlock": "836"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "35",
+            "Backend Block": false,
+            "Assembler": "Block 838\nvpblendd xmm0, xmm0, xmm0, 0x23\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x20]\njmp 0x7f6a529b63c4 <Block 818>",
+            "VtuneBlock": "838"
+        },
+        {
+            "BaseCpuTime": "0.266",
+            "GraalID": "13",
+            "Backend Block": false,
+            "Assembler": "Block 845\nvpblendd xmm0, xmm0, xmm0, 0xd\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov edx, dword ptr [r12+r11*8+0x1c]\nmov eax, dword ptr [r12+rdx*8+0x20]\nmov edx, dword ptr [r12+rdx*8+0x14]\nmov r9d, dword ptr [r12+r11*8+0x14]\nmov r8d, dword ptr [r12+r9*8+0x18]\nmov ecx, dword ptr [r12+r9*8+0x10]\ncmp eax, dword ptr [r12+r11*8+0xc]\njnz 0x7f6a529b74b5 <Block 942>",
+            "VtuneBlock": "845"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "57",
+            "Backend Block": false,
+            "Assembler": "Block 912\nvpblendd xmm0, xmm0, xmm0, 0x39\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rbp, qword ptr [rsp+0x40]\nadd rsp, 0x48\ncmp rsp, qword ptr [r15+0x28]\njnbe 0x7f6a529b766b <Block 982>",
+            "VtuneBlock": "912"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "14",
+            "Backend Block": false,
+            "Assembler": "Block 846\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529b68b8 <Block 850>",
+            "VtuneBlock": "846"
+        },
+        {
+            "BaseCpuTime": "0.001",
+            "GraalID": "37",
+            "Backend Block": false,
+            "Assembler": "Block 843\nvpblendd xmm0, xmm0, xmm0, 0x25\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov r9d, dword ptr [r12+r11*8+0x18]\nmov r9d, dword ptr [r12+r9*8+0x10]\ndata16 nop\ncmp r9d, dword ptr [r12+r11*8+0xc]\njz 0x7f6a529b6ec5 <Block 903>",
+            "VtuneBlock": "843"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "17",
+            "Backend Block": false,
+            "Assembler": "Block 869\nvpblendd xmm0, xmm0, xmm0, 0x11\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov ebx, eax\ninc ebx\nmov dword ptr [r12+r11*8+0x10], ebx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x11\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\nnop dword ptr [rax+rax*1]\njz 0x7f6a529b6b55 <Block 873>",
+            "VtuneBlock": "869"
+        },
+        {
+            "BaseCpuTime": "0.045",
+            "GraalID": "18",
+            "Backend Block": false,
+            "Assembler": "Block 880\nvpblendd xmm0, xmm0, xmm0, 0x12\nvpblendd xmm0, xmm0, xmm0, 0x0\nlfence\nrdtsc\nlfence\nmov eax, eax\nmov edx, edx\nshl rdx, 0x20\nor rax, rdx\nmov qword ptr [rsp+0x28], rax\nmov edx, ebx\njmp 0x7f6a529b6dac <Block 894>",
+            "VtuneBlock": "880"
+        },
+        {
+            "BaseCpuTime": "0.039",
+            "GraalID": "1",
+            "Backend Block": false,
+            "Assembler": "Block 818\nvpblendd xmm0, xmm0, xmm0, 0x1\nvpblendd xmm0, xmm0, xmm0, 0x0\nmovzx r10d, byte ptr [rsi+0xc]\nmov r11d, dword ptr [rsi+0x14]\nmov edx, dword ptr [r12+r11*8+0x8]\ndata16 nop\ntest r10d, r10d\njnz 0x7f6a529b740d <Block 935>",
+            "VtuneBlock": "818"
+        },
+        {
+            "BaseCpuTime": "0.027",
+            "GraalID": "2",
+            "Backend Block": false,
+            "Assembler": "Block 819\nvpblendd xmm0, xmm0, xmm0, 0x2\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov eax, 0x9c000000\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x2\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nlea rdx, ptr [rax+rdx*1]\ncmp rdx, qword ptr [rip-0x11d]\ndata16 nop\njz 0x7f6a529b6445 <Block 823>",
+            "VtuneBlock": "819"
+        },
+        {
+            "BaseCpuTime": "0.008",
+            "GraalID": "3",
+            "Backend Block": false,
+            "Assembler": "Block 823\nvpblendd xmm0, xmm0, xmm0, 0x3\nvpblendd xmm0, xmm0, xmm0, 0x0\ncmp byte ptr [r12+r11*8+0xc], 0x0\njz 0x7f6a529b7529 <Block 946>",
+            "VtuneBlock": "823"
+        },
+        {
+            "BaseCpuTime": "0.013",
+            "GraalID": "33005",
+            "Backend Block": true,
+            "Assembler": "Block 837\nnop dword ptr [rax+rax*1+0x60004c0]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x21\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nmov r11d, dword ptr [rsp+0x14]\ncmp byte ptr [r12+r11*8+0xc], 0x0\njz 0x7f6a529b6ec5 <Block 903>",
+            "VtuneBlock": "837"
+        },
+        {
+            "BaseCpuTime": "0.016",
+            "GraalID": "5",
+            "Backend Block": false,
+            "Assembler": "Block 824\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov byte ptr [r12+r11*8+0xc], r12b\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x5\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529b64c3 <Block 828>",
+            "VtuneBlock": "824"
+        },
+        {
+            "BaseCpuTime": "0.009",
+            "GraalID": "6",
+            "Backend Block": false,
+            "Assembler": "Block 839\nvpblendd xmm0, xmm0, xmm0, 0x6\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov edx, dword ptr [r12+r11*8+0x18]\nmov eax, dword ptr [r12+rdx*8+0x14]\nmov r9d, dword ptr [r12+rdx*8+0xc]\nmov edx, dword ptr [r12+rdx*8+0x10]\nmov r8d, dword ptr [r12+rax*8+0xc]\nmov ecx, dword ptr [r12+r11*8+0xc]\nnop dword ptr [rax]\ncmp r8d, ecx\njbe 0x7f6a529b7546 <Block 947>",
+            "VtuneBlock": "839"
+        },
+        {
+            "BaseCpuTime": "0.002",
+            "GraalID": "7",
+            "Backend Block": false,
+            "VtuneBlock": "840"
+        },
+        {
+            "BaseCpuTime": "0.004",
+            "GraalID": "14005",
+            "Backend Block": true,
+            "Assembler": "Block 850\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov dword ptr [r12+r11*8+0x18], r9d\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nshl r9, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x4\nsfence\nmov r10d, r11d\nshl r10, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x5\nsfence\nmov rax, r10\nxor rax, r9\nshr rax, 0x17\njz 0x7f6a529b6989 <Block 856>",
+            "VtuneBlock": "850"
+        },
+        {
+            "BaseCpuTime": "0.005",
+            "GraalID": "9",
+            "Backend Block": false,
+            "Assembler": "Block 842\nvpblendd xmm0, xmm0, xmm0, 0x9\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov edx, ecx\ninc edx\nmov dword ptr [r12+r11*8+0xc], edx\nmov dword ptr [r12+r11*8+0x10], ecx\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x9\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\nshl rax, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x9\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x2\nsfence\nmov edx, dword ptr [rax+rcx*4+0x10]\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x9\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x3\nsfence\nshl rdx, 0x3\njmp 0x7f6a529b6501 <Block 829>",
+            "VtuneBlock": "842"
+        },
+        {
+            "BaseCpuTime": "0.003",
+            "GraalID": "14009",
+            "Backend Block": true,
+            "Assembler": "Block 860\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x7\nsfence\nmov dword ptr [r12+r11*8+0x14], r8d\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x8\nsfence\nmov ebx, r8d\nshl rbx, 0x3\nsfence\nvpblendd xmm0, xmm0, xmm0, 0xe\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x9\nsfence\nmov rax, r10\nxor rax, rbx\nshr rax, 0x17\njz 0x7f6a529b6a8c <Block 866>",
+            "VtuneBlock": "860"
+        },
+        {
+            "BaseCpuTime": "0.257",
+            "GraalID": "42",
+            "Backend Block": false,
+            "Assembler": "Block 903\nvpblendd xmm0, xmm0, xmm0, 0x2a\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x20]\nvpblendd xmm0, xmm0, xmm0, 0x2c\nvpblendd xmm0, xmm0, xmm0, 0x0\nlfence\nrdtsc\nlfence\nmov r9, qword ptr [rsp+0x30]\nmov r10d, eax\nshl rdx, 0x20\nor r10, rdx\nxor rdx, rdx\ncmp r10, r9\nsub r10, r9\ncmovb r10, rdx\nmov r11, qword ptr [rip-0xbed]\nlock add qword ptr [r11], r10\nmovzx r10d, byte ptr [rsi+0xc]\nmov r11d, dword ptr [rsi+0x10]\nmov edx, dword ptr [r12+r11*8+0x8]\nnop\ntest r10d, r10d\njnz 0x7f6a529b7498 <Block 941>",
+            "VtuneBlock": "903"
+        },
+        {
+            "BaseCpuTime": "0.002",
+            "GraalID": "43",
+            "Backend Block": false,
+            "Assembler": "Block 897\nvpblendd xmm0, xmm0, xmm0, 0x2b\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov rsi, qword ptr [rsp+0x20]\njmp 0x7f6a529b63c4 <Block 818>",
+            "VtuneBlock": "897"
+        },
+        {
+            "BaseCpuTime": "0.007",
+            "GraalID": "21",
+            "Backend Block": false,
+            "Assembler": "Block 882\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nmov eax, edx\ninc eax\nmov dword ptr [r12+r11*8+0x10], eax\nsfence\nvpblendd xmm0, xmm0, xmm0, 0x15\nvpblendd xmm0, xmm0, xmm0, 0x0\nvpblendd xmm0, xmm0, xmm0, 0x1\nsfence\ncmp byte ptr [r15+0x48], 0x0\njz 0x7f6a529b6cdc <Block 886>",
+            "VtuneBlock": "882"
+        }
+    ]
+}

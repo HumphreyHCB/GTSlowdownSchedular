@@ -1,0 +1,18 @@
+{"deltablue.AbstractConstraint.satisfy": {
+  "8 (Vtune Block 9)": 11,
+  "Backend Blocks": {
+    "9001 (Vtune Block 12)": 4,
+    "12004 (Vtune Block 24)": 3,
+    "12003 (Vtune Block 19)": 2
+  },
+  "9 (Vtune Block 10)": 6,
+  "11 (Vtune Block 13)": 31,
+  "15 (Vtune Block 27)": 5,
+  "14 (Vtune Block 26)": 38,
+  "6 (Vtune Block 8)": 3,
+  "12 (Vtune Block 15)": 7,
+  "10 (Vtune Block 29)": 1,
+  "4 (Vtune Block 6)": 7,
+  "0 (Vtune Block 3)": 25,
+  "5 (Vtune Block 7)": 1
+}}

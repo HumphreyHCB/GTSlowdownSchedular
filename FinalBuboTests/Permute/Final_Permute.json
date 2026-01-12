@@ -1,0 +1,20 @@
+{"Permute.permute": {
+    "10 (Vtune Block 113)": 14,
+    "8 (Vtune Block 111)": 5,
+    "5 (Vtune Block 108)": 9,
+    "2 (Vtune Block 105)": 8,
+    "11 (Vtune Block 115)": 1,
+    "14 (Vtune Block 103)": 5,
+    "Backend Blocks": {
+        "2002 (Vtune Block 106)": 7,
+        "10002 (Vtune Block 114)": 9,
+        "5004 (Vtune Block 109)": 9
+    },
+    "65535 (Vtune Block 101)": 7,
+    "12 (Vtune Block 116)": 17,
+    "0 (Vtune Block 102)": 6,
+    "6 (Vtune Block 110)": 7,
+    "7 (Vtune Block 117)": 1,
+    "4 (Vtune Block 107)": 1,
+    "9 (Vtune Block 112)": 1
+}}

@@ -1,0 +1,131 @@
+{
+    "LoopBenchmarks.sieveLoop": {
+        "43 (Vtune Block 74)": 9,
+        "24 (Vtune Block 66)": 1,
+        "45 (Vtune Block 76)": 87,
+        "15 (Vtune Block 81)": 109,
+        "14 (Vtune Block 82)": 1,
+        "42 (Vtune Block 73)": 1,
+        "27 (Vtune Block 64)": 3,
+        "44 (Vtune Block 75)": 5,
+        "28 (Vtune Block 62)": 1,
+        "29 (Vtune Block 63)": 12
+    },
+    "LoopBenchmarks.crc32Loop": {
+        "37 (Vtune Block 93)": 51,
+        "43 (Vtune Block 96)": 41,
+        "35 (Vtune Block 84)": 23,
+        "32 (Vtune Block 83)": 41,
+        "38 (Vtune Block 85)": 29,
+        "34 (Vtune Block 92)": 51,
+        "53 (Vtune Block 90)": 23,
+        "46 (Vtune Block 98)": 51,
+        "44 (Vtune Block 87)": 35,
+        "40 (Vtune Block 94)": 43,
+        "47 (Vtune Block 88)": 25,
+        "55 (Vtune Block 97)": 43,
+        "50 (Vtune Block 89)": 27,
+        "31 (Vtune Block 82)": 11,
+        "54 (Vtune Block 91)": 27,
+        "52 (Vtune Block 95)": 49,
+        "49 (Vtune Block 99)": 43,
+        "41 (Vtune Block 86)": 19
+    },
+    "LoopBenchmarks.matrixMultiplyLoop": {
+        "26 (Vtune Block 180)": 1,
+        "25 (Vtune Block 182)": 2,
+        "27 (Vtune Block 181)": 25
+    },
+    "LoopBenchmarks.histogramLoop": {
+        "19 (Vtune Block 62)": 1,
+        "23 (Vtune Block 66)": 1,
+        "21 (Vtune Block 64)": 8,
+        "22 (Vtune Block 65)": 12,
+        "24 (Vtune Block 67)": 23,
+        "20 (Vtune Block 63)": 23
+    },
+    "LoopBenchmarks.monteCarloPiLoop": {
+        "6 (Vtune Block 30)": 11,
+        "3 (Vtune Block 28)": 3,
+        "4 (Vtune Block 29)": 96
+    },
+    "LoopBenchmarks.raySphereLoop": {
+        "43 (Vtune Block 176)": 1,
+        "47 (Vtune Block 171)": 5,
+        "50 (Vtune Block 174)": 48,
+        "52 (Vtune Block 175)": 27,
+        "46 (Vtune Block 170)": 1,
+        "45 (Vtune Block 169)": 4,
+        "44 (Vtune Block 168)": 3,
+        "49 (Vtune Block 173)": 1
+    },
+    "LoopBenchmarks.bubbleSortLoop": {
+        "16 (Vtune Block 77)": 20,
+        "1 (Vtune Block 81)": 1,
+        "5 (Vtune Block 72)": 1,
+        "17 (Vtune Block 78)": 13
+    },
+    "LoopBenchmarks.editDistanceLoop": {
+        "50 (Vtune Block 184)": 1,
+        "37 (Vtune Block 177)": 1,
+        "8 (Vtune Block 154)": 1,
+        "46 (Vtune Block 203)": 5,
+        "31 (Vtune Block 171)": 0,
+        "76 (Vtune Block 201)": 4,
+        "59 (Vtune Block 188)": 3,
+        "41 (Vtune Block 179)": 1,
+        "65535 (Vtune Block 149)": 8,
+        "77 (Vtune Block 197)": 1,
+        "74 (Vtune Block 199)": 1,
+        "78 (Vtune Block 198)": 12,
+        "75 (Vtune Block 196)": 18,
+        "13 (Vtune Block 157)": 1,
+        "55 (Vtune Block 186)": 1,
+        "0 (Vtune Block 150)": 1,
+        "28 (Vtune Block 168)": 1,
+        "25 (Vtune Block 166)": 17,
+        "47 (Vtune Block 182)": 1,
+        "2 (Vtune Block 151)": 2,
+        "53 (Vtune Block 185)": 5,
+        "34 (Vtune Block 174)": 1,
+        "33 (Vtune Block 175)": 2,
+        "10 (Vtune Block 155)": 7,
+        "71 (Vtune Block 194)": 1,
+        "65 (Vtune Block 191)": 5,
+        "17 (Vtune Block 160)": 75,
+        "67 (Vtune Block 192)": 1,
+        "22 (Vtune Block 163)": 3
+    },
+    "LoopBenchmarks.base64EncodeLoop": {
+        "50 (Vtune Block 163)": 1,
+        "51 (Vtune Block 162)": 71,
+        "48 (Vtune Block 159)": 1
+    },
+    "LoopBenchmarks.parseJsonLoop": {
+        "25 (Vtune Block 584)": 2,
+        "22 (Vtune Block 581)": 3,
+        "23 (Vtune Block 583)": 1,
+        "24 (Vtune Block 582)": 5,
+        "17 (Vtune Block 580)": 3,
+        "20 (Vtune Block 575)": 4,
+        "26 (Vtune Block 578)": 5,
+        "27 (Vtune Block 579)": 1,
+        "16 (Vtune Block 573)": 6,
+        "15 (Vtune Block 572)": 4,
+        "18 (Vtune Block 574)": 3,
+        "21 (Vtune Block 576)": 5
+    },
+    "LoopBenchmarks.blurLoop": {
+        "24 (Vtune Block 218)": 1,
+        "57 (Vtune Block 235)": 1,
+        "70 (Vtune Block 242)": 15,
+        "73 (Vtune Block 245)": 53,
+        "62 (Vtune Block 238)": 1,
+        "76 (Vtune Block 248)": 1,
+        "42 (Vtune Block 227)": 1,
+        "49 (Vtune Block 231)": 1,
+        "72 (Vtune Block 246)": 3,
+        "20 (Vtune Block 216)": 1,
+        "58 (Vtune Block 236)": 1
+    }
+}
