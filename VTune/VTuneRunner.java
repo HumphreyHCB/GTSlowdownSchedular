@@ -56,31 +56,50 @@ public class VTuneRunner {
         // Add other fixed JVM options
         command.add("-Djdk.graal.IsolatedLoopHeaderAlignment=0");
         command.add("-Djdk.graal.LoopHeaderAlignment=0");
-        command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
+        //command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
 
         command.add("-XX:+UseJVMCICompiler");
         command.add("-XX:+UseJVMCINativeLibrary");
         command.add("-XX:-TieredCompilation");
         command.add("-XX:-BackgroundCompilation");
 
-        //command.add("-Djdk.graal.MixGTSlowdown=false");
 
+        command.add("-Djdk.graal.BuboLIRPhase=true");
         if (compilerReplay) {
+            
+
             command.add("-Djdk.graal.StrictProfiles=false");
             command.add("-Djdk.graal.LoadProfiles=/home/hb478/repos/GTSlowdownSchedular/Data/"+ RunID.substring(0, 19) + "_CompilerReplay");
         }
 
 
+        
+        if (AWFYBenchmarksLookUp.isRenaissanceBenchmark(benchmark)) {
+                // Renaissance: ignore `iterations`; use extra_args as repetitions (-r)
 
-        command.add("-cp");
-        command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
-        // Add benchmark and inner benchmark amount
-        command.add("Harness");
-        command.add(benchmark); // e.g. "Queens"
-        command.add(iterations+ ""); // e.g. "Queens"
-        command.add(String.valueOf(innerBenchmarkAmount)); // e.g. "5000"
+            command.add("-Xms12G");
+            command.add("-Xmx12G");
 
-        //System.out.println(command.toString());
+            command.add("-jar");
+            command.add("/home/hb478/repos/renaissance/renaissance-gpl-0.16.1.jar");
+
+            command.add("-r");
+            command.add(String.valueOf(innerBenchmarkAmount));
+            command.add(benchmark);
+        }
+        else {
+                command.add("-cp");
+                command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
+                command.add("Harness");
+                command.add(benchmark); // e.g. "Queens"
+                command.add(iterations+ ""); 
+                command.add(String.valueOf(innerBenchmarkAmount)); // e.g. "5000"
+            
+        }
+
+        //command.toString();
+
+        System.out.println("Running: " + command.toString());
         // Run the command using ProcessBuilder
         ProcessBuilder processBuilder = new ProcessBuilder(command);
         processBuilder.redirectErrorStream(true);

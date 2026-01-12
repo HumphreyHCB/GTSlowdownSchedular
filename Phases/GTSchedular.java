@@ -43,7 +43,7 @@ public class GTSchedular {
 
     /// this method should invoke both the marker and divining phase
     public void schedule() {
-
+       System.out.println("GTSchedularTimeLogger,Start,"+ benchmark+ " " + System.currentTimeMillis());
        if (compilerReplay) {
            CompilerReplayRunner.run(benchmark, iterations, ID);
         }
@@ -72,14 +72,16 @@ public class GTSchedular {
 
 
         MarkerRunner.run(benchmark, iterations, ID, compilerReplay);
-        // ID = "2025_01_07_22_40_12";
-        //DiviningRunner.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
-        //DiviningRunnerMultiplexed.run(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+
         DiviningRunnerMultiplexed.runComplex(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
-        //DiviningRunnerMultiplexed.runComplexJumpStart(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+        
+        
+       //  DiviningRunnerMultiplexed.runComplexJumpStart(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
-        mergeFinalJsonFiles(benchmark, ID);
+       mergeFinalJsonFiles(benchmark, ID);
+
+        System.out.println("GTSchedularTimeLogger,End,"+ benchmark+ " " + System.currentTimeMillis());
 
     }
 

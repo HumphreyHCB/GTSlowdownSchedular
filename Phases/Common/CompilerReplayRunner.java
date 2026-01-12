@@ -59,18 +59,20 @@ public class CompilerReplayRunner {
         // Add other fixed JVM options
         command.add("-Djdk.graal.IsolatedLoopHeaderAlignment=0");
         command.add("-Djdk.graal.LoopHeaderAlignment=0");
+        //command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
 
         command.add("-XX:+UseJVMCICompiler");
         command.add("-XX:+UseJVMCINativeLibrary");
         command.add("-XX:-TieredCompilation");
         command.add("-XX:-BackgroundCompilation");
-        command.add("-Djdk.graal.DisableCodeEntryAlignment=true");
+       
 
         if (benchmark.equals("Havlak") || benchmark.equals("DeltaBlue")) {
             command.add("-Xms8g");
             command.add("-Xmx8g");
     
         }
+
 
         //command.add("-XX:CodeEntryAlignment=64");
         //command.add("-XX:OptoLoopAlignment=16");
@@ -83,15 +85,30 @@ public class CompilerReplayRunner {
         //command.add("-Djdk.graal.LoadProfiles=/home/hb478/repos/GTSlowdownSchedular/SaveProfiles");
 
 
-        command.add("-cp");
-        command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
-        // Add benchmark and inner benchmark amount
-        command.add("Harness");
-        command.add(benchmark); // e.g. "Queens"
-        command.add(iterations+ ""); // e.g. "Queens"
-        command.add(String.valueOf(AWFYBenchmarksLookUp.getExtraArgs(benchmark))); // e.g. "5000"
+        if (AWFYBenchmarksLookUp.isRenaissanceBenchmark(benchmark)) {
+                // Renaissance: ignore `iterations`; use extra_args as repetitions (-r)
+            command.add("-Xms12G");
+            command.add("-Xmx12G");
+            command.add("-jar");
+            command.add("/home/hb478/repos/renaissance/renaissance-gpl-0.16.1.jar");
+
+            command.add("-r");
+            command.add(""+AWFYBenchmarksLookUp.getExtraArgs(benchmark));
+            command.add(benchmark);
+        }
+        else {
+                command.add("-cp");
+                command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
+                // Add benchmark and inner benchmark amount
+                command.add("Harness");
+                command.add(benchmark); // e.g. "Queens"
+                command.add(iterations+ ""); // e.g. "Queens"
+                command.add(""+AWFYBenchmarksLookUp.getExtraArgs(benchmark)); // e.g. "5000"
+            
+        }
 
         // Run the command using ProcessBuilder
+        System.out.println("Running: " + command.toString());
         ProcessBuilder processBuilder = new ProcessBuilder(command);
         processBuilder.redirectErrorStream(true);
 

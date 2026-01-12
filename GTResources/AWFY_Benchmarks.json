@@ -17,7 +17,7 @@
             "SingleFile": false
         },
         "Havlak": {
-            "extra_args": 15000,
+            "extra_args": 1500,
             "SingleFile": false
         },
         "Bounce": {
@@ -55,6 +55,20 @@
         "Towers": {
             "extra_args": 2500,
             "SingleFile": true
+        },
+        "LoopBenchmarks": {
+            "extra_args": 1,
+            "SingleFile": true
         }
-    }
+    },
+  "Renaissance Benchmarks": {
+    "scrabble": { "extra_args": 55, "SingleFile": false },
+    "rx-scrabble": { "extra_args": 78, "SingleFile": false },
+    "mnemonics": { "extra_args": 10, "SingleFile": false },
+    "par-mnemonics": { "extra_args": 12, "SingleFile": false },
+    "future-genetic": { "extra_args": 18, "SingleFile": false },
+    "scala-stm-bench7": { "extra_args": 18, "SingleFile": false },
+    "philosophers": { "extra_args": 12, "SingleFile": false },
+    "scala-doku": { "extra_args": 11, "SingleFile": false }
+  }
 }

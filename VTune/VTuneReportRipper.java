@@ -21,24 +21,24 @@ public class VTuneReportRipper {
         );
 
         String result = processAssemblerLines(inputLines);
-        System.out.println(result);
+        //System.out.println(result);
 
-        // String filePath = "Data/2024_10_29_14_48_26_MarkerRun/Queens__placeQueenCopy.txt";
-        // VTuneReportRipper ripper = new VTuneReportRipper();
-        // Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
+         String filePath = "Data/2025_09_30_18_30_13_NormalRun/Queens__placeQueen.txt";
+         VTuneReportRipper ripper = new VTuneReportRipper();
+         Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
 
         // // Output blocks and their Graal ID for verification
-        // for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
-        //     System.out.println("Block " + entry.getKey() + ":");
-        //     System.out.println("CPU Time: " + entry.getValue().getCpuTime());
-        //     if (entry.getValue().getGraalID() != null) {
-        //         System.out.println("Graal ID: " + entry.getValue().getGraalID());
-        //     }
-        //     for (String line : entry.getValue().getLines()) {
-        //         System.out.println(line);
-        //     }
-        //     System.out.println();
-        // }
+        for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
+            System.out.println("Block " + entry.getKey() + ":");
+            System.out.println("CPU Time: " + entry.getValue().getCpuTime());
+            if (entry.getValue().getGraalID() != null) {
+                System.out.println("Graal ID: " + entry.getValue().getGraalID());
+            }
+            for (String line : entry.getValue().getLines()) {
+                System.out.println(line);
+            }
+            System.out.println();
+        }
     }
 
     // Method to read and process the text file into blocks
