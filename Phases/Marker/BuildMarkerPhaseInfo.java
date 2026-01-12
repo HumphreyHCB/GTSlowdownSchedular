@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * BuildMarkerPhaseInfo
@@ -140,6 +142,9 @@ public class BuildMarkerPhaseInfo {
                 // Add updated blocks to the new JSON under the method name
                 updatedMarkerRunJson.put(method, updatedBlocks);
             }
+
+            // Nasty Patch
+            filterOutEDeadBlocks(updatedMarkerRunJson);
     
             // Write updated JSON to a new file
             String outputPath = String.format("Data/%s_MarkerRun/MarkerPhaseInfo.json", markerRunId);
@@ -154,6 +159,53 @@ public class BuildMarkerPhaseInfo {
             return false;
         }
     }
+
+    private static void filterOutEDeadBlocks(JSONObject updatedMarkerRunJson) {
+        for (String method : updatedMarkerRunJson.keySet()) {
+            JSONArray blocks = updatedMarkerRunJson.getJSONArray(method);
+
+            // Map to keep the block with the largest VtuneBlock per GraalID
+            Map<String, JSONObject> graalIdToBestBlock = new HashMap<>();
+
+            for (int i = 0; i < blocks.length(); i++) {
+                JSONObject block = blocks.getJSONObject(i);
+                String graalId = block.optString("GraalID");
+                String vtuneBlockStr = block.optString("VtuneBlock");
+
+                int vtuneBlock = -1;
+                try {
+                    vtuneBlock = Integer.parseInt(vtuneBlockStr);
+                } catch (NumberFormatException e) {
+                    // Ignore this block if VtuneBlock is not numeric
+                    continue;
+                }
+
+                if (!graalIdToBestBlock.containsKey(graalId)) {
+                    graalIdToBestBlock.put(graalId, block);
+                } else {
+                    JSONObject existing = graalIdToBestBlock.get(graalId);
+                    try {
+                        int existingVtune = Integer.parseInt(existing.optString("VtuneBlock"));
+                        if (vtuneBlock > existingVtune) {
+                            graalIdToBestBlock.put(graalId, block);
+                        }
+                    } catch (NumberFormatException e) {
+                        // Replace the existing block if its VtuneBlock is not valid
+                        graalIdToBestBlock.put(graalId, block);
+                    }
+                }
+            }
+
+            // Rebuild the block list from filtered entries
+            JSONArray filteredBlocks = new JSONArray();
+            for (JSONObject bestBlock : graalIdToBestBlock.values()) {
+                filteredBlocks.put(bestBlock);
+            }
+
+            updatedMarkerRunJson.put(method, filteredBlocks);
+        }
+    }
+
 
     private static double haveSameMethodsAndBlocks(JSONObject normalRunJson, JSONObject markerRunJson) {
         boolean match = true;

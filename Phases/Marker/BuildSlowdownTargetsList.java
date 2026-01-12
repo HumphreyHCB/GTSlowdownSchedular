@@ -48,6 +48,11 @@ public class BuildSlowdownTargetsList {
                         JSONObject blockInfo = new JSONObject();
                         blockInfo.put("VtuneBlock", entry.getKey().replaceAll("Block ", ""));
                         String graalID = blockData.getGraalID();
+
+                        if (blockData.getFormatedAsm().contains("rdtsc")) {
+                            continue;
+                        }
+
                         if (graalID.contains("Backend Block")) {
                             blockInfo.put("GraalID", graalID.replace("Backend Block ", ""));
                             blockInfo.put("Backend Block", true);
