@@ -63,8 +63,10 @@ public class VTuneRunner {
         command.add("-XX:-TieredCompilation");
         command.add("-XX:-BackgroundCompilation");
 
+        if(GTSchedular.EnableBuboLIRPhase){
+            command.add("-Djdk.graal.BuboLIRPhase=true");
+        }
 
-        command.add("-Djdk.graal.BuboLIRPhase=true");
         if (compilerReplay) {
             
 

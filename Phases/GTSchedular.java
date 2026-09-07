@@ -27,14 +27,17 @@ public class GTSchedular {
     public String ID;
     public double slowdownAmount;
 
+    public static Boolean EnableBuboLIRPhase = false;
+
 
     // Parameterized constructor
-    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay, double slowdownAmount) {
+    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay, double slowdownAmount, Boolean enableBuboLIRPhase) {
         this.benchmark = benchmarkString;
         this.iterations = iterations;
         this.lowFootPrint = lowFootPrint;
         this.compilerReplay = compilerReplay;
         this.slowdownAmount = slowdownAmount;
+        EnableBuboLIRPhase = enableBuboLIRPhase;
         ID = generateId();
 
         schedule();

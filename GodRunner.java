@@ -6,16 +6,19 @@ public class GodRunner {
         //String benchmark = "Sieve";
         int iterations = 500;
 
-        //new GTSchedular("LoopBenchmarks", 12000, true, true, 2);
+       // new GTSchedular("LoopBenchmarks", 12000, true, true, 2);
 
         //new GTSchedular("scrabble", iterations, true, true, 1.5);
         //new GTSchedular("Mandelbrot", iterations, true, true, 2);
         //new GTSchedular("Mandelbrot", iterations, true, true, 2.5);
         //new GTSchedular("Mandelbrot", iterations, true, true, 3);
+        new GTSchedular("Bounce", iterations, true, true, 2, false);
         //AWFY(2);
-        
-        buboAWFY(2);
+        //new GTSchedular("Mandelbrot", iterations, true, true, 2);
+        //buboAWFY(2);
         //Renaissance(2);
+
+        //new GTSchedular("InnerLoopStepBenchmark", iterations, true, true, 2);
         
         
 
@@ -24,21 +27,21 @@ public class GodRunner {
     public static void AWFY(double slowdownAmount) {
         int iterations = 500;
 
-        new GTSchedular("Mandelbrot", iterations, true, true, slowdownAmount);
+        new GTSchedular("Mandelbrot", iterations, true, true, slowdownAmount, false);
        //new GTSchedular("Towers", iterations, true, true, slowdownAmount);
-       new GTSchedular("Permute", iterations, true, true, slowdownAmount);
-       new GTSchedular("NBody", iterations, true, true, slowdownAmount);
-       new GTSchedular("Bounce", iterations, true, true, slowdownAmount);
-       new GTSchedular("Richards", iterations, true, true, slowdownAmount);
+       new GTSchedular("Permute", iterations, true, true, slowdownAmount, false);
+       new GTSchedular("NBody", iterations, true, true, slowdownAmount, false);
+       new GTSchedular("Bounce", iterations, true, true, slowdownAmount, false);
+       new GTSchedular("Richards", iterations, true, true, slowdownAmount, false);
         
         //new GTSchedular("Storage", iterations, true, false, slowdownAmount);
-        new GTSchedular("List", iterations, true, true, slowdownAmount);
-        new GTSchedular("Sieve", iterations, true, true, slowdownAmount);
+        new GTSchedular("List", iterations, true, true, slowdownAmount, false);
+        new GTSchedular("Sieve", iterations, true, true, slowdownAmount, false);
         
-        new GTSchedular("Queens", iterations, true, true, slowdownAmount);
-        new GTSchedular("CD", iterations, true, true, slowdownAmount);
-        new GTSchedular("Json", iterations, true, true, slowdownAmount);
-        new GTSchedular("Havlak", iterations, true, true, slowdownAmount);
+        new GTSchedular("Queens", iterations, true, true, slowdownAmount, false);
+        new GTSchedular("CD", iterations, true, true, slowdownAmount, false);
+        new GTSchedular("Json", iterations, true, true, slowdownAmount, false);
+        new GTSchedular("Havlak", iterations, true, true, slowdownAmount, false);
         //new GTSchedular("DeltaBlue", iterations, true, true, slowdownAmount); // still crashes
 
     }
@@ -46,14 +49,14 @@ public class GodRunner {
         public static void buboAWFY(double slowdownAmount) {
         int iterations = 500;
 
-       new GTSchedular("Mandelbrot", iterations, true, true, slowdownAmount);
-       new GTSchedular("LoopBenchmarks", 12000, true, true, 2);
-       new GTSchedular("NBody", iterations, true, true, slowdownAmount);
-       new GTSchedular("Bounce", iterations, true, true, slowdownAmount);
-       new GTSchedular("Sieve", iterations, true, true, slowdownAmount);
+       new GTSchedular("Mandelbrot", iterations, true, true, slowdownAmount, true);
+       new GTSchedular("LoopBenchmarks", 12000, true, true, 2, true);
+       new GTSchedular("NBody", iterations, true, true, slowdownAmount, true);
+       new GTSchedular("Bounce", iterations, true, true, slowdownAmount, true);
+       new GTSchedular("Sieve", iterations, true, true, slowdownAmount, true);
         
-        //new GTSchedular("CD", iterations, true, true, slowdownAmount);
-        //new GTSchedular("Json", iterations, true, true, slowdownAmount);
+        new GTSchedular("CD", iterations, true, true, slowdownAmount, true);
+        new GTSchedular("Json", iterations, true, true, slowdownAmount, true);
 
 
     }
@@ -64,12 +67,12 @@ public class GodRunner {
         // - So this value can be anything; keep it consistent with AWFY for the constructor signature.
         int iterations = 1;
         
-         new GTSchedular("mnemonics", iterations, true, true, slowdownAmount);
-         new GTSchedular("scrabble", iterations, true, true, slowdownAmount);
-         new GTSchedular("rx-scrabble", iterations, true, true, slowdownAmount);
-         new GTSchedular("par-mnemonics", iterations, true, true, slowdownAmount);
+         new GTSchedular("mnemonics", iterations, true, true, slowdownAmount, false);
+         new GTSchedular("scrabble", iterations, true, true, slowdownAmount, false);
+         new GTSchedular("rx-scrabble", iterations, true, true, slowdownAmount, false);
+         new GTSchedular("par-mnemonics", iterations, true, true, slowdownAmount, false);
 
-        new GTSchedular("scala-stm-bench7", iterations, true, true, slowdownAmount); // added needs a bubo run
+        new GTSchedular("scala-stm-bench7", iterations, true, true, slowdownAmount, false); // added needs a bubo run
         //new GTSchedular("scala-doku", iterations, true, true, slowdownAmount);
 
         // Broken off by some error new GTSchedular("future-genetic", iterations, true, true, slowdownAmount);
