@@ -1,4 +1,5 @@
 {"NBody.innerBenchmarkLoop": {
-    "19 (Vtune Block 331)": 1,
-    "20 (Vtune Block 330)": 1071
+    "19 (Vtune Block 112)": 1,
+    "20 (Vtune Block 111)": 1074,
+    "8 (Vtune Block 78)": 1
 }}
