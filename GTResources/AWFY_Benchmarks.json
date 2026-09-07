@@ -58,7 +58,7 @@
         },
         "LoopBenchmarks": {
             "extra_args": 1,
-            "SingleFile": true
+            "SingleFile": false
         }
     },
   "Renaissance Benchmarks": {
