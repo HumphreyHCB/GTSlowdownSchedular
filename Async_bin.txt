@@ -1,0 +1,1139 @@
+--- Execution profile ---
+Total samples       : 6449
+
+--- 57820404556 ns (89.66%), 5782 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] Mandelbrot.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 3600066259 ns (5.58%), 360 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] Mandelbrot.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 2630199028 ns (4.08%), 263 samples
+  [ 0] Mandelbrot.mandelbrot
+  [ 1] Mandelbrot.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 119998089 ns (0.19%), 12 samples
+  [ 0] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 1] my.custom.BuboAgentCompilerMarkers.MarkerDelimiter
+  [ 2] my.custom.BuboAgentCompilerMarkers.Marker0
+  [ 3] my.custom.BuboAgentCompilerMarkers.Marker2
+  [ 4] my.custom.BuboAgentCompilerMarkers.Marker1
+  [ 5] Mandelbrot.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 20023584 ns (0.03%), 2 samples
+  [ 0] Mandelbrot.mandelbrot
+  [ 1] Mandelbrot.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 10011184 ns (0.02%), 1 sample
+  [ 0] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeWorkList$IterativeNodeWorkList::add
+  [ 1] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeWorkList::addAll
+  [ 2] LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.IncrementalCanonicalizerPhase::IncrementalCanonicalizerPhase
+  [ 3] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.CanonicalizerPhase::applyIncremental
+  [ 4] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.IncrementalCanonicalizerPhase$Apply::close
+  [ 5] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [ 6] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.phases.BaseTier::run
+  [ 7] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [ 8] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::emitFrontEnd
+  [ 9] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::compile
+  [10] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileHelper
+  [11] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compile
+  [12] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [13] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [14] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [15] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [16] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [17] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [18] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [19] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [20] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [21] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [22] JNIEnv_::CallNonvirtualObjectMethod
+  [23] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [24] JVMCIRuntime::compile_method
+  [25] CompileBroker::invoke_compiler_on_method
+  [26] CompileBroker::compiler_thread_loop
+  [27] JavaThread::thread_main_inner
+  [28] Thread::call_run
+  [29] thread_native_entry
+  [30] start_thread
+  [31] clone3
+
+--- 10007413 ns (0.02%), 1 sample
+  [ 0] PackedTableBase::PackedTableBase
+  [ 1] FieldInfoReader::search_table_lookup
+  [ 2] InstanceKlass::find_local_field
+  [ 3] InstanceKlass::find_field
+  [ 4] LinkResolver::resolve_field
+  [ 5] LinkResolver::resolve_field_access
+  [ 6] InterpreterRuntime::resolve_get_put
+  [ 7] InterpreterRuntime::resolve_get_put
+  [ 8] InterpreterRuntime::resolve_from_cache
+  [ 9] java.util.jar.JarFile.<clinit>
+  [10] jdk.internal.loader.URLClassPath$JarLoader.getJarFile
+  [11] jdk.internal.loader.URLClassPath$JarLoader.ensureOpen
+  [12] jdk.internal.loader.URLClassPath$JarLoader.<init>
+  [13] jdk.internal.loader.URLClassPath.getLoader
+  [14] jdk.internal.loader.URLClassPath.getLoader
+  [15] jdk.internal.loader.URLClassPath.getResource
+  [16] jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull
+  [17] jdk.internal.loader.BuiltinClassLoader.loadClassOrNull
+  [18] jdk.internal.loader.BuiltinClassLoader.loadClass
+  [19] java.lang.ClassLoader.loadClass
+  [20] java.lang.Class.forName0
+  [21] java.lang.Class.forName
+  [22] sun.launcher.LauncherHelper.loadMainClass
+  [23] sun.launcher.LauncherHelper.checkAndLoadMain
+
+--- 10006503 ns (0.02%), 1 sample
+  [ 0] jdk.internal.classfile.impl.SplitConstantPool.canWriteDirect
+  [ 1] jdk.internal.classfile.impl.AbstractPoolEntry.maybeClone
+  [ 2] jdk.internal.classfile.impl.BufWriterImpl.cpIndex
+  [ 3] jdk.internal.classfile.impl.DirectMethodBuilder.writeTo
+  [ 4] jdk.internal.classfile.impl.Util.writeList
+  [ 5] jdk.internal.classfile.impl.DirectClassBuilder.build
+  [ 6] jdk.internal.classfile.impl.ClassFileImpl.build
+  [ 7] java.lang.invoke.InvokerBytecodeGenerator.classFileSetup
+  [ 8] java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCodeBytes
+  [ 9] java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCode
+  [10] java.lang.invoke.LambdaForm.compileToBytecode
+  [11] java.lang.invoke.DirectMethodHandle.makePreparedLambdaForm
+  [12] java.lang.invoke.DirectMethodHandle.preparedLambdaForm
+  [13] java.lang.invoke.DirectMethodHandle.preparedLambdaForm
+  [14] java.lang.invoke.DirectMethodHandle.preparedLambdaForm
+  [15] java.lang.invoke.DirectMethodHandle.make
+  [16] java.lang.invoke.DirectMethodHandle.make
+  [17] java.lang.invoke.DirectMethodHandle.make
+  [18] java.lang.invoke.Invokers.basicInvoker
+  [19] java.lang.invoke.LambdaForm$NamedFunction.<init>
+  [20] java.lang.invoke.LambdaForm$Name.<init>
+  [21] java.lang.invoke.DelegatingMethodHandle.makeReinvokerForm
+  [22] java.lang.invoke.DelegatingMethodHandle.makeReinvokerForm
+  [23] java.lang.invoke.BoundMethodHandle.makeReinvoker
+  [24] java.lang.invoke.DirectMethodHandle.rebind
+  [25] java.lang.invoke.MethodHandle.bindArgumentL
+  [26] java.lang.invoke.MethodHandle.bindTo
+  [27] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy.generate
+  [28] java.lang.invoke.StringConcatFactory.makeConcatWithConstants
+  [29] java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+  [30] java.lang.invoke.DelegatingMethodHandle$Holder.delegate
+  [31] java.lang.invoke.BootstrapMethodInvoker.invoke
+  [32] java.lang.invoke.CallSite.makeSite
+  [33] java.lang.invoke.MethodHandleNatives.linkCallSiteImpl
+  [34] java.lang.invoke.MethodHandleNatives.linkCallSite
+  [35] Run.reportBenchmark
+  [36] Run.runBenchmark
+  [37] Harness.main
+
+--- 10004415 ns (0.02%), 1 sample
+  [ 0] do_set_pte_[k]
+  [ 1] filemap_map_pages_[k]
+  [ 2] do_read_fault_[k]
+  [ 3] do_pte_missing_[k]
+  [ 4] __handle_mm_fault_[k]
+  [ 5] handle_mm_fault_[k]
+  [ 6] do_user_addr_fault_[k]
+  [ 7] exc_page_fault_[k]
+  [ 8] asm_exc_page_fault_[k]
+  [ 9] java.lang.Object* com.oracle.svm.core.graal.jdk.SubstrateObjectCloneSnippets::doClone
+  [10] java.util.EnumSet* java.util.EnumSet::clone
+  [11] LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.GraphState* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.GraphState::copyWith
+  [12] LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.StructuredGraph* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.StructuredGraph$Builder::build
+  [13] LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.StructuredGraph* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::createGraph
+  [14] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [15] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [16] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [17] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [18] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [19] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [20] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [21] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [22] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [23] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [24] JNIEnv_::CallNonvirtualObjectMethod
+  [25] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [26] JVMCIRuntime::compile_method
+  [27] CompileBroker::invoke_compiler_on_method
+  [28] CompileBroker::compiler_thread_loop
+  [29] JavaThread::thread_main_inner
+  [30] Thread::call_run
+  [31] thread_native_entry
+  [32] start_thread
+  [33] clone3
+
+--- 10004108 ns (0.02%), 1 sample
+  [ 0] CodeHeap::next_block
+  [ 1] CodeBlobIterator<nmethod, NMethodFilter, false>::next_impl
+  [ 2] CodeCache::mark_for_deoptimization
+  [ 3] CodeCache::mark_dependents_on
+  [ 4] InstanceKlass::link_class_impl
+  [ 5] InstanceKlass::link_class
+  [ 6] InstanceKlass::initialize_impl
+  [ 7] InstanceKlass::initialize
+  [ 8] InterpreterRuntime::_new
+  [ 9] java.util.Arrays.asList
+  [10] sun.security.util.SecurityProviderConstants.store
+  [11] sun.security.util.SecurityProviderConstants.<clinit>
+  [12] sun.security.provider.SunEntries.addWithAlias
+  [13] sun.security.provider.SunEntries.<init>
+  [14] sun.security.provider.Sun.<init>
+  [15] sun.security.jca.ProviderConfig.getProvider
+  [16] sun.security.jca.ProviderList.getProvider
+  [17] sun.security.jca.ProviderList$2.get
+  [18] sun.security.jca.ProviderList$2.get
+  [19] java.util.AbstractList$Itr.next
+  [20] java.security.SecureRandom.getDefaultPRNG
+  [21] java.security.SecureRandom.<init>
+  [22] java.io.File$TempDirectory.<clinit>
+  [23] java.io.File.createTempFile
+  [24] java.io.File.createTempFile
+  [25] Tsc.loadNativeFromJar
+  [26] Tsc.<clinit>
+  [27] Harness.main
+
+--- 10003908 ns (0.02%), 1 sample
+  [ 0] Klass::subklass
+  [ 1] ClassHierarchyIterator::next
+  [ 2] Dependencies::find_finalizable_subclass
+  [ 3] Dependencies::DepStream::check_new_klass_dependency
+  [ 4] Dependencies::DepStream::check_klass_dependency
+  [ 5] CodeCache::mark_for_deoptimization
+  [ 6] CodeCache::mark_dependents_on
+  [ 7] InstanceKlass::add_to_hierarchy
+  [ 8] SystemDictionary::define_instance_class
+  [ 9] SystemDictionary::find_or_define_helper
+  [10] SystemDictionary::find_or_define_instance_class
+  [11] SystemDictionary::load_instance_class_impl
+  [12] SystemDictionary::load_instance_class
+  [13] SystemDictionary::resolve_instance_class_or_null
+  [14] SystemDictionary::resolve_or_fail
+  [15] ConstantPool::klass_at_impl
+  [16] InterpreterRuntime::_new
+  [17] java.util.AbstractList.iterator
+  [18] java.security.SecureRandom.getDefaultPRNG
+  [19] java.security.SecureRandom.<init>
+  [20] java.io.File$TempDirectory.<clinit>
+  [21] java.io.File.createTempFile
+  [22] java.io.File.createTempFile
+  [23] Tsc.loadNativeFromJar
+  [24] Tsc.<clinit>
+  [25] Harness.main
+
+--- 10003675 ns (0.02%), 1 sample
+  [ 0] RuntimeBlob::free
+  [ 1] CodeBuffer::~CodeBuffer
+  [ 2] CodeInstaller::install
+  [ 3] c2v_installCode0
+  [ 4] int LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.CompilerToVM::installCode0
+  [ 5] int LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.CompilerToVM::installCode
+  [ 6] LibGraalClassLoader_30c8681::jdk.vm.ci.code.InstalledCode* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCodeCacheProvider::installCode
+  [ 7] LibGraalClassLoader_30c8681::jdk.vm.ci.code.InstalledCode* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.target.Backend::createInstalledCode
+  [ 8] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::installMethod
+  [ 9] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [10] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [11] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [12] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [13] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [14] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [15] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [16] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [17] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [18] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [19] JNIEnv_::CallNonvirtualObjectMethod
+  [20] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [21] JVMCIRuntime::compile_method
+  [22] CompileBroker::invoke_compiler_on_method
+  [23] CompileBroker::compiler_thread_loop
+  [24] JavaThread::thread_main_inner
+  [25] Thread::call_run
+  [26] thread_native_entry
+  [27] start_thread
+  [28] clone3
+
+--- 10003549 ns (0.02%), 1 sample
+  [ 0] __alloc_pages_[k]
+  [ 1] __folio_alloc_[k]
+  [ 2] vma_alloc_folio_[k]
+  [ 3] do_anonymous_page_[k]
+  [ 4] __handle_mm_fault_[k]
+  [ 5] handle_mm_fault_[k]
+  [ 6] do_user_addr_fault_[k]
+  [ 7] exc_page_fault_[k]
+  [ 8] asm_exc_page_fault_[k]
+  [ 9] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.util.EconomicSetNodeEventListener::changed
+  [10] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Graph$NodeEventListener::event
+  [11] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Graph::fireNodeEvent
+  [12] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Node::maybeNotifyInputChanged
+  [13] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Node::updateUsages
+  [14] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeClass::updateEdgesInPlace
+  [15] void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeClass::updateInputSuccInPlace
+  [16] org.graalvm.collections.EconomicMap* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeClass::addGraphDuplicate
+  [17] org.graalvm.collections.EconomicMap* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.Graph::addDuplicates
+  [18] void LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.loop.LoopFragment::patchNodes
+  [19] void LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.loop.LoopFragmentWhole::reify
+  [20] LibGraalClassLoader_30c8681::jdk.graal.compiler.loop.phases.LoopTransformations$PreMainPostResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.loop.phases.LoopTransformations::insertPrePostLoops
+  [21] void LibGraalClassLoader_30c8681::jdk.graal.compiler.loop.phases.LoopPartialUnrollPhase::unroll
+  [22] void LibGraalClassLoader_30c8681::jdk.graal.compiler.loop.phases.LoopPartialUnrollPhase::run
+  [23] void LibGraalClassLoader_30c8681::jdk.graal.compiler.loop.phases.LoopPartialUnrollPhase::run
+  [24] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [25] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.phases.BaseTier::run
+  [26] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [27] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::emitFrontEnd
+  [28] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::compile
+  [29] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileHelper
+  [30] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compile
+  [31] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [32] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [33] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [34] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [35] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [36] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [37] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [38] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [39] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [40] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [41] JNIEnv_::CallNonvirtualObjectMethod
+  [42] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [43] JVMCIRuntime::compile_method
+  [44] CompileBroker::invoke_compiler_on_method
+  [45] CompileBroker::compiler_thread_loop
+  [46] JavaThread::thread_main_inner
+  [47] Thread::call_run
+  [48] thread_native_entry
+  [49] start_thread
+  [50] clone3
+
+--- 10003450 ns (0.02%), 1 sample
+  [ 0] org.graalvm.word.Pointer com.oracle.svm.core.genscavenge.TlabSupport::allocateRawMemoryInTlabSlow
+  [ 1] org.graalvm.word.Pointer com.oracle.svm.core.genscavenge.ThreadLocalAllocation::allocateRawMemory
+  [ 2] java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::allocateArraySlow
+  [ 3] java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::slowPathNewArrayLikeObjectWithoutAllocation0
+  [ 4] java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::slowPathNewArrayLikeObjectWithoutAllocating
+  [ 5] java.lang.Object* com.oracle.svm.core.genscavenge.ThreadLocalAllocation::slowPathNewArrayLikeObject
+  [ 6] java.lang.Object* com.oracle.svm.core.genscavenge.graal.GenScavengeAllocationSupport::slowNewArray
+  [ 7] java.nio.CharBuffer* java.nio.CharBuffer::allocate
+  [ 8] LibGraalClassLoader_30c8681::jdk.graal.compiler.util.json.JsonParser::JsonParser
+  [ 9] org.graalvm.collections.EconomicMap* LibGraalClassLoader_30c8681::jdk.graal.compiler.util.json.JsonParser::parseDict
+  [10] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport::profileReplayPrologue
+  [11] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [12] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [13] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [14] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [15] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [16] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [17] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [18] JNIEnv_::CallNonvirtualObjectMethod
+  [19] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [20] JVMCIRuntime::compile_method
+  [21] CompileBroker::invoke_compiler_on_method
+  [22] CompileBroker::compiler_thread_loop
+  [23] JavaThread::thread_main_inner
+  [24] Thread::call_run
+  [25] thread_native_entry
+  [26] start_thread
+  [27] clone3
+
+--- 10002928 ns (0.02%), 1 sample
+  [ 0] SymbolTable::do_add_if_needed
+  [ 1] SymbolTable::new_symbols
+  [ 2] ClassFileParser::parse_constant_pool_entries
+  [ 3] ClassFileParser::parse_constant_pool
+  [ 4] ClassFileParser::parse_stream
+  [ 5] ClassFileParser::ClassFileParser
+  [ 6] KlassFactory::create_from_stream
+  [ 7] ClassLoader::load_class
+  [ 8] SystemDictionary::load_instance_class_impl
+  [ 9] SystemDictionary::load_instance_class
+  [10] SystemDictionary::resolve_instance_class_or_null
+  [11] SystemDictionary::resolve_or_fail
+  [12] ConstantPool::klass_at_impl
+  [13] ConstantPool::klass_ref_at
+  [14] LinkInfo::LinkInfo
+  [15] LinkResolver::resolve_field_access
+  [16] InterpreterRuntime::resolve_get_put
+  [17] InterpreterRuntime::resolve_get_put
+  [18] InterpreterRuntime::resolve_from_cache
+  [19] sun.security.jca.Providers.<clinit>
+  [20] java.security.SecureRandom.getDefaultPRNG
+  [21] java.security.SecureRandom.<init>
+  [22] java.io.File$TempDirectory.<clinit>
+  [23] java.io.File.createTempFile
+  [24] java.io.File.createTempFile
+  [25] Tsc.loadNativeFromJar
+  [26] Tsc.<clinit>
+  [27] Harness.main
+
+--- 10002644 ns (0.02%), 1 sample
+  [ 0] AccessInternal::check_access_thread_state
+  [ 1] OopHandle::resolve
+  [ 2] InstanceKlass::init_lock
+  [ 3] InstanceKlass::initialize_impl
+  [ 4] InstanceKlass::initialize
+  [ 5] LinkResolver::resolve_field
+  [ 6] LinkResolver::resolve_field_access
+  [ 7] InterpreterRuntime::resolve_get_put
+  [ 8] InterpreterRuntime::resolve_get_put
+  [ 9] InterpreterRuntime::resolve_from_cache
+  [10] jdk.internal.classfile.impl.BytecodeHelpers$1.<clinit>
+  [11] jdk.internal.classfile.impl.BytecodeHelpers.arrayLoadBytecode
+  [12] jdk.internal.classfile.impl.DirectCodeBuilder.arrayLoad
+  [13] java.lang.classfile.CodeBuilder.aaload
+  [14] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$7.accept
+  [15] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$7.accept
+  [16] jdk.internal.classfile.impl.DirectCodeBuilder.build
+  [17] jdk.internal.classfile.impl.DirectMethodBuilder.withCode
+  [18] jdk.internal.classfile.impl.DirectMethodBuilder.withCode
+  [19] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$3$2.accept
+  [20] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$3$2.accept
+  [21] jdk.internal.classfile.impl.DirectMethodBuilder.run
+  [22] jdk.internal.classfile.impl.DirectClassBuilder.withMethod
+  [23] java.lang.classfile.ClassBuilder.withMethod
+  [24] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$3.accept
+  [25] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy$3.accept
+  [26] jdk.internal.classfile.impl.ClassFileImpl.build
+  [27] java.lang.classfile.ClassFile.build
+  [28] java.lang.invoke.StringConcatFactory$InlineHiddenClassStrategy.generate
+  [29] java.lang.invoke.StringConcatFactory.makeConcatWithConstants
+  [30] java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+  [31] java.lang.invoke.DelegatingMethodHandle$Holder.delegate
+  [32] java.lang.invoke.BootstrapMethodInvoker.invoke
+  [33] java.lang.invoke.CallSite.makeSite
+  [34] java.lang.invoke.MethodHandleNatives.linkCallSiteImpl
+  [35] java.lang.invoke.MethodHandleNatives.linkCallSite
+  [36] Run.printResult
+  [37] Run.measure
+  [38] Run.doRuns
+  [39] Run.runBenchmark
+  [40] Harness.main
+
+--- 10002023 ns (0.02%), 1 sample
+  [ 0] java.util.Iterator* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.iterators.FilteredNodeIterable::iterator
+  [ 1] int LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.iterators.NodeIterable::count
+  [ 2] boolean LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph$RPOLoopVerification::loopFullyProcessed
+  [ 3] boolean LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph::rpoInnerLoopsFirst
+  [ 4] void LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph::computeFrequenciesImpl
+  [ 5] void LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph::computeFrequencies
+  [ 6] LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph::computeImpl
+  [ 7] LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph* LibGraalClassLoader_30c8681::jdk.graal.compiler.nodes.cfg.ControlFlowGraph::compute
+  [ 8] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.schedule.SchedulePhase$Instance::run
+  [ 9] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.schedule.SchedulePhase::run
+  [10] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.schedule.SchedulePhase::run
+  [11] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [12] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.LoweringPhase::lower
+  [13] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.common.LoweringPhase::run
+  [14] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [15] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.phases.BaseTier::run
+  [16] void LibGraalClassLoader_30c8681::jdk.graal.compiler.phases.BasePhase::apply
+  [17] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::emitFrontEnd
+  [18] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::compile
+  [19] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileHelper
+  [20] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compile
+  [21] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [22] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [23] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [24] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [25] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [26] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [27] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [28] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [29] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [30] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [31] JNIEnv_::CallNonvirtualObjectMethod
+  [32] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [33] JVMCIRuntime::compile_method
+  [34] CompileBroker::invoke_compiler_on_method
+  [35] CompileBroker::compiler_thread_loop
+  [36] JavaThread::thread_main_inner
+  [37] Thread::call_run
+  [38] thread_native_entry
+  [39] start_thread
+  [40] clone3
+
+--- 10001977 ns (0.02%), 1 sample
+  [ 0] java.util.HashMap$Node* java.util.HashMap::getNode
+  [ 1] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.VMField* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotVMConfigAccess::getField
+  [ 2] java.lang.Object* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotVMConfigAccess::getFieldOffset0
+  [ 3] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotVMConfig::HotSpotVMConfig
+  [ 4] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::HotSpotJVMCIRuntime
+  [ 5] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::runtime
+  [ 6] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [ 7] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [ 8] JNIEnv_::CallStaticObjectMethod
+  [ 9] JVMCIEnv::call_HotSpotJVMCIRuntime_runtime
+  [10] JVMCIRuntime::initialize_HotSpotJVMCIRuntime
+  [11] JVM_GetJVMCIRuntime
+  [12] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::initializeRuntime
+  [13] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::getRuntime
+  [14] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [15] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [16] JNIEnv_::CallStaticObjectMethod
+  [17] JVMCIEnv::call_JVMCI_getRuntime
+  [18] JVMCIRuntime::get_HotSpotJVMCIRuntime
+  [19] JVMCIRuntime::compile_method
+  [20] CompileBroker::invoke_compiler_on_method
+  [21] CompileBroker::compiler_thread_loop
+  [22] JavaThread::thread_main_inner
+  [23] Thread::call_run
+  [24] thread_native_entry
+  [25] start_thread
+  [26] clone3
+
+--- 10001923 ns (0.02%), 1 sample
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] folio_batch_move_lru_[k]
+  [ 2] folio_add_lru_[k]
+  [ 3] do_anonymous_page_[k]
+  [ 4] __handle_mm_fault_[k]
+  [ 5] handle_mm_fault_[k]
+  [ 6] do_user_addr_fault_[k]
+  [ 7] exc_page_fault_[k]
+  [ 8] asm_exc_page_fault_[k]
+  [ 9] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CallingConvention* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkageImpl::createCallingConvention
+  [10] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkage* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkageImpl::create
+  [11] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkage* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotForeignCallsProviderImpl::registerForeignCall
+  [12] LibGraalClassLoader_30c8681::jdk.graal.compiler.core.common.spi.ForeignCallDescriptor* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::buildDescriptor
+  [13] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::registerArraycopyDescriptor
+  [14] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::registerArrayCopy
+  [15] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::initialize
+  [16] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.amd64.AMD64HotSpotForeignCallsProvider::initialize
+  [17] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotHostBackend::completeInitialization
+  [18] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalRuntime::HotSpotGraalRuntime
+  [19] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompilerFactory::createCompiler
+  [20] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompilerFactory::createCompiler
+  [21] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCICompiler* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompilerFactory::createCompiler
+  [22] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCICompiler* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::getCompiler
+  [23] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::runtime
+  [24] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [25] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [26] JNIEnv_::CallStaticObjectMethod
+  [27] JVMCIEnv::call_HotSpotJVMCIRuntime_runtime
+  [28] JVMCIRuntime::initialize_HotSpotJVMCIRuntime
+  [29] JVM_GetJVMCIRuntime
+  [30] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::initializeRuntime
+  [31] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::getRuntime
+  [32] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [33] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [34] JNIEnv_::CallStaticObjectMethod
+  [35] JVMCIEnv::call_JVMCI_getRuntime
+  [36] JVMCIRuntime::get_HotSpotJVMCIRuntime
+  [37] JVMCIRuntime::compile_method
+  [38] CompileBroker::invoke_compiler_on_method
+  [39] CompileBroker::compiler_thread_loop
+  [40] JavaThread::thread_main_inner
+  [41] Thread::call_run
+  [42] thread_native_entry
+  [43] start_thread
+  [44] clone3
+
+--- 10001822 ns (0.02%), 1 sample
+  [ 0] CodeBlobIterator<nmethod, NMethodFilter, false>::next_impl
+  [ 1] CodeCache::mark_for_deoptimization
+  [ 2] CodeCache::mark_dependents_on
+  [ 3] InstanceKlass::add_to_hierarchy
+  [ 4] SystemDictionary::define_instance_class
+  [ 5] SystemDictionary::find_or_define_helper
+  [ 6] SystemDictionary::find_or_define_instance_class
+  [ 7] SystemDictionary::load_instance_class_impl
+  [ 8] SystemDictionary::load_instance_class
+  [ 9] SystemDictionary::resolve_instance_class_or_null
+  [10] SystemDictionary::resolve_or_fail
+  [11] ConstantPool::klass_at_impl
+  [12] ConstantPool::klass_ref_at
+  [13] LinkInfo::LinkInfo
+  [14] LinkResolver::resolve_invokestatic
+  [15] LinkResolver::resolve_invoke
+  [16] InterpreterRuntime::resolve_invoke
+  [17] InterpreterRuntime::resolve_from_cache
+  [18] java.security.Provider.getService
+  [19] java.security.SecureRandom.getDefaultPRNG
+  [20] java.security.SecureRandom.<init>
+  [21] java.io.File$TempDirectory.<clinit>
+  [22] java.io.File.createTempFile
+  [23] java.io.File.createTempFile
+  [24] Tsc.loadNativeFromJar
+  [25] Tsc.<clinit>
+  [26] Harness.main
+
+--- 10001627 ns (0.02%), 1 sample
+  [ 0] Thread::is_VM_thread
+  [ 1] Mutex::check_safepoint_state
+  [ 2] Mutex::lock
+  [ 3] AdapterHandlerLibrary::get_adapter
+  [ 4] Method::make_adapters
+  [ 5] Method::link_method
+  [ 6] InstanceKlass::link_methods
+  [ 7] InstanceKlass::link_class_impl
+  [ 8] InstanceKlass::link_class
+  [ 9] InstanceKlass::initialize_impl
+  [10] InstanceKlass::initialize
+  [11] Unsafe_EnsureClassInitialized0
+  [12] jdk.internal.misc.Unsafe.ensureClassInitialized0
+  [13] jdk.internal.misc.Unsafe.ensureClassInitialized
+  [14] java.lang.invoke.VarHandle.<clinit>
+  [15] java.lang.invoke.VarHandles.byteArrayViewHandle
+  [16] java.lang.invoke.MethodHandles.byteArrayViewVarHandle
+  [17] sun.security.provider.ByteArrayAccess$BE.<clinit>
+  [18] sun.security.provider.ByteArrayAccess.i2bBig4
+  [19] sun.security.provider.SHA.implDigest
+  [20] sun.security.provider.DigestBase.engineDigest
+  [21] sun.security.provider.DigestBase.engineDigest
+  [22] java.security.MessageDigest$Delegate.engineDigest
+  [23] java.security.MessageDigest.digest
+  [24] java.security.MessageDigest.digest
+  [25] sun.security.provider.SecureRandom.engineSetSeed
+  [26] sun.security.provider.NativePRNG$RandomIO.getMixRandom
+  [27] sun.security.provider.NativePRNG$RandomIO.implNextBytes
+  [28] sun.security.provider.NativePRNG.engineNextBytes
+  [29] java.security.SecureRandom.nextBytes
+  [30] java.security.SecureRandom.next
+  [31] java.util.Random.nextLong
+  [32] java.io.File$TempDirectory.generateFile
+  [33] java.io.File.createTempFile
+  [34] java.io.File.createTempFile
+  [35] Tsc.loadNativeFromJar
+  [36] Tsc.<clinit>
+  [37] Harness.main
+
+--- 10001502 ns (0.02%), 1 sample
+  [ 0] java.lang.Object* java.util.concurrent.ConcurrentHashMap::get
+  [ 1] java.security.Provider$Service* java.security.Provider::getService
+  [ 2] java.security.Provider$Service* sun.security.jca.ProviderList::getService
+  [ 3] sun.security.jca.GetInstance$Instance* sun.security.jca.GetInstance::getInstance
+  [ 4] java.security.MessageDigest* java.security.MessageDigest::getInstance
+  [ 5] java.lang.String* LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult::getSignature
+  [ 6] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport::profileReplayEpilogue
+  [ 7] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [ 8] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [ 9] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [10] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [11] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [12] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [13] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [14] JNIEnv_::CallNonvirtualObjectMethod
+  [15] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [16] JVMCIRuntime::compile_method
+  [17] CompileBroker::invoke_compiler_on_method
+  [18] CompileBroker::compiler_thread_loop
+  [19] JavaThread::thread_main_inner
+  [20] Thread::call_run
+  [21] thread_native_entry
+  [22] start_thread
+  [23] clone3
+
+--- 10001431 ns (0.02%), 1 sample
+  [ 0] JavaThread::is_Java_thread
+  [ 1] LockStack::verify
+  [ 2] LockStack::contains
+  [ 3] LockStack::remove
+  [ 4] LightweightSynchronizer::exit
+  [ 5] ObjectLocker::~ObjectLocker
+  [ 6] InstanceKlass::initialize_impl
+  [ 7] InstanceKlass::initialize
+  [ 8] jni_GetFieldID
+  [ 9] Java_java_util_zip_Inflater_initIDs
+  [10] java.util.zip.Inflater.initIDs
+  [11] java.util.zip.Inflater.<clinit>
+  [12] java.util.zip.ZipFile$CleanableResource.getInflater
+  [13] java.util.zip.ZipFile$ZipFileInflaterInputStream.<init>
+  [14] java.util.zip.ZipFile.getInputStream
+  [15] java.util.jar.JarFile.getBytes
+  [16] java.util.jar.JarFile.checkForSpecialAttributes
+  [17] java.util.jar.JarFile.hasClassPathAttribute
+  [18] java.util.jar.JavaUtilJarAccessImpl.jarFileHasClassPathAttribute
+  [19] jdk.internal.loader.URLClassPath$JarLoader.getClassPath
+  [20] jdk.internal.loader.URLClassPath.getLoader
+  [21] jdk.internal.loader.URLClassPath.getResource
+  [22] jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull
+  [23] jdk.internal.loader.BuiltinClassLoader.loadClassOrNull
+  [24] jdk.internal.loader.BuiltinClassLoader.loadClass
+  [25] java.lang.ClassLoader.loadClass
+  [26] java.lang.Class.forName0
+  [27] java.lang.Class.forName
+  [28] sun.launcher.LauncherHelper.loadMainClass
+  [29] sun.launcher.LauncherHelper.checkAndLoadMain
+
+--- 10001125 ns (0.02%), 1 sample
+  [ 0] void com.oracle.svm.core.UnmanagedMemoryUtil::copyForward
+  [ 1] void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward
+  [ 2] void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward
+  [ 3] java.lang.Object* com.oracle.svm.core.graal.jdk.SubstrateObjectCloneSnippets::doClone
+  [ 4] byte[]* java.util.Arrays::copyOfRange
+  [ 5] java.lang.String::String
+  [ 6] java.lang.String::String
+  [ 7] java.lang.String* sun.nio.fs.UnixPath::toString
+  [ 8] boolean LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport::lambda$profileReplayPrologue$0
+  [ 9] boolean LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport$$Lambda/0x6eb2ccc3df84d193f3f32f83276128ac0::test
+  [10] void java.util.stream.ReferencePipeline$2$1::accept
+  [11] void java.util.Iterator::forEachRemaining
+  [12] void java.util.Spliterators$IteratorSpliterator::forEachRemaining
+  [13] void java.util.stream.AbstractPipeline::copyInto
+  [14] java.util.stream.Sink* java.util.stream.AbstractPipeline::wrapAndCopyInto
+  [15] java.lang.Object* java.util.stream.ReduceOps$ReduceOp::evaluateSequential
+  [16] java.lang.Object* java.util.stream.AbstractPipeline::evaluate
+  [17] java.lang.Object* java.util.stream.ReferencePipeline::collect
+  [18] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.ProfileReplaySupport::profileReplayPrologue
+  [19] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [20] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [21] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [22] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [23] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [24] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [25] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [26] JNIEnv_::CallNonvirtualObjectMethod
+  [27] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [28] JVMCIRuntime::compile_method
+  [29] CompileBroker::invoke_compiler_on_method
+  [30] CompileBroker::compiler_thread_loop
+  [31] JavaThread::thread_main_inner
+  [32] Thread::call_run
+  [33] thread_native_entry
+  [34] start_thread
+  [35] clone3
+
+--- 10000831 ns (0.02%), 1 sample
+  [ 0] JavaThread::current
+  [ 1] InterpreterRuntime::newarray
+  [ 2] jdk.internal.misc.Unsafe.allocateUninitializedArray0
+  [ 3] jdk.internal.misc.Unsafe.allocateUninitializedArray
+  [ 4] java.lang.StringConcatHelper.newArray
+  [ 5] java.lang.StringConcatHelper.newArrayWithSuffix
+  [ 6] java.lang.String$$StringConcat.0x0000000047044000.concat
+  [ 7] java.lang.invoke.LambdaForm$DMH.0x0000000047044400.invokeSpecial
+  [ 8] java.lang.invoke.LambdaForm$MH.0x0000000047045000.invoke
+  [ 9] java.lang.invoke.LambdaForm$MH.0x0000000047045400.linkToTargetMethod
+  [10] Run.printResult
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 10000793 ns (0.02%), 1 sample
+  [ 0] __memset_avx2_unaligned_erms
+  [ 1] CodeBuffer::copy_code_to
+  [ 2] AdapterBlob::create
+  [ 3] AdapterHandlerLibrary::generate_adapter_code
+  [ 4] AdapterHandlerLibrary::create_adapter
+  [ 5] AdapterHandlerLibrary::get_adapter
+  [ 6] Method::make_adapters
+  [ 7] Method::link_method
+  [ 8] InstanceKlass::link_methods
+  [ 9] InstanceKlass::link_class_impl
+  [10] InstanceKlass::link_class
+  [11] InstanceKlass::initialize_impl
+  [12] InstanceKlass::initialize
+  [13] LinkResolver::resolve_static_call
+  [14] LinkResolver::resolve_invokestatic
+  [15] LinkResolver::resolve_invoke
+  [16] InterpreterRuntime::resolve_invoke
+  [17] InterpreterRuntime::resolve_from_cache
+  [18] jdk.internal.jimage.BasicImageReader.verifyLocation
+  [19] jdk.internal.jimage.ImageReader.verifyLocation
+  [20] jdk.internal.module.SystemModuleFinders$SystemModuleReader.containsImageLocation
+  [21] jdk.internal.module.SystemModuleFinders$SystemModuleReader.find
+  [22] jdk.internal.loader.BuiltinClassLoader.findMiscResource
+  [23] jdk.internal.loader.BuiltinClassLoader.findResource
+  [24] jdk.internal.loader.BootLoader.findResource
+  [25] java.lang.ClassLoader.getResource
+  [26] java.lang.ClassLoader.getResource
+  [27] java.lang.ClassLoader.getResourceAsStream
+  [28] java.lang.Class.getResourceAsStream
+  [29] Tsc.loadNativeFromJar
+  [30] Tsc.<clinit>
+  [31] Harness.main
+
+--- 10000336 ns (0.02%), 1 sample
+  [ 0] int org.graalvm.collections.EconomicMapImpl::getHashTableSize
+  [ 1] int org.graalvm.collections.EconomicMapImpl::getHashIndex
+  [ 2] int org.graalvm.collections.EconomicMapImpl::findHash
+  [ 3] int org.graalvm.collections.EconomicMapImpl::find
+  [ 4] java.lang.Object* org.graalvm.collections.EconomicMapImpl::put
+  [ 5] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkage* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotForeignCallsProviderImpl::register
+  [ 6] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkage* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotForeignCallsProviderImpl::registerStubCall
+  [ 7] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotForeignCallLinkage* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotForeignCallsProviderImpl::registerStubCall
+  [ 8] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::linkSnippetStubs
+  [ 9] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::registerSnippetStubs
+  [10] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.meta.HotSpotHostForeignCallsProvider::initialize
+  [11] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.amd64.AMD64HotSpotForeignCallsProvider::initialize
+  [12] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotHostBackend::completeInitialization
+  [13] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalRuntime::HotSpotGraalRuntime
+  [14] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompilerFactory::createCompiler
+  [15] LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompilerFactory::createCompiler
+  [16] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCICompiler* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompilerFactory::createCompiler
+  [17] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCICompiler* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::getCompiler
+  [18] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::runtime
+  [19] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [20] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [21] JNIEnv_::CallStaticObjectMethod
+  [22] JVMCIEnv::call_HotSpotJVMCIRuntime_runtime
+  [23] JVMCIRuntime::initialize_HotSpotJVMCIRuntime
+  [24] JVM_GetJVMCIRuntime
+  [25] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::initializeRuntime
+  [26] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::getRuntime
+  [27] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [28] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [29] JNIEnv_::CallStaticObjectMethod
+  [30] JVMCIEnv::call_JVMCI_getRuntime
+  [31] JVMCIRuntime::get_HotSpotJVMCIRuntime
+  [32] JVMCIRuntime::compile_method
+  [33] CompileBroker::invoke_compiler_on_method
+  [34] CompileBroker::compiler_thread_loop
+  [35] JavaThread::thread_main_inner
+  [36] Thread::call_run
+  [37] thread_native_entry
+  [38] start_thread
+  [39] clone3
+
+--- 9999992 ns (0.02%), 1 sample
+  [ 0] java.lang.Object* java.util.ArrayList$Itr::next
+  [ 1] java.util.Formatter* java.util.Formatter::format
+  [ 2] java.lang.String* java.lang.String::format
+  [ 3] java.lang.String* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotMethod::toString
+  [ 4] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.HumphreysDebugDataPhase::run
+  [ 5] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.HumphreysDebugDataPhase::run
+  [ 6] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.LIRPhase::apply
+  [ 7] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.LIRPhaseSuite::run
+  [ 8] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.LIRPhase::apply
+  [ 9] LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.gen.LIRGenerationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitLowLevel
+  [10] LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.gen.LIRGenerationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitLIR0
+  [11] LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.gen.LIRGenerationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitLIR
+  [12] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitBackEnd
+  [13] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::compile
+  [14] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileHelper
+  [15] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compile
+  [16] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [17] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [18] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [19] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [20] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [21] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [22] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [23] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [24] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [25] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [26] JNIEnv_::CallNonvirtualObjectMethod
+  [27] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [28] JVMCIRuntime::compile_method
+  [29] CompileBroker::invoke_compiler_on_method
+  [30] CompileBroker::compiler_thread_loop
+  [31] JavaThread::thread_main_inner
+  [32] Thread::call_run
+  [33] thread_native_entry
+  [34] start_thread
+  [35] clone3
+
+--- 9999821 ns (0.02%), 1 sample
+  [ 0] void com.oracle.svm.core.UnmanagedMemoryUtil::copyLongsForward
+  [ 1] void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward
+  [ 2] void com.oracle.svm.core.JavaMemoryUtil::copyPrimitiveArrayForward
+  [ 3] void com.oracle.svm.core.graal.jdk.SubstrateArraycopySnippets::doArraycopy
+  [ 4] byte[]* java.lang.AbstractStringBuilder::appendChars
+  [ 5] java.lang.AbstractStringBuilder* java.lang.AbstractStringBuilder::append
+  [ 6] java.lang.Appendable* java.lang.StringBuilder::append
+  [ 7] void java.util.Formatter$FixedString::print
+  [ 8] java.util.Formatter* java.util.Formatter::format
+  [ 9] java.lang.String* java.lang.String::format
+  [10] java.lang.String* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotMethod::toString
+  [11] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.HumphreysDebugDataPhase::run
+  [12] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.HumphreysDebugDataPhase::run
+  [13] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.LIRPhase::apply
+  [14] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.LIRPhaseSuite::run
+  [15] void LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.phases.LIRPhase::apply
+  [16] LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.gen.LIRGenerationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitLowLevel
+  [17] LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.gen.LIRGenerationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitLIR0
+  [18] LibGraalClassLoader_30c8681::jdk.graal.compiler.lir.gen.LIRGenerationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitLIR
+  [19] void LibGraalClassLoader_30c8681::jdk.graal.compiler.core.gen.LIRCompilerBackend::emitBackEnd
+  [20] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.GraalCompiler::compile
+  [21] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileHelper
+  [22] LibGraalClassLoader_30c8681::jdk.graal.compiler.code.CompilationResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compile
+  [23] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [24] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [25] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [26] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [27] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [28] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [29] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [30] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [31] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [32] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [33] JNIEnv_::CallNonvirtualObjectMethod
+  [34] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [35] JVMCIRuntime::compile_method
+  [36] CompileBroker::invoke_compiler_on_method
+  [37] CompileBroker::compiler_thread_loop
+  [38] JavaThread::thread_main_inner
+  [39] Thread::call_run
+  [40] thread_native_entry
+  [41] start_thread
+  [42] clone3
+
+--- 9999185 ns (0.02%), 1 sample
+  [ 0] Dependencies::check_evol_method
+  [ 1] Dependencies::DepStream::check_new_klass_dependency
+  [ 2] Dependencies::DepStream::check_klass_dependency
+  [ 3] CodeCache::mark_for_deoptimization
+  [ 4] CodeCache::mark_dependents_on
+  [ 5] InstanceKlass::add_to_hierarchy
+  [ 6] SystemDictionary::define_instance_class
+  [ 7] SystemDictionary::find_or_define_helper
+  [ 8] SystemDictionary::find_or_define_instance_class
+  [ 9] SystemDictionary::load_instance_class_impl
+  [10] SystemDictionary::load_instance_class
+  [11] SystemDictionary::resolve_instance_class_or_null
+  [12] SystemDictionary::resolve_or_fail
+  [13] ConstantPool::klass_at_impl
+  [14] ConstantPool::klass_ref_at
+  [15] LinkInfo::LinkInfo
+  [16] LinkResolver::resolve_field_access
+  [17] InterpreterRuntime::resolve_get_put
+  [18] InterpreterRuntime::resolve_get_put
+  [19] InterpreterRuntime::resolve_from_cache
+  [20] java.util.Collections.emptyIterator
+  [21] java.util.Collections$EmptySet.iterator
+  [22] sun.nio.fs.UnixChannelFactory$Flags.toFlags
+  [23] sun.nio.fs.UnixChannelFactory.newFileChannel
+  [24] sun.nio.fs.UnixChannelFactory.newFileChannel
+  [25] sun.nio.fs.UnixFileSystemProvider.newFileChannel
+  [26] sun.nio.fs.UnixFileSystemProvider.newByteChannel
+  [27] java.nio.file.Files.newByteChannel
+  [28] java.nio.file.Files.newByteChannel
+  [29] java.nio.file.spi.FileSystemProvider.newInputStream
+  [30] java.nio.file.Files.newInputStream
+  [31] java.security.Security$SecPropLoader.loadFromPath
+  [32] java.security.Security$SecPropLoader.loadMaster
+  [33] java.security.Security$SecPropLoader.loadAll
+  [34] java.security.Security.initialize
+  [35] java.security.Security.<clinit>
+  [36] sun.security.jca.ProviderList.<init>
+  [37] sun.security.jca.ProviderList.fromSecurityProperties
+  [38] sun.security.jca.Providers.<clinit>
+  [39] java.security.SecureRandom.getDefaultPRNG
+  [40] java.security.SecureRandom.<init>
+  [41] java.io.File$TempDirectory.<clinit>
+  [42] java.io.File.createTempFile
+  [43] java.io.File.createTempFile
+  [44] Tsc.loadNativeFromJar
+  [45] Tsc.<clinit>
+  [46] Harness.main
+
+--- 9998936 ns (0.02%), 1 sample
+  [ 0] JNIJVMCI::HotSpotCompiledCode::is_instance
+  [ 1] JNIJVMCI::HotSpotCompiledCode::check
+  [ 2] JNIJVMCI::HotSpotCompiledCode::get_dataSection
+  [ 3] CodeInstaller::initialize_buffer
+  [ 4] CodeInstaller::install
+  [ 5] c2v_installCode0
+  [ 6] int LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.CompilerToVM::installCode0
+  [ 7] int LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.CompilerToVM::installCode
+  [ 8] LibGraalClassLoader_30c8681::jdk.vm.ci.code.InstalledCode* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCodeCacheProvider::installCode
+  [ 9] LibGraalClassLoader_30c8681::jdk.vm.ci.code.InstalledCode* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.target.Backend::createInstalledCode
+  [10] void LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::installMethod
+  [11] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [12] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask$HotSpotCompilationWrapper::performCompilation
+  [13] java.lang.Object* LibGraalClassLoader_30c8681::jdk.graal.compiler.core.CompilationWrapper::run
+  [14] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [15] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.CompilationTask::runCompilation
+  [16] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [17] LibGraalClassLoader_30c8681::jdk.vm.ci.code.CompilationRequestResult* LibGraalClassLoader_30c8681::jdk.graal.compiler.hotspot.HotSpotGraalCompiler::compileMethod
+  [18] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotCompilationRequestResult* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::compileMethod
+  [19] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke_AIJI_A
+  [20] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJIJIJI_J_VA_LIST_Nonvirtual
+  [21] JNIEnv_::CallNonvirtualObjectMethod
+  [22] JVMCIEnv::call_HotSpotJVMCIRuntime_compileMethod
+  [23] JVMCIRuntime::compile_method
+  [24] CompileBroker::invoke_compiler_on_method
+  [25] CompileBroker::compiler_thread_loop
+  [26] JavaThread::thread_main_inner
+  [27] Thread::call_run
+  [28] thread_native_entry
+  [29] start_thread
+  [30] clone3
+
+--- 9998805 ns (0.02%), 1 sample
+  [ 0] UTF8::unicode_length
+  [ 1] java_lang_String::create_from_symbol
+  [ 2] StringTable::do_intern
+  [ 3] StringTable::intern
+  [ 4] StringTable::intern
+  [ 5] ConstantPool::uncached_string_at
+  [ 6] fieldDescriptor::string_initial_value
+  [ 7] initialize_static_field
+  [ 8] InstanceKlass::do_local_static_fields
+  [ 9] java_lang_Class::initialize_mirror_fields
+  [10] java_lang_Class::allocate_mirror
+  [11] java_lang_Class::create_mirror
+  [12] ClassFileParser::fill_instance_klass
+  [13] ClassFileParser::create_instance_klass
+  [14] KlassFactory::create_from_stream
+  [15] SystemDictionary::resolve_class_from_stream
+  [16] jvm_define_class_common
+  [17] JVM_DefineClassWithSource
+  [18] Java_java_lang_ClassLoader_defineClass1
+  [19] java.lang.ClassLoader.defineClass1
+  [20] java.lang.ClassLoader.defineClass
+  [21] java.security.SecureClassLoader.defineClass
+  [22] jdk.internal.loader.BuiltinClassLoader.defineClass
+  [23] jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull
+  [24] jdk.internal.loader.BuiltinClassLoader.loadClassOrNull
+  [25] jdk.internal.loader.BuiltinClassLoader.loadClass
+  [26] java.lang.ClassLoader.loadClass
+  [27] Harness.processArguments
+  [28] Harness.main
+
+--- 9998086 ns (0.02%), 1 sample
+  [ 0] Klass::subklass
+  [ 1] ClassHierarchyIterator::next
+  [ 2] Dependencies::find_finalizable_subclass
+  [ 3] Dependencies::DepStream::check_new_klass_dependency
+  [ 4] Dependencies::DepStream::check_klass_dependency
+  [ 5] CodeCache::mark_for_deoptimization
+  [ 6] CodeCache::mark_dependents_on
+  [ 7] InstanceKlass::link_class_impl
+  [ 8] InstanceKlass::link_class
+  [ 9] InstanceKlass::initialize_impl
+  [10] InstanceKlass::initialize
+  [11] InterpreterRuntime::_new
+  [12] sun.nio.fs.UnixFileAttributeViews.createBasicView
+  [13] sun.nio.fs.UnixFileSystemProvider.getFileAttributeView
+  [14] sun.nio.fs.LinuxFileSystemProvider.getFileAttributeView
+  [15] sun.nio.fs.UnixFileSystemProvider.readAttributes
+  [16] sun.nio.fs.LinuxFileSystemProvider.readAttributes
+  [17] java.nio.file.Files.readAttributes
+  [18] java.util.zip.ZipFile$Source.get
+  [19] java.util.zip.ZipFile$CleanableResource.<init>
+  [20] java.util.zip.ZipFile.<init>
+  [21] java.util.zip.ZipFile.<init>
+  [22] java.util.jar.JarFile.<init>
+  [23] jdk.internal.loader.URLClassPath$JarLoader.getJarFile
+  [24] jdk.internal.loader.URLClassPath$JarLoader.ensureOpen
+  [25] jdk.internal.loader.URLClassPath$JarLoader.<init>
+  [26] jdk.internal.loader.URLClassPath.getLoader
+  [27] jdk.internal.loader.URLClassPath.getLoader
+  [28] jdk.internal.loader.URLClassPath.getResource
+  [29] jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull
+  [30] jdk.internal.loader.BuiltinClassLoader.loadClassOrNull
+  [31] jdk.internal.loader.BuiltinClassLoader.loadClass
+  [32] java.lang.ClassLoader.loadClass
+  [33] java.lang.Class.forName0
+  [34] java.lang.Class.forName
+  [35] sun.launcher.LauncherHelper.loadMainClass
+  [36] sun.launcher.LauncherHelper.checkAndLoadMain
+
+--- 9996556 ns (0.02%), 1 sample
+  [ 0] unsigned int UNSIGNED5::read_uint<unsigned char const*, int, UNSIGNED5::ArrayGetSet<unsigned char const*, int> >
+  [ 1] InstanceKlass::find_local_field
+  [ 2] InstanceKlass::find_field
+  [ 3] LinkResolver::resolve_field
+  [ 4] LinkResolver::resolve_field_access
+  [ 5] InterpreterRuntime::resolve_get_put
+  [ 6] InterpreterRuntime::resolve_get_put
+  [ 7] InterpreterRuntime::resolve_from_cache
+  [ 8] sun.security.util.KnownOIDs.<clinit>
+  [ 9] sun.security.util.SecurityProviderConstants.<clinit>
+  [10] sun.security.provider.SunEntries.addWithAlias
+  [11] sun.security.provider.SunEntries.<init>
+  [12] sun.security.provider.Sun.<init>
+  [13] sun.security.jca.ProviderConfig.getProvider
+  [14] sun.security.jca.ProviderList.getProvider
+  [15] sun.security.jca.ProviderList$2.get
+  [16] sun.security.jca.ProviderList$2.get
+  [17] java.util.AbstractList$Itr.next
+  [18] java.security.SecureRandom.getDefaultPRNG
+  [19] java.security.SecureRandom.<init>
+  [20] java.io.File$TempDirectory.<clinit>
+  [21] java.io.File.createTempFile
+  [22] java.io.File.createTempFile
+  [23] Tsc.loadNativeFromJar
+  [24] Tsc.<clinit>
+  [25] Harness.main
+
+--- 9994592 ns (0.02%), 1 sample
+  [ 0] int com.oracle.svm.core.handles.ThreadLocalHandles::popFramesIncluding
+  [ 1] void com.oracle.svm.core.jni.JNIGeneratedMethodSupport::nativeCallEpilogue
+  [ 2] java.lang.Object[]* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.CompilerToVM::readConfiguration
+  [ 3] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotVMConfigStore::HotSpotVMConfigStore
+  [ 4] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::HotSpotJVMCIRuntime
+  [ 5] LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.hotspot.HotSpotJVMCIRuntime::runtime
+  [ 6] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [ 7] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [ 8] JNIEnv_::CallStaticObjectMethod
+  [ 9] JVMCIEnv::call_HotSpotJVMCIRuntime_runtime
+  [10] JVMCIRuntime::initialize_HotSpotJVMCIRuntime
+  [11] JVM_GetJVMCIRuntime
+  [12] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::initializeRuntime
+  [13] LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCIRuntime* LibGraalClassLoader_30c8681::jdk.vm.ci.runtime.JVMCI::getRuntime
+  [14] long com.oracle.svm.core.jni.JNIJavaCallWrapperHolder::invoke__A
+  [15] long com.oracle.svm.core.jni.JNIJavaCallVariantWrapperHolder::invokeJJI_J_VA_LIST
+  [16] JNIEnv_::CallStaticObjectMethod
+  [17] JVMCIEnv::call_JVMCI_getRuntime
+  [18] JVMCIRuntime::get_HotSpotJVMCIRuntime
+  [19] JVMCIRuntime::compile_method
+  [20] CompileBroker::invoke_compiler_on_method
+  [21] CompileBroker::compiler_thread_loop
+  [22] JavaThread::thread_main_inner
+  [23] Thread::call_run
+  [24] thread_native_entry
+  [25] start_thread
+  [26] clone3
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 57940402645   89.84%     5794  my.custom.BuboAgentCompilerMarkers.Marker2
+  3600066259    5.58%      360  my.custom.BuboAgentCompilerMarkers.Marker1
+  2650222612    4.11%      265  Mandelbrot.mandelbrot
+    20001994    0.03%        2  Klass::subklass
+    10011184    0.02%        1  void LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.NodeWorkList$IterativeNodeWorkList::add
+    10007413    0.02%        1  PackedTableBase::PackedTableBase
+    10006503    0.02%        1  jdk.internal.classfile.impl.SplitConstantPool.canWriteDirect
+    10004415    0.02%        1  do_set_pte_[k]
+    10004108    0.02%        1  CodeHeap::next_block
+    10003675    0.02%        1  RuntimeBlob::free
+    10003549    0.02%        1  __alloc_pages_[k]
+    10003450    0.02%        1  org.graalvm.word.Pointer com.oracle.svm.core.genscavenge.TlabSupport::allocateRawMemoryInTlabSlow
+    10002928    0.02%        1  SymbolTable::do_add_if_needed
+    10002644    0.02%        1  AccessInternal::check_access_thread_state
+    10002023    0.02%        1  java.util.Iterator* LibGraalClassLoader_30c8681::jdk.graal.compiler.graph.iterators.FilteredNodeIterable::iterator
+    10001977    0.02%        1  java.util.HashMap$Node* java.util.HashMap::getNode
+    10001923    0.02%        1  _raw_spin_unlock_irqrestore_[k]
+    10001822    0.02%        1  CodeBlobIterator<nmethod, NMethodFilter, false>::next_impl
+    10001627    0.02%        1  Thread::is_VM_thread
+    10001502    0.02%        1  java.lang.Object* java.util.concurrent.ConcurrentHashMap::get
+    10001431    0.02%        1  JavaThread::is_Java_thread
+    10001125    0.02%        1  void com.oracle.svm.core.UnmanagedMemoryUtil::copyForward
+    10000831    0.02%        1  JavaThread::current
+    10000793    0.02%        1  __memset_avx2_unaligned_erms
+    10000336    0.02%        1  int org.graalvm.collections.EconomicMapImpl::getHashTableSize
+     9999992    0.02%        1  java.lang.Object* java.util.ArrayList$Itr::next
+     9999821    0.02%        1  void com.oracle.svm.core.UnmanagedMemoryUtil::copyLongsForward
+     9999185    0.02%        1  Dependencies::check_evol_method
+     9998936    0.02%        1  JNIJVMCI::HotSpotCompiledCode::is_instance
+     9998805    0.02%        1  UTF8::unicode_length
+     9996556    0.02%        1  unsigned int UNSIGNED5::read_uint<unsigned char const*, int, UNSIGNED5::ArrayGetSet<unsigned char const*, int> >
+     9994592    0.02%        1  int com.oracle.svm.core.handles.ThreadLocalHandles::popFramesIncluding
