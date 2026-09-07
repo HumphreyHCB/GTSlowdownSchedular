@@ -4,6 +4,6 @@ Data
 *.class
 SaveProfiles
 DataBackup
-Tests/
+Tests/TestResults
 FinalData3MultiplexedAdHoc/
 *.glog

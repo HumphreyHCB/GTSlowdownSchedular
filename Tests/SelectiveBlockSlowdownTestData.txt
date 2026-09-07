@@ -1,0 +1,177 @@
+List
+
+Block: 24 20
+Base Time: 0.492
+For Slowdown 0 Time: 0.486 Percentage Increase: -1.2195121951219523%
+For Slowdown 1 Time: 0.522 Percentage Increase: 6.0975609756097615%
+For Slowdown 2 Time: 0.548 Percentage Increase: 11.382113821138223%
+For Slowdown 3 Time: 0.997 Percentage Increase: 102.64227642276423%
+For Slowdown 4 Time: 1.092 Percentage Increase: 121.95121951219514%
+For Slowdown 5 Time: 1.035 Percentage Increase: 110.36585365853657%
+For Slowdown 6 Time: 1.093 Percentage Increase: 122.15447154471543%
+For Slowdown 7 Time: 1.484 Percentage Increase: 201.6260162601626%
+For Slowdown 8 Time: 1.515 Percentage Increase: 207.92682926829266%
+For Slowdown 9 Time: 1.491 Percentage Increase: 203.0487804878049%
+For Slowdown 10 Time: 1.495 Percentage Increase: 203.86178861788622%
+For Slowdown 11 Time: 1.945 Percentage Increase: 295.32520325203257%
+For Slowdown 12 Time: 2.127 Percentage Increase: 332.31707317073165%
+For Slowdown 13 Time: 2.053 Percentage Increase: 317.2764227642277%
+For Slowdown 14 Time: 2.079 Percentage Increase: 322.56097560975616%
+For Slowdown 15 Time: 2.496 Percentage Increase: 407.3170731707317%
+For Slowdown 16 Time: 2.47 Percentage Increase: 402.0325203252033%
+For Slowdown 17 Time: 2.511 Percentage Increase: 410.36585365853665%
+For Slowdown 18 Time: 2.537 Percentage Increase: 415.650406504065%
+For Slowdown 19 Time: 2.918 Percentage Increase: 493.08943089430903%
+For Slowdown 20 Time: 3.002 Percentage Increase: 510.1626016260162%
+For Slowdown 21 Time: 2.977 Percentage Increase: 505.0813008130081%
+For Slowdown 22 Time: 3.102 Percentage Increase: 530.4878048780488%
+For Slowdown 23 Time: 3.508 Percentage Increase: 613.0081300813008%
+For Slowdown 24 Time: 3.442 Percentage Increase: 599.5934959349594%
+For Slowdown 25 Time: 3.544 Percentage Increase: 620.3252032520325%
+For Slowdown 26 Time: 3.459 Percentage Increase: 603.048780487805%
+For Slowdown 27 Time: 3.972 Percentage Increase: 707.3170731707318%
+For Slowdown 28 Time: 3.99 Percentage Increase: 710.9756097560976%
+For Slowdown 29 Time: 4.134 Percentage Increase: 740.2439024390245%
+For Slowdown 30 Time: 4.074 Percentage Increase: 728.0487804878048%
+For Slowdown 31 Time: 4.492 Percentage Increase: 813.0081300813009%
+For Slowdown 32 Time: 4.536 Percentage Increase: 821.951219512195%
+For Slowdown 33 Time: 4.552 Percentage Increase: 825.2032520325204%
+For Slowdown 34 Time: 4.569 Percentage Increase: 828.6585365853659%
+For Slowdown 35 Time: 4.982 Percentage Increase: 912.6016260162603%
+For Slowdown 36 Time: 4.998 Percentage Increase: 915.8536585365855%
+For Slowdown 37 Time: 4.986 Percentage Increase: 913.4146341463413%
+For Slowdown 38 Time: 5.051 Percentage Increase: 926.6260162601627%
+For Slowdown 39 Time: 5.449 Percentage Increase: 1007.5203252032519%
+
+
+
+Block: 21 17
+Base Time: 3.466
+For Slowdown 0 Time: 3.362 Percentage Increase: -3.000577034045011%
+For Slowdown 1 Time: 1.765 Percentage Increase: -49.076745527986155%
+For Slowdown 2 Time: 3.333 Percentage Increase: -3.837276399307559%
+For Slowdown 3 Time: 6.709 Percentage Increase: 93.56607039815347%
+For Slowdown 4 Time: 5.179 Percentage Increase: 49.42296595499134%
+For Slowdown 5 Time: 6.695 Percentage Increase: 93.16214656664744%
+For Slowdown 6 Time: 6.741 Percentage Increase: 94.48932487016732%
+For Slowdown 7 Time: 6.836 Percentage Increase: 97.23023658395846%
+For Slowdown 8 Time: 10.242 Percentage Increase: 195.4991344489325%
+For Slowdown 9 Time: 8.405 Percentage Increase: 142.49855741488744%
+For Slowdown 10 Time: 10.101 Percentage Increase: 191.43104443162147%
+For Slowdown 11 Time: 10.184 Percentage Increase: 193.82573571840734%
+For Slowdown 12 Time: 13.632 Percentage Increase: 293.3064050778996%
+For Slowdown 13 Time: 11.867 Percentage Increase: 242.38315060588573%
+For Slowdown 14 Time: 13.588 Percentage Increase: 292.03693017888054%
+For Slowdown 15 Time: 16.886 Percentage Increase: 387.1898442008077%
+For Slowdown 16 Time: 17.052 Percentage Increase: 391.97922677437964%
+For Slowdown 17 Time: 15.363 Percentage Increase: 343.24870167339867%
+For Slowdown 18 Time: 17.171 Percentage Increase: 395.4125793421811%
+For Slowdown 19 Time: 17.167 Percentage Increase: 395.29717253317943%
+For Slowdown 20 Time: 20.448 Percentage Increase: 489.9596076168494%
+For Slowdown 21 Time: 18.659 Percentage Increase: 438.3439122908251%
+For Slowdown 22 Time: 20.474 Percentage Increase: 490.70975187536055%
+For Slowdown 23 Time: 20.338 Percentage Increase: 486.7859203693017%
+For Slowdown 24 Time: 22.348 Percentage Increase: 544.7778418926716%
+For Slowdown 25 Time: 23.772 Percentage Increase: 585.8626658972878%
+For Slowdown 26 Time: 23.98 Percentage Increase: 591.863819965378%
+For Slowdown 27 Time: 23.75 Percentage Increase: 585.2279284477784%
+For Slowdown 28 Time: 27.265 Percentage Increase: 686.6416618580496%
+For Slowdown 29 Time: 25.662 Percentage Increase: 640.3923831506057%
+For Slowdown 30 Time: 27.265 Percentage Increase: 686.6416618580496%
+For Slowdown 31 Time: 27.251 Percentage Increase: 686.2377380265435%
+For Slowdown 32 Time: 30.772 Percentage Increase: 787.8245816503172%
+For Slowdown 33 Time: 28.715 Percentage Increase: 728.4766301211771%
+For Slowdown 34 Time: 30.319 Percentage Increase: 774.7547605308713%
+For Slowdown 35 Time: 34.247 Percentage Increase: 888.0842469705713%
+For Slowdown 36 Time: 32.47 Percentage Increase: 836.8147720715522%
+For Slowdown 37 Time: 33.911 Percentage Increase: 878.3900750144259%
+For Slowdown 38 Time: 34.121 Percentage Increase: 884.4489324870167%
+For Slowdown 39 Time: 34.015 Percentage Increase: 881.3906520484707%
+
+Block: 27 21
+Base Time: 1.088
+For Slowdown 0 Time: 1.09 Percentage Increase: 0.18382352941176486%
+For Slowdown 1 Time: 1.172 Percentage Increase: 7.720588235294104%
+For Slowdown 2 Time: 1.111 Percentage Increase: 2.1139705882352855%
+For Slowdown 3 Time: 1.223 Percentage Increase: 12.408088235294118%
+For Slowdown 4 Time: 1.664 Percentage Increase: 52.94117647058821%
+For Slowdown 5 Time: 1.77 Percentage Increase: 62.683823529411754%
+For Slowdown 6 Time: 1.748 Percentage Increase: 60.661764705882334%
+For Slowdown 7 Time: 1.8 Percentage Increase: 65.44117647058823%
+For Slowdown 8 Time: 2.327 Percentage Increase: 113.87867647058823%
+For Slowdown 9 Time: 2.281 Percentage Increase: 109.65073529411764%
+For Slowdown 10 Time: 2.236 Percentage Increase: 105.51470588235294%
+For Slowdown 11 Time: 2.812 Percentage Increase: 158.45588235294116%
+For Slowdown 12 Time: 2.826 Percentage Increase: 159.7426470588235%
+For Slowdown 13 Time: 2.854 Percentage Increase: 162.31617647058823%
+For Slowdown 14 Time: 2.835 Percentage Increase: 160.56985294117646%
+For Slowdown 15 Time: 2.87 Percentage Increase: 163.78676470588235%
+For Slowdown 16 Time: 3.376 Percentage Increase: 210.29411764705878%
+For Slowdown 17 Time: 3.488 Percentage Increase: 220.58823529411762%
+For Slowdown 18 Time: 3.476 Percentage Increase: 219.48529411764702%
+For Slowdown 19 Time: 3.434 Percentage Increase: 215.625%
+For Slowdown 20 Time: 4.073 Percentage Increase: 274.35661764705884%
+For Slowdown 21 Time: 4.047 Percentage Increase: 271.96691176470586%
+For Slowdown 22 Time: 4.051 Percentage Increase: 272.3345588235294%
+For Slowdown 23 Time: 4.038 Percentage Increase: 271.1397058823529%
+For Slowdown 24 Time: 4.57 Percentage Increase: 320.0367647058823%
+For Slowdown 25 Time: 4.509 Percentage Increase: 314.43014705882354%
+For Slowdown 26 Time: 4.54 Percentage Increase: 317.27941176470586%
+For Slowdown 27 Time: 4.438 Percentage Increase: 307.90441176470586%
+For Slowdown 28 Time: 5.065 Percentage Increase: 365.5330882352941%
+For Slowdown 29 Time: 5.002 Percentage Increase: 359.7426470588235%
+For Slowdown 30 Time: 5.139 Percentage Increase: 372.3345588235294%
+For Slowdown 31 Time: 5.173 Percentage Increase: 375.4595588235294%
+For Slowdown 32 Time: 5.597 Percentage Increase: 414.43014705882354%
+For Slowdown 33 Time: 5.663 Percentage Increase: 420.49632352941177%
+For Slowdown 34 Time: 5.619 Percentage Increase: 416.4522058823529%
+For Slowdown 35 Time: 5.91 Percentage Increase: 443.1985294117647%
+For Slowdown 36 Time: 6.343 Percentage Increase: 482.9963235294117%
+For Slowdown 37 Time: 6.145 Percentage Increase: 464.797794117647%
+For Slowdown 38 Time: 6.059 Percentage Increase: 456.8933823529411%
+For Slowdown 39 Time: 6.276 Percentage Increase: 476.83823529411757%
+
+Richards
+
+Block: 21 248
+Base Time: 1.634
+For Slowdown 0 Time: 1.66 Percentage Increase: 1.5911872705018375%
+For Slowdown 1 Time: 1.571 Percentage Increase: -3.8555691554467533%
+For Slowdown 2 Time: 2.883 Percentage Increase: 76.43818849449205%
+For Slowdown 3 Time: 2.689 Percentage Increase: 64.5654834761322%
+For Slowdown 4 Time: 3.115 Percentage Increase: 90.63647490820075%
+For Slowdown 5 Time: 3.163 Percentage Increase: 93.57405140758874%
+For Slowdown 6 Time: 4.126 Percentage Increase: 152.50917992656065%
+For Slowdown 7 Time: 4.251 Percentage Increase: 160.1591187270502%
+For Slowdown 8 Time: 4.33 Percentage Increase: 164.99388004895962%
+For Slowdown 9 Time: 5.998 Percentage Increase: 267.07466340269286%
+For Slowdown 10 Time: 5.723 Percentage Increase: 250.24479804161572%
+For Slowdown 11 Time: 6.181 Percentage Increase: 278.2741738066096%
+For Slowdown 12 Time: 6.112 Percentage Increase: 274.05140758873927%
+For Slowdown 13 Time: 6.286 Percentage Increase: 284.70012239902076%
+For Slowdown 14 Time: 7.449 Percentage Increase: 355.875152998776%
+For Slowdown 15 Time: 7.108 Percentage Increase: 335.00611995104043%
+For Slowdown 16 Time: 7.513 Percentage Increase: 359.79192166462667%
+For Slowdown 17 Time: 7.898 Percentage Increase: 383.3537331701346%
+For Slowdown 18 Time: 8.551 Percentage Increase: 423.31701346389235%
+For Slowdown 19 Time: 8.909 Percentage Increase: 445.22643818849457%
+For Slowdown 20 Time: 9.42 Percentage Increase: 476.49938800489593%
+For Slowdown 21 Time: 10.726 Percentage Increase: 556.4259485924114%
+For Slowdown 22 Time: 10.72 Percentage Increase: 556.0587515299878%
+For Slowdown 23 Time: 10.381 Percentage Increase: 535.31211750306%
+For Slowdown 24 Time: 10.773 Percentage Increase: 559.3023255813954%
+For Slowdown 25 Time: 10.955 Percentage Increase: 570.4406364749082%
+For Slowdown 26 Time: 12.142 Percentage Increase: 643.0844553243574%
+For Slowdown 27 Time: 11.913 Percentage Increase: 629.0697674418606%
+For Slowdown 28 Time: 12.049 Percentage Increase: 637.3929008567932%
+For Slowdown 29 Time: 12.328 Percentage Increase: 654.4675642594859%
+For Slowdown 30 Time: 13.655 Percentage Increase: 735.6793145654834%
+For Slowdown 31 Time: 14.075 Percentage Increase: 761.3831089351285%
+For Slowdown 32 Time: 13.951 Percentage Increase: 753.7943696450429%
+For Slowdown 33 Time: 13.898 Percentage Increase: 750.5507955936353%
+For Slowdown 34 Time: 15.271 Percentage Increase: 834.5777233782131%
+For Slowdown 35 Time: 14.829 Percentage Increase: 807.5275397796819%
+For Slowdown 36 Time: 15.328 Percentage Increase: 838.0660954712362%
+For Slowdown 37 Time: 15.441 Percentage Increase: 844.9816401468789%
+For Slowdown 38 Time: 16.26 Percentage Increase: 895.1040391676868%
+For Slowdown 39 Time: 16.376 Percentage Increase: 902.2031823745411%
