@@ -232,51 +232,84 @@ public class Diviner {
             }
         }
 
-        // Step 2: Fine-tune to find the exact number that makes it go over
-        guess = closestUnder + 1 ; // Start just above the last "under" value
-        while (true) {
-            // Add slowdown entry and write to file for the current guess
-            GTBuildSlowdownFile.addEntry(method, block.graalID, block.vtuneBlock, guess, block.backendBlock);
-            String pathToSlowdownFile = GTBuildSlowdownFile
-                    .writeToFile("_" + method + "_" + block.vtuneBlock + "_" + guess, runID);
+        // Step 2: Binary-search between the last under-target guess
+        // and the first over-target guess.
+        while (closestOver - closestUnder > 1) {
+            guess = closestUnder + ((closestOver - closestUnder) / 2);
 
-            // Run VTune analysis and get CPU speed for the current guess
-            String formattedRunLocation = runID + "_" + method.replace("::", "").replace(".", "") + "_"
-                    + block.vtuneBlock + "_" + guess;
-            String runLocation = VTuneRunner.runVtune(Benchmark, iterations,
-                    AWFYBenchmarksLookUp.getExtraArgs(Benchmark), false, true, pathToSlowdownFile,
-                    formattedRunLocation, compilerReplay);
-            double currentBlockCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
+            GTBuildSlowdownFile.addEntry(
+                    method,
+                    block.graalID,
+                    block.vtuneBlock,
+                    guess,
+                    block.backendBlock);
+
+            String pathToSlowdownFile =
+                    GTBuildSlowdownFile.writeToFile(
+                            "_" + method +
+                            "_" + block.vtuneBlock +
+                            "_" + guess,
+                            runID);
+
+            String formattedRunLocation =
+                    runID +
+                    "_" +
+                    method.replace("::", "").replace(".", "") +
+                    "_" +
+                    block.vtuneBlock +
+                    "_" +
+                    guess;
+
+            String runLocation =
+                    VTuneRunner.runVtune(
+                            Benchmark,
+                            iterations,
+                            AWFYBenchmarksLookUp.getExtraArgs(Benchmark),
+                            false,
+                            true,
+                            pathToSlowdownFile,
+                            formattedRunLocation,
+                            compilerReplay);
+
+            double currentBlockCPUSpeed =
+                    VTuneAnalyzer.getCpuTimeForBlock(
+                            runLocation,
+                            method,
+                            block.vtuneBlock);
 
             if (lowFootPrint) {
-                // Handle low footprint option: generate report and remove VTune run
-                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
-                        + "_SlowDown_Data/LowFootPrintDumps";
+                String directoryPath =
+                        "/home/hb478/repos/GTSlowdownSchedular/Data/" +
+                        runID +
+                        "_SlowDown_Data/LowFootPrintDumps";
+
                 File directory = new File(directoryPath);
-    
-                // Create the directory if it does not exist
+
                 if (!directory.exists()) {
                     directory.mkdirs();
                 }
-                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
-                        runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
-                VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
+
+                String outputFilePath2 = String.format(
+                        "/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                        runID + "_SlowDown_Data/LowFootPrintDumps/",
+                        formattedRunLocation);
+
+                VTuneAnalyzer.generateMethodBlockVTuneReport(
+                        formattedRunLocation,
+                        method,
+                        outputFilePath2);
+
                 RemoveVtuneRun.run(runLocation);
             }
 
             if (currentBlockCPUSpeed > targetSpeed) {
-                // guess is now first over
-                break;
+                closestOver = guess;
             } else {
-                guess++;
-            }
-
-            if (guess > closestOver) {
-                guess = closestOver;
-                break;
+                closestUnder = guess;
             }
         }
 
-        return guess; // Return both values
+
+        return closestOver; // Return both values
     }
 }
