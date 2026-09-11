@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import GTResources.AWFYBenchmarksLookUp;
+import Phases.GTSchedular;
 
 public class CompilerReplayRunner {
     
@@ -84,6 +85,10 @@ public class CompilerReplayRunner {
         //command.add("-Djdk.graal.StrictProfiles=false");
         //command.add("-Djdk.graal.LoadProfiles=/home/hb478/repos/GTSlowdownSchedular/SaveProfiles");
 
+
+        if(GTSchedular.EnableBuboLIRPhase){
+            command.add("-Djdk.graal.BuboLIRPhase=true");
+        }
 
         if (AWFYBenchmarksLookUp.isRenaissanceBenchmark(benchmark)) {
                 // Renaissance: ignore `iterations`; use extra_args as repetitions (-r)
