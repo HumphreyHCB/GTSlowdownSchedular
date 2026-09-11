@@ -2,12 +2,15 @@ package Phases.Marker;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * BuildMarkerPhaseInfo
@@ -60,121 +63,277 @@ public class BuildMarkerPhaseInfo {
 
     private static String readFileContents(File file) throws IOException {
         StringBuilder content = new StringBuilder();
+
         try (FileReader reader = new FileReader(file)) {
             int ch;
+
             while ((ch = reader.read()) != -1) {
                 content.append((char) ch);
             }
         }
+
         return content.toString();
     }
 
     public static boolean build(String markerRunId) {
-        String normalRunPath = String.format("Data/%s_NormalRun/result.json", markerRunId);
-        String markerRunPath = String.format("Data/%s_MarkerRun/result.json", markerRunId);
+        String normalRunPath = String.format(
+                "Data/%s_NormalRun/result.json",
+                markerRunId);
+
+        String markerRunPath = String.format(
+                "Data/%s_MarkerRun/result.json",
+                markerRunId);
 
         File normalRunFile = new File(normalRunPath);
         File markerRunFile = new File(markerRunPath);
-    
+
         if (!normalRunFile.exists() || !markerRunFile.exists()) {
             System.out.println("One or both result files are missing.");
             return false;
         }
-    
+
+        /*
+         * Build the normal MarkerPhaseInfo.
+         */
+        String outputPath = String.format(
+                "Data/%s_MarkerRun/MarkerPhaseInfo.json",
+                markerRunId);
+
+        if (!buildMarkerPhase(
+                normalRunFile,
+                markerRunFile,
+                outputPath,
+                false)) {
+
+            return false;
+        }
+
+        /*
+         * If the BuboL included result exists, also build
+         * MarkerPhase_BuboIncluded.json.
+         */
+        String buboIncludedPath = String.format(
+                "Data/%s_MarkerRun/result_with_bubol.json",
+                markerRunId);
+
+        File buboIncludedFile = new File(buboIncludedPath);
+
+        if (buboIncludedFile.exists()) {
+
+            String buboOutputPath = String.format(
+                    "Data/%s_MarkerRun/MarkerPhase_BuboIncluded.json",
+                    markerRunId);
+
+            if (!buildMarkerPhase(
+                    normalRunFile,
+                    buboIncludedFile,
+                    buboOutputPath,
+                    true)) {
+
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private static boolean buildMarkerPhase(
+            File normalRunFile,
+            File markerRunFile,
+            String outputPath,
+            boolean includeBuboBlocks) {
+
         try {
             String normalRunContent = readFileContents(normalRunFile);
             String markerRunContent = readFileContents(markerRunFile);
-    
+
             JSONObject normalRunJson = new JSONObject(normalRunContent);
             JSONObject markerRunJson = new JSONObject(markerRunContent);
-    
-            // New JSON structure based only on normalRunJson
+
+            // New JSON structure based on normalRunJson
             JSONObject updatedMarkerRunJson = new JSONObject();
-    
+
             for (String method : normalRunJson.keySet()) {
                 JSONArray normalBlocks = normalRunJson.getJSONArray(method);
                 JSONArray markerBlocks = markerRunJson.optJSONArray(method);
                 JSONArray updatedBlocks = new JSONArray();
-    
+
                 if (markerBlocks == null) {
-                    System.out.println("No matching method found in marker JSON for: " + method);
+                    System.out.println(
+                            "No matching method found in marker JSON for: "
+                                    + method);
                     continue;
                 }
-                int total_time = 0;
-    
+
+                double total_time = 0;
+
+                /*
+                 * Keep track of the marker blocks already added through
+                 * normalRunJson.
+                 */
+                Set<String> addedVtuneBlocks = new HashSet<>();
+
                 for (int i = 0; i < normalBlocks.length(); i++) {
                     JSONObject normalBlock = normalBlocks.getJSONObject(i);
-                    String vtuneBlockId = normalBlock.optString("VtuneBlock");
-    
-                    // Look for a corresponding block in the marker run with the same VtuneBlock ID
+                    String vtuneBlockId =
+                            normalBlock.optString("VtuneBlock");
+
+                    // Look for a corresponding block in the marker run
+                    // with the same VtuneBlock ID.
                     JSONObject markerBlock = null;
+
                     for (int j = 0; j < markerBlocks.length(); j++) {
-                        JSONObject tempMarkerBlock = markerBlocks.getJSONObject(j);
-                        if (vtuneBlockId.equals(tempMarkerBlock.optString("VtuneBlock"))) {
+                        JSONObject tempMarkerBlock =
+                                markerBlocks.getJSONObject(j);
+
+                        if (vtuneBlockId.equals(
+                                tempMarkerBlock.optString("VtuneBlock"))) {
+
                             markerBlock = tempMarkerBlock;
                             break;
                         }
                     }
+
                     if (markerBlock != null && normalBlock.has("CpuTime")) {
+
                         // Construct updated block based on normal run values
                         JSONObject updatedBlock = new JSONObject();
-                        updatedBlock.put("VtuneBlock", vtuneBlockId);
-                        updatedBlock.put("BaseCpuTime", normalBlock.get("CpuTime"));
-                        //updatedBlock.put("LineCount", normalBlock.get("LineCount"));
 
-                        // Carry over other fields from markerBlock if it exists
-                        if (markerBlock != null) {
-                            for (String key : markerBlock.keySet()) {
-                                if (!key.equals("CpuTime")) { // Exclude CpuTime from marker run
-                                    updatedBlock.put(key, markerBlock.get(key));
-                                }
+                        updatedBlock.put(
+                                "VtuneBlock",
+                                vtuneBlockId);
+
+                        updatedBlock.put(
+                                "BaseCpuTime",
+                                normalBlock.get("CpuTime"));
+
+                        // Carry over other fields from markerBlock
+                        for (String key : markerBlock.keySet()) {
+                            if (!key.equals("CpuTime")) {
+                                updatedBlock.put(
+                                        key,
+                                        markerBlock.get(key));
                             }
                         }
+
                         updatedBlocks.put(updatedBlock);
+                        addedVtuneBlocks.add(vtuneBlockId);
+
                     } else {
-                        System.out
-                                .println("Incomplete block data for VtuneBlock ID: " + vtuneBlockId + " Time : "+ normalBlock.get("CpuTime") +" . Skipping...");
-                                total_time += normalBlock.getDouble("CpuTime");
+                        System.out.println(
+                                "Incomplete block data for VtuneBlock ID: "
+                                        + vtuneBlockId
+                                        + " Time : "
+                                        + normalBlock.get("CpuTime")
+                                        + " . Skipping...");
+
+                        total_time += normalBlock.getDouble("CpuTime");
                     }
                 }
-                System.out.println("Total time missing for method: " + method + " is " + total_time);
-    
+
+                /*
+                 * result_with_bubol.json contains the RDTSC blocks as well.
+                 *
+                 * These blocks may not exist in normalRunJson, so the normal
+                 * loop above would never add them.
+                 *
+                 * Add those extra RDTSC blocks here.
+                 */
+                if (includeBuboBlocks) {
+
+                    for (int i = 0; i < markerBlocks.length(); i++) {
+                        JSONObject markerBlock =
+                                markerBlocks.getJSONObject(i);
+
+                        String vtuneBlockId =
+                                markerBlock.optString("VtuneBlock");
+
+                        /*
+                         * Already added above, so do not add it twice.
+                         */
+                        if (addedVtuneBlocks.contains(vtuneBlockId)) {
+                            continue;
+                        }
+
+                        String assembler =
+                                markerBlock.optString("Assembler");
+
+                        /*
+                         * Only the Bubo RDTSC blocks should be extra.
+                         */
+                        if (!assembler.contains("rdtsc")) {
+                            continue;
+                        }
+
+                        JSONObject updatedBlock = new JSONObject();
+
+                        for (String key : markerBlock.keySet()) {
+                            if (!key.equals("CpuTime")) {
+                                updatedBlock.put(
+                                        key,
+                                        markerBlock.get(key));
+                            }
+                        }
+
+                        updatedBlocks.put(updatedBlock);
+                    }
+                }
+
+                System.out.println(
+                        "Total time missing for method: "
+                                + method
+                                + " is "
+                                + total_time);
+
                 // Add updated blocks to the new JSON under the method name
                 updatedMarkerRunJson.put(method, updatedBlocks);
             }
 
             // Nasty Patch
             filterOutEDeadBlocks(updatedMarkerRunJson);
-    
-            // Write updated JSON to a new file
-            String outputPath = String.format("Data/%s_MarkerRun/MarkerPhaseInfo.json", markerRunId);
+
+            // Write updated JSON to the requested output file
             try (FileWriter writer = new FileWriter(outputPath)) {
                 writer.write(updatedMarkerRunJson.toString(4));
             }
-    
+
             return true;
-    
+
         } catch (IOException e) {
-            System.err.println("Error processing JSON files: " + e.getMessage());
+            System.err.println(
+                    "Error processing JSON files: "
+                            + e.getMessage());
+
             return false;
         }
     }
 
-    private static void filterOutEDeadBlocks(JSONObject updatedMarkerRunJson) {
+    private static void filterOutEDeadBlocks(
+            JSONObject updatedMarkerRunJson) {
+
         for (String method : updatedMarkerRunJson.keySet()) {
-            JSONArray blocks = updatedMarkerRunJson.getJSONArray(method);
+            JSONArray blocks =
+                    updatedMarkerRunJson.getJSONArray(method);
 
             // Map to keep the block with the largest VtuneBlock per GraalID
-            Map<String, JSONObject> graalIdToBestBlock = new HashMap<>();
+            Map<String, JSONObject> graalIdToBestBlock =
+                    new HashMap<>();
 
             for (int i = 0; i < blocks.length(); i++) {
                 JSONObject block = blocks.getJSONObject(i);
-                String graalId = block.optString("GraalID");
-                String vtuneBlockStr = block.optString("VtuneBlock");
+
+                String graalId =
+                        block.optString("GraalID");
+
+                String vtuneBlockStr =
+                        block.optString("VtuneBlock");
 
                 int vtuneBlock = -1;
+
                 try {
-                    vtuneBlock = Integer.parseInt(vtuneBlockStr);
+                    vtuneBlock =
+                            Integer.parseInt(vtuneBlockStr);
+
                 } catch (NumberFormatException e) {
                     // Ignore this block if VtuneBlock is not numeric
                     continue;
@@ -182,36 +341,57 @@ public class BuildMarkerPhaseInfo {
 
                 if (!graalIdToBestBlock.containsKey(graalId)) {
                     graalIdToBestBlock.put(graalId, block);
+
                 } else {
-                    JSONObject existing = graalIdToBestBlock.get(graalId);
+                    JSONObject existing =
+                            graalIdToBestBlock.get(graalId);
+
                     try {
-                        int existingVtune = Integer.parseInt(existing.optString("VtuneBlock"));
+                        int existingVtune =
+                                Integer.parseInt(
+                                        existing.optString("VtuneBlock"));
+
                         if (vtuneBlock > existingVtune) {
-                            graalIdToBestBlock.put(graalId, block);
+                            graalIdToBestBlock.put(
+                                    graalId,
+                                    block);
                         }
+
                     } catch (NumberFormatException e) {
-                        // Replace the existing block if its VtuneBlock is not valid
-                        graalIdToBestBlock.put(graalId, block);
+                        // Replace the existing block if its
+                        // VtuneBlock is not valid
+                        graalIdToBestBlock.put(
+                                graalId,
+                                block);
                     }
                 }
             }
 
             // Rebuild the block list from filtered entries
             JSONArray filteredBlocks = new JSONArray();
-            for (JSONObject bestBlock : graalIdToBestBlock.values()) {
+
+            for (JSONObject bestBlock :
+                    graalIdToBestBlock.values()) {
+
                 filteredBlocks.put(bestBlock);
             }
 
-            updatedMarkerRunJson.put(method, filteredBlocks);
+            updatedMarkerRunJson.put(
+                    method,
+                    filteredBlocks);
         }
     }
 
+    private static double haveSameMethodsAndBlocks(
+            JSONObject normalRunJson,
+            JSONObject markerRunJson) {
 
-    private static double haveSameMethodsAndBlocks(JSONObject normalRunJson, JSONObject markerRunJson) {
         boolean match = true;
         double totalMissingCpuTime = 0.0;
 
-        if (!normalRunJson.keySet().equals(markerRunJson.keySet())) {
+        if (!normalRunJson.keySet().equals(
+                markerRunJson.keySet())) {
+
             match = false;
         }
 
@@ -221,8 +401,11 @@ public class BuildMarkerPhaseInfo {
                 continue;
             }
 
-            JSONArray normalBlocks = normalRunJson.getJSONArray(method);
-            JSONArray markerBlocks = markerRunJson.getJSONArray(method);
+            JSONArray normalBlocks =
+                    normalRunJson.getJSONArray(method);
+
+            JSONArray markerBlocks =
+                    markerRunJson.getJSONArray(method);
 
             // if (normalBlocks.length() != markerBlocks.length()) {
             //     match = false;
@@ -230,11 +413,19 @@ public class BuildMarkerPhaseInfo {
             // }
 
             for (int i = 0; i < normalBlocks.length(); i++) {
-                String normalVtuneBlock = normalBlocks.getJSONObject(i).getString("VtuneBlock");
+                String normalVtuneBlock =
+                        normalBlocks
+                                .getJSONObject(i)
+                                .getString("VtuneBlock");
+
                 boolean blockFound = false;
 
                 for (int j = 0; j < markerBlocks.length(); j++) {
-                    String markerVtuneBlock = markerBlocks.getJSONObject(j).getString("VtuneBlock");
+                    String markerVtuneBlock =
+                            markerBlocks
+                                    .getJSONObject(j)
+                                    .getString("VtuneBlock");
+
                     if (normalVtuneBlock.equals(markerVtuneBlock)) {
                         blockFound = true;
                         break;
@@ -243,17 +434,38 @@ public class BuildMarkerPhaseInfo {
 
                 if (!blockFound) {
                     match = false;
-                    if (normalBlocks.getJSONObject(i).has("CpuTime")) {
-                        System.out.println("Cant Find " + normalBlocks.getJSONObject(i).getString("VtuneBlock") + " Cost: " + normalBlocks.getJSONObject(i).getDouble("CpuTime"));
-                        totalMissingCpuTime += normalBlocks.getJSONObject(i).getDouble("CpuTime");
+
+                    if (normalBlocks
+                            .getJSONObject(i)
+                            .has("CpuTime")) {
+
+                        System.out.println(
+                                "Cant Find "
+                                        + normalBlocks
+                                                .getJSONObject(i)
+                                                .getString("VtuneBlock")
+                                        + " Cost: "
+                                        + normalBlocks
+                                                .getJSONObject(i)
+                                                .getDouble("CpuTime"));
+
+                        totalMissingCpuTime +=
+                                normalBlocks
+                                        .getJSONObject(i)
+                                        .getDouble("CpuTime");
                     }
                 }
             }
         }
 
         if (!match) {
-            System.out.println("Methods and blocks do not match between the runs.");
-            System.out.println("Total missing CPU time: " + totalMissingCpuTime + "s");
+            System.out.println(
+                    "Methods and blocks do not match between the runs.");
+
+            System.out.println(
+                    "Total missing CPU time: "
+                            + totalMissingCpuTime
+                            + "s");
         }
 
         return totalMissingCpuTime;

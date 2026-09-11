@@ -6,6 +6,9 @@ import VTune.VTuneReportRipper.BlockData;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import Phases.GTSchedular;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -32,26 +35,28 @@ public class BuildSlowdownTargetsList {
     private static void processGeneratedFiles(String markerRunId, List<String> significantMethods) {
         String directoryPath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/", markerRunId);
         VTuneReportRipper ripper = new VTuneReportRipper();
+
         JSONObject resultJson = new JSONObject();
+        JSONObject resultJsonWithBuboL = new JSONObject();
 
         for (String method : significantMethods) {
             String filePath = directoryPath + method.replaceAll("[\\/:*?\"<>|]", "_") + ".txt";
             File file = new File(filePath);
+
             if (file.exists()) {
                 Map<String, BlockData> blocks = ripper.processFileIntoBlocks(filePath);
+
                 JSONArray blockArray = new JSONArray();
+                JSONArray blockArrayWithBuboL = new JSONArray();
 
                 for (Map.Entry<String, BlockData> entry : blocks.entrySet()) {
                     BlockData blockData = entry.getValue();
-                    //&& blockData.getCpuTime() != null
-                    if (blockData.getGraalID() != null ) {
+
+                    if (blockData.getGraalID() != null) {
                         JSONObject blockInfo = new JSONObject();
+
                         blockInfo.put("VtuneBlock", entry.getKey().replaceAll("Block ", ""));
                         String graalID = blockData.getGraalID();
-
-                        if (blockData.getFormatedAsm().contains("rdtsc")) {
-                            continue;
-                        }
 
                         if (graalID.contains("Backend Block")) {
                             blockInfo.put("GraalID", graalID.replace("Backend Block ", ""));
@@ -60,20 +65,54 @@ public class BuildSlowdownTargetsList {
                             blockInfo.put("GraalID", graalID);
                             blockInfo.put("Backend Block", false);
                         }
+
                         if (blockData.getCpuTime() != null) {
                             blockInfo.put("CpuTime", blockData.getCpuTime());
                             blockInfo.put("Assembler", blockData.getFormatedAsm());
                         }
+
+                        // BuboL version gets every block
+                        if (GTSchedular.EnableBuboLIRPhase) {
+                            blockArrayWithBuboL.put(blockInfo);
+                        }
+
+                        // Normal version excludes rdtsc blocks when BuboL is enabled
+                        if (GTSchedular.EnableBuboLIRPhase
+                                && blockData.getFormatedAsm().contains("rdtsc")) {
+                            continue;
+                        }
+
                         blockArray.put(blockInfo);
                     }
                 }
+
                 resultJson.put(method, blockArray);
+
+                if (GTSchedular.EnableBuboLIRPhase) {
+                    resultJsonWithBuboL.put(method, blockArrayWithBuboL);
+                }
+
             } else {
                 System.out.println("File not found for method: " + method);
             }
         }
 
         dumpResultsToJson(markerRunId, resultJson);
+
+        if (GTSchedular.EnableBuboLIRPhase) {
+            dumpResultsToJsonWithBuboL(markerRunId, resultJsonWithBuboL);
+        }
+    }
+
+        private static void dumpResultsToJsonWithBuboL(String markerRunId, JSONObject resultJson) {
+        try (FileWriter writer = new FileWriter(
+                "Data/" + markerRunId + "/result_with_bubol.json")) {
+
+            writer.write(resultJson.toString(4));
+
+        } catch (IOException e) {
+            System.err.println("Error writing JSON file: " + e.getMessage());
+        }
     }
 
     private static void dumpResultsToJson(String markerRunId, JSONObject resultJson) {
