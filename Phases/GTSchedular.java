@@ -12,6 +12,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
@@ -26,18 +27,20 @@ public class GTSchedular {
     public int iterations;
     public String ID;
     public double slowdownAmount;
+    public String OptionalOutput;
 
     public static Boolean EnableBuboLIRPhase = false;
 
-
     // Parameterized constructor
-    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay, double slowdownAmount, Boolean enableBuboLIRPhase) {
+    public GTSchedular(String benchmarkString, int iterations, Boolean lowFootPrint, Boolean compilerReplay,
+            double slowdownAmount, Boolean enableBuboLIRPhase, String OptionalOutput) {
         this.benchmark = benchmarkString;
         this.iterations = iterations;
         this.lowFootPrint = lowFootPrint;
         this.compilerReplay = compilerReplay;
         this.slowdownAmount = slowdownAmount;
         EnableBuboLIRPhase = enableBuboLIRPhase;
+        this.OptionalOutput = OptionalOutput;
         ID = generateId();
 
         schedule();
@@ -46,45 +49,56 @@ public class GTSchedular {
 
     /// this method should invoke both the marker and divining phase
     public void schedule() {
-       System.out.println("GTSchedularTimeLogger,Start,"+ benchmark+ " " + System.currentTimeMillis());
-       if (compilerReplay) {
-           CompilerReplayRunner.run(benchmark, iterations, ID);
+        System.out.println("GTSchedularTimeLogger,Start," + benchmark + " " + System.currentTimeMillis());
+        if (compilerReplay) {
+            CompilerReplayRunner.run(benchmark, iterations, ID);
         }
 
         // if (compilerReplay) {
 
-        //     String sourcePath = "/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/"+ benchmark+"/"+ benchmark + "_CompilerReplay";
-        //     String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
-        //     try {
-        //         // Ensure destination directory exists
-        //         Files.createDirectories(Paths.get(destinationPath));
+        // String sourcePath =
+        // "/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/"+ benchmark+"/"+
+        // benchmark + "_CompilerReplay";
+        // String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID +
+        // "_CompilerReplay";
+        // try {
+        // // Ensure destination directory exists
+        // Files.createDirectories(Paths.get(destinationPath));
 
-        //         // Get all files in the source directory
-        //         DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(sourcePath));
-        //         for (Path file : stream) {
-        //             if (Files.isRegularFile(file)) { // Only process files
-        //                 Path destinationFile = Paths.get(destinationPath).resolve(file.getFileName());
-        //                 Files.copy(file, destinationFile, StandardCopyOption.REPLACE_EXISTING);
-        //             }
-        //         }
-        //     } catch (Exception e) {
-        //         e.printStackTrace();
-        //     }
+        // // Get all files in the source directory
+        // DirectoryStream<Path> stream =
+        // Files.newDirectoryStream(Paths.get(sourcePath));
+        // for (Path file : stream) {
+        // if (Files.isRegularFile(file)) { // Only process files
+        // Path destinationFile =
+        // Paths.get(destinationPath).resolve(file.getFileName());
+        // Files.copy(file, destinationFile, StandardCopyOption.REPLACE_EXISTING);
         // }
-
-
+        // }
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // }
+        // }
 
         MarkerRunner.run(benchmark, iterations, ID, compilerReplay);
 
         DiviningRunnerMultiplexed.runComplex(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
-        
-        
-       //  DiviningRunnerMultiplexed.runComplexJumpStart(benchmark, iterations, ID, lowFootPrint, compilerReplay, slowdownAmount);
+
+        // DiviningRunnerMultiplexed.runComplexJumpStart(benchmark, iterations, ID,
+        // lowFootPrint, compilerReplay, slowdownAmount);
         // Divining
 
-       mergeFinalJsonFiles(benchmark, ID);
+        mergeFinalJsonFiles(benchmark, ID);
 
-        System.out.println("GTSchedularTimeLogger,End,"+ benchmark+ " " + System.currentTimeMillis());
+        System.out.println("GTSchedularTimeLogger,End," + benchmark + " " + System.currentTimeMillis());
+
+        try {
+            Paths.get(OptionalOutput);
+            System.out.println("Outputting final JSON and CompilerReplay to: " + OptionalOutput);
+            outputJsonandReplay(benchmark, ID, OptionalOutput);
+        } catch (InvalidPathException | NullPointerException ex) {
+
+        }
 
     }
 
@@ -145,7 +159,7 @@ public class GTSchedular {
         }
 
         // Output path for the merged JSON file
-        String outputPath = directoryPath + "/Final_"+benchmark+".json";
+        String outputPath = directoryPath + "/Final_" + benchmark + ".json";
 
         try (FileWriter fileWriter = new FileWriter(outputPath)) {
             // Write the merged JSONObject to the output file
@@ -171,6 +185,200 @@ public class GTSchedular {
                 // Otherwise, add or replace the block
                 existingMethodData.put(blockKey, newBlockValue);
             }
+        }
+    }
+
+    private static void outputJsonandReplay(String benchmark, String id, String OptionalOutput) {
+        String slowdownDirectoryPath = "Data/" + id + "_SlowDown_Data";
+        String replayDirectoryPath = "Data/" + id + "_CompilerReplay";
+        String MarkerRunDirectoryPath = "Data/" + id + "_MarkerRun";
+        
+
+        Path slowdownDirectory = Paths.get(slowdownDirectoryPath);
+        Path replayDirectory = Paths.get(replayDirectoryPath);
+        Path MarkerRunDirectory = Paths.get(MarkerRunDirectoryPath);
+        Path outputDirectory = Paths.get(OptionalOutput);
+
+        try {
+            Files.createDirectories(outputDirectory);
+
+            /*
+             * Find:
+             * Final*<benchmark>.json
+             *
+             * For example:
+             * Final_Bounce.json
+             */
+            File slowdownDirectoryFile = slowdownDirectory.toFile();
+
+            File[] finalJsonFiles = slowdownDirectoryFile.listFiles(
+                    (dir, name) -> name.startsWith("Final") &&
+                            name.endsWith(benchmark + ".json"));
+
+            if (finalJsonFiles != null && finalJsonFiles.length > 0) {
+                for (File jsonFile : finalJsonFiles) {
+                    Path destination = outputDirectory.resolve(jsonFile.getName());
+
+                    Files.copy(
+                            jsonFile.toPath(),
+                            destination,
+                            StandardCopyOption.REPLACE_EXISTING);
+
+                    System.out.println(
+                            "Copied final JSON: " +
+                                    jsonFile.getPath() +
+                                    " -> " +
+                                    destination);
+                }
+            } else {
+                System.err.println(
+                        "Could not find Final*" +
+                                benchmark +
+                                ".json in " +
+                                slowdownDirectoryPath);
+            }
+
+
+            /*
+            * Copy MarkerPhaseInfo.json from:
+            *
+            * Data/<id>_MarkerRun/MarkerPhaseInfo.json
+            *
+            * into OptionalOutput.
+            */
+            Path markerPhaseInfo = MarkerRunDirectory.resolve("MarkerPhaseInfo.json");
+
+            if (Files.exists(markerPhaseInfo) && Files.isRegularFile(markerPhaseInfo)) {
+                Path destination = outputDirectory.resolve("MarkerPhaseInfo.json");
+
+                Files.copy(
+                        markerPhaseInfo,
+                        destination,
+                        StandardCopyOption.REPLACE_EXISTING);
+
+                System.out.println(
+                        "Copied MarkerPhaseInfo.json: " +
+                                markerPhaseInfo +
+                                " -> " +
+                                destination);
+            } else {
+                System.err.println(
+                        "MarkerPhaseInfo.json does not exist: " +
+                                markerPhaseInfo);
+            }
+
+            /*
+             * Copy the entire CompilerReplay directory.
+             *
+             * Output becomes:
+             *
+             * OptionalOutput/
+             * Final_Bounce.json
+             * <id>_CompilerReplay/
+             * ...
+             */
+            if (Files.exists(replayDirectory) && Files.isDirectory(replayDirectory)) {
+
+                Path replayOutputDirectory = outputDirectory.resolve(id + "_CompilerReplay");
+
+                try (var paths = Files.walk(replayDirectory)) {
+                    paths.forEach(source -> {
+                        try {
+                            Path relativePath = replayDirectory.relativize(source);
+                            Path destination = replayOutputDirectory.resolve(relativePath);
+
+                            if (Files.isDirectory(source)) {
+                                Files.createDirectories(destination);
+                            } else {
+                                Files.createDirectories(destination.getParent());
+
+                                Files.copy(
+                                        source,
+                                        destination,
+                                        StandardCopyOption.REPLACE_EXISTING);
+                            }
+                        } catch (IOException e) {
+                            throw new RuntimeException(
+                                    "Failed copying: " + source,
+                                    e);
+                        }
+                    });
+                }
+
+                System.out.println(
+                        "Copied CompilerReplay directory: " +
+                                replayDirectory +
+                                " -> " +
+                                replayOutputDirectory);
+
+            } else {
+                System.err.println(
+                        "CompilerReplay directory does not exist: " +
+                                replayDirectoryPath);
+            }
+
+            /*
+ * Copy MarkerPhaseInfo.json from:
+ *
+ * Data/<id>_MarkerRun/MarkerPhaseInfo.json
+ *
+ * into OptionalOutput.
+ */
+//Path markerPhaseInfo = MarkerRunDirectory.resolve("MarkerPhaseInfo.json");
+
+if (Files.exists(markerPhaseInfo) && Files.isRegularFile(markerPhaseInfo)) {
+    Path destination = outputDirectory.resolve("MarkerPhaseInfo.json");
+
+    Files.copy(
+            markerPhaseInfo,
+            destination,
+            StandardCopyOption.REPLACE_EXISTING);
+
+    System.out.println(
+            "Copied MarkerPhaseInfo.json: " +
+                    markerPhaseInfo +
+                    " -> " +
+                    destination);
+} else {
+    System.err.println(
+            "MarkerPhaseInfo.json does not exist: " +
+                    markerPhaseInfo);
+}
+
+
+/*
+ * Copy MarkerPhase_BuboIncluded.json if it exists.
+ */
+Path markerPhaseBuboIncluded =
+        MarkerRunDirectory.resolve("MarkerPhase_BuboIncluded.json");
+
+if (Files.exists(markerPhaseBuboIncluded)
+        && Files.isRegularFile(markerPhaseBuboIncluded)) {
+
+    Path destination =
+            outputDirectory.resolve("MarkerPhase_BuboIncluded.json");
+
+    Files.copy(
+            markerPhaseBuboIncluded,
+            destination,
+            StandardCopyOption.REPLACE_EXISTING);
+
+    System.out.println(
+            "Copied MarkerPhase_BuboIncluded.json: " +
+                    markerPhaseBuboIncluded +
+                    " -> " +
+                    destination);
+
+} else {
+    System.out.println(
+            "MarkerPhase_BuboIncluded.json does not exist, skipping: " +
+                    markerPhaseBuboIncluded);
+}
+
+        } catch (IOException e) {
+            System.err.println(
+                    "Error copying final JSON / CompilerReplay output.");
+            e.printStackTrace();
         }
     }
 
