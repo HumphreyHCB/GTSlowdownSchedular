@@ -39,7 +39,7 @@ public class Diviner {
             double currentBlockCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
 
             if (lowFootPrint) {
-                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
+                String directoryPath = "Data/" + runID
                         + "_SlowDown_Data/LowFootPrintDumps";
                 File directory = new File(directoryPath);
 
@@ -47,7 +47,7 @@ public class Diviner {
                 if (!directory.exists()) {
                     directory.mkdirs();
                 }
-                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                String outputFilePath2 = String.format("Data/%s/%s.txt",
                         runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
                 VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
                 RemoveVtuneRun.run(runLocation);
@@ -97,7 +97,7 @@ public class Diviner {
             double currentBlockCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
 
             if (lowFootPrint) {
-                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
+                String directoryPath = "Data/" + runID
                         + "_SlowDown_Data/LowFootPrintDumps";
                 File directory = new File(directoryPath);
 
@@ -105,7 +105,7 @@ public class Diviner {
                 if (!directory.exists()) {
                     directory.mkdirs();
                 }
-                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                String outputFilePath2 = String.format("Data/%s/%s.txt",
                         runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
                 VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
                 RemoveVtuneRun.run(runLocation);
@@ -143,7 +143,7 @@ public class Diviner {
 
             if (lowFootPrint) {
                 // Handle low footprint option: generate report and remove VTune run
-                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
+                String directoryPath = "Data/" + runID
                         + "_SlowDown_Data/LowFootPrintDumps";
                 File directory = new File(directoryPath);
     
@@ -151,7 +151,7 @@ public class Diviner {
                 if (!directory.exists()) {
                     directory.mkdirs();
                 }
-                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                String outputFilePath2 = String.format("Data/%s/%s.txt",
                         runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
                 VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
                 RemoveVtuneRun.run(runLocation);
@@ -204,7 +204,7 @@ public class Diviner {
             double currentBlockCPUSpeed = VTuneAnalyzer.getCpuTimeForBlock(runLocation, method, block.vtuneBlock);
 
             if (lowFootPrint) {
-                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID
+                String directoryPath = "Data/" + runID
                         + "_SlowDown_Data/LowFootPrintDumps";
                 File directory = new File(directoryPath);
 
@@ -212,7 +212,7 @@ public class Diviner {
                 if (!directory.exists()) {
                     directory.mkdirs();
                 }
-                String outputFilePath2 = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                String outputFilePath2 = String.format("Data/%s/%s.txt",
                         runID + "_SlowDown_Data/LowFootPrintDumps/", formattedRunLocation);
                 VTuneAnalyzer.generateMethodBlockVTuneReport(formattedRunLocation, method, outputFilePath2);
                 RemoveVtuneRun.run(runLocation);
@@ -279,7 +279,7 @@ public class Diviner {
 
             if (lowFootPrint) {
                 String directoryPath =
-                        "/home/hb478/repos/GTSlowdownSchedular/Data/" +
+                        "Data/" +
                         runID +
                         "_SlowDown_Data/LowFootPrintDumps";
 
@@ -290,7 +290,7 @@ public class Diviner {
                 }
 
                 String outputFilePath2 = String.format(
-                        "/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                        "Data/%s/%s.txt",
                         runID + "_SlowDown_Data/LowFootPrintDumps/",
                         formattedRunLocation);
 

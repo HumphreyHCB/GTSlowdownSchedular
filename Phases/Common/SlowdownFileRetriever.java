@@ -16,7 +16,7 @@ public class SlowdownFileRetriever {
 
     public static void main(String[] args) {
         try {
-            loadMethodBlockCostsFromJSON("/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/Havlak/Final_Havlak.json");
+            loadMethodBlockCostsFromJSON("FinalDataRefined100/Havlak/Final_Havlak.json");
         } catch (IOException e) {
             System.out.println("Failed to load method block costs: " + e.getMessage());
         }

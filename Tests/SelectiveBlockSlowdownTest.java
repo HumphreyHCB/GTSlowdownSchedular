@@ -85,7 +85,7 @@ public class SelectiveBlockSlowdownTest {
         List<BlockInfo> blocks = MarkerPhaseDataLookup.getBenchmarkEntries(formattedMethodName);
 
         // First we need to Generate the customSlowdown file
-        String slowdownDataPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_SlowDown_Data";
+        String slowdownDataPath = "Data/" + ID + "_SlowDown_Data";
         try {
             Files.createDirectories(Paths.get(slowdownDataPath));
         } catch (Exception e) {
@@ -182,7 +182,7 @@ public class SelectiveBlockSlowdownTest {
         List<BlockInfo> blocks = MarkerPhaseDataLookup.getBenchmarkEntries(formattedMethodName);
 
         // First we need to Generate the customSlowdown file
-        String slowdownDataPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_SlowDown_Data";
+        String slowdownDataPath = "Data/" + ID + "_SlowDown_Data";
         try {
             Files.createDirectories(Paths.get(slowdownDataPath));
         } catch (Exception e) {
@@ -262,7 +262,7 @@ public class SelectiveBlockSlowdownTest {
             String ID) {
 
         String sourcePath = path + "/" + benchmark + "/" + benchmark + "_CompilerReplay";
-        String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
+        String destinationPath = "Data/" + ID + "_CompilerReplay";
         try {
             // Ensure destination directory exists
             Files.createDirectories(Paths.get(destinationPath));

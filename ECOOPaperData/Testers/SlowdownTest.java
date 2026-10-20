@@ -63,7 +63,7 @@ public class SlowdownTest {
         if (CompilerReplay) {
 
             String sourcePath = path + "/" + benchmark + "/" + benchmark + "_CompilerReplay";
-            destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
+            destinationPath = "Data/" + ID + "_CompilerReplay";
             try {
                 // Ensure destination directory exists
                 Files.createDirectories(Paths.get(destinationPath));
@@ -103,11 +103,11 @@ public class SlowdownTest {
         for (String method : normalRunsignificantMethods) {
             // Create output file paths with sanitized method names
             String outputFilePath1 = String.format(
-                    "/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt",
+                    "Data/%s/%s.txt",
                     slowdownRunID,
                     method.replaceAll("[\\/:*?\"<>|]", "_"));
             String outputFilePath2 = String.format(
-                    "/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s_normal.txt",
+                    "Data/%s/%s_normal.txt",
                     normalRunID,
                     method.replaceAll("[\\/:*?\"<>|]", "_"));
 

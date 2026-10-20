@@ -168,7 +168,7 @@ public class DiviningRunnerMultiplexed {
                 }
 
                 if (lowFootPrint) {
-                    String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID
+                    String directoryPath = "Data/" + RunID
                             + "_SlowDown_Data/LowFootPrintDumps";
                     File directory = new File(directoryPath);
 
@@ -439,7 +439,7 @@ public class DiviningRunnerMultiplexed {
                 // 3.3.7 If lowFootPrint is set, generate a report & remove VTune runs
                 // (same as your existing logic)
                 if (lowFootPrint) {
-                    String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID
+                    String directoryPath = "Data/" + RunID
                             + "_SlowDown_Data/LowFootPrintDumps";
                     File directory = new File(directoryPath);
                     if (!directory.exists()) {
@@ -478,7 +478,7 @@ public class DiviningRunnerMultiplexed {
     Collections.reverse(methods);
 
     try {
-        SlowdownFileRetriever.loadMethodBlockCostsFromJSON("/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/"+Benchmark+"/Final_"+Benchmark+".json");
+        SlowdownFileRetriever.loadMethodBlockCostsFromJSON("FinalDataRefined100/"+Benchmark+"/Final_"+Benchmark+".json");
     } catch (IOException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
@@ -717,7 +717,7 @@ public class DiviningRunnerMultiplexed {
             // 3.3.7 If lowFootPrint is set, generate a report & remove VTune runs
             // (same as your existing logic)
             if (lowFootPrint) {
-                String directoryPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID
+                String directoryPath = "Data/" + RunID
                         + "_SlowDown_Data/LowFootPrintDumps";
                 File directory = new File(directoryPath);
                 if (!directory.exists()) {

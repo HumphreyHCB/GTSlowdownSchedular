@@ -8,8 +8,7 @@ import java.nio.file.Paths;
 
 public class AWFYBenchmarksLookUp {
 
-    private static final String FILE_PATH =
-            "/home/hb478/repos/GTSlowdownSchedular/GTResources/AWFY_Benchmarks.json";
+    private static final String FILE_PATH = EcosystemPaths.benchmarkMetadata();
 
     private static final String AWFY_GROUP = "AWFY Benchmarks";
     private static final String RENAISSANCE_GROUP = "Renaissance Benchmarks";
