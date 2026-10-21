@@ -58,7 +58,7 @@ public class VTuneBenchmarkRun {
         if (CompilerReplay) {
 
             String sourcePath = path + "/" + benchmark + "/" + benchmark + "_CompilerReplay";
-            destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
+            destinationPath = "Data/" + ID + "_CompilerReplay";
             try {
                 // Ensure destination directory exists
                 Files.createDirectories(Paths.get(destinationPath));

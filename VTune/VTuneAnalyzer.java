@@ -15,7 +15,7 @@ public class VTuneAnalyzer {
         // Construct the VTune command to get method level analysis
         String command = String.format(
                 "vtune -report hotspots -r %s -group-by=function -column=function,\"CPU Time:Self\"",
-                "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
+                "Data/" + RunID);
 
         try {
             // Using ProcessBuilder to run the shell command and capture the output
@@ -465,12 +465,12 @@ public class VTuneAnalyzer {
         // "Lc/CollisionDetector\$\$Lambda\:\:0x00007f37f4007820\;\:\:apply"
         String id = "2026_01_08_15_47_03_NormalRun";
         String vtunePath = "2026_01_08_15_47_03_NormalRun";
-        generateMethodBlockVTuneReport(vtunePath, "Mandelbrot::mandelbrot","/home/hb478/repos/GTSlowdownSchedular/Data/2026_01_08_15_47_03_NormalRun/a.txt");
+        generateMethodBlockVTuneReport(vtunePath, "Mandelbrot::mandelbrot","Data/2026_01_08_15_47_03_NormalRun/a.txt");
         // for (Integer block : RDTSCNormalRunBlocks.keySet()) {
         //     System.out.println(block);
         // }
         //generateMethodBlockVTuneReport(id, "Bounce::benchmark", vtunePath + "/Bounce.txt");
-        // getCpuTimesForAllBlocks("/home/hb478/repos/GTSlowdownSchedular/Data/2025_9999",
+        // getCpuTimesForAllBlocks("Data/2025_9999",
         // "Bounce::benchmark");
         // getAllMethodsFoundByVtune(id);
     }

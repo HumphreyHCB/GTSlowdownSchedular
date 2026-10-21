@@ -24,7 +24,7 @@ public class BuildSlowdownTargetsList {
         }
 
         for (String method : significantMethods) {
-            String outputFilePath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/%s.txt", markerRunId,
+            String outputFilePath = String.format("Data/%s/%s.txt", markerRunId,
                     method.replaceAll("[\\/:*?\"<>|]", "_"));
             VTuneAnalyzer.generateMethodBlockVTuneReport(markerRunId, method, outputFilePath);
         }
@@ -33,7 +33,7 @@ public class BuildSlowdownTargetsList {
     }
 
     private static void processGeneratedFiles(String markerRunId, List<String> significantMethods) {
-        String directoryPath = String.format("/home/hb478/repos/GTSlowdownSchedular/Data/%s/", markerRunId);
+        String directoryPath = String.format("Data/%s/", markerRunId);
         VTuneReportRipper ripper = new VTuneReportRipper();
 
         JSONObject resultJson = new JSONObject();

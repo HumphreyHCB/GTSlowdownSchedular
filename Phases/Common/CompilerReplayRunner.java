@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import GTResources.AWFYBenchmarksLookUp;
+import GTResources.EcosystemPaths;
 import Phases.GTSchedular;
 
 public class CompilerReplayRunner {
@@ -19,7 +20,7 @@ public class CompilerReplayRunner {
     }
 
     private static void generateReplay(String benchmark, int iterations, String RunID){
-                Path folderPath = Paths.get("/home/hb478/repos/GTSlowdownSchedular/Data/"+RunID+"_CompilerReplay");
+                Path folderPath = Paths.get("Data/"+RunID+"_CompilerReplay");
         if (Files.notExists(folderPath)) {
             try {
                 Files.createDirectories(folderPath);
@@ -33,10 +34,11 @@ public class CompilerReplayRunner {
         List<String> command = new ArrayList<>();
         
         // Base vtune command with fixed options
-        command.add("vtune");
+        command.add(EcosystemPaths.vtuneCommand());
         command.add("-collect");
         command.add("hotspots");
-        command.add("-r /home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
+        command.add("-r");
+        command.add("Data/" + RunID);
         //command.add("-r /mnt/vtune_ramdisk/" + RunID);
         command.add("-knob");
         command.add("sampling-mode=hw");
@@ -53,7 +55,7 @@ public class CompilerReplayRunner {
         //command.add("-mrte-mode managed");
         //command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
         command.add("--");
-        command.add("/home/hb478/repos/graal-instrumentation/vm/latest_graalvm_home/bin/java");
+        command.add(EcosystemPaths.graalJava());
 
         //command.add("-Djdk.graal.TrivialInliningSize=0");
 
@@ -95,7 +97,7 @@ public class CompilerReplayRunner {
             command.add("-Xms12G");
             command.add("-Xmx12G");
             command.add("-jar");
-            command.add("/home/hb478/repos/renaissance/renaissance-gpl-0.16.1.jar");
+            command.add(EcosystemPaths.renaissanceJar());
 
             command.add("-r");
             command.add(""+AWFYBenchmarksLookUp.getExtraArgs(benchmark));
@@ -103,7 +105,7 @@ public class CompilerReplayRunner {
         }
         else {
                 command.add("-cp");
-                command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
+                command.add(EcosystemPaths.awfyJar());
                 // Add benchmark and inner benchmark amount
                 command.add("Harness");
                 command.add(benchmark); // e.g. "Queens"
@@ -135,7 +137,7 @@ public class CompilerReplayRunner {
             } else {
                 System.out.println("VTune command failed with exit code: " + exitCode);
             }
-           // return "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID;
+           // return "Data/" + RunID;
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

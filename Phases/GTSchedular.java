@@ -59,7 +59,7 @@ public class GTSchedular {
         // String sourcePath =
         // "/home/hb478/repos/GTSlowdownSchedular/FinalDataRefined100/"+ benchmark+"/"+
         // benchmark + "_CompilerReplay";
-        // String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID +
+        // String destinationPath = "Data/" + ID +
         // "_CompilerReplay";
         // try {
         // // Ensure destination directory exists

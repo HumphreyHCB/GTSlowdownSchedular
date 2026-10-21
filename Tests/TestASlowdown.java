@@ -43,7 +43,7 @@ public class TestASlowdown {
                String formattedMethodName = compUnit.replace(".", "::");
 
                 // First we need to Generate the customSlowdown file
-                String slowdownDataPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_SlowDown_Data";
+                String slowdownDataPath = "Data/" + ID + "_SlowDown_Data";
                     // Add a slowdown entry
             GTBuildSlowdownFile.addEntry(compUnit, graalID, vtuneBlock, slowdown, false);
         
@@ -78,7 +78,7 @@ public class TestASlowdown {
             String ID) {
 
         String sourcePath = path + "/" + benchmark + "/" + benchmark + "_CompilerReplay";
-        String destinationPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + ID + "_CompilerReplay";
+        String destinationPath = "Data/" + ID + "_CompilerReplay";
         try {
             // Ensure destination directory exists
             Files.createDirectories(Paths.get(destinationPath));

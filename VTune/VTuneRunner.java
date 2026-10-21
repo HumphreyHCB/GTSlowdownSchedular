@@ -1,5 +1,6 @@
 package VTune;
 import GTResources.AWFYBenchmarksLookUp;
+import GTResources.EcosystemPaths;
 import Phases.GTSchedular;
 
 import java.io.BufferedReader;
@@ -7,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.nio.file.Path;
+import java.nio.file.Files;
 
 public class VTuneRunner {
 
@@ -17,10 +20,11 @@ public class VTuneRunner {
         List<String> command = new ArrayList<>();
         
         // Base vtune command with fixed options
-        command.add("vtune");
+        command.add(EcosystemPaths.vtuneCommand());
         command.add("-collect");
         command.add("hotspots");
-        command.add("-r /home/hb478/repos/GTSlowdownSchedular/Data/" + RunID);
+        command.add("-r");
+        command.add("Data/" + RunID);
 
         command.add("-knob");
         command.add("sampling-mode=hw");
@@ -35,10 +39,10 @@ public class VTuneRunner {
 
 
 
-       command.add("--app-working-dir=/home/hb478/repos/are-we-fast-yet/benchmarks/Java/src");
+       command.add("--app-working-dir=" + EcosystemPaths.awfySourceDirectory());
 
         command.add("--");
-        command.add("/home/hb478/repos/graal-instrumentation/vm/latest_graalvm_home/bin/java");
+        command.add(EcosystemPaths.graalJava());
 
         // Add customizable JVM options, defaulting to false                        
         command.add("-Djdk.graal.LIRGTSlowDown=" + (jdkGraalLIRGTSlowDown ? "true" : "false"));
@@ -68,10 +72,20 @@ public class VTuneRunner {
         }
 
         if (compilerReplay) {
-            
+            Path replayDirectory = Path.of(
+                    "Data",
+                    RunID.substring(0, 19) + "_CompilerReplay"
+            ).toAbsolutePath().normalize();
+
+            if (!Files.isDirectory(replayDirectory)) {
+                throw new IllegalStateException(
+                        "Compiler replay directory does not exist: "
+                        + replayDirectory
+                );
+            }
 
             command.add("-Djdk.graal.StrictProfiles=false");
-            command.add("-Djdk.graal.LoadProfiles=/home/hb478/repos/GTSlowdownSchedular/Data/"+ RunID.substring(0, 19) + "_CompilerReplay");
+            command.add("-Djdk.graal.LoadProfiles=" + replayDirectory);
         }
 
 
@@ -83,7 +97,7 @@ public class VTuneRunner {
             command.add("-Xmx12G");
 
             command.add("-jar");
-            command.add("/home/hb478/repos/renaissance/renaissance-gpl-0.16.1.jar");
+            command.add(EcosystemPaths.renaissanceJar());
 
             command.add("-r");
             command.add(String.valueOf(innerBenchmarkAmount));
@@ -91,7 +105,7 @@ public class VTuneRunner {
         }
         else {
                 command.add("-cp");
-                command.add("/home/hb478/repos/are-we-fast-yet/benchmarks/Java/benchmarks.jar");
+                command.add(EcosystemPaths.awfyJar());
                 command.add("Harness");
                 command.add(benchmark); // e.g. "Queens"
                 command.add(iterations+ ""); 
@@ -124,7 +138,7 @@ public class VTuneRunner {
             } else {
                 System.out.println("VTune command failed with exit code: " + exitCode);
             }
-            return "/home/hb478/repos/GTSlowdownSchedular/Data/" + RunID;
+            return "Data/" + RunID;
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
@@ -138,7 +152,7 @@ public class VTuneRunner {
         int innerBenchmarkAmount = AWFYBenchmarksLookUp.getExtraArgs(benchmark); // Inner benchmark amount
         boolean jdkGraalGTMarkBasicBlocks = false; // Dynamic JVM option, default to false
         boolean jdkGraalLIRGTSlowDown = true; // Dynamic JVM option, default to false
-        String lirBlockSlowdownFileName = "/home/hb478/repos/GTSlowdownSchedular/Data/2024_12_20_17_01_59_SlowDown_Data/_deltablue::Planner::makePlan_290_14731.json"; // File path
+        String lirBlockSlowdownFileName = "Data/2024_12_20_17_01_59_SlowDown_Data/_deltablue::Planner::makePlan_290_14731.json"; // File path
         //String trivialInliningSize = "0"; // Dynamic JVM option
         String runId = "2024_12_20_17_01_59_runE";
         long start = System.currentTimeMillis();

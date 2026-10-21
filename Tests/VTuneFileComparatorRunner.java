@@ -25,8 +25,8 @@ public class VTuneFileComparatorRunner {
         VTuneLineComparator.setLogWriter(logWriter);
         VTuneFindUnmarkedBlocks.setLogWriter(logWriter);
 
-        String normalRunDirPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID + "_NormalRun";
-        String markerRunDirPath = "/home/hb478/repos/GTSlowdownSchedular/Data/" + runID + "_MarkerRun";
+        String normalRunDirPath = "Data/" + runID + "_NormalRun";
+        String markerRunDirPath = "Data/" + runID + "_MarkerRun";
 
         // Get the list of method names dynamically from the NormalRun directory
         List<String> methods = findMethodsInDirectory(normalRunDirPath);
