@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.nio.file.Path;
+import java.nio.file.Files;
 
 public class VTuneRunner {
 
@@ -70,10 +72,20 @@ public class VTuneRunner {
         }
 
         if (compilerReplay) {
-            
+            Path replayDirectory = Path.of(
+                    "Data",
+                    RunID.substring(0, 19) + "_CompilerReplay"
+            ).toAbsolutePath().normalize();
+
+            if (!Files.isDirectory(replayDirectory)) {
+                throw new IllegalStateException(
+                        "Compiler replay directory does not exist: "
+                        + replayDirectory
+                );
+            }
 
             command.add("-Djdk.graal.StrictProfiles=false");
-            command.add("-Djdk.graal.LoadProfiles=Data/"+ RunID.substring(0, 19) + "_CompilerReplay");
+            command.add("-Djdk.graal.LoadProfiles=" + replayDirectory);
         }
 
 
